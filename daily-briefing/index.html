@@ -260,9 +260,11 @@ async function readArticle(a, afterFn) {
       setCardPlaying(a.url, false);
       // Speech finished naturally — if Mic ON and user hasn't chosen yet, speak cue then listen
       if (voiceModeOn && vcResolve) {
-        speakText('Say Keep, Dismiss, Open Article, or Replay.', () => {
-          setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
-        });
+        // No spoken cue — TTS would be picked up by mic and trigger false commands
+        // Show visual status instead, then start listening after a clear gap
+        const statusEl = document.getElementById('vc-listen-status');
+        if (statusEl) statusEl.innerHTML = 'Mic ready<span class="listening-dot"></span>';
+        setTimeout(() => startListening(document.getElementById('vc-listen-status')), 900);
       }
     });
 
@@ -324,6 +326,11 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
 function resolveVC(cmd) { if (vcResolve) { vcResolve(cmd); vcResolve = null; } }
 
 function startListening(statusEl) {
+  // Guard: don't start mic if TTS is still speaking (would hear itself)
+  if (window.speechSynthesis && window.speechSynthesis.speaking) {
+    setTimeout(() => startListening(statusEl), 400);
+    return;
+  }
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SR) return;
   const r = new SR(); r.lang='en-US'; r.maxAlternatives=3; r.interimResults=false;
@@ -334,7 +341,7 @@ function startListening(statusEl) {
     const t = Array.from(e.results[0]).map(x=>x.transcript).join(' ').toLowerCase();
     if (statusEl) statusEl.textContent = 'Heard: "' + t + '"';
     if (t.includes('dismiss') || t.includes('hide') || t.includes('remove')) resolveVC('dismiss');
-    else if (t.includes('open') || t.includes('article')) resolveVC('open');
+    else if (t.includes('open article') || t.includes('open')) resolveVC('open');
     else if (t.includes('replay') || t.includes('again') || t.includes('repeat')) { replayCurrentArticle(); }
     else resolveVC('keep');
   };
@@ -344,19 +351,12 @@ function startListening(statusEl) {
 }
 
 async function promptVoiceCommand(article, afterFn, isPostArticle) {
-  if (voiceModeOn) {
-    const prompt = isPostArticle
-      ? 'Say Keep to continue, Dismiss to hide this article, or Open to open in browser.'
-      : 'Say Keep to skip, Dismiss to hide, or Open Article to read the full text.';
-    speakText(prompt, null);
-  }
+  // No spoken cue — mic would hear itself through speakers and misfire
   const promptEl = showVoicePrompt(article, isPostArticle, null);
   if (voiceModeOn) {
-    // Speak short prompt FIRST, then start listening once it finishes (avoids mic hearing itself)
-    const promptText = isPostArticle ? 'Say Keep, Dismiss, or Open.' : 'Say Keep, Dismiss, Open Article, or Replay.';
-    speakText(promptText, () => {
-      setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
-    });
+    const statusEl = document.getElementById('vc-listen-status');
+    if (statusEl) statusEl.innerHTML = 'Mic ready<span class="listening-dot"></span>';
+    setTimeout(() => startListening(document.getElementById('vc-listen-status')), 900);
   }
   const cmd = await promptEl;
   removeVoicePrompt();
@@ -536,9 +536,9 @@ function replayCurrentArticle() {
   // Re-read without resolving the prompt — buttons stay visible
   speakText(articleText(currentArticle), () => {
     if (voiceModeOn && vcResolve) {
-      speakText('Say Keep, Dismiss, Open Article, or Replay.', () => {
-        setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
-      });
+      const statusEl2 = document.getElementById('vc-listen-status');
+      if (statusEl2) statusEl2.innerHTML = 'Mic ready<span class="listening-dot"></span>';
+      setTimeout(() => startListening(document.getElementById('vc-listen-status')), 900);
     }
   });
 }
