@@ -395,7 +395,7 @@ function toggleArticle(url) {
       // Pause currently playing article
       window.speechSynthesis.pause();
       isPaused = true;
-      const id = btoa(url).replace(/[+/=]/g,'_');
+      const id = urlId(url);
       const btn = document.getElementById('play-'+id);
       if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9654;'; }
       return;
@@ -423,7 +423,7 @@ function renderArticles() {
     total += unread.length;
     html += `<div class="day-group"><div class="day-hdr"><span>${esc(day.label)}</span><span class="day-count">${unread.length} article${unread.length!==1?'s':''}</span></div>`;
     unread.forEach(a => {
-      const id = btoa(a.url).replace(/[+/=]/g,'_');
+      const id = urlId(a.url);
       const byline = [a.publisher, a.author, a.date].filter(Boolean).join(' \xB7 ');
       html += `<div class="article-card" id="card-${id}" data-url="${esc(a.url)}">
         <div class="card-top">
@@ -432,8 +432,8 @@ function renderArticles() {
             <div class="art-byline">${byline}</div>
           </div>
           <div class="card-actions">
-            <button class="play-btn" id="play-${id}" onclick="toggleArticle(${JSON.stringify(a.url)})" title="Read aloud">&#9654;</button>
-            <button class="dismiss-btn" onclick="dismissArticle(${JSON.stringify(a.url)})" title="Dismiss">&times;</button>
+            <button class="play-btn" id="play-${id}" data-url="${esc(a.url)}" onclick="handlePlay(this)" title="Read aloud">&#9654;</button>
+            <button class="dismiss-btn" data-url="${esc(a.url)}" onclick="handleDismiss(this)" title="Dismiss">&times;</button>
           </div>
         </div>
         <div class="card-body">
@@ -463,6 +463,18 @@ async function loadArchive() {
   }
 }
 
+
+
+// --- Stable URL -> element ID (avoids btoa throwing on some chars) ---
+function urlId(url) {
+  let h = 5381;
+  for (let i = 0; i < url.length; i++) h = ((h << 5) + h) ^ url.charCodeAt(i);
+  return 'u' + (h >>> 0).toString(36);
+}
+
+// --- Data-attribute click handlers (avoids inline JSON.stringify breaking HTML) ---
+function handlePlay(btn) { toggleArticle(btn.dataset.url); }
+function handleDismiss(btn) { dismissArticle(btn.dataset.url); }
 
 // --- Voice preview ---
 function previewVoice() {
