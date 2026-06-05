@@ -77,7 +77,7 @@
   <button class="btn btn-red"   id="btn-stop"     onclick="stopAll()" style="display:none">&#9632; Stop</button>
   <button class="btn btn-ghost" id="btn-mark-all" onclick="markAllRead()">&#10003; Mark all read</button>
   <button class="btn btn-ghost" id="btn-sort"     onclick="toggleSort()">&#8645; Oldest first</button>
-  <button class="btn btn-ghost" id="btn-voice-mode" onclick="toggleVoiceMode()" title="After each article, say Keep / Dismiss / Open Article to control what happens next">&#127908; Cmds</button>
+  <button class="btn btn-ghost" id="btn-voice-mode" onclick="toggleVoiceMode()" title="Enables microphone so you can SPEAK 'Keep', 'Dismiss', or 'Open' instead of clicking the buttons. Read All always pauses and shows the prompt — this just adds voice input.">&#127908; Mic</button>
   <div class="right-controls">
     <div class="speed-wrap">
       <span>Speed</span>
@@ -178,8 +178,8 @@ function toggleVoiceMode() {
 }
 function updateVoiceModeBtn() {
   const btn = document.getElementById('btn-voice-mode');
-  if (voiceModeOn) { btn.className = 'btn btn-voice-on'; btn.textContent = '🎙 Cmds ON'; }
-  else { btn.className = 'btn btn-ghost'; btn.textContent = '🎙 Cmds'; }
+  if (voiceModeOn) { btn.className = 'btn btn-voice-on'; btn.textContent = '🎙 Mic ON'; }
+  else { btn.className = 'btn btn-ghost'; btn.textContent = '🎙 Mic'; }
 }
 
 // --- Dismiss ---
@@ -273,9 +273,10 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
     </div>
     <div id="vc-listen-status" style="font-size:.76rem;margin-top:6px;color:#7c3aed"></div>
   </div>`;
-  const cardId = 'card-'+btoa(article.url).replace(/[+/=]/g,'_');
+  const cardId = 'card-'+urlId(article.url);
   const card = document.getElementById(cardId);
   if (card) card.after(div); else document.getElementById('main').prepend(div);
+  setTimeout(() => div.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
   return new Promise(resolve => { vcResolve = resolve; });
 }
 
