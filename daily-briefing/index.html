@@ -244,17 +244,54 @@ function articleText(a) {
   return `${a.title}. From ${a.publisher}. ${a.summary} Logicbroker angle: ${a.tieback}`;
 }
 
-function readArticle(a, afterFn) {
+async function readArticle(a, afterFn) {
   if (currentCardUrl) setCardPlaying(currentCardUrl, false);
   currentCardUrl = a.url;
   setCardPlaying(a.url, true);
   document.getElementById('btn-stop').style.display = 'inline-flex';
-  speakText(articleText(a), () => {
-    setCardPlaying(a.url, false);
+
+  if (isReadAll || voiceModeOn) {
+    // Show prompt NOW — user can click Keep/Dismiss/Open to skip while article is reading
+    const cmdPromise = showVoicePrompt(a, false, null);
+
+    let speechEnded = false;
+    speakText(articleText(a), () => {
+      speechEnded = true;
+      setCardPlaying(a.url, false);
+      // Speech finished naturally — if Mic ON and user hasn't chosen yet, speak cue then listen
+      if (voiceModeOn && vcResolve) {
+        speakText('Say Keep, Dismiss, or Open Article.', () => {
+          setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
+        });
+      }
+    });
+
+    const cmd = await cmdPromise;
+
+    // User chose — cancel speech if it's still going (they skipped ahead)
+    if (!speechEnded) {
+      window.speechSynthesis.cancel();
+      isSpeaking = false; isPaused = false;
+      setCardPlaying(a.url, false);
+    }
     currentCardUrl = null;
-    if (isReadAll || voiceModeOn) promptVoiceCommand(a, afterFn);
-    else if (afterFn) afterFn();
-  });
+    removeVoicePrompt();
+
+    if (cmd === 'dismiss') {
+      dismissArticle(a.url);
+      if (isReadAll) advanceQueue(); else resetUI();
+    } else if (cmd === 'open') {
+      openAndRead(a, afterFn);
+    } else {
+      if (isReadAll) advanceQueue(); else resetUI();
+    }
+  } else {
+    speakText(articleText(a), () => {
+      setCardPlaying(a.url, false);
+      currentCardUrl = null;
+      if (afterFn) afterFn(); else resetUI();
+    });
+  }
 }
 
 // --- Voice command flow ---
@@ -265,7 +302,7 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
   const div = document.createElement('div');
   div.id = 'vc-prompt'; div.className = 'voice-prompt';
   div.innerHTML = `<div>
-    <div style="font-weight:700;margin-bottom:4px">${voiceModeOn ? '&#127908; ' : ''}${isPostArticle ? 'Full article read.' : (voiceModeOn ? 'Say or click:' : 'What next?')}</div>
+    <div style="font-weight:700;margin-bottom:4px">${voiceModeOn ? '&#127908; ' : ''}${isPostArticle ? 'Full article read.' : (voiceModeOn ? 'Say or click to skip:' : 'Skip ahead or keep listening:')}</div>
     <div class="voice-choices">
       <button class="vchoice" onclick="resolveVC('keep')">Keep / Next</button>
       <button class="vchoice" onclick="resolveVC('dismiss')">Dismiss</button>
