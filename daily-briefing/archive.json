@@ -1,0 +1,53 @@
+[
+  {
+    "date": "2026-06-05",
+    "label": "Friday, June 5, 2026",
+    "articles": [
+      {
+        "title": "Retailers turn to AI for productivity, personalized shopping",
+        "publisher": "Retail Dive",
+        "author": "Paige Gross",
+        "date": "2026-06-04",
+        "url": "https://www.retaildive.com/news/gap-best-buy-dicks-retailers-ai-personalization/821843/",
+        "summary": "Best Buy, Gap, and Dick's Sporting Goods each shared AI deployment plans during Q1 earnings calls, highlighting initiatives ranging from Best Buy's OpenAI and Google partnerships for agent-driven product discovery to Gap's Universal Commerce Protocol integration enabling in-chat checkout and Dick's launch of a Gemini-powered agentic shopping coach. Investment in AI for personalization and productivity is accelerating, with 39% of retailers expecting AI to exceed 10% of their tech spend by 2028.",
+        "tieback": "Retailers betting on AI-mediated discovery need product data that is clean, structured, and accessible to agents in real time, which is the exact gap Logicbroker closes for brands feeding LLMs and agentic platforms through fast SKU onboarding and transactionable catalog presence."
+      },
+      {
+        "title": "Why retailers are putting next-gen AI in the palm of the worker's hand",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-05-29",
+        "url": "https://chainstoreage.com/why-retailers-are-putting-next-gen-ai-palm-workers-hand",
+        "summary": "Walmart, Albertsons, and 7-Eleven are deploying mobile AI directly to frontline workers for tasks spanning AI-directed stocking workflows, Gemini-powered produce quality inspection in distribution centers, and automated hiring that has saved 7-Eleven more than 40,000 manager hours per week. The pattern shows AI moving from back-office planning into real-time operations, with workers acting on inventory signals without waiting for management escalation.",
+        "tieback": "As AI closes the gap between inventory data and frontline action, the accuracy of that upstream inventory data becomes critical, which is where Logicbroker's real-time order and inventory visibility gives the agentic worker tools a reliable feed to act on."
+      },
+      {
+        "title": "An AI overhaul at Macy's is fueling the 168-year-old retailer's turnaround",
+        "publisher": "Fortune",
+        "author": "Phil Wahba",
+        "date": "2026-06-02",
+        "url": "https://fortune.com/2026/06/02/macys-ai-overhaul-ai-chatbot-retail/",
+        "summary": "Macy's Ask Macy's AI shopping assistant drives nearly five times the spending per session versus non-users, while machine learning tools for demand forecasting and manager training have become operational staples. CEO Tony Spring's philosophy is disciplined AI adoption focused on solving specific customer problems or unlocking measurable efficiency, a model that is now producing visible turnaround results.",
+        "tieback": "Macy's results are tied directly to forecasting accuracy and real-time inventory signals, and the same data fidelity that Logicbroker's real-time inventory visibility provides to brands and suppliers flowing product through dropship and 3P channels is the upstream condition that makes those AI investments pay off."
+      },
+      {
+        "title": "Amazon applies AI shopping tech to customer retailer agents with AWS",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-06-03",
+        "url": "https://www.digitalcommerce360.com/2026/06/03/amazon-applies-ai-shopping-tech-to-customer-retailer-agents-with-aws/",
+        "summary": "Amazon is offering its Agentic Shopping Assistant technology through AWS, allowing retailers to deploy branded AI shopping agents in weeks without building from scratch; Kate Spade was an early adopter with a gift concierge agent. The tool is customizable per retailer's brand voice, product assortment, and shopping environment, positioning Amazon as the infrastructure layer beneath agentic retail rather than just a destination.",
+        "tieback": "As Amazon commoditizes AI agent deployment, brands need clean, normalized, real-time product data piped to these agentic platforms from day one, which is exactly the problem Logicbroker's SKU onboarding speed and transactionable catalog presence solves."
+      },
+      {
+        "title": "The AI regulation gap: Risk, cost, and competitive advantage",
+        "publisher": "Supply Chain Management Review",
+        "author": "Dravida Seetharam and Sarah Lahti",
+        "date": "2026-06-03",
+        "url": "https://www.scmr.com/article/the-ai-regulation-gap-risk-cost-and-competitive-advantage",
+        "summary": "Global AI regulations, from the EU AI Act's strict compliance and documentation mandates to flexible sandboxes in Singapore and Japan, are creating uneven operating costs and competitive divides across supply chain networks. Organizations that build modular, governance-ready technology architectures now will be better positioned to scale AI across supplier networks as regulatory requirements tighten globally, with Gartner projecting AI governance spend will exceed $1 billion by 2030.",
+        "tieback": "As regulatory divergence raises the bar for AI auditability and traceability across supply chains, Logicbroker's automated EDI and normalized supplier data layer provides a documented, auditable transaction record that supports the governance infrastructure enterprises and regulators will increasingly require."
+      }
+    ]
+  }
+]
