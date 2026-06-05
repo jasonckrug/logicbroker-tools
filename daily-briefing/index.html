@@ -77,7 +77,7 @@
   <button class="btn btn-red"   id="btn-stop"     onclick="stopAll()" style="display:none">&#9632; Stop</button>
   <button class="btn btn-ghost" id="btn-mark-all" onclick="markAllRead()">&#10003; Mark all read</button>
   <button class="btn btn-ghost" id="btn-sort"     onclick="toggleSort()">&#8645; Oldest first</button>
-  <button class="btn btn-ghost" id="btn-voice-mode" onclick="toggleVoiceMode()" title="Enable voice commands after each article">&#127908; Voice</button>
+  <button class="btn btn-ghost" id="btn-voice-mode" onclick="toggleVoiceMode()" title="After each article, say Keep / Dismiss / Open Article to control what happens next">&#127908; Cmds</button>
   <div class="right-controls">
     <div class="speed-wrap">
       <span>Speed</span>
@@ -87,6 +87,7 @@
     <div class="voice-wrap">
       <span>Voice</span>
       <select class="voice-sel" id="voice-sel" onchange="saveVoice(this.value)"><option value="">Default</option></select>
+      <button class="btn btn-ghost" onclick="previewVoice()" title="Hear the selected voice before using it" style="padding:5px 10px;font-size:.76rem">&#9654; Test</button>
     </div>
   </div>
 </div>
@@ -177,8 +178,8 @@ function toggleVoiceMode() {
 }
 function updateVoiceModeBtn() {
   const btn = document.getElementById('btn-voice-mode');
-  if (voiceModeOn) { btn.className = 'btn btn-voice-on'; btn.textContent = '🎙 Voice ON'; }
-  else { btn.className = 'btn btn-ghost'; btn.textContent = '🎙 Voice'; }
+  if (voiceModeOn) { btn.className = 'btn btn-voice-on'; btn.textContent = '🎙 Cmds ON'; }
+  else { btn.className = 'btn btn-ghost'; btn.textContent = '🎙 Cmds'; }
 }
 
 // --- Dismiss ---
@@ -439,6 +440,20 @@ async function loadArchive() {
     document.getElementById('main').innerHTML = `<div class="loading" style="color:var(--red)">Could not load articles. (${e.message})</div>`;
     document.getElementById('unread-badge').textContent = 'Error';
   }
+}
+
+
+// --- Voice preview ---
+function previewVoice() {
+  const uri = document.getElementById('voice-sel').value;
+  const voice = voices.find(v => v.voiceURI === uri) || null;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(
+    "Hello. This is a preview of the selected voice. You can use it to read your daily Logicbroker AI Brief."
+  );
+  u.rate = speed;
+  if (voice) u.voice = voice;
+  window.speechSynthesis.speak(u);
 }
 
 init();
