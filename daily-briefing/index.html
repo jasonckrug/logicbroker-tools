@@ -106,6 +106,7 @@ const SPK = 'lb_speed_v1';
 let archive = [], speed = 1.0, sortNewest = true, voiceModeOn = false;
 let selectedVoice = null, voices = [];
 let isSpeaking = false, isPaused = false, readQueue = [], readQueueIdx = 0, isReadAll = false, currentArticle = null;
+let activeRecognition = null, listenSession = 0;
 let currentCardUrl = null, pendingCallback = null;
 let vcResolve = null; // for voice command promise
 
@@ -227,7 +228,7 @@ function setCardPlaying(url, playing) {
 }
 
 function resetUI() {
-  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false; isPaused = false; currentArticle = null;
+  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false; isPaused = false; currentArticle = null; abortActiveRecognition();
   if (currentCardUrl) setCardPlaying(currentCardUrl, false);
   currentCardUrl = null;
   document.getElementById('btn-stop').style.display = 'none';
@@ -273,7 +274,7 @@ async function readArticle(a, afterFn) {
     // User chose — cancel speech if it's still going (they skipped ahead)
     if (!speechEnded) {
       window.speechSynthesis.cancel();
-      isSpeaking = false; isPaused = false; currentArticle = null;
+      isSpeaking = false; isPaused = false; currentArticle = null; abortActiveRecognition();
       setCardPlaying(a.url, false);
     }
     currentCardUrl = null;
@@ -325,19 +326,29 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
 
 function resolveVC(cmd) { if (vcResolve) { vcResolve(cmd); vcResolve = null; } }
 
+function abortActiveRecognition() {
+  if (activeRecognition) { try { activeRecognition.abort(); } catch(e) {} activeRecognition = null; }
+}
+
 function startListening(statusEl) {
-  // Guard: don't start mic if TTS is still speaking (would hear itself)
+  abortActiveRecognition(); // Kill any previous session before starting
   if (window.speechSynthesis && window.speechSynthesis.speaking) {
     setTimeout(() => startListening(statusEl), 400);
     return;
   }
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SR) return;
-  const r = new SR(); r.lang='en-US'; r.maxAlternatives=3; r.interimResults=false;
+
+  listenSession++;
+  const mySession = listenSession;
+  const r = new SR();
+  activeRecognition = r;
+  r.lang='en-US'; r.maxAlternatives=3; r.interimResults=false;
   let timer = setTimeout(() => { try{r.abort();}catch(e){} }, 8000);
   if (statusEl) { statusEl.innerHTML = 'Listening<span class="listening-dot"></span>'; }
   r.onresult = (e) => {
-    clearTimeout(timer);
+    clearTimeout(timer); activeRecognition = null;
+    if (listenSession !== mySession) return; // Stale session — ignore
     const t = Array.from(e.results[0]).map(x=>x.transcript).join(' ').toLowerCase();
     if (statusEl) statusEl.textContent = 'Heard: "' + t + '"';
     if (t.includes('dismiss') || t.includes('hide') || t.includes('remove')) resolveVC('dismiss');
@@ -345,8 +356,13 @@ function startListening(statusEl) {
     else if (t.includes('replay') || t.includes('again') || t.includes('repeat')) { replayCurrentArticle(); }
     else resolveVC('keep');
   };
-  r.onerror = () => { clearTimeout(timer); if(statusEl) statusEl.textContent = 'Not heard — defaulting to Keep'; setTimeout(()=>resolveVC('keep'), 1200); };
-  r.onend   = () => { clearTimeout(timer); };
+  r.onerror = () => {
+    clearTimeout(timer); activeRecognition = null;
+    if (listenSession !== mySession) return; // Stale session — ignore
+    if (statusEl) statusEl.textContent = 'Not heard — click a button to continue';
+    // No auto-advance: stale delayed resolveVC was causing next article to skip automatically
+  };
+  r.onend = () => { clearTimeout(timer); if (activeRecognition === r) activeRecognition = null; };
   try { r.start(); } catch(e) {}
 }
 
