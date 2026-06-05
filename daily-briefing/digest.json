@@ -2,49 +2,49 @@
   "date": "Friday, June 5, 2026",
   "articles": [
     {
-      "title": "Retailers turn to AI for productivity, personalized shopping",
+      "title": "Shop 'til you bot: Google, OpenAI, and the race to build agentic commerce",
+      "publisher": "Fast Company",
+      "author": "Elizabeth Segran",
+      "date": "2026-05-07",
+      "url": "https://www.fastcompany.com/91533534/shop-til-you-bot-google-openai-and-the-race-to-build-agentic-commerce",
+      "summary": "OpenAI quietly killed its Instant Checkout feature after fewer than 30 Shopify merchants went live, exposing that large language models were never designed for commerce and that bridging the gap between AI models and real-time e-commerce infrastructure is far harder than anticipated. Logicbroker CEO Omar Qari is quoted directly on the failure, and the piece positions Google's Shopping Graph and Universal Commerce Protocol as the stronger foundation, with Gap and Ulta already completing purchases inside Gemini.",
+      "tieback": "Retailers that cannot surface clean, real-time product data to AI agents lose the sale before checkout is attempted, which is the inventory and catalog connectivity problem that a transactionable presence on LLMs and agents directly solves."
+    },
+    {
+      "title": "Agentic AI in Retail: How Autonomous Shopping Is Redefining the Customer Journey",
+      "publisher": "Bain & Company",
+      "author": "Ruth Lewis",
+      "date": "2026-05-14",
+      "url": "https://www.bain.com/insights/agentic-ai-in-retail-how-autonomous-shopping-redefining-customer-journey/",
+      "summary": "Bain argues that agentic AI is collapsing the traditional multi-step customer journey into a single AI-mediated transaction, splitting the retail landscape into agent-ready merchants who surface structured data and agent-blind ones who do not. Retailers must now compete not just for shoppers but for AI agents as a distinct class of buyer with different discovery, evaluation, and fulfillment requirements.",
+      "tieback": "Brands whose product catalogs, inventory positions, and order data are not agent-readable become invisible at the moment of purchase, the gap that rapid SKU onboarding and real-time inventory visibility help close for dropship and 3P sellers."
+    },
+    {
+      "title": "Lowe's courts DIY shoppers as AI tools boost online conversions",
       "publisher": "Retail Dive",
-      "author": "Paige Gross",
-      "date": "2026-06-04",
-      "url": "https://www.retaildive.com/news/gap-best-buy-dicks-retailers-ai-personalization/821843/",
-      "summary": "Best Buy, Gap, and Dick's Sporting Goods each shared AI deployment plans during Q1 earnings calls, highlighting initiatives ranging from Best Buy's OpenAI and Google partnerships for agent-driven product discovery to Gap's Universal Commerce Protocol integration enabling in-chat checkout and Dick's launch of a Gemini-powered agentic shopping coach. Investment in AI for personalization and productivity is accelerating, with 39% of retailers expecting AI to exceed 10% of their tech spend by 2028.",
-      "tieback": "Retailers betting on AI-mediated discovery need product data that is clean, structured, and accessible to agents in real time, which is the exact gap Logicbroker closes for brands feeding LLMs and agentic platforms through fast SKU onboarding and transactionable catalog presence."
+      "author": "Bryan Wassel",
+      "date": "2026-05-26",
+      "url": "https://www.retaildive.com/news/lowes-diy-shoppers-ai-tools-online-conversions/821019/",
+      "summary": "Lowe's Mylow AI shopping assistant now handles more than 1 million customer inquiries per month and drives 3x higher online conversion rates compared to sessions without the tool, while the associate-facing Mylow Companion delivers a 2% improvement in in-store satisfaction scores. CEO Marvin Ellison characterized a well-designed agentic AI experience as a clear driver of purchasing decisions at the Q1 2026 earnings call.",
+      "tieback": "Retailers reporting measurable conversion lift from embedded AI agents become critically dependent on accurate, real-time inventory signals to fulfill those intent-driven purchases, putting pressure on every link in the supplier data chain."
     },
     {
-      "title": "Why retailers are putting next-gen AI in the palm of the worker's hand",
-      "publisher": "Chain Store Age",
-      "author": "Dan Berthiaume",
-      "date": "2026-05-29",
-      "url": "https://chainstoreage.com/why-retailers-are-putting-next-gen-ai-palm-workers-hand",
-      "summary": "Walmart, Albertsons, and 7-Eleven are deploying mobile AI directly to frontline workers for tasks spanning AI-directed stocking workflows, Gemini-powered produce quality inspection in distribution centers, and automated hiring that has saved 7-Eleven more than 40,000 manager hours per week. The pattern shows AI moving from back-office planning into real-time operations, with workers acting on inventory signals without waiting for management escalation.",
-      "tieback": "As AI closes the gap between inventory data and frontline action, the accuracy of that upstream inventory data becomes critical, which is where Logicbroker's real-time order and inventory visibility gives the agentic worker tools a reliable feed to act on."
+      "title": "AI in the C-suite vs. on Main Street",
+      "publisher": "DC Velocity",
+      "author": "Susan Lacefield",
+      "date": "2026-05-28",
+      "url": "https://www.dcvelocity.com/technology/ai-in-the-c-suite-vs-on-main-street",
+      "summary": "Drawing on the MHI/Deloitte 2026 Annual Industry Report (61% of supply chain leaders expect AI to transform or majorly improve operations, 65% plan AI investment) alongside a May 2026 YouGov poll (51% of workers worried AI will replace their jobs), Lacefield argues that the optimism gap between the C-suite and the warehouse floor is a management problem that will determine whether implementations succeed or fail.",
+      "tieback": "Supplier-facing automation that reduces manual EDI work and onboarding friction offers a concrete AI benefits you too story for front-line teams, making adoption stickier across the trading partner network."
     },
     {
-      "title": "An AI overhaul at Macy's is fueling the 168-year-old retailer's turnaround",
-      "publisher": "Fortune",
-      "author": "Phil Wahba",
-      "date": "2026-06-02",
-      "url": "https://fortune.com/2026/06/02/macys-ai-overhaul-ai-chatbot-retail/",
-      "summary": "Macy's 'Ask Macy's' AI shopping assistant drives nearly five times the spending per session versus non-users, while machine learning tools for demand forecasting and manager training have become operational staples. CEO Tony Spring's philosophy is disciplined AI adoption focused on solving specific customer problems or unlocking measurable efficiency, a model that is now producing visible turnaround results.",
-      "tieback": "Macy's results are tied directly to forecasting accuracy and real-time inventory signals, and the same data fidelity that Logicbroker's real-time inventory visibility provides to brands and suppliers flowing product through dropship and 3P channels is the upstream condition that makes those AI investments pay off."
-    },
-    {
-      "title": "Amazon applies AI shopping tech to customer retailer agents with AWS",
-      "publisher": "Digital Commerce 360",
-      "author": "",
-      "date": "2026-06-03",
-      "url": "https://www.digitalcommerce360.com/2026/06/03/amazon-applies-ai-shopping-tech-to-customer-retailer-agents-with-aws/",
-      "summary": "Amazon is offering its Agentic Shopping Assistant technology through AWS, allowing retailers to deploy branded AI shopping agents in weeks without building from scratch; Kate Spade was an early adopter with a gift concierge agent. The tool is customizable per retailer's brand voice, product assortment, and shopping environment, positioning Amazon as the infrastructure layer beneath agentic retail rather than just a destination.",
-      "tieback": "As Amazon commoditizes AI agent deployment, brands need clean, normalized, real-time product data piped to these agentic platforms from day one, which is exactly the problem Logicbroker's SKU onboarding speed and transactionable catalog presence solves."
-    },
-    {
-      "title": "The AI regulation gap: Risk, cost, and competitive advantage",
+      "title": "Agentic coding and the future of supply chain leadership",
       "publisher": "Supply Chain Management Review",
-      "author": "Dravida Seetharam and Sarah Lahti",
-      "date": "2026-06-03",
-      "url": "https://www.scmr.com/article/the-ai-regulation-gap-risk-cost-and-competitive-advantage",
-      "summary": "Global AI regulations, from the EU AI Act's strict compliance and documentation mandates to flexible sandboxes in Singapore and Japan, are creating uneven operating costs and competitive divides across supply chain networks. Organizations that build modular, governance-ready technology architectures now will be better positioned to scale AI across supplier networks as regulatory requirements tighten globally, with Gartner projecting AI governance spend will exceed $1 billion by 2030.",
-      "tieback": "As regulatory divergence raises the bar for AI auditability and traceability across supply chains, Logicbroker's automated EDI and normalized supplier data layer provides a documented, auditable transaction record that supports the governance infrastructure enterprises and regulators will increasingly require."
+      "author": "Vincent E. Castillo, Ph.D. and Abhinav Hasija, Ph.D.",
+      "date": "2026-06-01",
+      "url": "https://www.scmr.com/article/agentic-coding-and-the-future-of-supply-chain-leadership",
+      "summary": "Ohio State and Grand Valley State professors argue that AI coding agents are lowering the barrier for supply chain executives to prototype their own decision tools and fulfillment workflows directly from domain expertise, without traditional software development. The article predicts that prototype-and-test will become a core leadership competency while cautioning that generated code still requires rigorous validation and engineering hardening before enterprise deployment.",
+      "tieback": "Supply chain leaders building custom tooling will prioritize platforms that expose clean APIs and real-time data feeds for inventory, orders, and supplier analytics, making well-documented integrations a meaningful differentiator in vendor selection."
     }
   ]
 }
