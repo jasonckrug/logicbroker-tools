@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Research Digest — Logicbroker</title>
+  <title>Daily AI Brief — Logicbroker</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --lb-blue: #0066cc;
       --lb-teal: #00a99d;
@@ -16,263 +15,179 @@
       --muted: #6b7280;
       --border: #e5e7eb;
     }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
     header {
       background: linear-gradient(135deg, #0066cc 0%, #00a99d 100%);
-      color: white;
-      padding: 24px 20px 20px;
-      text-align: center;
+      color: white; padding: 20px 20px 16px; text-align: center;
     }
-
-    header h1 {
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-    }
-
-    header .subtitle {
-      font-size: 0.82rem;
-      opacity: 0.8;
-      margin-top: 3px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    header .date {
-      font-size: 0.95rem;
-      opacity: 0.9;
-      margin-top: 6px;
-      font-weight: 500;
+    header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 4px; }
+    header h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; }
+    header .unread-badge {
+      display: inline-block; background: rgba(255,255,255,0.25); border-radius: 20px;
+      padding: 2px 10px; font-size: 0.8rem; font-weight: 600; margin-top: 6px;
     }
 
     .controls {
-      background: white;
-      border-bottom: 1px solid var(--border);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      background: white; border-bottom: 1px solid var(--border);
+      padding: 9px 16px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      position: sticky; top: 0; z-index: 10; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
-
     .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 7px 14px;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      font-size: 0.83rem;
-      font-weight: 600;
-      transition: all 0.15s;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 13px; border-radius: 6px; border: none; cursor: pointer;
+      font-size: 0.82rem; font-weight: 600; transition: all 0.15s; white-space: nowrap;
     }
-
     .btn-primary { background: var(--lb-blue); color: white; }
     .btn-primary:hover { background: #0052a3; }
-
+    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+    .btn-ghost:hover { background: var(--bg); color: var(--text); }
     .btn-stop { background: #ef4444; color: white; }
     .btn-stop:hover { background: #dc2626; }
+    .speed-wrap { display: flex; align-items: center; gap: 7px; margin-left: auto; font-size: 0.82rem; color: var(--muted); }
+    .speed-wrap input[type=range] { width: 85px; accent-color: var(--lb-blue); cursor: pointer; }
+    .speed-val { min-width: 30px; font-weight: 700; color: var(--text); }
 
-    .speed-wrap {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-left: auto;
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
+    main { max-width: 700px; margin: 0 auto; padding: 16px 14px 48px; }
 
-    .speed-wrap input[type=range] {
-      width: 90px;
-      accent-color: var(--lb-blue);
-      cursor: pointer;
+    .day-group { margin-bottom: 24px; }
+    .day-header {
+      font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted); padding: 0 2px 8px; border-bottom: 1px solid var(--border);
+      margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between;
     }
-
-    .speed-val {
-      min-width: 32px;
-      font-weight: 700;
-      color: var(--text);
-      font-size: 0.85rem;
-    }
-
-    main {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 18px 14px 40px;
-    }
+    .day-count { font-weight: 500; }
 
     .article-card {
-      background: var(--card);
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      margin-bottom: 14px;
-      overflow: hidden;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      background: var(--card); border-radius: 10px; border: 1px solid var(--border);
+      margin-bottom: 10px; overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s;
     }
-
     .article-card.playing {
-      border-color: var(--lb-teal);
-      box-shadow: 0 0 0 3px rgba(0,169,157,0.15);
+      border-color: var(--lb-teal); box-shadow: 0 0 0 3px rgba(0,169,157,0.15);
     }
-
-    .card-top {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 14px 14px 10px;
-    }
-
+    .card-top { display: flex; align-items: flex-start; gap: 10px; padding: 13px 13px 8px; }
     .card-meta { flex: 1; min-width: 0; }
-
-    .art-num {
-      font-size: 0.7rem;
-      font-weight: 800;
-      color: var(--lb-blue);
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-    }
-
-    .art-title {
-      font-size: 0.97rem;
-      font-weight: 700;
-      line-height: 1.4;
-      margin: 3px 0 5px;
-    }
-
-    .art-title a {
-      color: var(--text);
-      text-decoration: none;
-    }
-
+    .art-title { font-size: 0.96rem; font-weight: 700; line-height: 1.4; margin-bottom: 4px; }
+    .art-title a { color: var(--text); text-decoration: none; }
     .art-title a:hover { color: var(--lb-blue); text-decoration: underline; }
+    .art-byline { font-size: 0.77rem; color: var(--muted); }
 
-    .art-byline {
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-
+    .card-actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; margin-top: 1px; }
     .play-btn {
-      flex-shrink: 0;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: none;
-      background: var(--lb-blue);
-      color: white;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 15px;
-      transition: background 0.15s, transform 0.1s;
-      margin-top: 2px;
+      width: 34px; height: 34px; border-radius: 50%; border: none; background: var(--lb-blue);
+      color: white; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: 13px; transition: background 0.15s, transform 0.1s;
     }
-
     .play-btn:hover { background: #0052a3; transform: scale(1.06); }
     .play-btn.active { background: var(--lb-teal); }
-
-    .card-body { padding: 0 14px 14px; }
-
-    .art-summary {
-      font-size: 0.88rem;
-      color: #2d2d2d;
-      line-height: 1.65;
-      margin-bottom: 10px;
+    .dismiss-btn {
+      width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border);
+      background: white; color: var(--muted); cursor: pointer;
+      display: flex; align-items: center; justify-content: center; font-size: 16px;
+      transition: all 0.15s; line-height: 1;
     }
+    .dismiss-btn:hover { background: #fef2f2; color: #ef4444; border-color: #ef4444; }
 
-    .tieback {
-      background: #eef5ff;
-      border-left: 3px solid var(--lb-blue);
-      padding: 8px 11px;
-      border-radius: 0 6px 6px 0;
-    }
+    .card-body { padding: 0 13px 13px; }
+    .art-summary { font-size: 0.87rem; color: #2d2d2d; line-height: 1.65; margin-bottom: 9px; }
+    .tieback { background: #eef5ff; border-left: 3px solid var(--lb-blue); padding: 7px 11px; border-radius: 0 6px 6px 0; }
+    .tieback-label { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--lb-blue); margin-bottom: 2px; }
+    .tieback-text { font-size: 0.81rem; color: #1a3660; line-height: 1.55; }
 
-    .tieback-label {
-      font-size: 0.68rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--lb-blue);
-      margin-bottom: 3px;
-    }
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
+    .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .empty-state h2 { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .empty-state p { font-size: 0.88rem; }
 
-    .tieback-text {
-      font-size: 0.82rem;
-      color: #1a3660;
-      line-height: 1.55;
-    }
+    .loading { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 0.9rem; }
 
-    .state-msg {
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .state-msg.error { color: #ef4444; }
-
-    footer {
-      text-align: center;
-      padding: 16px;
-      font-size: 0.78rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-
+    footer { text-align: center; padding: 14px; font-size: 0.77rem; color: var(--muted); border-top: 1px solid var(--border); }
     footer a { color: var(--lb-blue); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
     @media (max-width: 480px) {
-      .controls { gap: 8px; padding: 8px 12px; }
+      .controls { padding: 8px 11px; gap: 8px; }
       .speed-wrap { width: 100%; margin-left: 0; }
-      main { padding: 12px 10px 30px; }
+      main { padding: 12px 10px 36px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="subtitle">Logicbroker Internal</div>
-  <h1>AI Research Digest</h1>
-  <div class="date" id="digest-date">Loading...</div>
+  <div class="eyebrow">Logicbroker Internal</div>
+  <h1>Daily AI Brief</h1>
+  <div class="unread-badge" id="unread-badge">Loading...</div>
 </header>
 
 <div class="controls">
   <button class="btn btn-primary" id="btn-read-all" onclick="readAll()">&#9654;&nbsp; Read All</button>
   <button class="btn btn-stop" id="btn-stop" onclick="stopAll()" style="display:none">&#9632;&nbsp; Stop</button>
+  <button class="btn btn-ghost" id="btn-mark-all" onclick="markAllRead()">&#10003;&nbsp; Mark all read</button>
   <div class="speed-wrap">
     <span>Speed</span>
-    <input type="range" id="speed-slider" min="0.8" max="1.5" step="0.1" value="1.0"
-           oninput="updateSpeed(this.value)">
+    <input type="range" id="speed-slider" min="0.8" max="1.5" step="0.1" value="1.0" oninput="updateSpeed(this.value)">
     <span class="speed-val" id="speed-label">1.0x</span>
   </div>
 </div>
 
-<main id="main"></main>
+<main id="main"><div class="loading">Loading articles...</div></main>
 
 <footer>
-  Logicbroker AI Research Digest &nbsp;|&nbsp;
-  <a href="https://jasonckrug.github.io/logicbroker-tools/">All Internal Tools</a>
+  Daily AI Brief &nbsp;|&nbsp; <a href="https://jasonckrug.github.io/logicbroker-tools/">All Internal Tools</a>
 </footer>
 
 <script>
-  let articles = [];
+  const DISMISS_KEY = 'lb_dismissed_v1';
+  let archive = [];
   let speed = 1.0;
   let currentIdx = -1;
   let isReadAll = false;
+  let readQueue = [];
+
+  function getDismissed() {
+    try { return new Set(JSON.parse(localStorage.getItem(DISMISS_KEY) || '[]')); }
+    catch(e) { return new Set(); }
+  }
+
+  function saveDismissed(set) {
+    try { localStorage.setItem(DISMISS_KEY, JSON.stringify([...set])); } catch(e) {}
+  }
+
+  function dismissArticle(url) {
+    const d = getDismissed();
+    d.add(url);
+    saveDismissed(d);
+    const el = document.getElementById('card-' + CSS.escape(url));
+    if (el) {
+      el.style.transition = 'opacity 0.25s, transform 0.25s';
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(20px)';
+      setTimeout(() => { el.remove(); refreshCounts(); }, 260);
+    }
+    if (currentIdx !== -1) stopAll();
+  }
+
+  function markAllRead() {
+    const d = getDismissed();
+    document.querySelectorAll('.article-card').forEach(c => {
+      const url = c.dataset.url;
+      if (url) d.add(url);
+    });
+    saveDismissed(d);
+    renderArticles();
+  }
+
+  function refreshCounts() {
+    const remaining = document.querySelectorAll('.article-card').length;
+    document.getElementById('unread-badge').textContent =
+      remaining === 0 ? 'All caught up' : remaining + ' unread';
+    document.querySelectorAll('.day-group').forEach(g => {
+      const cards = g.querySelectorAll('.article-card').length;
+      if (cards === 0) g.remove();
+      else g.querySelector('.day-count').textContent = cards + (cards === 1 ? ' article' : ' articles');
+    });
+  }
 
   function updateSpeed(v) {
     speed = parseFloat(v);
@@ -284,122 +199,143 @@
     document.querySelectorAll('.play-btn').forEach(b => { b.classList.remove('active'); b.innerHTML = '&#9654;'; });
     document.getElementById('btn-stop').style.display = 'none';
     document.getElementById('btn-read-all').style.display = 'inline-flex';
-    currentIdx = -1;
-    isReadAll = false;
+    currentIdx = -1; isReadAll = false; readQueue = [];
   }
 
-  function stopAll() {
-    window.speechSynthesis.cancel();
-    resetUI();
-  }
+  function stopAll() { window.speechSynthesis.cancel(); resetUI(); }
 
-  function speakArticle(idx, onEnd) {
+  function speakText(text, cardEl, btnEl, onEnd) {
     window.speechSynthesis.cancel();
-
     document.querySelectorAll('.article-card').forEach(c => c.classList.remove('playing'));
     document.querySelectorAll('.play-btn').forEach(b => { b.classList.remove('active'); b.innerHTML = '&#9654;'; });
-
-    const card = document.getElementById('card-' + idx);
-    const btn = document.getElementById('play-' + idx);
-    if (card) card.classList.add('playing');
-    if (btn) { btn.classList.add('active'); btn.innerHTML = '&#9646;&#9646;'; }
-
+    if (cardEl) cardEl.classList.add('playing');
+    if (btnEl) { btnEl.classList.add('active'); btnEl.innerHTML = '&#9646;&#9646;'; }
     document.getElementById('btn-stop').style.display = 'inline-flex';
-    currentIdx = idx;
-
-    const a = articles[idx];
-    const text = `Article ${idx + 1}. ${a.title}. ${a.publisher}. ${a.summary} Logicbroker angle: ${a.tieback}`;
 
     const u = new SpeechSynthesisUtterance(text);
     u.rate = speed;
     u.onend = () => {
-      if (card) card.classList.remove('playing');
-      if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9654;'; }
-      if (onEnd) onEnd();
-      else resetUI();
+      if (cardEl) cardEl.classList.remove('playing');
+      if (btnEl) { btnEl.classList.remove('active'); btnEl.innerHTML = '&#9654;'; }
+      if (onEnd) onEnd(); else resetUI();
     };
-    u.onerror = () => {
-      resetUI();
-    };
+    u.onerror = () => resetUI();
     window.speechSynthesis.speak(u);
   }
 
-  function toggleArticle(idx) {
-    if (currentIdx === idx && window.speechSynthesis.speaking) {
-      stopAll();
-      return;
-    }
+  function toggleArticle(url, title, summary, tieback, publisher) {
+    const cardEl = document.getElementById('card-' + CSS.escape(url));
+    const btnEl = document.getElementById('play-' + CSS.escape(url));
+    if (currentIdx === url && window.speechSynthesis.speaking) { stopAll(); return; }
     isReadAll = false;
     document.getElementById('btn-read-all').style.display = 'inline-flex';
-    speakArticle(idx, null);
+    currentIdx = url;
+    const text = `${title}. From ${publisher}. ${summary} Logicbroker angle: ${tieback}`;
+    speakText(text, cardEl, btnEl, null);
   }
 
   function readAll() {
     isReadAll = true;
     document.getElementById('btn-read-all').style.display = 'none';
-    readNext(0);
-  }
-
-  function readNext(idx) {
-    if (!isReadAll || idx >= articles.length) {
-      resetUI();
-      return;
-    }
-    speakArticle(idx, () => {
-      if (isReadAll) readNext(idx + 1);
+    const dismissed = getDismissed();
+    readQueue = [];
+    archive.forEach(day => {
+      day.articles.forEach(a => {
+        if (!dismissed.has(a.url)) readQueue.push(a);
+      });
     });
+    readNextInQueue();
   }
 
-  async function loadDigest() {
-    const main = document.getElementById('main');
-    try {
-      const res = await fetch('./digest.json?v=' + Date.now());
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const data = await res.json();
-
-      document.getElementById('digest-date').textContent = data.date || '';
-      articles = data.articles || [];
-
-      if (!articles.length) {
-        main.innerHTML = '<div class="state-msg">No articles in today\'s digest.</div>';
-        return;
-      }
-
-      main.innerHTML = articles.map((a, i) => `
-        <div class="article-card" id="card-${i}">
-          <div class="card-top">
-            <div class="card-meta">
-              <div class="art-num">Article ${i + 1}</div>
-              <div class="art-title">
-                <a href="${escHtml(a.url)}" target="_blank" rel="noopener noreferrer">${escHtml(a.title)}</a>
-              </div>
-              <div class="art-byline">
-                ${escHtml(a.publisher)}${a.author ? ' &middot; ' + escHtml(a.author) : ''}${a.date ? ' &middot; ' + escHtml(a.date) : ''}
-              </div>
-            </div>
-            <button class="play-btn" id="play-${i}" onclick="toggleArticle(${i})" title="Read aloud">&#9654;</button>
-          </div>
-          <div class="card-body">
-            <div class="art-summary">${escHtml(a.summary)}</div>
-            <div class="tieback">
-              <div class="tieback-label">Logicbroker Tie-back</div>
-              <div class="tieback-text">${escHtml(a.tieback)}</div>
-            </div>
-          </div>
-        </div>
-      `).join('');
-
-    } catch (e) {
-      main.innerHTML = `<div class="state-msg error">Could not load digest data.<br><small>The daily file may not have been pushed yet. (${e.message})</small></div>`;
-    }
+  function readNextInQueue() {
+    if (!isReadAll || readQueue.length === 0) { resetUI(); return; }
+    const a = readQueue.shift();
+    const cardEl = document.getElementById('card-' + CSS.escape(a.url));
+    const btnEl = document.getElementById('play-' + CSS.escape(a.url));
+    currentIdx = a.url;
+    const text = `${a.title}. From ${a.publisher}. ${a.summary} Logicbroker angle: ${a.tieback}`;
+    speakText(text, cardEl, btnEl, () => { if (isReadAll) readNextInQueue(); });
   }
 
-  function escHtml(str) {
+  function esc(str) {
     if (!str) return '';
     return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
-  loadDigest();
+  function renderArticles() {
+    const main = document.getElementById('main');
+    const dismissed = getDismissed();
+    let totalUnread = 0;
+    let html = '';
+
+    archive.forEach(day => {
+      const unread = day.articles.filter(a => !dismissed.has(a.url));
+      if (unread.length === 0) return;
+      totalUnread += unread.length;
+
+      html += `<div class="day-group">
+        <div class="day-header">
+          <span>${esc(day.label)}</span>
+          <span class="day-count">${unread.length} article${unread.length !== 1 ? 's' : ''}</span>
+        </div>`;
+
+      unread.forEach(a => {
+        const idUrl = CSS.escape(a.url);
+        const byline = [a.publisher, a.author, a.date].filter(Boolean).join(' &middot; ');
+        html += `
+        <div class="article-card" id="card-${idUrl}" data-url="${esc(a.url)}">
+          <div class="card-top">
+            <div class="card-meta">
+              <div class="art-title"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>
+              <div class="art-byline">${byline}</div>
+            </div>
+            <div class="card-actions">
+              <button class="play-btn" id="play-${idUrl}"
+                onclick="toggleArticle(${JSON.stringify(a.url)},${JSON.stringify(a.title)},${JSON.stringify(a.summary)},${JSON.stringify(a.tieback)},${JSON.stringify(a.publisher)})"
+                title="Read aloud">&#9654;</button>
+              <button class="dismiss-btn" onclick="dismissArticle(${JSON.stringify(a.url)})" title="Dismiss">&times;</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="art-summary">${esc(a.summary)}</div>
+            <div class="tieback">
+              <div class="tieback-label">Logicbroker Tie-back</div>
+              <div class="tieback-text">${esc(a.tieback)}</div>
+            </div>
+          </div>
+        </div>`;
+      });
+
+      html += '</div>';
+    });
+
+    if (totalUnread === 0) {
+      html = `<div class="empty-state">
+        <div class="icon">&#10003;</div>
+        <h2>All caught up</h2>
+        <p>No unread articles. Check back after the next weekday morning digest.</p>
+      </div>`;
+    }
+
+    main.innerHTML = html;
+    document.getElementById('unread-badge').textContent =
+      totalUnread === 0 ? 'All caught up' : totalUnread + ' unread';
+  }
+
+  async function loadArchive() {
+    try {
+      const res = await fetch('./archive.json?v=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      archive = await res.json();
+      renderArticles();
+    } catch(e) {
+      document.getElementById('main').innerHTML =
+        `<div class="loading" style="color:#ef4444">Could not load articles. (${e.message})</div>`;
+      document.getElementById('unread-badge').textContent = 'Error';
+    }
+  }
+
+  loadArchive();
 </script>
 </body>
 </html>
