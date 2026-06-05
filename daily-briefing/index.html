@@ -105,7 +105,7 @@ const SPK = 'lb_speed_v1';
 
 let archive = [], speed = 1.0, sortNewest = true, voiceModeOn = false;
 let selectedVoice = null, voices = [];
-let isSpeaking = false, isPaused = false, readQueue = [], readQueueIdx = 0, isReadAll = false;
+let isSpeaking = false, isPaused = false, readQueue = [], readQueueIdx = 0, isReadAll = false, currentArticle = null;
 let currentCardUrl = null, pendingCallback = null;
 let vcResolve = null; // for voice command promise
 
@@ -227,7 +227,7 @@ function setCardPlaying(url, playing) {
 }
 
 function resetUI() {
-  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false; isPaused = false;
+  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false; isPaused = false; currentArticle = null;
   if (currentCardUrl) setCardPlaying(currentCardUrl, false);
   currentCardUrl = null;
   document.getElementById('btn-stop').style.display = 'none';
@@ -246,7 +246,7 @@ function articleText(a) {
 
 async function readArticle(a, afterFn) {
   if (currentCardUrl) setCardPlaying(currentCardUrl, false);
-  currentCardUrl = a.url;
+  currentCardUrl = a.url; currentArticle = a;
   setCardPlaying(a.url, true);
   document.getElementById('btn-stop').style.display = 'inline-flex';
 
@@ -271,7 +271,7 @@ async function readArticle(a, afterFn) {
     // User chose — cancel speech if it's still going (they skipped ahead)
     if (!speechEnded) {
       window.speechSynthesis.cancel();
-      isSpeaking = false; isPaused = false;
+      isSpeaking = false; isPaused = false; currentArticle = null;
       setCardPlaying(a.url, false);
     }
     currentCardUrl = null;
@@ -307,6 +307,7 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
       <button class="vchoice" onclick="resolveVC('keep')">Keep / Next</button>
       <button class="vchoice" onclick="resolveVC('dismiss')">Dismiss</button>
       <button class="vchoice" onclick="resolveVC('open')">${isPostArticle ? 'Open in browser' : 'Open Article'}</button>
+      ${!isPostArticle ? '<button class="vchoice" onclick="replayCurrentArticle()">&#8635; Replay</button>' : ''}
     </div>
     <div style="display:flex;align-items:center;gap:8px;margin-top:6px">
       <div id="vc-listen-status" style="font-size:.76rem;color:#7c3aed;flex:1"></div>
@@ -524,6 +525,22 @@ function urlId(url) {
 function handlePlay(btn) { toggleArticle(btn.dataset.url); }
 function handleDismiss(btn) { dismissArticle(btn.dataset.url); }
 
+
+
+// --- Replay current article ---
+function replayCurrentArticle() {
+  if (!currentArticle) return;
+  window.speechSynthesis.cancel();
+  isSpeaking = false; isPaused = false;
+  // Re-read without resolving the prompt — buttons stay visible
+  speakText(articleText(currentArticle), () => {
+    if (voiceModeOn && vcResolve) {
+      speakText('Say Keep, Dismiss, or Open Article.', () => {
+        setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
+      });
+    }
+  });
+}
 
 // --- Mic test (from voice prompt) ---
 function testMic() {
