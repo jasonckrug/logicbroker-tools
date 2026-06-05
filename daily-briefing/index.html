@@ -6,336 +6,442 @@
   <title>Daily AI Brief — Logicbroker</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --lb-blue: #0066cc;
-      --lb-teal: #00a99d;
-      --bg: #f5f7fa;
-      --card: #ffffff;
-      --text: #1a1a2e;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-    }
+    :root { --blue:#0066cc; --teal:#00a99d; --bg:#f5f7fa; --card:#fff; --text:#1a1a2e; --muted:#6b7280; --border:#e5e7eb; --red:#ef4444; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-    header {
-      background: linear-gradient(135deg, #0066cc 0%, #00a99d 100%);
-      color: white; padding: 20px 20px 16px; text-align: center;
-    }
-    header .eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 4px; }
-    header h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.01em; }
-    header .unread-badge {
-      display: inline-block; background: rgba(255,255,255,0.25); border-radius: 20px;
-      padding: 2px 10px; font-size: 0.8rem; font-weight: 600; margin-top: 6px;
-    }
+    header { background: linear-gradient(135deg, #0066cc 0%, #00a99d 100%); color: white; padding: 18px 20px 14px; text-align: center; }
+    header .eyebrow { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; opacity: .8; margin-bottom: 3px; }
+    header h1 { font-size: 1.35rem; font-weight: 700; }
+    header .badge { display: inline-block; background: rgba(255,255,255,.22); border-radius: 20px; padding: 2px 10px; font-size: .8rem; font-weight: 600; margin-top: 5px; }
 
-    .controls {
-      background: white; border-bottom: 1px solid var(--border);
-      padding: 9px 16px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-      position: sticky; top: 0; z-index: 10; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    }
-    .btn {
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 6px 13px; border-radius: 6px; border: none; cursor: pointer;
-      font-size: 0.82rem; font-weight: 600; transition: all 0.15s; white-space: nowrap;
-    }
-    .btn-primary { background: var(--lb-blue); color: white; }
-    .btn-primary:hover { background: #0052a3; }
-    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
-    .btn-ghost:hover { background: var(--bg); color: var(--text); }
-    .btn-stop { background: #ef4444; color: white; }
-    .btn-stop:hover { background: #dc2626; }
-    .speed-wrap { display: flex; align-items: center; gap: 7px; margin-left: auto; font-size: 0.82rem; color: var(--muted); }
-    .speed-wrap input[type=range] { width: 85px; accent-color: var(--lb-blue); cursor: pointer; }
-    .speed-val { min-width: 30px; font-weight: 700; color: var(--text); }
+    .controls { background: #fff; border-bottom: 1px solid var(--border); padding: 8px 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; position: sticky; top: 0; z-index: 10; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .btn { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: .8rem; font-weight: 600; transition: all .15s; white-space: nowrap; }
+    .btn-blue { background: var(--blue); color: #fff; } .btn-blue:hover { background: #0052a3; }
+    .btn-teal { background: var(--teal); color: #fff; } .btn-teal:hover { background: #008c82; }
+    .btn-red  { background: var(--red);  color: #fff; } .btn-red:hover  { background: #dc2626; }
+    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); } .btn-ghost:hover { background: var(--bg); color: var(--text); }
+    .btn-voice-on { background: #7c3aed; color: #fff; } .btn-voice-on:hover { background: #6d28d9; }
+    .listening-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--red); animation: pulse 1s infinite; margin-left: 4px; }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.3} }
+    .right-controls { display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap; }
+    .speed-wrap, .voice-wrap { display: flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--muted); }
+    .speed-wrap input[type=range] { width: 80px; accent-color: var(--blue); }
+    .speed-val { min-width: 28px; font-weight: 700; color: var(--text); }
+    select.voice-sel { font-size: .78rem; border: 1px solid var(--border); border-radius: 5px; padding: 4px 6px; background: #fff; color: var(--text); max-width: 160px; }
 
-    main { max-width: 700px; margin: 0 auto; padding: 16px 14px 48px; }
-
-    .day-group { margin-bottom: 24px; }
-    .day-header {
-      font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
-      color: var(--muted); padding: 0 2px 8px; border-bottom: 1px solid var(--border);
-      margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between;
-    }
-    .day-count { font-weight: 500; }
-
-    .article-card {
-      background: var(--card); border-radius: 10px; border: 1px solid var(--border);
-      margin-bottom: 10px; overflow: hidden; transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .article-card.playing {
-      border-color: var(--lb-teal); box-shadow: 0 0 0 3px rgba(0,169,157,0.15);
-    }
-    .card-top { display: flex; align-items: flex-start; gap: 10px; padding: 13px 13px 8px; }
+    main { max-width: 700px; margin: 0 auto; padding: 14px 12px 48px; }
+    .day-group { margin-bottom: 22px; }
+    .day-hdr { font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding: 0 2px 7px; border-bottom: 1px solid var(--border); margin-bottom: 10px; display: flex; justify-content: space-between; }
+    .article-card { background: var(--card); border-radius: 10px; border: 1px solid var(--border); margin-bottom: 9px; overflow: hidden; transition: border-color .2s, box-shadow .2s; }
+    .article-card.playing { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(0,169,157,.15); }
+    .card-top { display: flex; align-items: flex-start; gap: 10px; padding: 12px 12px 7px; }
     .card-meta { flex: 1; min-width: 0; }
-    .art-title { font-size: 0.96rem; font-weight: 700; line-height: 1.4; margin-bottom: 4px; }
-    .art-title a { color: var(--text); text-decoration: none; }
-    .art-title a:hover { color: var(--lb-blue); text-decoration: underline; }
-    .art-byline { font-size: 0.77rem; color: var(--muted); }
+    .art-title { font-size: .94rem; font-weight: 700; line-height: 1.4; margin-bottom: 3px; }
+    .art-title a { color: var(--text); text-decoration: none; } .art-title a:hover { color: var(--blue); text-decoration: underline; }
+    .art-byline { font-size: .76rem; color: var(--muted); }
+    .card-actions { display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; margin-top: 1px; }
+    .play-btn { width: 33px; height: 33px; border-radius: 50%; border: none; background: var(--blue); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; transition: background .15s, transform .1s; }
+    .play-btn:hover { background: #0052a3; transform: scale(1.06); } .play-btn.active { background: var(--teal); }
+    .dismiss-btn { width: 33px; height: 33px; border-radius: 50%; border: 1px solid var(--border); background: #fff; color: var(--muted); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: all .15s; }
+    .dismiss-btn:hover { background: #fef2f2; color: var(--red); border-color: var(--red); }
+    .card-body { padding: 0 12px 12px; }
+    .art-summary { font-size: .86rem; color: #2d2d2d; line-height: 1.65; margin-bottom: 8px; }
+    .tieback { background: #eef5ff; border-left: 3px solid var(--blue); padding: 7px 11px; border-radius: 0 6px 6px 0; }
+    .tieback-label { font-size: .67rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--blue); margin-bottom: 2px; }
+    .tieback-text { font-size: .8rem; color: #1a3660; line-height: 1.55; }
 
-    .card-actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; margin-top: 1px; }
-    .play-btn {
-      width: 34px; height: 34px; border-radius: 50%; border: none; background: var(--lb-blue);
-      color: white; cursor: pointer; display: flex; align-items: center; justify-content: center;
-      font-size: 13px; transition: background 0.15s, transform 0.1s;
-    }
-    .play-btn:hover { background: #0052a3; transform: scale(1.06); }
-    .play-btn.active { background: var(--lb-teal); }
-    .dismiss-btn {
-      width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border);
-      background: white; color: var(--muted); cursor: pointer;
-      display: flex; align-items: center; justify-content: center; font-size: 16px;
-      transition: all 0.15s; line-height: 1;
-    }
-    .dismiss-btn:hover { background: #fef2f2; color: #ef4444; border-color: #ef4444; }
-
-    .card-body { padding: 0 13px 13px; }
-    .art-summary { font-size: 0.87rem; color: #2d2d2d; line-height: 1.65; margin-bottom: 9px; }
-    .tieback { background: #eef5ff; border-left: 3px solid var(--lb-blue); padding: 7px 11px; border-radius: 0 6px 6px 0; }
-    .tieback-label { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--lb-blue); margin-bottom: 2px; }
-    .tieback-text { font-size: 0.81rem; color: #1a3660; line-height: 1.55; }
+    .voice-prompt { background: #f3f0ff; border: 1px solid #c4b5fd; border-radius: 8px; padding: 10px 14px; margin: 10px 12px; font-size: .84rem; color: #4c1d95; display: flex; align-items: center; gap: 8px; }
+    .voice-choices { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+    .vchoice { padding: 5px 12px; border-radius: 5px; border: 1px solid #a78bfa; background: #fff; color: #5b21b6; font-size: .78rem; font-weight: 600; cursor: pointer; }
+    .vchoice:hover { background: #ede9fe; }
 
     .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
-    .empty-state .icon { font-size: 2.5rem; margin-bottom: 12px; }
-    .empty-state h2 { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-    .empty-state p { font-size: 0.88rem; }
-
-    .loading { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 0.9rem; }
-
-    footer { text-align: center; padding: 14px; font-size: 0.77rem; color: var(--muted); border-top: 1px solid var(--border); }
-    footer a { color: var(--lb-blue); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 480px) {
-      .controls { padding: 8px 11px; gap: 8px; }
-      .speed-wrap { width: 100%; margin-left: 0; }
-      main { padding: 12px 10px 36px; }
-    }
+    .empty-state .ck { font-size: 2.2rem; margin-bottom: 10px; }
+    .empty-state h2 { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 5px; }
+    .empty-state p { font-size: .86rem; }
+    .loading { text-align: center; padding: 60px 20px; color: var(--muted); font-size: .88rem; }
+    footer { text-align: center; padding: 12px; font-size: .76rem; color: var(--muted); border-top: 1px solid var(--border); }
+    footer a { color: var(--blue); text-decoration: none; } footer a:hover { text-decoration: underline; }
+    @media(max-width:480px){ .controls{padding:7px 10px;gap:6px} .right-controls{width:100%;margin-left:0} select.voice-sel{max-width:130px} main{padding:10px 9px 36px} }
   </style>
 </head>
 <body>
-
 <header>
   <div class="eyebrow">Logicbroker Internal</div>
   <h1>Daily AI Brief</h1>
-  <div class="unread-badge" id="unread-badge">Loading...</div>
+  <div class="badge" id="unread-badge">Loading...</div>
 </header>
 
 <div class="controls">
-  <button class="btn btn-primary" id="btn-read-all" onclick="readAll()">&#9654;&nbsp; Read All</button>
-  <button class="btn btn-stop" id="btn-stop" onclick="stopAll()" style="display:none">&#9632;&nbsp; Stop</button>
-  <button class="btn btn-ghost" id="btn-mark-all" onclick="markAllRead()">&#10003;&nbsp; Mark all read</button>
-  <div class="speed-wrap">
-    <span>Speed</span>
-    <input type="range" id="speed-slider" min="0.8" max="1.5" step="0.1" value="1.0" oninput="updateSpeed(this.value)">
-    <span class="speed-val" id="speed-label">1.0x</span>
+  <button class="btn btn-blue"  id="btn-read-all" onclick="readAll()">&#9654; Read All</button>
+  <button class="btn btn-red"   id="btn-stop"     onclick="stopAll()" style="display:none">&#9632; Stop</button>
+  <button class="btn btn-ghost" id="btn-mark-all" onclick="markAllRead()">&#10003; Mark all read</button>
+  <button class="btn btn-ghost" id="btn-sort"     onclick="toggleSort()">&#8645; Oldest first</button>
+  <button class="btn btn-ghost" id="btn-voice-mode" onclick="toggleVoiceMode()" title="Enable voice commands after each article">&#127908; Voice</button>
+  <div class="right-controls">
+    <div class="speed-wrap">
+      <span>Speed</span>
+      <input type="range" id="speed-slider" min="0.8" max="1.5" step="0.1" value="1.0" oninput="updateSpeed(this.value)">
+      <span class="speed-val" id="speed-label">1.0x</span>
+    </div>
+    <div class="voice-wrap">
+      <span>Voice</span>
+      <select class="voice-sel" id="voice-sel" onchange="saveVoice(this.value)"><option value="">Default</option></select>
+    </div>
   </div>
 </div>
 
 <main id="main"><div class="loading">Loading articles...</div></main>
 
-<footer>
-  Daily AI Brief &nbsp;|&nbsp; <a href="https://jasonckrug.github.io/logicbroker-tools/">All Internal Tools</a>
-</footer>
+<footer>Daily AI Brief &nbsp;|&nbsp; <a href="https://jasonckrug.github.io/logicbroker-tools/">All Internal Tools</a></footer>
 
 <script>
-  const DISMISS_KEY = 'lb_dismissed_v1';
-  let archive = [];
-  let speed = 1.0;
-  let currentIdx = -1;
-  let isReadAll = false;
-  let readQueue = [];
+const DK = 'lb_dismissed_v2';
+const SK = 'lb_sort_v1';
+const VK = 'lb_voice_uri_v1';
+const VMK = 'lb_voicemode_v1';
+const SPK = 'lb_speed_v1';
 
-  function getDismissed() {
-    try { return new Set(JSON.parse(localStorage.getItem(DISMISS_KEY) || '[]')); }
-    catch(e) { return new Set(); }
-  }
+let archive = [], speed = 1.0, sortNewest = true, voiceModeOn = false;
+let selectedVoice = null, voices = [];
+let isSpeaking = false, readQueue = [], readQueueIdx = 0, isReadAll = false;
+let currentCardUrl = null, pendingCallback = null;
+let vcResolve = null; // for voice command promise
 
-  function saveDismissed(set) {
-    try { localStorage.setItem(DISMISS_KEY, JSON.stringify([...set])); } catch(e) {}
-  }
+// --- LocalStorage helpers ---
+function getDismissed() { try { return new Set(JSON.parse(localStorage.getItem(DK)||'[]')); } catch(e) { return new Set(); } }
+function saveDismissed(s) { try { localStorage.setItem(DK, JSON.stringify([...s])); } catch(e) {} }
+function ls(k,v) { if(v===undefined){ try{return localStorage.getItem(k);}catch(e){return null;} } try{localStorage.setItem(k,v);}catch(e){} }
 
-  function dismissArticle(url) {
-    const d = getDismissed();
-    d.add(url);
-    saveDismissed(d);
-    const el = document.getElementById('card-' + CSS.escape(url));
-    if (el) {
-      el.style.transition = 'opacity 0.25s, transform 0.25s';
-      el.style.opacity = '0';
-      el.style.transform = 'translateX(20px)';
-      setTimeout(() => { el.remove(); refreshCounts(); }, 260);
-    }
-    if (currentIdx !== -1) stopAll();
-  }
+// --- Init ---
+function init() {
+  speed = parseFloat(ls(SPK)||'1.0');
+  document.getElementById('speed-slider').value = speed;
+  document.getElementById('speed-label').textContent = speed.toFixed(1)+'x';
 
-  function markAllRead() {
-    const d = getDismissed();
-    document.querySelectorAll('.article-card').forEach(c => {
-      const url = c.dataset.url;
-      if (url) d.add(url);
-    });
-    saveDismissed(d);
-    renderArticles();
-  }
+  sortNewest = (ls(SK)||'newest') === 'newest';
+  updateSortBtn();
 
-  function refreshCounts() {
-    const remaining = document.querySelectorAll('.article-card').length;
-    document.getElementById('unread-badge').textContent =
-      remaining === 0 ? 'All caught up' : remaining + ' unread';
-    document.querySelectorAll('.day-group').forEach(g => {
-      const cards = g.querySelectorAll('.article-card').length;
-      if (cards === 0) g.remove();
-      else g.querySelector('.day-count').textContent = cards + (cards === 1 ? ' article' : ' articles');
-    });
-  }
+  voiceModeOn = ls(VMK) === 'on';
+  updateVoiceModeBtn();
 
-  function updateSpeed(v) {
-    speed = parseFloat(v);
-    document.getElementById('speed-label').textContent = speed.toFixed(1) + 'x';
-  }
-
-  function resetUI() {
-    document.querySelectorAll('.article-card').forEach(c => c.classList.remove('playing'));
-    document.querySelectorAll('.play-btn').forEach(b => { b.classList.remove('active'); b.innerHTML = '&#9654;'; });
-    document.getElementById('btn-stop').style.display = 'none';
-    document.getElementById('btn-read-all').style.display = 'inline-flex';
-    currentIdx = -1; isReadAll = false; readQueue = [];
-  }
-
-  function stopAll() { window.speechSynthesis.cancel(); resetUI(); }
-
-  function speakText(text, cardEl, btnEl, onEnd) {
-    window.speechSynthesis.cancel();
-    document.querySelectorAll('.article-card').forEach(c => c.classList.remove('playing'));
-    document.querySelectorAll('.play-btn').forEach(b => { b.classList.remove('active'); b.innerHTML = '&#9654;'; });
-    if (cardEl) cardEl.classList.add('playing');
-    if (btnEl) { btnEl.classList.add('active'); btnEl.innerHTML = '&#9646;&#9646;'; }
-    document.getElementById('btn-stop').style.display = 'inline-flex';
-
-    const u = new SpeechSynthesisUtterance(text);
-    u.rate = speed;
-    u.onend = () => {
-      if (cardEl) cardEl.classList.remove('playing');
-      if (btnEl) { btnEl.classList.remove('active'); btnEl.innerHTML = '&#9654;'; }
-      if (onEnd) onEnd(); else resetUI();
-    };
-    u.onerror = () => resetUI();
-    window.speechSynthesis.speak(u);
-  }
-
-  function toggleArticle(url, title, summary, tieback, publisher) {
-    const cardEl = document.getElementById('card-' + CSS.escape(url));
-    const btnEl = document.getElementById('play-' + CSS.escape(url));
-    if (currentIdx === url && window.speechSynthesis.speaking) { stopAll(); return; }
-    isReadAll = false;
-    document.getElementById('btn-read-all').style.display = 'inline-flex';
-    currentIdx = url;
-    const text = `${title}. From ${publisher}. ${summary} Logicbroker angle: ${tieback}`;
-    speakText(text, cardEl, btnEl, null);
-  }
-
-  function readAll() {
-    isReadAll = true;
-    document.getElementById('btn-read-all').style.display = 'none';
-    const dismissed = getDismissed();
-    readQueue = [];
-    archive.forEach(day => {
-      day.articles.forEach(a => {
-        if (!dismissed.has(a.url)) readQueue.push(a);
-      });
-    });
-    readNextInQueue();
-  }
-
-  function readNextInQueue() {
-    if (!isReadAll || readQueue.length === 0) { resetUI(); return; }
-    const a = readQueue.shift();
-    const cardEl = document.getElementById('card-' + CSS.escape(a.url));
-    const btnEl = document.getElementById('play-' + CSS.escape(a.url));
-    currentIdx = a.url;
-    const text = `${a.title}. From ${a.publisher}. ${a.summary} Logicbroker angle: ${a.tieback}`;
-    speakText(text, cardEl, btnEl, () => { if (isReadAll) readNextInQueue(); });
-  }
-
-  function esc(str) {
-    if (!str) return '';
-    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-
-  function renderArticles() {
-    const main = document.getElementById('main');
-    const dismissed = getDismissed();
-    let totalUnread = 0;
-    let html = '';
-
-    archive.forEach(day => {
-      const unread = day.articles.filter(a => !dismissed.has(a.url));
-      if (unread.length === 0) return;
-      totalUnread += unread.length;
-
-      html += `<div class="day-group">
-        <div class="day-header">
-          <span>${esc(day.label)}</span>
-          <span class="day-count">${unread.length} article${unread.length !== 1 ? 's' : ''}</span>
-        </div>`;
-
-      unread.forEach(a => {
-        const idUrl = CSS.escape(a.url);
-        const byline = [a.publisher, a.author, a.date].filter(Boolean).join(' &middot; ');
-        html += `
-        <div class="article-card" id="card-${idUrl}" data-url="${esc(a.url)}">
-          <div class="card-top">
-            <div class="card-meta">
-              <div class="art-title"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>
-              <div class="art-byline">${byline}</div>
-            </div>
-            <div class="card-actions">
-              <button class="play-btn" id="play-${idUrl}"
-                onclick="toggleArticle(${JSON.stringify(a.url)},${JSON.stringify(a.title)},${JSON.stringify(a.summary)},${JSON.stringify(a.tieback)},${JSON.stringify(a.publisher)})"
-                title="Read aloud">&#9654;</button>
-              <button class="dismiss-btn" onclick="dismissArticle(${JSON.stringify(a.url)})" title="Dismiss">&times;</button>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="art-summary">${esc(a.summary)}</div>
-            <div class="tieback">
-              <div class="tieback-label">Logicbroker Tie-back</div>
-              <div class="tieback-text">${esc(a.tieback)}</div>
-            </div>
-          </div>
-        </div>`;
-      });
-
-      html += '</div>';
-    });
-
-    if (totalUnread === 0) {
-      html = `<div class="empty-state">
-        <div class="icon">&#10003;</div>
-        <h2>All caught up</h2>
-        <p>No unread articles. Check back after the next weekday morning digest.</p>
-      </div>`;
-    }
-
-    main.innerHTML = html;
-    document.getElementById('unread-badge').textContent =
-      totalUnread === 0 ? 'All caught up' : totalUnread + ' unread';
-  }
-
-  async function loadArchive() {
-    try {
-      const res = await fetch('./archive.json?v=' + Date.now());
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      archive = await res.json();
-      renderArticles();
-    } catch(e) {
-      document.getElementById('main').innerHTML =
-        `<div class="loading" style="color:#ef4444">Could not load articles. (${e.message})</div>`;
-      document.getElementById('unread-badge').textContent = 'Error';
-    }
-  }
-
+  loadVoices();
   loadArchive();
+}
+
+// --- Voices ---
+function loadVoices() {
+  const populate = () => {
+    voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+    const sel = document.getElementById('voice-sel');
+    sel.innerHTML = '<option value="">Default system voice</option>';
+    voices.forEach(v => {
+      const opt = document.createElement('option');
+      opt.value = v.voiceURI;
+      opt.textContent = v.name + (v.localService ? '' : ' ☁');
+      if (v.voiceURI === ls(VK)) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    const saved = ls(VK);
+    if (saved) selectedVoice = voices.find(v => v.voiceURI === saved) || null;
+  };
+  if (speechSynthesis.getVoices().length) populate();
+  speechSynthesis.onvoiceschanged = populate;
+}
+function saveVoice(uri) {
+  ls(VK, uri);
+  selectedVoice = voices.find(v => v.voiceURI === uri) || null;
+}
+
+// --- Speed ---
+function updateSpeed(v) { speed = parseFloat(v); document.getElementById('speed-label').textContent = speed.toFixed(1)+'x'; ls(SPK, v); }
+
+// --- Sort ---
+function toggleSort() {
+  sortNewest = !sortNewest;
+  ls(SK, sortNewest ? 'newest' : 'oldest');
+  updateSortBtn();
+  renderArticles();
+}
+function updateSortBtn() {
+  document.getElementById('btn-sort').textContent = (sortNewest ? '虅 Oldest first' : '虅 Newest first');
+}
+
+// --- Voice mode ---
+function toggleVoiceMode() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR && !voiceModeOn) { alert('Voice commands are not supported in this browser. Try Chrome or Edge.'); return; }
+  voiceModeOn = !voiceModeOn;
+  ls(VMK, voiceModeOn ? 'on' : 'off');
+  updateVoiceModeBtn();
+}
+function updateVoiceModeBtn() {
+  const btn = document.getElementById('btn-voice-mode');
+  if (voiceModeOn) { btn.className = 'btn btn-voice-on'; btn.textContent = '🎙 Voice ON'; }
+  else { btn.className = 'btn btn-ghost'; btn.textContent = '🎙 Voice'; }
+}
+
+// --- Dismiss ---
+function dismissArticle(url) {
+  const d = getDismissed(); d.add(url); saveDismissed(d);
+  const el = document.getElementById('card-'+btoa(url).replace(/[+/=]/g,'_'));
+  if (el) { el.style.transition='opacity .25s,transform .25s'; el.style.opacity='0'; el.style.transform='translateX(18px)'; setTimeout(()=>{ el.remove(); refreshCounts(); }, 270); }
+  if (currentCardUrl === url) stopAll();
+}
+function markAllRead() {
+  const d = getDismissed();
+  document.querySelectorAll('.article-card').forEach(c => { if(c.dataset.url) d.add(c.dataset.url); });
+  saveDismissed(d); renderArticles();
+}
+function refreshCounts() {
+  const n = document.querySelectorAll('.article-card').length;
+  document.getElementById('unread-badge').textContent = n === 0 ? 'All caught up' : n + ' unread';
+  document.querySelectorAll('.day-group').forEach(g => {
+    const c = g.querySelectorAll('.article-card').length;
+    if (!c) g.remove(); else g.querySelector('.day-count').textContent = c + (c===1?' article':' articles');
+  });
+}
+
+// --- TTS core ---
+function speakText(text, onEnd) {
+  if (!window.speechSynthesis) { if(onEnd) onEnd(); return; }
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.rate = speed;
+  if (selectedVoice) u.voice = selectedVoice;
+  u.onend = () => { isSpeaking = false; if(onEnd) onEnd(); };
+  u.onerror = () => { isSpeaking = false; if(onEnd) onEnd(); };
+  isSpeaking = true;
+  window.speechSynthesis.speak(u);
+}
+
+function setCardPlaying(url, playing) {
+  if (url) {
+    const id = 'card-'+btoa(url).replace(/[+/=]/g,'_');
+    const card = document.getElementById(id);
+    const btn  = document.getElementById('play-'+btoa(url).replace(/[+/=]/g,'_'));
+    if (card) card.classList.toggle('playing', playing);
+    if (btn)  { btn.classList.toggle('active', playing); btn.innerHTML = playing ? '&#9646;&#9646;' : '&#9654;'; }
+  }
+}
+
+function resetUI() {
+  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false;
+  if (currentCardUrl) setCardPlaying(currentCardUrl, false);
+  currentCardUrl = null;
+  document.getElementById('btn-stop').style.display = 'none';
+  document.getElementById('btn-read-all').style.display = 'inline-flex';
+  removeVoicePrompt();
+  if (vcResolve) { vcResolve('keep'); vcResolve = null; }
+  window.speechSynthesis && window.speechSynthesis.cancel();
+}
+
+function stopAll() { resetUI(); }
+
+// --- Article TTS ---
+function articleText(a) {
+  return `${a.title}. From ${a.publisher}. ${a.summary} Logicbroker angle: ${a.tieback}`;
+}
+
+function readArticle(a, afterFn) {
+  if (currentCardUrl) setCardPlaying(currentCardUrl, false);
+  currentCardUrl = a.url;
+  setCardPlaying(a.url, true);
+  document.getElementById('btn-stop').style.display = 'inline-flex';
+  speakText(articleText(a), () => {
+    setCardPlaying(a.url, false);
+    currentCardUrl = null;
+    if (voiceModeOn) promptVoiceCommand(a, afterFn);
+    else if (afterFn) afterFn();
+  });
+}
+
+// --- Voice command flow ---
+function removeVoicePrompt() { const el = document.getElementById('vc-prompt'); if(el) el.remove(); }
+
+function showVoicePrompt(article, isPostArticle, onChoice) {
+  removeVoicePrompt();
+  const div = document.createElement('div');
+  div.id = 'vc-prompt'; div.className = 'voice-prompt';
+  div.innerHTML = `<div>
+    <div style="font-weight:700;margin-bottom:4px">&#127908; ${isPostArticle ? 'Full article read.' : 'Say or click:'}</div>
+    <div class="voice-choices">
+      <button class="vchoice" onclick="resolveVC('keep')">Keep / Next</button>
+      <button class="vchoice" onclick="resolveVC('dismiss')">Dismiss</button>
+      <button class="vchoice" onclick="resolveVC('open')">${isPostArticle ? 'Open in browser' : 'Open Article'}</button>
+    </div>
+    <div id="vc-listen-status" style="font-size:.76rem;margin-top:6px;color:#7c3aed"></div>
+  </div>`;
+  const cardId = 'card-'+btoa(article.url).replace(/[+/=]/g,'_');
+  const card = document.getElementById(cardId);
+  if (card) card.after(div); else document.getElementById('main').prepend(div);
+  return new Promise(resolve => { vcResolve = resolve; });
+}
+
+function resolveVC(cmd) { if (vcResolve) { vcResolve(cmd); vcResolve = null; } }
+
+function startListening(statusEl) {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) return;
+  const r = new SR(); r.lang='en-US'; r.maxAlternatives=3; r.interimResults=false;
+  let timer = setTimeout(() => { try{r.abort();}catch(e){} }, 8000);
+  if (statusEl) { statusEl.innerHTML = 'Listening<span class="listening-dot"></span>'; }
+  r.onresult = (e) => {
+    clearTimeout(timer);
+    const t = Array.from(e.results[0]).map(x=>x.transcript).join(' ').toLowerCase();
+    if (statusEl) statusEl.textContent = 'Heard: "' + t + '"';
+    if (t.includes('dismiss') || t.includes('hide') || t.includes('remove')) resolveVC('dismiss');
+    else if (t.includes('open') || t.includes('read') || t.includes('article')) resolveVC('open');
+    else resolveVC('keep');
+  };
+  r.onerror = () => { clearTimeout(timer); if(statusEl) statusEl.textContent = 'Not heard — defaulting to Keep'; setTimeout(()=>resolveVC('keep'), 1200); };
+  r.onend   = () => { clearTimeout(timer); };
+  try { r.start(); } catch(e) {}
+}
+
+async function promptVoiceCommand(article, afterFn, isPostArticle) {
+  const prompt = isPostArticle
+    ? 'Say Keep to continue, Dismiss to hide this article, or Open to open in browser.'
+    : 'Say Keep to skip, Dismiss to hide, or Open Article to read the full text.';
+  speakText(prompt, null);
+  const promptEl = showVoicePrompt(article, isPostArticle, null);
+  setTimeout(() => { startListening(document.getElementById('vc-listen-status')); }, 1200);
+  const cmd = await promptEl;
+  removeVoicePrompt();
+  if (!isReadAll && cmd !== 'keep') {} // single-article mode — just act
+  if (cmd === 'dismiss') {
+    dismissArticle(article.url);
+    if (isReadAll) advanceQueue(); else resetUI();
+  } else if (cmd === 'open') {
+    if (isPostArticle) { window.open(article.url, '_blank'); if(isReadAll) advanceQueue(); else resetUI(); }
+    else openAndRead(article, afterFn);
+  } else {
+    if (afterFn) afterFn(); else resetUI();
+  }
+}
+
+async function openAndRead(article, afterFn) {
+  speakText('Fetching full article. One moment.', null);
+  try {
+    const res = await Promise.race([
+      fetch('https://api.allorigins.win/get?url=' + encodeURIComponent(article.url)),
+      new Promise((_,rej) => setTimeout(()=>rej(new Error('timeout')), 12000))
+    ]);
+    if (!res.ok) throw new Error('fetch failed');
+    const data = await res.json();
+    const text = extractText(data.contents || '');
+    if (text.length < 100) throw new Error('too short');
+    speakText('Reading full article: ' + article.title + '. ' + text, () => {
+      promptVoiceCommand(article, afterFn, true);
+    });
+  } catch(e) {
+    speakText('Could not load article content. Opening in your browser instead.', () => {
+      window.open(article.url, '_blank');
+      if (isReadAll) advanceQueue(); else resetUI();
+    });
+  }
+}
+
+function extractText(html) {
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  ['script','style','nav','header','footer','aside','[class*="ad-"],[id*="ad-"],[class*="banner"],[class*="sidebar"],[class*="newsletter"]'].forEach(sel => {
+    try { doc.querySelectorAll(sel).forEach(el=>el.remove()); } catch(e) {}
+  });
+  const content = doc.querySelector('article') || doc.querySelector('[role="main"]') || doc.querySelector('main') || doc.body;
+  return (content ? content.textContent : '').replace(/\s+/g,' ').trim().substring(0,7000);
+}
+
+// --- Read All queue ---
+function buildQueue() {
+  const dismissed = getDismissed();
+  const ordered = sortNewest ? [...archive] : [...archive].reverse();
+  const q = [];
+  ordered.forEach(day => day.articles.forEach(a => { if (!dismissed.has(a.url)) q.push(a); }));
+  return q;
+}
+
+function readAll() {
+  readQueue = buildQueue();
+  if (!readQueue.length) return;
+  isReadAll = true; readQueueIdx = 0;
+  document.getElementById('btn-read-all').style.display = 'none';
+  advanceQueue();
+}
+
+function advanceQueue() {
+  if (!isReadAll || readQueueIdx >= readQueue.length) { resetUI(); return; }
+  const a = readQueue[readQueueIdx++];
+  readArticle(a, () => advanceQueue());
+}
+
+// --- Single article toggle ---
+function toggleArticle(url) {
+  const a = findArticle(url);
+  if (!a) return;
+  if (currentCardUrl === url && isSpeaking) { stopAll(); return; }
+  stopAll();
+  isReadAll = false;
+  document.getElementById('btn-read-all').style.display = 'inline-flex';
+  readArticle(a, null);
+}
+function findArticle(url) {
+  for (const day of archive) { const a = day.articles.find(x=>x.url===url); if(a) return a; }
+  return null;
+}
+
+// --- Render ---
+function renderArticles() {
+  const main = document.getElementById('main');
+  const dismissed = getDismissed();
+  const ordered = sortNewest ? [...archive] : [...archive].reverse();
+  let total = 0, html = '';
+  ordered.forEach(day => {
+    const unread = day.articles.filter(a => !dismissed.has(a.url));
+    if (!unread.length) return;
+    total += unread.length;
+    html += `<div class="day-group"><div class="day-hdr"><span>${esc(day.label)}</span><span class="day-count">${unread.length} article${unread.length!==1?'s':''}</span></div>`;
+    unread.forEach(a => {
+      const id = btoa(a.url).replace(/[+/=]/g,'_');
+      const byline = [a.publisher, a.author, a.date].filter(Boolean).join(' \xB7 ');
+      html += `<div class="article-card" id="card-${id}" data-url="${esc(a.url)}">
+        <div class="card-top">
+          <div class="card-meta">
+            <div class="art-title"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>
+            <div class="art-byline">${byline}</div>
+          </div>
+          <div class="card-actions">
+            <button class="play-btn" id="play-${id}" onclick="toggleArticle(${JSON.stringify(a.url)})" title="Read aloud">&#9654;</button>
+            <button class="dismiss-btn" onclick="dismissArticle(${JSON.stringify(a.url)})" title="Dismiss">&times;</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="art-summary">${esc(a.summary)}</div>
+          <div class="tieback"><div class="tieback-label">Logicbroker Tie-back</div><div class="tieback-text">${esc(a.tieback)}</div></div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  if (!total) html = `<div class="empty-state"><div class="ck">&#10003;</div><h2>All caught up</h2><p>New articles will appear here after the next morning digest.</p></div>`;
+  main.innerHTML = html;
+  document.getElementById('unread-badge').textContent = total === 0 ? 'All caught up' : total + ' unread';
+}
+
+function esc(s) { return s ? s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : ''; }
+
+async function loadArchive() {
+  try {
+    const res = await fetch('./archive.json?v='+Date.now());
+    if (!res.ok) throw new Error('HTTP '+res.status);
+    archive = await res.json();
+    renderArticles();
+  } catch(e) {
+    document.getElementById('main').innerHTML = `<div class="loading" style="color:var(--red)">Could not load articles. (${e.message})</div>`;
+    document.getElementById('unread-badge').textContent = 'Error';
+  }
+}
+
+init();
 </script>
 </body>
 </html>
