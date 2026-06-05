@@ -260,7 +260,7 @@ async function readArticle(a, afterFn) {
       setCardPlaying(a.url, false);
       // Speech finished naturally — if Mic ON and user hasn't chosen yet, speak cue then listen
       if (voiceModeOn && vcResolve) {
-        speakText('Say Keep, Dismiss, or Open Article.', () => {
+        speakText('Say Keep, Dismiss, Open Article, or Replay.', () => {
           setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
         });
       }
@@ -334,7 +334,8 @@ function startListening(statusEl) {
     const t = Array.from(e.results[0]).map(x=>x.transcript).join(' ').toLowerCase();
     if (statusEl) statusEl.textContent = 'Heard: "' + t + '"';
     if (t.includes('dismiss') || t.includes('hide') || t.includes('remove')) resolveVC('dismiss');
-    else if (t.includes('open') || t.includes('read') || t.includes('article')) resolveVC('open');
+    else if (t.includes('open') || t.includes('article')) resolveVC('open');
+    else if (t.includes('replay') || t.includes('again') || t.includes('repeat')) { replayCurrentArticle(); }
     else resolveVC('keep');
   };
   r.onerror = () => { clearTimeout(timer); if(statusEl) statusEl.textContent = 'Not heard — defaulting to Keep'; setTimeout(()=>resolveVC('keep'), 1200); };
@@ -352,7 +353,7 @@ async function promptVoiceCommand(article, afterFn, isPostArticle) {
   const promptEl = showVoicePrompt(article, isPostArticle, null);
   if (voiceModeOn) {
     // Speak short prompt FIRST, then start listening once it finishes (avoids mic hearing itself)
-    const promptText = isPostArticle ? 'Say Keep, Dismiss, or Open.' : 'Say Keep, Dismiss, or Open Article.';
+    const promptText = isPostArticle ? 'Say Keep, Dismiss, or Open.' : 'Say Keep, Dismiss, Open Article, or Replay.';
     speakText(promptText, () => {
       setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
     });
@@ -535,7 +536,7 @@ function replayCurrentArticle() {
   // Re-read without resolving the prompt — buttons stay visible
   speakText(articleText(currentArticle), () => {
     if (voiceModeOn && vcResolve) {
-      speakText('Say Keep, Dismiss, or Open Article.', () => {
+      speakText('Say Keep, Dismiss, Open Article, or Replay.', () => {
         setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
       });
     }
