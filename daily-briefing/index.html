@@ -185,7 +185,7 @@ function updateVoiceModeBtn() {
 // --- Dismiss ---
 function dismissArticle(url) {
   const d = getDismissed(); d.add(url); saveDismissed(d);
-  const el = document.getElementById('card-'+btoa(url).replace(/[+/=]/g,'_'));
+  const el = document.getElementById('card-'+urlId(url));
   if (el) { el.style.transition='opacity .25s,transform .25s'; el.style.opacity='0'; el.style.transform='translateX(18px)'; setTimeout(()=>{ el.remove(); refreshCounts(); }, 270); }
   if (currentCardUrl === url) stopAll();
 }
@@ -218,9 +218,9 @@ function speakText(text, onEnd) {
 
 function setCardPlaying(url, playing) {
   if (url) {
-    const id = 'card-'+btoa(url).replace(/[+/=]/g,'_');
+    const id = 'card-'+urlId(url);
     const card = document.getElementById(id);
-    const btn  = document.getElementById('play-'+btoa(url).replace(/[+/=]/g,'_'));
+    const btn  = document.getElementById('play-'+urlId(url));
     if (card) card.classList.toggle('playing', playing);
     if (btn)  { btn.classList.toggle('active', playing); btn.innerHTML = playing ? '&#9646;&#9646;' : '&#9654;'; }
   }
