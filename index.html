@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logicbroker Internal Tools</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f7f8fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 32px 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header svg { width: 36px; height: 36px; }
+
+    header span {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a1a2e;
+      letter-spacing: -0.3px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px 48px;
+      width: 100%;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e2e4e9;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 680px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 28px 32px 20px;
+      border-bottom: 1px solid #e2e4e9;
+      text-align: center;
+    }
+
+    .card-header h1 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    .card-header p {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .tool {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 16px;
+      border-right: 1px solid #e2e4e9;
+      border-bottom: 1px solid #e2e4e9;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s;
+      gap: 14px;
+    }
+
+    .tool:last-child { border-right: none; }
+    .tool:hover { background: #fafafa; }
+
+    .tool.active .icon-wrap {
+      border-color: #6c5ce7;
+      background: #f0eeff;
+    }
+
+    .tool.active .tool-name { color: #6c5ce7; }
+
+    .tool.coming-soon { opacity: 0.45; cursor: default; }
+    .tool.coming-soon:hover { background: transparent; }
+
+    .tool-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #374151;
+      text-align: center;
+    }
+
+    .tool-desc {
+      font-size: 11px;
+      color: #9ca3af;
+      text-align: center;
+      line-height: 1.4;
+      margin-top: -8px;
+    }
+
+    .icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      border: 1.5px solid #d1d5db;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-wrap svg { width: 26px; height: 26px; color: #6b7280; }
+    .tool.active .icon-wrap svg { color: #6c5ce7; }
+
+    footer {
+      padding: 20px;
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logicbroker gear logo -->
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 2L21.5 8.5H28.5L31 14L26.5 18L31 22L28.5 27.5H21.5L18 34L14.5 27.5H7.5L5 22L9.5 18L5 14L7.5 8.5H14.5L18 2Z" fill="#e53e3e" stroke="#e53e3e" stroke-width="0.5" stroke-linejoin="round"/>
+      <circle cx="18" cy="18" r="5.5" fill="white"/>
+    </svg>
+    <span>Logicbroker</span>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="card-header">
+        <h1>Internal Tools</h1>
+        <p>Claude-built tools and resources for the Logicbroker team.</p>
+      </div>
+
+      <div class="grid">
+
+        <!-- Add real tools here as they're built. Template below. -->
+
+        <a href="./deal-gap-dashboard/" class="tool coming-soon">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <span class="tool-name">Deal Gap Dashboard</span>
+          <span class="tool-desc">Coming soon</span>
+        </a>
+
+        <a href="./daily-briefing/" class="tool coming-soon">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
+              <path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8z"/>
+            </svg>
+          </div>
+          <span class="tool-name">Daily Briefing</span>
+          <span class="tool-desc">Coming soon</span>
+        </a>
+
+        <a href="./account-playbooks/" class="tool coming-soon">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <span class="tool-name">Account Playbooks</span>
+          <span class="tool-desc">Coming soon</span>
+        </a>
+
+        <a href="./resources/" class="tool coming-soon">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <span class="tool-name">Resources</span>
+          <span class="tool-desc">Coming soon</span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Logicbroker, Inc. &nbsp;|&nbsp; Logicbroker.com
+  </footer>
+
+</body>
+</html>
