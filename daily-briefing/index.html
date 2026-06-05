@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Research Digest — Logicbroker</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --lb-blue: #0066cc;
+      --lb-teal: #00a99d;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0066cc 0%, #00a99d 100%);
+      color: white;
+      padding: 24px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    header .subtitle {
+      font-size: 0.82rem;
+      opacity: 0.8;
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    header .date {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    .controls {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 7px 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.83rem;
+      font-weight: 600;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+
+    .btn-primary { background: var(--lb-blue); color: white; }
+    .btn-primary:hover { background: #0052a3; }
+
+    .btn-stop { background: #ef4444; color: white; }
+    .btn-stop:hover { background: #dc2626; }
+
+    .speed-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .speed-wrap input[type=range] {
+      width: 90px;
+      accent-color: var(--lb-blue);
+      cursor: pointer;
+    }
+
+    .speed-val {
+      min-width: 32px;
+      font-weight: 700;
+      color: var(--text);
+      font-size: 0.85rem;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 18px 14px 40px;
+    }
+
+    .article-card {
+      background: var(--card);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .article-card.playing {
+      border-color: var(--lb-teal);
+      box-shadow: 0 0 0 3px rgba(0,169,157,0.15);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 14px 10px;
+    }
+
+    .card-meta { flex: 1; min-width: 0; }
+
+    .art-num {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--lb-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .art-title {
+      font-size: 0.97rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin: 3px 0 5px;
+    }
+
+    .art-title a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .art-title a:hover { color: var(--lb-blue); text-decoration: underline; }
+
+    .art-byline {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .play-btn {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: none;
+      background: var(--lb-blue);
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      transition: background 0.15s, transform 0.1s;
+      margin-top: 2px;
+    }
+
+    .play-btn:hover { background: #0052a3; transform: scale(1.06); }
+    .play-btn.active { background: var(--lb-teal); }
+
+    .card-body { padding: 0 14px 14px; }
+
+    .art-summary {
+      font-size: 0.88rem;
+      color: #2d2d2d;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+
+    .tieback {
+      background: #eef5ff;
+      border-left: 3px solid var(--lb-blue);
+      padding: 8px 11px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .tieback-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--lb-blue);
+      margin-bottom: 3px;
+    }
+
+    .tieback-text {
+      font-size: 0.82rem;
+      color: #1a3660;
+      line-height: 1.55;
+    }
+
+    .state-msg {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .state-msg.error { color: #ef4444; }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a { color: var(--lb-blue); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      .controls { gap: 8px; padding: 8px 12px; }
+      .speed-wrap { width: 100%; margin-left: 0; }
+      main { padding: 12px 10px 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="subtitle">Logicbroker Internal</div>
+  <h1>AI Research Digest</h1>
+  <div class="date" id="digest-date">Loading...</div>
+</header>
+
+<div class="controls">
+  <button class="btn btn-primary" id="btn-read-all" onclick="readAll()">&#9654;&nbsp; Read All</button>
+  <button class="btn btn-stop" id="btn-stop" onclick="stopAll()" style="display:none">&#9632;&nbsp; Stop</button>
+  <div class="speed-wrap">
+    <span>Speed</span>
+    <input type="range" id="speed-slider" min="0.8" max="1.5" step="0.1" value="1.0"
+           oninput="updateSpeed(this.value)">
+    <span class="speed-val" id="speed-label">1.0x</span>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<footer>
+  Logicbroker AI Research Digest &nbsp;|&nbsp;
+  <a href="https://jasonckrug.github.io/logicbroker-tools/">All Internal Tools</a>
+</footer>
+
+<script>
+  let articles = [];
+  let speed = 1.0;
+  let currentIdx = -1;
+  let isReadAll = false;
+
+  function updateSpeed(v) {
+    speed = parseFloat(v);
+    document.getElementById('speed-label').textContent = speed.toFixed(1) + 'x';
+  }
+
+  function resetUI() {
+    document.querySelectorAll('.article-card').forEach(c => c.classList.remove('playing'));
+    document.querySelectorAll('.play-btn').forEach(b => { b.classList.remove('active'); b.innerHTML = '&#9654;'; });
+    document.getElementById('btn-stop').style.display = 'none';
+    document.getElementById('btn-read-all').style.display = 'inline-flex';
+    currentIdx = -1;
+    isReadAll = false;
+  }
+
+  function stopAll() {
+    window.speechSynthesis.cancel();
+    resetUI();
+  }
+
+  function speakArticle(idx, onEnd) {
+    window.speechSynthesis.cancel();
+
+    document.querySelectorAll('.article-card').forEach(c => c.classList.remove('playing'));
+    document.querySelectorAll('.play-btn').forEach(b => { b.classList.remove('active'); b.innerHTML = '&#9654;'; });
+
+    const card = document.getElementById('card-' + idx);
+    const btn = document.getElementById('play-' + idx);
+    if (card) card.classList.add('playing');
+    if (btn) { btn.classList.add('active'); btn.innerHTML = '&#9646;&#9646;'; }
+
+    document.getElementById('btn-stop').style.display = 'inline-flex';
+    currentIdx = idx;
+
+    const a = articles[idx];
+    const text = `Article ${idx + 1}. ${a.title}. ${a.publisher}. ${a.summary} Logicbroker angle: ${a.tieback}`;
+
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = speed;
+    u.onend = () => {
+      if (card) card.classList.remove('playing');
+      if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9654;'; }
+      if (onEnd) onEnd();
+      else resetUI();
+    };
+    u.onerror = () => {
+      resetUI();
+    };
+    window.speechSynthesis.speak(u);
+  }
+
+  function toggleArticle(idx) {
+    if (currentIdx === idx && window.speechSynthesis.speaking) {
+      stopAll();
+      return;
+    }
+    isReadAll = false;
+    document.getElementById('btn-read-all').style.display = 'inline-flex';
+    speakArticle(idx, null);
+  }
+
+  function readAll() {
+    isReadAll = true;
+    document.getElementById('btn-read-all').style.display = 'none';
+    readNext(0);
+  }
+
+  function readNext(idx) {
+    if (!isReadAll || idx >= articles.length) {
+      resetUI();
+      return;
+    }
+    speakArticle(idx, () => {
+      if (isReadAll) readNext(idx + 1);
+    });
+  }
+
+  async function loadDigest() {
+    const main = document.getElementById('main');
+    try {
+      const res = await fetch('./digest.json?v=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+
+      document.getElementById('digest-date').textContent = data.date || '';
+      articles = data.articles || [];
+
+      if (!articles.length) {
+        main.innerHTML = '<div class="state-msg">No articles in today\'s digest.</div>';
+        return;
+      }
+
+      main.innerHTML = articles.map((a, i) => `
+        <div class="article-card" id="card-${i}">
+          <div class="card-top">
+            <div class="card-meta">
+              <div class="art-num">Article ${i + 1}</div>
+              <div class="art-title">
+                <a href="${escHtml(a.url)}" target="_blank" rel="noopener noreferrer">${escHtml(a.title)}</a>
+              </div>
+              <div class="art-byline">
+                ${escHtml(a.publisher)}${a.author ? ' &middot; ' + escHtml(a.author) : ''}${a.date ? ' &middot; ' + escHtml(a.date) : ''}
+              </div>
+            </div>
+            <button class="play-btn" id="play-${i}" onclick="toggleArticle(${i})" title="Read aloud">&#9654;</button>
+          </div>
+          <div class="card-body">
+            <div class="art-summary">${escHtml(a.summary)}</div>
+            <div class="tieback">
+              <div class="tieback-label">Logicbroker Tie-back</div>
+              <div class="tieback-text">${escHtml(a.tieback)}</div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+    } catch (e) {
+      main.innerHTML = `<div class="state-msg error">Could not load digest data.<br><small>The daily file may not have been pushed yet. (${e.message})</small></div>`;
+    }
+  }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  loadDigest();
+</script>
+</body>
+</html>
