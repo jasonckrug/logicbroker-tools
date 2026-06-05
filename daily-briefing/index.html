@@ -105,7 +105,7 @@ const SPK = 'lb_speed_v1';
 
 let archive = [], speed = 1.0, sortNewest = true, voiceModeOn = false;
 let selectedVoice = null, voices = [];
-let isSpeaking = false, readQueue = [], readQueueIdx = 0, isReadAll = false;
+let isSpeaking = false, isPaused = false, readQueue = [], readQueueIdx = 0, isReadAll = false;
 let currentCardUrl = null, pendingCallback = null;
 let vcResolve = null; // for voice command promise
 
@@ -227,7 +227,7 @@ function setCardPlaying(url, playing) {
 }
 
 function resetUI() {
-  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false;
+  isReadAll = false; readQueueIdx = 0; readQueue = []; isSpeaking = false; isPaused = false;
   if (currentCardUrl) setCardPlaying(currentCardUrl, false);
   currentCardUrl = null;
   document.getElementById('btn-stop').style.display = 'none';
@@ -252,7 +252,7 @@ function readArticle(a, afterFn) {
   speakText(articleText(a), () => {
     setCardPlaying(a.url, false);
     currentCardUrl = null;
-    if (voiceModeOn) promptVoiceCommand(a, afterFn);
+    if (isReadAll || voiceModeOn) promptVoiceCommand(a, afterFn);
     else if (afterFn) afterFn();
   });
 }
@@ -265,7 +265,7 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
   const div = document.createElement('div');
   div.id = 'vc-prompt'; div.className = 'voice-prompt';
   div.innerHTML = `<div>
-    <div style="font-weight:700;margin-bottom:4px">&#127908; ${isPostArticle ? 'Full article read.' : 'Say or click:'}</div>
+    <div style="font-weight:700;margin-bottom:4px">${voiceModeOn ? '&#127908; ' : ''}${isPostArticle ? 'Full article read.' : (voiceModeOn ? 'Say or click:' : 'What next?')}</div>
     <div class="voice-choices">
       <button class="vchoice" onclick="resolveVC('keep')">Keep / Next</button>
       <button class="vchoice" onclick="resolveVC('dismiss')">Dismiss</button>
@@ -301,12 +301,16 @@ function startListening(statusEl) {
 }
 
 async function promptVoiceCommand(article, afterFn, isPostArticle) {
-  const prompt = isPostArticle
-    ? 'Say Keep to continue, Dismiss to hide this article, or Open to open in browser.'
-    : 'Say Keep to skip, Dismiss to hide, or Open Article to read the full text.';
-  speakText(prompt, null);
+  if (voiceModeOn) {
+    const prompt = isPostArticle
+      ? 'Say Keep to continue, Dismiss to hide this article, or Open to open in browser.'
+      : 'Say Keep to skip, Dismiss to hide, or Open Article to read the full text.';
+    speakText(prompt, null);
+  }
   const promptEl = showVoicePrompt(article, isPostArticle, null);
-  setTimeout(() => { startListening(document.getElementById('vc-listen-status')); }, 1200);
+  if (voiceModeOn) {
+    setTimeout(() => { startListening(document.getElementById('vc-listen-status')); }, 1200);
+  }
   const cmd = await promptEl;
   removeVoicePrompt();
   if (!isReadAll && cmd !== 'keep') {} // single-article mode — just act
@@ -379,7 +383,24 @@ function advanceQueue() {
 function toggleArticle(url) {
   const a = findArticle(url);
   if (!a) return;
-  if (currentCardUrl === url && isSpeaking) { stopAll(); return; }
+  if (currentCardUrl === url) {
+    if (isPaused) {
+      // Resume paused article
+      window.speechSynthesis.resume();
+      isPaused = false;
+      setCardPlaying(url, true);
+      return;
+    }
+    if (isSpeaking || window.speechSynthesis.speaking) {
+      // Pause currently playing article
+      window.speechSynthesis.pause();
+      isPaused = true;
+      const id = btoa(url).replace(/[+/=]/g,'_');
+      const btn = document.getElementById('play-'+id);
+      if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9654;'; }
+      return;
+    }
+  }
   stopAll();
   isReadAll = false;
   document.getElementById('btn-read-all').style.display = 'inline-flex';
