@@ -271,7 +271,10 @@ function showVoicePrompt(article, isPostArticle, onChoice) {
       <button class="vchoice" onclick="resolveVC('dismiss')">Dismiss</button>
       <button class="vchoice" onclick="resolveVC('open')">${isPostArticle ? 'Open in browser' : 'Open Article'}</button>
     </div>
-    <div id="vc-listen-status" style="font-size:.76rem;margin-top:6px;color:#7c3aed"></div>
+    <div style="display:flex;align-items:center;gap:8px;margin-top:6px">
+      <div id="vc-listen-status" style="font-size:.76rem;color:#7c3aed;flex:1"></div>
+      <button onclick="testMic()" style="font-size:.72rem;padding:3px 8px;border-radius:4px;border:1px solid #a78bfa;background:#fff;color:#5b21b6;cursor:pointer" title="Check if microphone is working">&#127908; Test mic</button>
+    </div>
   </div>`;
   const cardId = 'card-'+urlId(article.url);
   const card = document.getElementById(cardId);
@@ -310,7 +313,11 @@ async function promptVoiceCommand(article, afterFn, isPostArticle) {
   }
   const promptEl = showVoicePrompt(article, isPostArticle, null);
   if (voiceModeOn) {
-    setTimeout(() => { startListening(document.getElementById('vc-listen-status')); }, 1200);
+    // Speak short prompt FIRST, then start listening once it finishes (avoids mic hearing itself)
+    const promptText = isPostArticle ? 'Say Keep, Dismiss, or Open.' : 'Say Keep, Dismiss, or Open Article.';
+    speakText(promptText, () => {
+      setTimeout(() => startListening(document.getElementById('vc-listen-status')), 400);
+    });
   }
   const cmd = await promptEl;
   removeVoicePrompt();
@@ -341,9 +348,12 @@ async function openAndRead(article, afterFn) {
       promptVoiceCommand(article, afterFn, true);
     });
   } catch(e) {
-    speakText('Could not load article content. Opening in your browser instead.', () => {
-      window.open(article.url, '_blank');
-      if (isReadAll) advanceQueue(); else resetUI();
+    // Show visible error in the prompt area
+    const errEl = document.getElementById('vc-listen-status');
+    if (errEl) errEl.innerHTML = '<span style="color:#dc2626">&#9888; Article content not accessible (paywall or JS-only site). Opened in new tab.</span>';
+    window.open(article.url, '_blank');
+    speakText('Article not accessible. Opened in your browser.', () => {
+      setTimeout(() => { if (isReadAll) advanceQueue(); else resetUI(); }, 1500);
     });
   }
 }
@@ -476,6 +486,27 @@ function urlId(url) {
 // --- Data-attribute click handlers (avoids inline JSON.stringify breaking HTML) ---
 function handlePlay(btn) { toggleArticle(btn.dataset.url); }
 function handleDismiss(btn) { dismissArticle(btn.dataset.url); }
+
+
+// --- Mic test (from voice prompt) ---
+function testMic() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { alert('Speech recognition not supported in this browser. Use Chrome or Edge.'); return; }
+  const statusEl = document.getElementById('vc-listen-status');
+  if (statusEl) statusEl.innerHTML = 'Testing mic<span class="listening-dot"></span>';
+  const r = new SR(); r.lang = 'en-US'; r.maxAlternatives = 1;
+  const timer = setTimeout(() => { try { r.abort(); } catch(e) {} if (statusEl) statusEl.textContent = 'No speech heard. Check mic permissions in browser settings.'; }, 6000);
+  r.onresult = (e) => {
+    clearTimeout(timer);
+    const t = e.results[0][0].transcript;
+    if (statusEl) statusEl.innerHTML = '&#10003; Mic working — heard: "' + t + '"';
+  };
+  r.onerror = (e) => {
+    clearTimeout(timer);
+    if (statusEl) statusEl.textContent = 'Mic error: ' + (e.error || 'check browser permissions');
+  };
+  try { r.start(); } catch(e) { if (statusEl) statusEl.textContent = 'Could not start mic: ' + e.message; }
+}
 
 // --- Voice preview ---
 function previewVoice() {
