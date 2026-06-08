@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-06-08",
+    "label": "June 8, 2026",
+    "articles": [
+      {
+        "topic": "Agentic Commerce",
+        "title": "Google's Universal Cart will soon be available to Walmart, Target shoppers — getting their buy-in may be the hard part",
+        "publisher": "Modern Retail",
+        "author": "Mitchell Parton",
+        "date": "June 4, 2026",
+        "url": "https://www.modernretail.co/technology/google-attracts-retailers-like-walmart-target-to-universal-cart-getting-shoppers-will-be-the-harder-part/",
+        "summary": "Google's AI-powered Universal Cart launches in U.S. Search and Gemini this summer, enabling cross-merchant shopping and checkout across Google services, with Walmart, Target, Nike, and Sephora as early retail partners. Analysts warn the cart could erode traffic to retailer-owned sites and question whether enough shoppers will adopt a checkout experience outside familiar brand destinations.",
+        "tieback": "As agentic carts pull purchasing earlier in the discovery funnel, merchants need real-time inventory and enriched product data exposed to AI surfaces — exactly what Logicbroker's catalog syndication and real-time order visibility infrastructure enables."
+      },
+      {
+        "topic": "Agentic Commerce",
+        "title": "Walmart executives see the promise of AI, but also the costs",
+        "publisher": "Modern Retail",
+        "author": "Mitchell Parton",
+        "date": "June 4, 2026",
+        "url": "https://www.modernretail.co/technology/walmart-executives-see-the-promise-of-ai-but-also-the-costs/",
+        "summary": "Walmart's EVP of AI acceleration described a shift toward conversational, intent-based shopping via agents like ChatGPT, where customers ask about camping trips and receive product recommendations mid-conversation. The retailer is advancing agentic commerce partnerships while also capping internal AI tool usage as token costs from heavy employee adoption become a governance challenge.",
+        "tieback": "Walmart's open-partnerships AI posture requires suppliers to have structured, agent-readable product and inventory data at scale — the core of Logicbroker's transactionable presence on LLMs/agents differentiator."
+      },
+      {
+        "topic": "AI Retail Ops",
+        "title": "Starbucks ditches AI inventory system after just 9 months",
+        "publisher": "Supply Chain Dive",
+        "author": "Aneurin Canham-Clyne",
+        "date": "June 4, 2026",
+        "url": "https://www.supplychaindive.com/news/starbucks-ditches-ai-inventory-system-after-just-9-months/821104/",
+        "summary": "Starbucks ended its computer vision AI inventory counting system after approximately nine months, citing employee complaints about unreliability and miscounting. The chain is returning to traditional stock-keeping methods while CEO Brian Niccol emphasized the need for daily replenishment by end of 2026 to support food program goals.",
+        "tieback": "Starbucks' AI inventory failure underscores that real-time operational visibility requires reliable data infrastructure from the outset — Logicbroker's automated order and inventory sync gives retailers that foundation so they avoid costly rip-and-replace cycles."
+      },
+      {
+        "topic": "AI Retail Ops",
+        "title": "Can AI gains give alternative delivery providers an edge?",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "June 5, 2026",
+        "url": "https://www.supplychaindive.com/news/can-ai-gains-give-alternative-delivery-providers-an-edge/821623/",
+        "summary": "Emerging parcel carriers SpeedX, Veho, and UniUni are deploying proprietary AI tools — from chatbots handling 80% of customer inquiries to ML-based proof-of-delivery photo validation — to close the technology gap with FedEx and UPS. Experts say AI's lower barrier to entry is leveling the playing field in last-mile delivery as national carriers shift away from lower-margin volume.",
+        "tieback": "As AI-enabled alternative carriers gain capability and market share, Logicbroker's intelligent routing and supplier analytics position brands to optimize across an expanding delivery ecosystem without manual configuration for each new carrier."
+      },
+      {
+        "topic": "AI Thought Leadership",
+        "title": "Autonomous Supply Chain: Why Agentic AI Is Rewriting the Operating Model",
+        "publisher": "SAP News Center",
+        "author": "Hagen Heubach",
+        "date": "June 4, 2026",
+        "url": "https://news.sap.com/2026/06/autonomous-supply-chain-why-agentic-ai-is-rewriting-the-operating-model/",
+        "summary": "Drawing on interviews with supply chain leaders across six industries, SAP's supply chain CMO documents the shift from isolated AI pilots to coordinated agent-to-agent workflows, with companies deploying 1,000+ AI agents and reducing disruption response times by 95%. The piece identifies trust and fragmented data as the primary scaling barriers, with 90% of AI use cases still stuck in pilot mode.",
+        "tieback": "The '90% stuck in pilot' finding validates Logicbroker's position: automated EDI and real-time supplier data give companies the trusted operational foundation that agentic supply chain orchestration requires before AI can move from pilot to production."
+      }
+    ]
+  },
+  {
     "date": "2026-06-05",
     "label": "Friday, June 5, 2026 (Edition 2)",
     "articles": [
