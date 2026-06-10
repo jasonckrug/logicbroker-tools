@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-06-10",
+    "label": "June 10, 2026",
+    "articles": [
+      {
+        "topic": "Thought Leadership",
+        "title": "AI won't fix a broken supply chain foundation",
+        "publisher": "Supply Chain Management Review (SCMR)",
+        "author": "Brian Straight",
+        "date": "June 5, 2026",
+        "url": "https://www.scmr.com/article/ai-wont-fix-a-broken-supply-chain-foundation",
+        "summary": "96% of companies report value from AI supply chain investments, but not transformational value \u2014 because competitive advantage comes from clean data, process standardization, and management systems, not AI tools themselves. EY's Al Mendoza advises companies to pursue a \"value blueprint\" approach, defining strategic business problems first rather than chasing isolated use cases.",
+        "lb_tieBack": "Retailers deploying AI on fragmented supplier data and inconsistent order workflows will hit the same ceiling; clean, real-time integration across vendors and orders is the operational foundation that makes AI actionable at scale."
+      },
+      {
+        "topic": "Agentic Commerce",
+        "title": "US agentic commerce revenue forecast to reach $1 trillion by 2030",
+        "publisher": "Retail Dive",
+        "author": "Howard Ruben",
+        "date": "May 5, 2026",
+        "url": "https://www.retaildive.com/news/agentic-commerce-us-one-trillion-2030/818936/",
+        "summary": "McKinsey & Company and ICSC forecast agentic commerce will reach $1 trillion in U.S. B2C retail revenue by 2030. 68% of consumers already used at least one AI tool in their recent shopping experience, with 62% using AI to compare brands, prices, or reviews; physical stores retain strategic importance for experiential retail with Gen Z and millennials.",
+        "lb_tieBack": "As AI agents become primary purchase-decision surfaces, retailers need supplier catalogs and inventory data surfaced accurately and in real time; Logicbroker's normalized product data layer and real-time inventory sync position merchant assortments to be discovered by the AI agents driving that $1T."
+      },
+      {
+        "topic": "Agentic Commerce",
+        "title": "AI referrals make shoppers more likely to either return \u2014 or never come back",
+        "publisher": "Retail Dive",
+        "author": "Bryan Wassel",
+        "date": "May 20, 2026",
+        "url": "https://www.retaildive.com/news/ai-referrals-shoppers-more-likely-return-again-never-come-back/820464/",
+        "summary": "Info-Tech Research Group finds AI-driven referrals polarize customer outcomes \u2014 reinforcing loyalty when the recommendation lands, but driving customers away permanently when it fails. The key is fast, visible validation: if consumers cannot quickly verify why an AI chose a specific brand or product, trust disappears.",
+        "lb_tieBack": "Logicbroker's real-time inventory sync and accurate product data ensure that when an AI agent surfaces a supplier's item, the SKU is actually in stock and correctly described \u2014 the moment of validation that determines whether an AI referral converts or kills the relationship."
+      },
+      {
+        "topic": "AI Retail Ops",
+        "title": "Gap targets improved traceability operations, data collection",
+        "publisher": "Retail Dive",
+        "author": "Kelly Stroh",
+        "date": "May 4, 2026",
+        "url": "https://www.retaildive.com/news/gap-improved-traceability-operations-data-collection/818846/",
+        "summary": "Gap is deploying an AI layer from supply chain software company Inspectorio to improve coordination with suppliers and enhance traceability data collection across its vendor network. The initiative reflects a broader industry shift toward AI-assisted supplier visibility as a strategic operational priority \u2014 not just a compliance measure.",
+        "lb_tieBack": "Logicbroker's automated EDI and real-time order visibility create the clean supplier data layer that AI traceability tools require to function \u2014 the same integration and normalization work Logicbroker handles natively across hundreds of suppliers."
+      },
+      {
+        "topic": "AI Retail Ops",
+        "title": "Kohl's delves into AI for gift finding, aiding associates",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "April 30, 2026",
+        "url": "https://www.retaildive.com/news/kohls-ai-gift-finding-google-cloud/818590/",
+        "summary": "Kohl's launched a conversational AI agent (built on Google Cloud) to help shoppers find gifts while evolving how store associates engage with inventory and product data in real time. The deployment marks Kohl's transition from AI experimentation to AI as a core customer interaction and operations layer.",
+        "lb_tieBack": "Kohl's AI agent depends on accurate, real-time product and inventory data from vendors \u2014 exactly what Logicbroker delivers through automated SKU onboarding and live inventory sync across third-party suppliers."
+      }
+    ]
+  },
+  {
     "date": "2026-06-09",
     "label": "June 9, 2026",
     "articles": [
