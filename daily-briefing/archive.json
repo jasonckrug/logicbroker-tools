@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-06-15",
+    "label": "Monday, June 15, 2026",
+    "articles": [
+      {
+        "title": "Why AI in Supply Chain Can't Succeed Without Foundational Systems",
+        "publisher": "SupplyChainBrain",
+        "author": "David Anderson",
+        "date": "June 11, 2026",
+        "url": "https://www.supplychainbrain.com/blogs/1-think-tank/post/44055-why-ai-in-supply-chain-cant-succeed-without-foundational-systems",
+        "summary": "Companies attempting AI in supply chains fail when underlying ERP, WMS, and TMS systems carry dirty or siloed data. A North American manufacturer's AI demand forecasting tool performed worse than spreadsheets because its ERP held years of incorrect delivery dates, illustrating that foundational data accuracy is the non-negotiable prerequisite before any AI layer can deliver value.",
+        "tieback": "Logicbroker's real-time order and inventory visibility gives suppliers and retailers clean, reliable transactional data, which is exactly the foundational layer AI tools require to produce useful outputs rather than amplified errors.",
+        "topic": "AI Thought Leadership"
+      },
+      {
+        "title": "Walmart Caps Usage of an AI Tool for Employees After High Demand",
+        "publisher": "SupplyChainBrain (Bloomberg)",
+        "author": "Bloomberg",
+        "date": "June 8, 2026",
+        "url": "https://www.supplychainbrain.com/articles/44229-walmart-caps-usage-of-an-ai-tool-for-employees-after-high-demand",
+        "summary": "Walmart introduced token limits on its in-house Code Puppy AI agent after employees used it far more heavily than anticipated, exposing the unexpected cost burden of enterprise-wide AI deployment at scale. The company continues investing in AI across supply chain and the shopping experience while managing the financial tradeoffs of broad, unmetered adoption.",
+        "tieback": "Walmart's scaling friction points to the ROI advantage of AI that operates at the integration and transaction layer. Logicbroker's automated EDI and intelligent routing deliver AI-driven efficiency at the point where orders and inventory move, without the per-seat cost risk of employee-facing tools.",
+        "topic": "AI Retail Ops"
+      },
+      {
+        "title": "Why Marketers Must Rethink Loyalty as AI Reshapes Consumer Connections",
+        "publisher": "Marketing Dive (via Retail Dive)",
+        "author": "Peter Adams",
+        "date": "June 10, 2026",
+        "url": "https://www.retaildive.com/news/marketers-rethink-loyalty-ai-reshapes-consumer-connections/822305/",
+        "summary": "New Gale research finds 56% of consumers are now comfortable letting AI filter all brand communications, and roughly a quarter plan to delegate purchasing preferences to LLMs within a year. Brands that fail to build AI-native loyalty strategies and strong first-party data foundations risk losing direct consumer relationships to intermediary AI agents that make purchasing decisions without surfacing brand-controlled messaging.",
+        "tieback": "As AI agents become purchasing intermediaries, supplier catalog data and real-time product availability must be machine-readable and transactionable. Logicbroker's transactionable presence on LLMs and agents positions supplier products to be discoverable and buyable at the moment an AI agent makes a purchase decision.",
+        "topic": "Agentic Commerce"
+      },
+      {
+        "title": "Pinterest Signs $4B AI Deal With AWS",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "June 11, 2026",
+        "url": "https://www.retaildive.com/news/pinterest-signs-four-billion-dollar-ai-deal-aws-visual-search/822374/",
+        "summary": "Pinterest signed a $4 billion, five-year agreement with AWS to accelerate its AI roadmap for visual search and personalized product discovery, its largest infrastructure deal in company history. The move signals that AI-powered discovery is now considered foundational e-commerce infrastructure, not an optional capability, as platforms race to make discovery more personal, visual and actionable.",
+        "tieback": "When discovery platforms treat AI infrastructure as a $4B priority, the quality and speed of product catalog data flowing into those surfaces becomes a direct competitive variable for brands. Logicbroker's rapid SKU onboarding gets supplier products into these AI-powered discovery channels faster than competitors relying on manual catalog processes.",
+        "topic": "AI Retail Ops"
+      },
+      {
+        "title": "AI Is \"Not Optional Anymore\" in Omnichannel Supply Chains, New MIT CTL Research Finds",
+        "publisher": "MIT Center for Transportation and Logistics",
+        "author": "Mackenzie Berry",
+        "date": "April 16, 2026",
+        "url": "https://ctl.mit.edu/news/ai-not-optional-anymore-omnichannel-supply-chains-new-mit-ctl-research-finds",
+        "summary": "MIT CTL's 2026 State of Supply Chain Omnichannel Report finds 81% of organizations are experiencing ongoing e-commerce growth, with AI now embedded across 58-64% of core functions including inventory management, demand forecasting, warehouse ops, and customer experience. The research identifies real-time inventory visibility and fulfillment accuracy as the non-negotiable priorities for competitive advantage.",
+        "tieback": "MIT's finding that real-time inventory visibility is now a baseline competitive requirement aligns directly with Logicbroker's core offering: live order and inventory data across supplier networks closes the data gap that holds back omnichannel performance at scale.",
+        "topic": "AI Thought Leadership"
+      }
+    ]
+  },
+  {
     "date": "2026-06-10",
     "label": "June 10, 2026",
     "articles": [
