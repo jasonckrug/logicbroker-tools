@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-06-16",
+    "articles": [
+      {
+        "title": "Visa enables ChatGPT AI agents to shop and pay for things",
+        "publisher": "Fortune",
+        "author": "Barbara Ortutay & Ken Sweet (AP)",
+        "date": "2026-06-11",
+        "url": "https://fortune.com/2026/06/11/visa-chatgpt-ai-agent-payments-shopping/",
+        "topic": "Agentic Commerce",
+        "summary": "Visa embedded its payment network inside ChatGPT, enabling AI agents to complete purchases at any Visa merchant on behalf of users, with guardrails like spending limits and approval steps. Unlike prior isolated AI checkout experiments (including OpenAI's retired Instant Checkout), this pairing gives agentic shopping broad payment reach across Visa's global merchant network.",
+        "tieback": "As AI agents gain payment capabilities, suppliers need catalog and inventory data structured for machine-readable consumption. Logicbroker's real-time product and availability feeds position suppliers for discovery and fulfillment through agent-driven purchase flows."
+      },
+      {
+        "title": "Grocery Outlet turns to AI to modernize supply chain",
+        "publisher": "Supply Chain Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-06-15",
+        "url": "https://www.supplychaindive.com/news/grocery-outlet-turns-to-ai-to-modernize-supply-chain/822837/",
+        "topic": "AI Retail Ops",
+        "summary": "Grocery Outlet is deploying Afresh's multi-category AI ordering system across fresh, center store, and general merchandise, giving store teams real-time demand-based recommendations and corporate teams visibility into store-level ordering. Afresh customers report an average 3% sales lift and 25% shrink reduction.",
+        "tieback": "The gains depend on supplier data arriving accurately and on time. Logicbroker's automated EDI and real-time inventory visibility give grocery suppliers the integration foundation that AI ordering systems require to act on."
+      },
+      {
+        "title": "Tractor Supply taps AI to help scale last-mile delivery network",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-06-10",
+        "url": "https://www.supplychaindive.com/news/tractor-supply-taps-ai-to-help-scale-last-mile-delivery-network/822349/",
+        "topic": "AI Retail Ops",
+        "summary": "As Tractor Supply's private delivery fleet scaled with double-digit volume growth, the company deployed AI routing tools that let territory managers act as dispatchers, decoupling routing decisions from driver execution. The company is also piloting AI-powered delivery time estimates at the address and market level.",
+        "tieback": "Intelligent last-mile routing depends on order accuracy and real-time status upstream. Logicbroker's order routing and supplier analytics provide the operational data layer that makes AI dispatch viable at scale."
+      },
+      {
+        "title": "PepsiCo expanding autonomous truck use in its supply chain",
+        "publisher": "Supply Chain Dive",
+        "author": "Alejandra Carranza",
+        "date": "2026-06-11",
+        "url": "https://www.supplychaindive.com/news/pepsico-expanding-autonomous-truck-use-in-its-supply-chain/822403/",
+        "topic": "AI Retail Ops",
+        "summary": "PepsiCo signed a multiyear deal with Gatik to expand its autonomous truck fleet across North American supply chain routes that are hard to staff, with 41 trucks already operating in TX, AZ, and AR. The trucks handle end-to-end deliveries and can adjust routes dynamically to provide capacity flexibility without changing existing operations.",
+        "tieback": "Autonomous fulfillment networks require precise order data and route-level visibility to operate without human oversight. Logicbroker's real-time order and inventory visibility provides the upstream accuracy these systems require to function reliably."
+      },
+      {
+        "title": "Anthropic pledges $200 million to study AI's economic impact, job losses",
+        "publisher": "AP via Business Standard",
+        "author": "AP",
+        "date": "2026-06-11",
+        "url": "https://www.business-standard.com/technology/tech-news/anthropic-pledges-200-million-to-study-ai-s-economic-impact-job-losses-126061100070_1.html",
+        "topic": "AI Thought Leadership",
+        "summary": "Anthropic announced a $200 million Economic Futures Research Fund to study AI's impact on jobs and the economy, alongside a policy framework proposing unemployment support, pro-employment incentives, and potential UBI if displacement proves severe. CEO Dario Amodei published a companion essay calling for FAA-style safety regulation for AI models.",
+        "tieback": "As AI reshapes commerce workflows, retailers and brands best positioned to benefit are those with clean, automated data pipelines that reduce manual overhead. Logicbroker's EDI automation and rapid vendor onboarding are practical examples of AI-adjacent efficiency gains the broader industry is now being asked to measure and account for."
+      }
+    ]
+  },
+  {
     "date": "2026-06-15",
     "label": "Monday, June 15, 2026",
     "articles": [
