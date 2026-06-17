@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-06-17",
+    "articles": [
+      {
+        "title": "AI forces retailers, brands to rethink their product pages",
+        "publisher": "Modern Retail",
+        "author": "Mitchell Parton",
+        "date": "2026-06-16",
+        "url": "https://www.modernretail.co/technology/ai-forces-retailers-brands-to-rethink-their-product-pages/",
+        "topic": "Agentic Commerce",
+        "summary": "E-commerce leaders are rethinking product page design to be more discoverable to AI shopping agents like ChatGPT, Claude, and Gemini, as AI bot traffic to retail sites grew more than five times from 2024 to 2025. Strategies include adding FAQ sections, removing JavaScript elements bots cannot parse, creating text-only versions for crawlers, and pushing product data through Google Universal Commerce Protocol.",
+        "tieback": "SKU onboarding speed and transactionable catalog presence on LLMs close exactly the data-readability gap retailers are scrambling to fill."
+      },
+      {
+        "title": "Walmart is training store-level employees to use AI",
+        "publisher": "Modern Retail",
+        "author": "Mitchell Parton",
+        "date": "2026-06-11",
+        "url": "https://www.modernretail.co/technology/walmart-is-training-store-level-employees-to-use-ai/",
+        "topic": "AI Retail Operations",
+        "summary": "Walmart launched AI certification programs with OpenAI and Google, training store associates, logistics managers, and merchandising staff to use AI tools in daily work. Associates are building AI-powered apps for scheduling, supply chain routing, and inventory coaching.",
+        "tieback": "Automated EDI and real-time order and inventory visibility become table stakes as retailer-side AI fluency raises the bar for vendor data accuracy."
+      },
+      {
+        "title": "Dollar General shuffles executive ranks",
+        "publisher": "Retail Dive",
+        "author": "Sam Silverstein",
+        "date": "2026-06-16",
+        "url": "https://www.retaildive.com/news/dollar-general-nine-executive-appointments-store-operations-technology-ai/822925/",
+        "topic": "AI Retail Operations",
+        "summary": "Dollar General appointed Travis Nixon as Chief Data and AI Officer, tasking him with overseeing AI strategy across data engineering, supply chain, and store operations optimization. The nine-officer realignment signals major discount retailers are hardening AI into organizational structure.",
+        "tieback": "Intelligent routing and supplier analytics address the fulfillment data pressure that trickles down to every vendor in the Dollar General supply network."
+      },
+      {
+        "title": "The AI-First Supply Chain",
+        "publisher": "BCG",
+        "author": "Ashish Pathak",
+        "date": "2026-05-22",
+        "url": "https://www.bcg.com/publications/2026/how-ai-agents-are-transforming-supply-chains",
+        "topic": "Thought Leadership",
+        "summary": "BCG argues that AI agents break longstanding supply chain tradeoffs by identifying and coordinating solutions at a speed and scale that sequential human workflows cannot reach, framing the AI-first supply chain as a fundamentally different operating model.",
+        "tieback": "Real-time order and inventory visibility is the foundational data layer every AI orchestration model requires, which is the infrastructure Logicbroker provides."
+      },
+      {
+        "title": "Gartner Forecasts Supply Chain Management Software with Agentic AI Will Grow to 53 Billion in Spend by 2030",
+        "publisher": "Gartner",
+        "author": "",
+        "date": "2026-04-07",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-04-07-gartner-forecasts-supply-chain-management-software-with-agentic-ai-will-grow-to-53-billion-in-spend-by-2030",
+        "topic": "Thought Leadership",
+        "summary": "Gartner projects that supply chain management software incorporating agentic AI will reach 53 billion in global spend by 2030, driven by demand for autonomous decision-making in procurement, fulfillment, and inventory.",
+        "tieback": "With 53B in play, buyers will shortlist AI-native platforms first, a conversation Logicbroker leads with intelligent routing and supplier analytics on real-time data."
+      }
+    ]
+  },
+  {
     "date": "2026-06-16",
     "articles": [
       {
