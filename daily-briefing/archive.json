@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-06-18",
+    "articles": [
+      {
+        "title": "Mastercard launches protocol to let AI agents pay each other, send micropayments",
+        "publisher": "Fortune",
+        "author": "",
+        "date": "2026-06-10",
+        "url": "https://fortune.com/2026/06/10/mastercard-ai-payments-protocol-launch-agentic-finance/",
+        "topic": "Agentic Commerce",
+        "summary": "Mastercard launched Agent Pay for Machines (AP4M), enabling AI agents to transact at machine speed across cards, accounts, and stablecoins with 30+ partners including Stripe, Adyen, Cloudflare, and Coinbase. The launch establishes the credentialing and settlement rails agentic commerce requires at scale.",
+        "tieback": "Logicbroker's transactionable presence on LLMs and structured catalog data positions merchant suppliers to be reachable when AI agents initiate purchase flows."
+      },
+      {
+        "title": "Focus on the AI execution gap and discovery experience as Shoptalk Europe 2026 wraps in Barcelona",
+        "publisher": "Retail Technology Innovation Hub",
+        "author": "Scott Thompson",
+        "date": "2026-06-15",
+        "url": "https://retailtechinnovationhub.com/home/2026/6/14/focus-on-ai-execution-gap-and-discovery-experience-as-shoptalk-europe-2026-wraps-in-barcelona",
+        "topic": "Agentic Commerce / Thought Leadership",
+        "summary": "Shoptalk Europe 2026 found 88% of enterprises have deployed AI but only 6% can draw a direct line to EBITDA impact. The event named agentic commerce and AI-driven discovery as the two structural shifts defining retail in 2026.",
+        "tieback": "Logicbroker's real-time inventory and order visibility is the operational foundation that makes AI-driven discovery actionable at the transaction layer."
+      },
+      {
+        "title": "Inside Bristol Myers' AI-powered procurement overhaul",
+        "publisher": "Supply Chain Dive",
+        "author": "Alexei Alexis",
+        "date": "2026-06-17",
+        "url": "https://www.supplychaindive.com/news/inside-bristol-myers-ai-powered-procurement-overhaul/822840/",
+        "topic": "AI Retail Ops",
+        "summary": "Bristol Myers compressed RFP cycles from 6-9 months to under 30 days via AI-powered procurement platform Globality, with B+ flowing through year one. A clean-as-you-go data approach proves AI delivers results without waiting for perfect data.",
+        "tieback": "Same cycle compression that Logicbroker's automated EDI and real-time order visibility deliver -- digitize now, no perfect-data prerequisite required."
+      },
+      {
+        "title": "Kimberly-Clark credits supply chain for productivity gains",
+        "publisher": "Supply Chain Dive",
+        "author": "Phil Neuffer",
+        "date": "2026-06-15",
+        "url": "https://www.supplychaindive.com/news/kimberly-clark-credits-supply-chain-for-productivity-gains/822811/",
+        "topic": "AI Retail Ops",
+        "summary": "Kimberly-Clark is halfway through a $3B five-year productivity program anchored on AI-powered distribution automation, including a new robotics-enabled DC in South Carolina. Productivity gains expected by 2027.",
+        "tieback": "Logicbroker's intelligent routing and supplier analytics extend CPG automation gains across the full vendor and dropship network."
+      },
+      {
+        "title": "Gartner: Gap in SC AI Talent Cannot Be Closed by Hiring Alone",
+        "publisher": "SupplyChainBrain",
+        "author": "SupplyChainBrain Staff",
+        "date": "2026-06-15",
+        "url": "https://www.supplychainbrain.com/articles/44261-gartner-gap-in-sc-ai-talent-cannot-be-closed-by-hiring-alone",
+        "topic": "Thought Leadership",
+        "summary": "Demand for supply chain roles requiring AI skills surged 387% from Q1 2023 to Q1 2026. Gartner advises CSCOs to prioritize internal upskilling over external hiring for a sustainable AI talent pipeline.",
+        "tieback": "Platforms like Logicbroker that embed AI-driven routing, supplier analytics, and automated EDI deliver operational gains without requiring scarce in-house supply chain AI talent."
+      }
+    ]
+  },
+  {
     "date": "2026-06-17",
     "articles": [
       {
