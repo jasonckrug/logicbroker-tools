@@ -1,5 +1,60 @@
 [
   {
+    "date": "2026-06-19",
+    "articles": [
+      {
+        "title": "Marketplace Briefing: Shopify launches tools to help merchants track sales and traffic from AI platforms",
+        "publisher": "Modern Retail",
+        "author": "Allison Smith",
+        "date": "2026-06-18",
+        "url": "https://www.modernretail.co/technology/marketplace-briefing-shopify-launches-tools-to-help-merchants-track-sales-and-traffic-from-ai-platforms/",
+        "topic": "Agentic Commerce",
+        "summary": "Shopify is rolling out an AI dashboard inside Shopify Admin that lets merchants track sales, orders, and conversions from AI shopping channels including ChatGPT, Gemini, and Copilot. A new Search Intelligence tool shows merchants what AI shoppers are asking in their category and flags product data gaps limiting visibility in AI-generated recommendations.",
+        "tieback": "Merchants need clean, structured product data to surface inside AI shopping channels, the same catalog-readiness gap that makes Logicbroker's SKU onboarding speed and dropship supplier data enrichment directly relevant to brands managing 3P assortment programs."
+      },
+      {
+        "title": "Burlington opens high-tech distribution center in Georgia",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-06-17",
+        "url": "https://www.supplychaindive.com/news/burlington-opens-high-tech-distribution-center-in-georgia/823075/",
+        "topic": "AI Optimizing Retail Operations",
+        "summary": "Burlington Stores opened a 2 million-square-foot automated, climate-controlled distribution center in Ellabell, Georgia, featuring more than 25 miles of conveyor, smarter sortation systems, and custom software built specifically for off-price retail throughput. The facility is part of a broader fulfillment network overhaul aimed at getting merchandise to stores faster and is expected to create 1,500 jobs.",
+        "tieback": "Off-price retailers scaling automated DCs still depend on upstream supplier data accuracy to keep those systems fed, which is precisely where Logicbroker's real-time order and inventory visibility and intelligent routing cut friction between vendor and fulfillment network."
+      },
+      {
+        "title": "CSCMP's State of Logistics Report: Get Used to the Fog",
+        "publisher": "SupplyChainBrain",
+        "author": "CSCMP / Kearney",
+        "date": "2026-06-16",
+        "url": "https://www.supplychainbrain.com/articles/44278-cscmps-state-of-logistics-report",
+        "topic": "AI Thought Leadership",
+        "summary": "CSCMP's 2026 State of Logistics Report found AI delivers measurable ROI in supply chain when applied to four functions: interpreting, predicting, recommending, and executing, with particular growth in AI-enabled automation driven partly by labor constraints. Despite clear leaders, adoption remains uneven, with a large gap between companies that have embedded AI into core workflows versus those running isolated point solutions.",
+        "tieback": "The report's core finding that AI value concentrates in connected, workflow-integrated deployments reinforces why Logicbroker's end-to-end supplier network automation (EDI, onboarding, routing, real-time visibility) positions retailers for AI leverage better than fragmented standalone tools."
+      },
+      {
+        "title": "Gartner: Top 25 Supply Chain Organizations Are Embracing AI",
+        "publisher": "SupplyChainBrain",
+        "author": "SupplyChainBrain Staff",
+        "date": "2026-06-18",
+        "url": "https://www.supplychainbrain.com/articles/44288-gartner-top-25-supply-chain-organizations-are-embracing-ai",
+        "topic": "AI Thought Leadership",
+        "summary": "Gartner's 2026 Global Supply Chain Top 25 ranked Schneider Electric first for the fourth consecutive year, with NVIDIA second and Walmart climbing 10 spots to third. What separated the leaders was comprehensive AI use to fundamentally redesign how work gets done between people and machines, including autonomous workforces, network-centric strategies, and end-to-end ecosystem orchestration.",
+        "tieback": "Gartner's finding that top supply chains win by orchestrating entire ecosystems with AI maps directly to the problem Logicbroker solves for retailers managing complex dropship and 3P supplier networks through intelligent routing and supplier analytics."
+      },
+      {
+        "title": "Rewiring retail in Europe: The AI imperative",
+        "publisher": "McKinsey & Company",
+        "author": "Carlos Sanchez Altable, Franck Laizet, Holger Harreis",
+        "date": "2026-06-10",
+        "url": "https://www.mckinsey.com/industries/retail/our-insights/rewiring-retail-in-europe-the-ai-imperative",
+        "topic": "Agentic Commerce",
+        "summary": "McKinsey's analysis of leading European retailers finds that organizations using AI to rewire end-to-end operations are generating two to three times the productivity gains of those applying AI to isolated tasks. The piece spotlights Ocado's use of AI-enabled teams and digital twins to orchestrate warehouse robot fleets in real time as a model for how AI agents are transforming supply chain operations at scale.",
+        "tieback": "McKinsey's finding that AI-led supply chain orchestration requires tight data integration across the full retail ecosystem maps directly to Logicbroker's role connecting retailers with hundreds of suppliers through automated EDI and real-time inventory and order visibility."
+      }
+    ]
+  },
+  {
     "date": "2026-06-18",
     "articles": [
       {
