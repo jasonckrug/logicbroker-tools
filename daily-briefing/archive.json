@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-06-24",
+    "label": "Wednesday, June 24, 2026",
+    "articles": [
+      {
+        "title": "The reality of AI supply chain hype",
+        "publisher": "Modern Retail",
+        "author": "Melissa Daniels",
+        "publishDate": "June 22, 2026",
+        "url": "https://www.modernretail.co/operations/the-reality-of-ai-supply-chain-hype/",
+        "summary": "Kearney's 2026 State of Logistics Report shows AI delivering real operational value through hyper-targeted processes (C.H. Robinson books 3,000 appointments/day; ArcBest saved ~$15M on routes), but fully automated supply chains remain aspirational. Companies must invest in clean data and embedded day-to-day workflows before AI can scale.",
+        "logicbrokerTieback": "Suppliers and retailers that have yet to clean and connect their order and inventory data face the exact readiness gap Kearney flags — the integration layer Logicbroker's real-time order and inventory visibility closes.",
+        "category": "AI Retail Ops"
+      },
+      {
+        "title": "Amazon's latest ad format offers a glimpse of advertising's agentic future",
+        "publisher": "Digiday",
+        "author": "Kimeko McCoy",
+        "publishDate": "June 23, 2026",
+        "url": "https://digiday.com/marketing/amazons-latest-ad-format-offers-a-glimpse-of-advertisings-agentic-future/",
+        "summary": "Amazon unveiled Alexa+ Agentic Ads at Cannes Lions — users complete purchases without leaving the ad, powered by LLM conversations rather than fixed scripts. Papa Johns and Sony's The Orchard are beta testing a format that signals recommendation is becoming the new shelf.",
+        "logicbrokerTieback": "As AI agents take over product discovery and purchasing decisions, brands without structured, machine-readable product data and reliable fulfillment will be invisible to agentic buyers — exactly the connectivity gap Logicbroker's real-time catalog and order routing solves.",
+        "category": "Agentic Commerce"
+      },
+      {
+        "title": "OpenAI moves to automate ad creative",
+        "publisher": "Digiday",
+        "author": "Krystal Scanlon",
+        "publishDate": "June 17, 2026",
+        "url": "https://digiday.com/marketing/openai-moves-to-automate-ad-creative/",
+        "summary": "OpenAI is adding AI-powered creative tools to its ChatGPT ad platform, enabling auto-generation of ad creative from product catalogs at scale, plus new conversion tracking and cost-per-action models — building ChatGPT into a full performance marketing channel.",
+        "logicbrokerTieback": "As ChatGPT evolves into a full commerce channel where AI agents surface and transact products, suppliers need clean, structured catalog data already in-network — exactly the SKU onboarding and transactionable presence Logicbroker delivers.",
+        "category": "Agentic Commerce"
+      },
+      {
+        "title": "Cannes Briefing: Cannes is selling AI transformation. Off stage the talk is about the bill",
+        "publisher": "Digiday",
+        "author": "Krystal Scanlon, Seb Joseph",
+        "publishDate": "June 23, 2026",
+        "url": "https://digiday.com/marketing/cannes-briefing-cannes-is-selling-ai-transformation-off-stage-the-talk-is-about-the-bill/",
+        "summary": "At Cannes Lions 2026, the gap between AI's public narrative (agentic, efficiency) and private reality (escalating token costs, incomplete unit economics) is growing. Executives from Havas, Deloitte, and Bose say the industry is building use cases around vision rather than current costs, with a real TCO reckoning expected next year.",
+        "logicbrokerTieback": "Companies experimenting with AI without proven data infrastructure are spending on vision, not outcomes — reinforcing why the foundational integration Logicbroker provides (automated EDI, real-time visibility, SKU onboarding) is what makes AI ROI achievable rather than aspirational.",
+        "category": "AI Thought Leadership"
+      }
+    ]
+  },
+  {
     "date": "2026-06-23",
     "label": "Tuesday, June 23, 2026",
     "articles": [
@@ -78,12 +124,12 @@
         "tieback": "Merchants need real-time, structured catalog and inventory data to be visible to AI agents across protocols; Logicbroker's SKU onboarding speed and real-time inventory visibility are the upstream prerequisite that makes Adyen Agentic and similar tools viable for suppliers entering the agentic channel."
       },
       {
-        "title": "Nestl\u00e9 Ups Automation Use with Latest Distribution Center",
+        "title": "Nestlé Ups Automation Use with Latest Distribution Center",
         "publisher": "Supply Chain Dive",
         "author": "Phil Neuffer",
         "date": "2026-06-18",
         "url": "https://www.supplychaindive.com/news/nestle-ups-automation-use-with-latest-distribution-center/823174/",
-        "summary": "Nestl\u00e9 opened a 700,000-square-foot automated distribution center in Arvin, California as part of its $25 billion U.S. investment plan. The $330 million facility features automated storage and retrieval cranes, laser-guided vehicles, and layer-picking robotics, and is the first in the company's global network built from the ground up with automation alongside a global SAP S/4HANA Cloud rollout.",
+        "summary": "Nestlé opened a 700,000-square-foot automated distribution center in Arvin, California as part of its $25 billion U.S. investment plan. The $330 million facility features automated storage and retrieval cranes, laser-guided vehicles, and layer-picking robotics, and is the first in the company's global network built from the ground up with automation alongside a global SAP S/4HANA Cloud rollout.",
         "tieback": "CPG giants investing in automated fulfillment infrastructure still depend on clean order and inventory signals at the retailer edge; Logicbroker's real-time order and inventory visibility gives brands the data connection that makes DC investment pay off."
       },
       {
@@ -393,7 +439,7 @@
         "author": "Brian Straight",
         "date": "June 5, 2026",
         "url": "https://www.scmr.com/article/ai-wont-fix-a-broken-supply-chain-foundation",
-        "summary": "96% of companies report value from AI supply chain investments, but not transformational value \u2014 because competitive advantage comes from clean data, process standardization, and management systems, not AI tools themselves. EY's Al Mendoza advises companies to pursue a \"value blueprint\" approach, defining strategic business problems first rather than chasing isolated use cases.",
+        "summary": "96% of companies report value from AI supply chain investments, but not transformational value — because competitive advantage comes from clean data, process standardization, and management systems, not AI tools themselves. EY's Al Mendoza advises companies to pursue a \"value blueprint\" approach, defining strategic business problems first rather than chasing isolated use cases.",
         "lb_tieBack": "Retailers deploying AI on fragmented supplier data and inconsistent order workflows will hit the same ceiling; clean, real-time integration across vendors and orders is the operational foundation that makes AI actionable at scale."
       },
       {
@@ -408,13 +454,13 @@
       },
       {
         "topic": "Agentic Commerce",
-        "title": "AI referrals make shoppers more likely to either return \u2014 or never come back",
+        "title": "AI referrals make shoppers more likely to either return — or never come back",
         "publisher": "Retail Dive",
         "author": "Bryan Wassel",
         "date": "May 20, 2026",
         "url": "https://www.retaildive.com/news/ai-referrals-shoppers-more-likely-return-again-never-come-back/820464/",
-        "summary": "Info-Tech Research Group finds AI-driven referrals polarize customer outcomes \u2014 reinforcing loyalty when the recommendation lands, but driving customers away permanently when it fails. The key is fast, visible validation: if consumers cannot quickly verify why an AI chose a specific brand or product, trust disappears.",
-        "lb_tieBack": "Logicbroker's real-time inventory sync and accurate product data ensure that when an AI agent surfaces a supplier's item, the SKU is actually in stock and correctly described \u2014 the moment of validation that determines whether an AI referral converts or kills the relationship."
+        "summary": "Info-Tech Research Group finds AI-driven referrals polarize customer outcomes — reinforcing loyalty when the recommendation lands, but driving customers away permanently when it fails. The key is fast, visible validation: if consumers cannot quickly verify why an AI chose a specific brand or product, trust disappears.",
+        "lb_tieBack": "Logicbroker's real-time inventory sync and accurate product data ensure that when an AI agent surfaces a supplier's item, the SKU is actually in stock and correctly described — the moment of validation that determines whether an AI referral converts or kills the relationship."
       },
       {
         "topic": "AI Retail Ops",
@@ -423,8 +469,8 @@
         "author": "Kelly Stroh",
         "date": "May 4, 2026",
         "url": "https://www.retaildive.com/news/gap-improved-traceability-operations-data-collection/818846/",
-        "summary": "Gap is deploying an AI layer from supply chain software company Inspectorio to improve coordination with suppliers and enhance traceability data collection across its vendor network. The initiative reflects a broader industry shift toward AI-assisted supplier visibility as a strategic operational priority \u2014 not just a compliance measure.",
-        "lb_tieBack": "Logicbroker's automated EDI and real-time order visibility create the clean supplier data layer that AI traceability tools require to function \u2014 the same integration and normalization work Logicbroker handles natively across hundreds of suppliers."
+        "summary": "Gap is deploying an AI layer from supply chain software company Inspectorio to improve coordination with suppliers and enhance traceability data collection across its vendor network. The initiative reflects a broader industry shift toward AI-assisted supplier visibility as a strategic operational priority — not just a compliance measure.",
+        "lb_tieBack": "Logicbroker's automated EDI and real-time order visibility create the clean supplier data layer that AI traceability tools require to function — the same integration and normalization work Logicbroker handles natively across hundreds of suppliers."
       },
       {
         "topic": "AI Retail Ops",
@@ -434,7 +480,7 @@
         "date": "April 30, 2026",
         "url": "https://www.retaildive.com/news/kohls-ai-gift-finding-google-cloud/818590/",
         "summary": "Kohl's launched a conversational AI agent (built on Google Cloud) to help shoppers find gifts while evolving how store associates engage with inventory and product data in real time. The deployment marks Kohl's transition from AI experimentation to AI as a core customer interaction and operations layer.",
-        "lb_tieBack": "Kohl's AI agent depends on accurate, real-time product and inventory data from vendors \u2014 exactly what Logicbroker delivers through automated SKU onboarding and live inventory sync across third-party suppliers."
+        "lb_tieBack": "Kohl's AI agent depends on accurate, real-time product and inventory data from vendors — exactly what Logicbroker delivers through automated SKU onboarding and live inventory sync across third-party suppliers."
       }
     ]
   },
@@ -450,7 +496,7 @@
         "date": "March 10, 2026",
         "url": "https://www.digitalcommerce360.com/2026/03/10/agentic-commerce-faces-reality-check-in-b2b-ecommerce/",
         "summary": "Rather than replacing B2B platforms, AI agents are settling into a role as embedded automation within existing procurement workflows. OpenAI has steered developers toward merchant-controlled checkout systems, and Amazon Buy for Me remains in limited beta. Fewer than 1 in 4 B2B suppliers currently use agentic AI.",
-        "lb_tieBack": "Suppliers on Logicbroker's network are naturally positioned for agent-assisted commerce \u2014 structured catalog data, real-time inventory, and automated EDI are exactly the infrastructure AI agents need to function in B2B without disrupting existing financial controls."
+        "lb_tieBack": "Suppliers on Logicbroker's network are naturally positioned for agent-assisted commerce — structured catalog data, real-time inventory, and automated EDI are exactly the infrastructure AI agents need to function in B2B without disrupting existing financial controls."
       },
       {
         "topic": "AI Retail Ops",
@@ -490,7 +536,7 @@
         "date": "June 8, 2026",
         "url": "https://www.supplychaindive.com/news/dollar-generals-fast-delivery-offering-helps-lift-sales/822127/",
         "summary": "More than 80% of Dollar General delivery orders arrive in under one hour (half within 30 minutes), using 18,000 store locations as distributed fulfillment nodes. The program contributed 70 basis points to same-store sales growth.",
-        "lb_tieBack": "Real-time inventory visibility across distributed fulfillment points is the foundational data layer behind sub-hour delivery at scale \u2014 the same capability Logicbroker provides for retailers managing dropship, 3P, and multi-location fulfillment networks."
+        "lb_tieBack": "Real-time inventory visibility across distributed fulfillment points is the foundational data layer behind sub-hour delivery at scale — the same capability Logicbroker provides for retailers managing dropship, 3P, and multi-location fulfillment networks."
       }
     ]
   },
@@ -500,13 +546,13 @@
     "articles": [
       {
         "topic": "Agentic Commerce",
-        "title": "Google's Universal Cart will soon be available to Walmart, Target shoppers \u2014 getting their buy-in may be the hard part",
+        "title": "Google's Universal Cart will soon be available to Walmart, Target shoppers — getting their buy-in may be the hard part",
         "publisher": "Modern Retail",
         "author": "Mitchell Parton",
         "date": "June 4, 2026",
         "url": "https://www.modernretail.co/technology/google-attracts-retailers-like-walmart-target-to-universal-cart-getting-shoppers-will-be-the-harder-part/",
         "summary": "Google's AI-powered Universal Cart launches in U.S. Search and Gemini this summer, enabling cross-merchant shopping and checkout across Google services, with Walmart, Target, Nike, and Sephora as early retail partners. Analysts warn the cart could erode traffic to retailer-owned sites and question whether enough shoppers will adopt a checkout experience outside familiar brand destinations.",
-        "tieback": "As agentic carts pull purchasing earlier in the discovery funnel, merchants need real-time inventory and enriched product data exposed to AI surfaces \u2014 exactly what Logicbroker's catalog syndication and real-time order visibility infrastructure enables."
+        "tieback": "As agentic carts pull purchasing earlier in the discovery funnel, merchants need real-time inventory and enriched product data exposed to AI surfaces — exactly what Logicbroker's catalog syndication and real-time order visibility infrastructure enables."
       },
       {
         "topic": "Agentic Commerce",
@@ -516,7 +562,7 @@
         "date": "June 4, 2026",
         "url": "https://www.modernretail.co/technology/walmart-executives-see-the-promise-of-ai-but-also-the-costs/",
         "summary": "Walmart's EVP of AI acceleration described a shift toward conversational, intent-based shopping via agents like ChatGPT, where customers ask about camping trips and receive product recommendations mid-conversation. The retailer is advancing agentic commerce partnerships while also capping internal AI tool usage as token costs from heavy employee adoption become a governance challenge.",
-        "tieback": "Walmart's open-partnerships AI posture requires suppliers to have structured, agent-readable product and inventory data at scale \u2014 the core of Logicbroker's transactionable presence on LLMs/agents differentiator."
+        "tieback": "Walmart's open-partnerships AI posture requires suppliers to have structured, agent-readable product and inventory data at scale — the core of Logicbroker's transactionable presence on LLMs/agents differentiator."
       },
       {
         "topic": "AI Retail Ops",
@@ -526,7 +572,7 @@
         "date": "June 4, 2026",
         "url": "https://www.supplychaindive.com/news/starbucks-ditches-ai-inventory-system-after-just-9-months/821104/",
         "summary": "Starbucks ended its computer vision AI inventory counting system after approximately nine months, citing employee complaints about unreliability and miscounting. The chain is returning to traditional stock-keeping methods while CEO Brian Niccol emphasized the need for daily replenishment by end of 2026 to support food program goals.",
-        "tieback": "Starbucks' AI inventory failure underscores that real-time operational visibility requires reliable data infrastructure from the outset \u2014 Logicbroker's automated order and inventory sync gives retailers that foundation so they avoid costly rip-and-replace cycles."
+        "tieback": "Starbucks' AI inventory failure underscores that real-time operational visibility requires reliable data infrastructure from the outset — Logicbroker's automated order and inventory sync gives retailers that foundation so they avoid costly rip-and-replace cycles."
       },
       {
         "topic": "AI Retail Ops",
@@ -535,7 +581,7 @@
         "author": "Max Garland",
         "date": "June 5, 2026",
         "url": "https://www.supplychaindive.com/news/can-ai-gains-give-alternative-delivery-providers-an-edge/821623/",
-        "summary": "Emerging parcel carriers SpeedX, Veho, and UniUni are deploying proprietary AI tools \u2014 from chatbots handling 80% of customer inquiries to ML-based proof-of-delivery photo validation \u2014 to close the technology gap with FedEx and UPS. Experts say AI's lower barrier to entry is leveling the playing field in last-mile delivery as national carriers shift away from lower-margin volume.",
+        "summary": "Emerging parcel carriers SpeedX, Veho, and UniUni are deploying proprietary AI tools — from chatbots handling 80% of customer inquiries to ML-based proof-of-delivery photo validation — to close the technology gap with FedEx and UPS. Experts say AI's lower barrier to entry is leveling the playing field in last-mile delivery as national carriers shift away from lower-margin volume.",
         "tieback": "As AI-enabled alternative carriers gain capability and market share, Logicbroker's intelligent routing and supplier analytics position brands to optimize across an expanding delivery ecosystem without manual configuration for each new carrier."
       },
       {
