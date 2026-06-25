@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-06-25",
+    "label": "Thursday, June 25, 2026",
+    "articles": [
+      {
+        "title": "As AI Agents Transform Commerce, Salesforce Unleashes Its Biggest Agentforce Commerce Release Yet",
+        "publisher": "Salesforce",
+        "author": "Corporate",
+        "pubDate": "2026-06-24",
+        "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/",
+        "category": "Agentic Commerce",
+        "summary": "Salesforce released Shopper Agent, Buyer Agent, and Merchant Agent as generally available, connecting B2C and B2B commerce to external AI apps including ChatGPT and Gemini. AI influenced 20% of global online sales (62B) last holiday season; retailers running their own shopper agents grew sales 59% faster than those that did not.",
+        "soWhat": "Merchants whose catalog and inventory data are not connected to their commerce platform will be unreliable or invisible inside LLM-driven shopping agents, reinforcing the case for Logicbroker's transactionable presence on LLMs and agents."
+      },
+      {
+        "title": "DHL Supply Chain bets on data foundations, robotics, and agentic AI to drive growth",
+        "publisher": "Supply Chain Management Review",
+        "author": "Brian Straight",
+        "pubDate": "2026-06-17",
+        "url": "https://www.scmr.com/article/dhl-supply-chain-bets-on-data-foundations-robotics-and-agentic-ai-to-drive-growth",
+        "category": "Agentic AI in Operations",
+        "summary": "DHL Supply Chain head of digitalization Brian Gaunt explains the company's strategy of prioritizing clean data foundations and scalable robotics before AI. DHL operates 8,000+ robots globally and is building agentic AI models with agent-to-agent communication structures to manage exceptions and drive decisions, targeting a doubling of its business by 2030.",
+        "soWhat": "DHL's insistence on clean, normalized operational data as the prerequisite for agentic AI mirrors the challenge Logicbroker solves for retailers: suppliers with messy or disconnected data cannot participate meaningfully in automated or agent-driven commerce flows."
+      },
+      {
+        "title": "How brands, retailers are using AI — and what they won't let it touch",
+        "publisher": "Modern Retail",
+        "author": "Mitchell Parton",
+        "pubDate": "2026-06-25",
+        "url": "https://www.modernretail.co/technology/how-brands-retailers-are-using-ai-and-what-they-wont-let-it-touch/",
+        "category": "AI Retail Ops",
+        "summary": "Coverage from CommerceNext Growth Summit shows execs at Ulta, Tecovas, Pandora, JD Finish Line, Kendra Scott, and Authentic Brands Group deploying AI for internal operations (email management, customer service, propensity modeling) while preserving human judgment in customer-facing interactions.",
+        "soWhat": "Retailers pushing AI into vendor management and operations can only go as deep as the quality of their supplier data connections; automated reordering and merchandising decisions require accurate, real-time inventory and catalog data from every supplier in the network."
+      },
+      {
+        "title": "The real reason supply chain tech ROI falls short",
+        "publisher": "Supply Chain Management Review",
+        "author": "Brian Straight",
+        "pubDate": "2026-06-19",
+        "url": "https://www.scmr.com/article/supply-chain-tech-roi-falls-short",
+        "category": "AI Retail Ops",
+        "summary": "JBF Consulting research shows 89% of supply chain technology implementations realized less than 76% of projected ROI; failures stem from selecting software before defining strategy, underfunding change management, and weak data governance. AI deployments face the same pitfall: without clean master data and defined use cases, tools underdeliver.",
+        "soWhat": "Organizations that rush to automate before cleaning their supplier data and order workflows face the same failure mode; Logicbroker's structured onboarding and EDI automation give retailers a clean data foundation that AI tools can actually use."
+      },
+      {
+        "title": "Surging AI adoption doesn't match mass layoff narrative",
+        "publisher": "Supply Chain Management Review",
+        "author": "Brian Straight",
+        "pubDate": "2026-06-23",
+        "url": "https://www.scmr.com/article/surging-ai-adoption-doesnt-match-mass-layoff-narrative",
+        "category": "AI Thought Leadership",
+        "summary": "Gartner analysis of 1.1 million affected jobs in H2 2025 found only 1% of layoffs were directly tied to AI productivity gains, while Gallup data shows worker anxiety about AI displacement is growing faster than actual job losses. Gartner warns that experience starvation from reduced junior hiring poses a bigger long-term risk than mass displacement.",
+        "soWhat": "Supply chain teams adopting AI can redeploy people toward higher-value oversight and exception management roles rather than eliminating them, a transition that depends on having connected, real-time data systems underneath."
+      }
+    ]
+  },
+  {
     "date": "2026-06-24",
     "label": "Wednesday, June 24, 2026",
     "articles": [
