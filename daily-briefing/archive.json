@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-06-26",
+    "label": "Friday, June 26, 2026",
+    "articles": [
+      {
+        "title": "How retailers are thinking about omnichannel in the age of AI",
+        "publisher": "Retail Dive",
+        "author": "Lara Ewen",
+        "pubDate": "2026-06-25",
+        "url": "https://www.retaildive.com/news/ulta-stitch-fix-tapestry-retail-omnichannel-ai-age/823707/",
+        "summary": "Executives from Ulta, Stitch Fix, and Tapestry at CommerceNext say consumer discovery is shifting toward LLM-based agents (ChatGPT, Gemini), where AI recommends products by solving problems rather than surfacing brand names. Loyalty programs remain the critical connective tissue across channels as omnichannel evolves to include agentic platforms.",
+        "soWhat": "Retailers deploying AI-driven omnichannel discovery depend on real-time inventory accuracy across fulfillment nodes to deliver on AI-initiated purchases, exactly what Logicbroker's visibility and intelligent routing capabilities power."
+      },
+      {
+        "title": "How Gen AI is Disrupting B2B Buying Decisions",
+        "publisher": "Harvard Business Review",
+        "author": "Amit Joshi, Ivy Buche, Caroline Schwaer",
+        "pubDate": "2026-06-12",
+        "url": "https://hbr.org/2026/06/how-gen-ai-is-disrupting-b2b-buying-decisions",
+        "summary": "Generative AI is automating B2B vendor research, proposal scoring, and supplier shortlisting, shifting purchasing influence from sales relationships to machine-readable catalog and pricing data. Suppliers unable to present clean, structured data to AI procurement tools face systematic deprioritization regardless of relationship history.",
+        "soWhat": "Logicbroker's transactionable LLM presence and structured EDI/catalog infrastructure position it as discoverable and executable in agentic B2B procurement flows where unstructured suppliers get filtered out."
+      },
+      {
+        "title": "AI runs on compute; scaling it runs on logistics",
+        "publisher": "Supply Chain Management Review",
+        "author": "Ya-Han Brownlee-Chen",
+        "pubDate": "2026-06-24",
+        "url": "https://www.scmr.com/article/ai-runs-on-compute-scaling-it-runs-on-logistics",
+        "summary": "Scaling AI requires moving massive volumes of compute hardware, GPUs, and data center components globally, exposing the same supply chain fragility AI is supposed to solve: visibility gaps, supplier coordination failures, and last-mile bottlenecks. The logistics of AI infrastructure is itself a supply chain orchestration problem.",
+        "soWhat": "The supply chain orchestration Logicbroker delivers (real-time visibility, supplier coordination, automated order flows at scale) is foundational to the networks that AI infrastructure itself depends on to scale."
+      },
+      {
+        "title": "AI-powered supply chains require work redesign, not just process automation",
+        "publisher": "Supply Chain Management Review",
+        "author": "Brian Straight",
+        "pubDate": "2026-06-16",
+        "url": "https://www.scmr.com/article/ai-powered-supply-chains-require-work-redesign",
+        "summary": "AI in supply chains does not automate existing work so much as reveal which manual processes can be eliminated through proper data architecture and redesigned workflows. Companies that layer AI onto fragmented data and broken processes get faster failures; measurable P&L impact requires rebuilding work around AI's actual capabilities.",
+        "soWhat": "Redesigning supply chain work for AI outcomes requires the clean data foundation and automated execution layer Logicbroker provides, eliminating the manual integration overhead that prevents AI from delivering measurable business impact."
+      },
+      {
+        "title": "Visa plugs OpenAI into payments infrastructure",
+        "publisher": "Axios",
+        "author": "Madison Mills",
+        "pubDate": "2026-06-10",
+        "url": "https://www.axios.com/2026/06/10/visa-chatgpt-agents-commerce",
+        "summary": "Visa is integrating its payments infrastructure directly into OpenAI's agent platform, enabling AI agents to complete purchases autonomously within user-set spending caps and merchant restrictions. With roughly 1 in 5 transactions already LLM-influenced, the partnership establishes foundational rails for end-to-end agentic commerce.",
+        "soWhat": "As AI agents gain the ability to transact autonomously through Visa/OpenAI payment rails, suppliers and retailers without transactionable catalog presence will be bypassed at checkout. Logicbroker's agentic discovery and execution infrastructure directly addresses this gap."
+      }
+    ]
+  },
+  {
     "date": "2026-06-25",
     "label": "Thursday, June 25, 2026",
     "articles": [
