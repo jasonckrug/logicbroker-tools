@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-01",
+    "label": "Tuesday, July 1, 2026",
+    "articles": [
+      {
+        "title": "Amazon buys ads in ChatGPT to promote Prime Day",
+        "publisher": "Modern Retail",
+        "author": "Allison Smith",
+        "pubDate": "2026-06-26",
+        "url": "https://www.modernretail.co/technology/amazon-buys-ads-in-chatgpt-to-promote-prime-day/",
+        "summary": "Amazon purchased sponsored placements in ChatGPT to promote Prime Day, directing shoppers to its sale when they searched for product deals. The piece also covers how Amazon is simultaneously blocking AI shopping agents from scraping its marketplace, revealing the tension between ad-driven discovery and autonomous purchasing in LLM interfaces.",
+        "soWhat": "Retailers experimenting with AI-native ad channels signals that product discovery is shifting toward LLM interfaces, where suppliers without transactionable catalog presence will be invisible at the moment of purchase."
+      },
+      {
+        "title": "The now and next steps retailers should take in the agentic commerce era",
+        "publisher": "Retail Customer Experience",
+        "author": "Nicole Jass, SVP Enterprise Strategy, Signifyd",
+        "pubDate": "2026-06-30",
+        "url": "https://www.retailcustomerexperience.com/blogs/the-now-and-next-steps-retailers-should-take-in-the-agentic-commerce-era/",
+        "summary": "Drawing on Signifyd Commerce Network data showing LLM referrals up 600%+ year-over-year but agent-executed purchases under 1% of all orders, the author argues merchants must structure product catalogs and inventory data now for agent discoverability. Traditional fraud signals fail for agentic orders, requiring an entirely new trust framework.",
+        "soWhat": "Accurate, consistent product catalog data is the prerequisite for agentic commerce readiness, aligning directly with Logicbroker's SKU onboarding speed and real-time inventory visibility as a transactionable LLM presence."
+      },
+      {
+        "title": "HelloFresh boosts chilled fulfillment capacity via robotics",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "pubDate": "2026-06-30",
+        "url": "https://www.supplychaindive.com/news/hellofresh-boosts-chilled-fulfillment-capacity-via-robotics/823994/",
+        "summary": "HelloFresh expanded its chilled fulfillment from 100 to 500 SKUs by deploying Locus Origin robots at its Phoenix facility, completing order cycles in under 4 minutes. The partnership grew from a 13-robot pilot in July 2025 to 39 robots within three months, driven by measurable fulfillment cost improvements.",
+        "soWhat": "The 5x SKU capacity expansion via automation illustrates why real-time inventory visibility and SKU-level data integrity are prerequisites for any fulfillment robotics investment to deliver ROI."
+      },
+      {
+        "title": "Advance Auto Parts expands OneRail partnership for same-day fulfillment",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "pubDate": "2026-06-30",
+        "url": "https://www.supplychaindive.com/news/advance-auto-parts-expands-onerail-partnership-for-same-day-fulfillment/824015/",
+        "summary": "Advance Auto Parts expanded its partnership with OneRail's delivery orchestration platform, coordinating routing decisions across 4,000+ store locations for same-day fulfillment. The system routes drivers to multiple store locations to complete orders rather than waiting for scheduled hub runs.",
+        "soWhat": "Intelligent routing across a distributed store network mirrors Logicbroker's supplier analytics and order routing capabilities, where real-time inventory visibility is the prerequisite for dynamic, cost-efficient fulfillment decisions."
+      },
+      {
+        "title": "AI dominates Shoptalk Europe 2026 conversations: the biggest retail technology stories from June",
+        "publisher": "Retail Technology Innovation Hub",
+        "author": "RTIH Staff",
+        "pubDate": "2026-06-27",
+        "url": "https://retailtechinnovationhub.com/home/2026/6/27/ai-dominates-shoptalk-europe-2026-conversations-the-biggest-retail-technology-stories-from-june",
+        "summary": "A roundup of June's biggest retail technology stories centered on how AI dominated Shoptalk Europe 2026 discussions, covering deployments across Ocado Group, Asda, Tesco, M&S, Hanshow, and others. The piece reflects how AI has shifted from a features discussion to the dominant operating framework across retail.",
+        "soWhat": "As AI becomes the organizing principle for retail operations, the demand for real-time supplier data and seamless order flows increases, directly validating Logicbroker's integrated dropship and inventory visibility platform."
+      }
+    ]
+  },
+  {
     "date": "2026-06-30",
     "label": "Tuesday, June 30, 2026",
     "articles": [
