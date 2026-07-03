@@ -1,1 +1,52 @@
-
+[
+  {
+    "date": "Friday, July 3, 2026",
+    "articles": [
+      {
+        "title": "Inside AI's $5 trillion quest to give agentic AI a sense of taste",
+        "publisher": "Fast Company",
+        "author": "Elizabeth Segran",
+        "date": "2026-06-26",
+        "url": "https://www.fastcompany.com/91549049/agentic-commerce-ai-human-taste",
+        "summary": "Shopping agents from OpenAI, Google and Anthropic can browse and compare products but still struggle to match people with brands that fit their taste, since large language models lack the aesthetic judgment behind most real purchase decisions. The piece traces the plumbing being built for agentic commerce, including OpenAI and Stripe's Agentic Commerce Protocol and Google and Shopify's Universal Commerce Protocol, and notes that checkout inside AI chat still stumbles on inventory and personalization gaps.",
+        "tieback": "Agentic checkout only works if the AI can see accurate, real-time product and inventory data, the same data layer Logicbroker's real-time order and inventory visibility and transactionable LLM presence are built to supply."
+      },
+      {
+        "title": "Square launches agentic commerce integrations with ChatGPT, Claude",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-07-01",
+        "url": "https://www.digitalcommerce360.com/2026/07/01/square-agentic-commerce-integrations-chatgpt-claude/",
+        "summary": "Square rolled out a ChatGPT app and a Claude plugin that let food and beverage sellers on Square Online Ordering get discovered and take orders directly inside those AI assistants, with no new contracts or marketplace commissions beyond standard processing fees. Square is also joining the AAIF Agentic Commerce Working Group and partnering with Google on the Universal Commerce Protocol for local ordering and delivery.",
+        "tieback": "AI assistants are becoming a real order channel that small and mid-size merchants need to plug into, the same transactionable presence on LLMs and agents that Logicbroker is building toward for its supplier network."
+      },
+      {
+        "title": "EXCLUSIVE: The top CPG retailer fulfillment pain points are...",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-01",
+        "url": "https://chainstoreage.com/exclusive-top-cpg-retailer-fulfillment-pain-points-are",
+        "summary": "A Dynata survey of 50 CPG retail executives, commissioned by Radial, found that 48% cite technology integrations and data visibility as their top fulfillment pain point, ahead of DTC fulfillment speed (38%) and routing guide compliance and chargebacks (30%). More than half of respondents also said their 3PL needs to integrate with Salesforce, SAP, Oracle, NetSuite, Amazon Seller/Vendor Central and Shopify, while only 30% flagged EDI integration specifically.",
+        "tieback": "Technology integration gaps and routing guide chargebacks are exactly what automated EDI and real-time order and inventory visibility are built to eliminate, making this survey a direct read on the pain Logicbroker sells against."
+      },
+      {
+        "title": "Digital twins, software maturity lead manufacturing automation trends",
+        "publisher": "Supply Chain Dive",
+        "author": "Nathan Owens and Katie Pyzyk",
+        "date": "2026-07-02",
+        "url": "https://www.supplychaindive.com/news/digital-twins-software-maturity-lead-manufacturing-automation-trends/824288/",
+        "summary": "At the Automate conference, speakers described engineers using large language models through an MCP-style agent interface to pull technical specs and quotes for faster, smarter robot simulation. They also warned that AI still requires per-process configuration and that finance teams want quality and risk cases, not headcount savings, before greenlighting automation spend.",
+        "tieback": "The same MCP-style pattern that lets an AI agent pull structured technical data on demand is the model Logicbroker applies to supplier analytics and intelligent routing across a dropship network."
+      },
+      {
+        "title": "4 experts on how to make AI investments worthwhile",
+        "publisher": "Retail Dive (CX Dive)",
+        "author": "Bryan Wassel",
+        "date": "2026-07-02",
+        "url": "https://www.retaildive.com/news/experts-how-to-make-ai-investments-worthwhile/824254/",
+        "summary": "Leaders at Customer Contact Week Las Vegas warned that AI vendors often oversell capabilities that add friction instead of value, and urged buyers to understand the true cost to scale before signing on and to judge vendors on long-term reliability rather than a polished demo. They also stressed that any AI rollout has to start from what customers actually want, not from what the technology can technically do.",
+        "tieback": "The advice to weigh a vendor's long-term reliability and real cost to scale over a slick demo is a useful lens for retailers evaluating any AI-driven commerce platform, including one built for dropship and marketplace onboarding."
+      }
+    ]
+  }
+]
