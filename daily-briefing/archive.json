@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-06",
+    "label": "Monday, July 6, 2026",
+    "articles": [
+      {
+        "title": "Visa Payments Forum in Paris: Agentic Commerce is Coming",
+        "publisher": "FinTech Magazine",
+        "author": "Natalia Elliot",
+        "date": "2026-07-02",
+        "url": "https://fintechmagazine.com/news/visa-payments-forum-in-paris-agentic-commerce-is-coming",
+        "summary": "At its Payments Forum in Paris, Visa announced that AI agents can now search, select, and initiate purchases on merchant websites across Europe using its Intelligent Commerce infrastructure, working with 30 European issuers and merchants including lastminute.com and Frasers. Visa also expanded Visa Agentic Ready to merchants through a new Trusted Agent Protocol and Agent Directory, and said the same model will extend to B2B payment scenarios.",
+        "tieback": "As payment networks build the rails for agents to transact directly with individual merchants, suppliers whose product, price, and inventory data isn't clean and real-time will be invisible to the agent at the exact moment it's ready to buy."
+      },
+      {
+        "title": "Square Intros ChatGPT and Claude Integrations for Sellers",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-07-01",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/square-intros-chatgpt-and-claude-integrations-for-sellers/",
+        "summary": "Square launched a ChatGPT app and Claude plugin that let merchants get discovered and take orders directly inside AI conversations, starting with food and beverage sellers on Square Online Ordering, with automatic enrollment and no added fees. Square is also extending AI-powered discovery to voice commerce through a partnership with Amazon's Alexa+.",
+        "tieback": "Square's zero-setup approach lowers the bar for showing up inside agent conversations, raising the stakes for suppliers that still can't connect accurate inventory and order data fast enough to participate."
+      },
+      {
+        "title": "Brands focus agentic AI on lower-level customer experience workflows",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-06-30",
+        "url": "https://chainstoreage.com/news-briefs/2026-06-30?article=brands-focus-agentic-ai-lower-level-customer-experience-workflows",
+        "summary": "An Infobip 2026 Customer Experience Maturity Report found 53% of global brands have adopted agentic AI for lower-value tasks like feedback collection and reminders, but adoption drops sharply for higher-value workflows such as loyalty management (35%), delivery management (28%), and returns and refunds (15%). Infobip's chief revenue officer attributes the gap to fragmented systems rather than a lack of appetite for deeper automation.",
+        "tieback": "The steep drop-off in agentic AI adoption for delivery management and returns tracks directly to fragmented order and inventory data, the gap that real-time order and inventory visibility is built to close."
+      },
+      {
+        "title": "Amazon invests $1 billion to embed AI engineers with clients",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-01",
+        "url": "https://chainstoreage.com/news-briefs/2026-07-01?article=amazon-invests-1-billion-embed-ai-engineers-clients",
+        "summary": "AWS is committing $1 billion to a new Forward Deployed Engineering unit that embeds engineering teams directly inside customer organizations to build and deploy production agentic AI systems in weeks rather than months. Amazon frames it as a break from traditional consulting, with customers left owning both the finished system and the in-house skills to extend it.",
+        "tieback": "As cloud providers race to shrink the time between deciding to deploy AI and having it live in production, the retailers who benefit most will be the ones whose supplier and inventory data is already clean enough for an embedded engineering team to build on."
+      },
+      {
+        "title": "EXCLUSIVE: The top CPG retailer fulfillment pain points are...",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-01",
+        "url": "https://chainstoreage.com/news-briefs/2026-07-01?article=exclusive-top-cpg-retailer-fulfillment-pain-points-are",
+        "summary": "A Dynata survey of 50 CPG retail executives conducted for Radial found 48% cite technology integrations and data visibility as their top fulfillment pain point, ahead of e-commerce fulfillment speed (38%) and routing guide compliance and chargebacks (30%). Two-thirds of respondents said it's highly important that a single 3PL partner handle both retail replenishment and e-commerce fulfillment, and 30% named EDI integration a required 3PL capability.",
+        "tieback": "Technology integration and data visibility topping the pain point list is a direct match for what automated EDI and real-time order and inventory visibility are built to fix in a CPG-heavy fulfillment conversation."
+      }
+    ]
+  },
+  {
     "date": "Friday, July 3, 2026",
     "articles": [
       {
