@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-07",
+    "label": "Tuesday, July 7, 2026",
+    "articles": [
+      {
+        "title": "Amazon offers agentic shoppers up to 365 days of price history",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-06-29",
+        "url": "https://chainstoreage.com/amazon-offers-agentic-shoppers-365-days-price-history",
+        "summary": "Amazon expanded its Alexa for Shopping assistant to show 30, 90, and 365 days of price history directly on product pages, alongside existing agentic features like auto-buying at a target price. The rollout continues Amazon's push to have its AI shopping layer handle more of the buying decision, not just product discovery.",
+        "tieback": "For dropship and 3P sellers, this raises the bar on how fast and accurately supplier pricing and inventory data needs to sync back to marketplace listings, since stale price or stock data now gets surfaced directly to AI-assisted shoppers."
+      },
+      {
+        "title": "Adyen on Agentic Commerce: The AI Was Never the Hard Part",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-06-29",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/adyen-on-agentic-commerce-the-ai-was-never-the-hard-part/",
+        "summary": "Adyen's global head of agentic commerce, Karan Katyal, told PYMNTS the industry sits at 0.5 on a five-point maturity scale and will roughly triple activity in the next year. He said the real bottleneck isn't the AI itself but the infrastructure underneath it: machine-readable product catalogs, fragmented protocols, and unresolved questions about fraud and liability when an agent transacts on a shopper's behalf.",
+        "tieback": "The catalog and trust gap Katyal describes is exactly where automated EDI and real-time order and inventory visibility matter most, since an agent can't transact against a supplier's product data if that data isn't structured, current, and machine-readable in the first place."
+      },
+      {
+        "title": "How AI Erased a $184 Billion Supply Chain Blind Spot",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-06-29",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/how-ai-erased-a-184-billion-supply-chain-blind-spot/",
+        "summary": "C.H. Robinson's new Lean AI Engineer tool assesses an entire supply chain in under 30 minutes and acts on inefficiencies in real time, replacing a process that used to take four weeks of backward-looking analysis. Annual supply chain disruption costs of $184 billion are driven less by the disruptions themselves than by the lag between spotting a problem and acting on it.",
+        "tieback": "This is the same lag that real-time order and inventory visibility plus intelligent routing and supplier analytics are built to close, turning weeks of backward-looking reporting into an operational feed suppliers and retailers can act on immediately."
+      },
+      {
+        "title": "The top supply chain stress sources include…",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-06-29",
+        "url": "https://chainstoreage.com/top-supply-chain-stress-sources-include",
+        "summary": "A new Inspectorio survey of nearly 200 supply chain professionals found compliance strain rising while budgets flatten, with only 21% of organizations having a multi-tier traceability strategy. Inspectorio's CEO said the biggest obstacle to effective AI adoption isn't the technology, it's insufficient data quality, change management gaps, and lack of cross-functional integration.",
+        "tieback": "That data quality bottleneck is a direct argument for rapid, standardized vendor onboarding and automated EDI, since AI initiatives stall when supplier and compliance data arrives fragmented or in inconsistent formats."
+      },
+      {
+        "title": "AI Is Changing How Customers Choose Your Business",
+        "publisher": "Harvard Business Review",
+        "author": "Graham Kenny and Ganna Pogrebna",
+        "date": "2026-07-06",
+        "url": "https://hbr.org/2026/07/ai-is-changing-how-customers-choose-your-business",
+        "summary": "Graham Kenny and Ganna Pogrebna argue that as AI increasingly mediates how business customers research and choose suppliers, competitive advantage is shifting from direct customer understanding to managing how AI systems represent a company. They cite three companies that adapted by screening AI-generated inquiries, monitoring how AI tools describe their business, and replacing periodic reviews with continuous monitoring of AI-generated market perceptions.",
+        "tieback": "For B2B sellers on marketplaces, this reinforces the case for a transactionable presence on LLMs and agents, since suppliers not structured for AI-mediated discovery risk being screened out before a buyer ever sees their catalog."
+      }
+    ]
+  },
+  {
     "date": "2026-07-06",
     "label": "Monday, July 6, 2026",
     "articles": [
