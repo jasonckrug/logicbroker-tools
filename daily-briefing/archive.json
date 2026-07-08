@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-07-08",
+    "label": "Wednesday, July 8, 2026",
+    "articles": [
+      {
+        "title": "As AI Agents Transform Commerce, Salesforce Unleashes Its Biggest Agentforce Commerce Release Yet",
+        "publisher": "Salesforce Newsroom",
+        "author": "",
+        "date": "2026-07-06",
+        "url": "https://www.salesforce.com/ap/news/press-releases/2026/07/06/as-ai-agents-transform-commerce-salesforce-unleashes-its-biggest-agentforce-commerce-release-yet/",
+        "summary": "Salesforce made its Shopper Agent, Buyer Agent, and Merchant Agent generally available, with native integration into ChatGPT now live and Google Search and Gemini integrations coming soon. The release ties agent-led shopping directly to a retailer's own catalog, inventory, and order data rather than treating AI as a bolt-on chatbot.",
+        "tieback": "Salesforce is betting that agent-native commerce still lives or dies on real-time inventory and order data behind the scenes, the same order and inventory visibility gap Logicbroker closes for retailers connecting to dropship and 3P suppliers."
+      },
+      {
+        "title": "A Tale of Two Amazon Prime Days",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-07-02",
+        "url": "https://chainstoreage.com/tale-two-amazon-prime-days",
+        "summary": "Amazon's June 2026 Prime Day grew total U.S. online spend 9.3% year over year to $26.4 billion, but average order size and household spend both slipped versus 2025. AI-driven traffic to retail sites rose 89% year over year during the event and converted 40% better than traffic from other channels.",
+        "tieback": "AI-referred traffic converting well above other channels is a preview of what agent-driven order volume will demand from a retailer's backend: real-time order and inventory visibility across suppliers so those conversions don't turn into stockouts or delayed fulfillment."
+      },
+      {
+        "title": "Why ERP Isn't Just Another Platform You Can Rebuild With AI Code",
+        "publisher": "SupplyChainBrain (Think Tank)",
+        "author": "Chris Lloyd",
+        "date": "2026-07-02",
+        "url": "https://www.supplychainbrain.com/blogs/1-think-tank/post/44187-why-erp-isnt-just-another-platform-you-can-rebuild-with-ai-code",
+        "summary": "The piece argues manufacturers shouldn't try to rebuild core ERP systems with AI-generated (\"vibe coded\") software, citing a finding that 45% of AI-generated code contains security flaws. It recommends applying AI to narrow, well-specified tasks like document processing and shop floor visibility rather than replacing systems of record.",
+        "tieback": "The caution against DIY AI rebuilds of core systems supports the case for platforms with proven, automated EDI and integration logic already built in, rather than asking internal teams to stitch together fragile custom code for vendor onboarding and order routing."
+      },
+      {
+        "title": "When Developing an AI Strategy, Beware the Urgency Trap",
+        "publisher": "Harvard Business Review",
+        "author": "David De Cremer",
+        "date": "2026-07-01",
+        "url": "https://hbr.org/2026/07/when-developing-an-ai-strategy-beware-the-urgency-trap",
+        "summary": "De Cremer cites survey data showing roughly 90% of executives report no measurable productivity gain from AI over the past three years, arguing that framing AI as a fix for urgent bottlenecks causes initiatives to start fast but fail to deliver lasting value. He recommends leaders prioritize clarity of purpose over urgency when building an AI strategy.",
+        "tieback": "The \"urgency trap\" shows up in retail tech buying too: chasing a quick AI fix for onboarding or fulfillment pain without addressing the underlying supplier connectivity and data problems that rapid vendor onboarding and intelligent routing are built to solve properly."
+      }
+    ]
+  },
+  {
     "date": "2026-07-07",
     "label": "Tuesday, July 7, 2026",
     "articles": [
