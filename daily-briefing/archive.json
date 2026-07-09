@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-09",
+    "label": "Thursday, July 9, 2026",
+    "articles": [
+      {
+        "title": "Agentic Payments Give CFOs Usage Pricing With Subscription Discipline",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-07-08",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/agentic-payments-give-cfos-usage-pricing-with-subscription-discipline/",
+        "summary": "PYMNTS covers Cloudflare's new Monetization Gateway and the x402 payment protocol, which lets systems charge for API calls, data pulls and other machine-triggered requests using the long-unused HTTP 402 status code. The piece argues the nearer-term opportunity for agentic AI isn't consumer shopping but enterprise back-office transactions, where CFOs will want batch settlement, spending limits and audit trails rather than a stream of one-off micropayments.",
+        "tieback": "The reconciliation problem PYMNTS describes, tracking which workflow, vendor and cost center a machine-triggered transaction belongs to, is the same problem Logicbroker's automated EDI already solves for supplier order and invoice data today."
+      },
+      {
+        "title": "Are grocers making smart investments in back-end AI?",
+        "publisher": "Grocery Dive",
+        "author": "Jeff Wells",
+        "date": "2026-07-07",
+        "url": "https://www.grocerydive.com/news/pardon-the-disruption-grocers-ai-back-end-operations/823191/",
+        "summary": "Grocery Dive details how grocers like Hy-Vee, Grocery Outlet and Albertsons are getting more value from back-end AI on forecasting, replenishment and quality inspection than from consumer-facing chatbots, but sources warn that fragmented, disconnected data undercuts the payoff. Experts say moving toward agentic retailing requires a connected \"data fabric\" spanning inventory, vendor and store systems before AI can make reliable autonomous decisions.",
+        "tieback": "This is the gap Logicbroker closes for dropship and 3P networks: real-time order and inventory visibility across suppliers gives back-end AI the connected data it needs, instead of the siloed vendor data the article describes as holding grocers back."
+      },
+      {
+        "title": "Retailers plan to invest deeper in AI, cybersecurity this year",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-07-08",
+        "url": "https://www.retaildive.com/news/retailers-increase-investments-spending-ai-digital-technology/824613/",
+        "summary": "A KPMG survey of 250 retail executives found 52% of retailers now spend $50 million or more a year on technology, with AI and agentic AI among the top areas for planned spending increases. Just 42% of respondents say they're deploying AI at scale today, though 74% expect to reach that point within 12 months.",
+        "tieback": "Retailers scaling that AI budget still need current supplier and inventory data underneath it, which is exactly what automated EDI and real-time inventory visibility are built to provide."
+      },
+      {
+        "title": "The Mess Most Companies Call An AI Strategy",
+        "publisher": "Forbes (Forbes Technology Council)",
+        "author": "David Van Ronk",
+        "date": "2026-07-02",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/07/02/the-mess-most-companies-call-an-ai-strategy/",
+        "summary": "Van Ronk argues most companies confuse a pile of AI tools and pilots with an actual strategy, noting that teams forget why past decisions were made and end up re-litigating the same choices. He frames a real AI strategy as a documented, living record of reasoning rather than a static plan filed away after a kickoff meeting.",
+        "tieback": "This is a useful gut check for prospects: a platform decision like automated EDI or real-time supplier visibility needs documented reasoning up front, or the same vendor onboarding debate resurfaces every time leadership changes."
+      },
+      {
+        "title": "How AI Is Redefining Business Planning",
+        "publisher": "Forbes (Forbes Business Council)",
+        "author": "Tom Strohl",
+        "date": "2026-07-02",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/07/02/how-ai-is-redefining-business-planning/",
+        "summary": "Strohl writes that AI is compressing planning cycles that once took a month into a matter of days, letting leaders spend less time assembling data and more time acting on it. The piece frames this as a shift in what planning teams are for, less data wrangling, more judgment calls on what to do with a faster stream of insight.",
+        "tieback": "That shift only holds up if the underlying operational data, like vendor order status and inventory position, is current, which is the layer real-time inventory and order visibility is meant to keep accurate."
+      }
+    ]
+  },
+  {
     "date": "2026-07-08",
     "label": "Wednesday, July 8, 2026",
     "articles": [
