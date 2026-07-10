@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-10",
+    "label": "Friday, July 10, 2026",
+    "articles": [
+      {
+        "title": "How Salesforce is positioning itself in the agentic AI landscape",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-07-08",
+        "url": "https://www.digitalcommerce360.com/2026/07/08/salesforce-agentic-ai-landscape/",
+        "summary": "Salesforce framed its latest ecommerce release, including the general availability of Cimulate product discovery technology and a new Storefront Next front end, as its biggest agentic commerce push yet. The release also deepens integrations with OpenAI's Agentic Commerce Protocol and Google's Universal Commerce Protocol, letting merchants surface catalogs directly inside ChatGPT and Gemini.",
+        "tieback": "As Salesforce pipes retailer catalogs into ChatGPT and Gemini through ACP and UCP, the backend data feeding those protocols has to be clean and current or the connection is worthless, which is exactly the automated EDI and real-time inventory visibility problem Logicbroker solves upstream."
+      },
+      {
+        "title": "Batteries Plus' modernization journey prepared it for agentic AI",
+        "publisher": "Digital Commerce 360",
+        "author": "Abbas Haleem",
+        "date": "2026-07-07",
+        "url": "https://www.digitalcommerce360.com/2026/07/07/batteries-plus-agentic-ai-modernization-journey/",
+        "summary": "Batteries Plus spent years building what it calls an AI-Ready Enterprise Architecture to future-proof its tech stack, not knowing it would become the foundation for its current agentic AI tools. The retailer has since cut failed product searches by 25% and now contains 35-40% of customer service inquiries through automation, with propensity modeling planned next.",
+        "tieback": "Batteries Plus only got agentic AI results because it fixed its data foundation first, the same precondition rapid vendor onboarding and automated EDI create for dropship and 3P suppliers before any agent can act reliably on their catalog."
+      },
+      {
+        "title": "Brookshire Brothers rolls out AI tool for planning promotions",
+        "publisher": "Grocery Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-07-08",
+        "url": "https://www.grocerydive.com/news/brookshire-brothers-rolls-out-ai-tool-for-planning-promotions/824776/",
+        "summary": "Grocery chain Brookshire Brothers completed its rollout of Cognira's PromoAI, giving the employee-owned, 100-plus-store retailer a single platform to plan, forecast, and evaluate promotions across departments. The tool is meant to cut manual planning inefficiencies and give teams a clearer read on promotional ROI after each event.",
+        "tieback": "Promotion forecasting is only as good as the inventory and supplier data behind it, which is why real-time order and inventory visibility matters as much as the forecasting model itself when a retailer is deciding what to discount and when."
+      },
+      {
+        "title": "Scotts Miracle-Gro widens tech partnership for supply chain AI",
+        "publisher": "Supply Chain Dive",
+        "author": "Antone Gonsalves",
+        "date": "2026-07-09",
+        "url": "https://www.supplychaindive.com/news/scotts-miracle-gro-widens-tech-partnership-for-supply-chain-ai/824764/",
+        "summary": "Scotts Miracle-Gro is expanding its partnership with planning software provider Kinaxis to unify demand planning, decision-making, and execution onto a single AI-assisted platform. The company expects the move to improve responsiveness and resilience across its lawn-care and fertilizer supply chain.",
+        "tieback": "Unified planning-to-execution platforms like this only perform as well as the order and inventory signals feeding them, which is the operational layer Logicbroker's intelligent routing and supplier analytics provide across a dropship or 3P vendor network."
+      },
+      {
+        "title": "Why AI Shopping Won't Disrupt Every Retail Category Equally",
+        "publisher": "Forbes",
+        "author": "Michelle Evans",
+        "date": "2026-07-09",
+        "url": "https://www.forbes.com/sites/michelleevans1/2026/07/09/ai-shopping-wont-disrupt-every-retail-category-equally/",
+        "summary": "Forbes retail analyst Michelle Evans argues retailers should assess AI shopping disruption category by category rather than apply one blanket strategy, since some categories benefit far more from AI's ability to cut shopper uncertainty and comparison effort than others.",
+        "tieback": "Category-level AI readiness comes down to whether a retailer's product and inventory data in that category is current and structured, which is the SKU onboarding speed and catalog data quality question that determines which categories actually show up well in agentic discovery."
+      }
+    ]
+  },
+  {
     "date": "2026-07-09",
     "label": "Thursday, July 9, 2026",
     "articles": [
