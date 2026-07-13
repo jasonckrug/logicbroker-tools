@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-13",
+    "label": "Monday, July 13, 2026",
+    "articles": [
+      {
+        "title": "Visa and BBVA Prove Today's Rails Can Handle Agentic Payments",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-07-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/visa-and-bbva-prove-todays-rails-can-handle-agentic-payments/",
+        "summary": "BBVA completed its first AI agent-initiated payment transaction in partnership with Visa, using real card credentials under the Visa Agentic Ready program in Europe. The transaction relied on tokenization, real-time fraud monitoring and biometric authentication to satisfy EU strong customer authentication rules.",
+        "tieback": "As banks start running live agent-initiated transactions over existing card rails, the merchants on the other end need clean, real-time product and order data or the agent has nothing trustworthy to transact against, which is the gap Logicbroker's automated EDI and real-time order and inventory visibility close."
+      },
+      {
+        "title": "Ambi Robotics and Pickle Robot Integrate AI-Powered Robots to Automate Inbound Warehouse Logistics",
+        "publisher": "Robotics & Automation News",
+        "author": "Sam Francis",
+        "date": "2026-07-06",
+        "url": "https://roboticsandautomationnews.com/2026/07/06/ambi-robotics-and-pickle-robot-integrate-ai-powered-robots-to-automate-inbound-warehouse-logistics/103077/",
+        "summary": "Ambi Robotics and Pickle Robot integrated their AI-powered robotic systems into a single inbound logistics workflow that unloads trailers and stacks pallets with minimal human intervention, built in response to demand from Fortune 500 retailers. The companies say the combined system runs inside existing warehouse infrastructure without requiring facility redesigns.",
+        "tieback": "Automating the physical unload-to-shelf handoff only pays off if the order and inventory data behind it updates in real time, the same visibility gap Logicbroker closes for dropship and 3P suppliers feeding those warehouses."
+      },
+      {
+        "title": "Albertsons Works to Scale Merchandising Intelligence Platform",
+        "publisher": "Grocery Dive (first published by CIO Dive)",
+        "author": "Makenzie Holland",
+        "date": "2026-07-02",
+        "url": "https://www.grocerydive.com/news/albertsons-scale-merchandising-intelligence-platform/824110/",
+        "summary": "Albertsons is rolling out an AI-first merchandising intelligence platform built on Databricks, giving merchants a single natural-language interface to query pricing, promotion and assortment data instead of working across fragmented systems. The grocer plans full deployment by the end of 2026, with governance layered in through Databricks' Unity Catalog and AI Gateway.",
+        "tieback": "The project is really a data-consolidation problem wearing an AI label; Logicbroker's supplier analytics and intelligent routing already solve that consolidation on the vendor and inventory side before the data ever reaches a merchandising tool."
+      },
+      {
+        "title": "Grocers Are Quickly Embracing AI, Research Shows",
+        "publisher": "Grocery Dive",
+        "author": "Sam Silverstein",
+        "date": "2026-07-10",
+        "url": "https://www.grocerydive.com/news/grocers-artificial-intelligence-technology-spending-fmi/824777/",
+        "summary": "FMI's 2026 industry survey found 68% of food retailers now use AI in their business, up from 47% a year ago, with generative AI usage climbing to 59% and organization-wide GenAI tool adoption more than doubling. Retailers are increasing tech spending even as they stay cautious about how much staff AI will actually let them reassign.",
+        "tieback": "Rising AI budgets are chasing efficiency gains that stall without clean upstream data; automated EDI and fast SKU onboarding are the kind of foundational fix that keeps those AI investments from hitting a data-quality ceiling."
+      },
+      {
+        "title": "Companies Trust AI's Advice but Not Its Actions",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-07-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/companies-trust-ai-advice-not-actions/",
+        "summary": "A PYMNTS Intelligence survey of senior technology executives found that nearly every wholesale firm and 90% of retailers currently restrict AI agents to look-up access only, letting them retrieve information but not act autonomously, even though most of the same firms name semi-autonomous AI as their five-year goal. The gap points to a governance and trust problem rather than a technology limitation.",
+        "tieback": "Retailers eager for semi-autonomous AI still won't grant it execution rights, which is exactly why a transactionable, auditable presence for AI agents and real-time data feeds will matter more than raw model capability going forward."
+      }
+    ]
+  },
+  {
     "date": "2026-07-10",
     "label": "Friday, July 10, 2026",
     "articles": [
