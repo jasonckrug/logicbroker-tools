@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-14",
+    "label": "Tuesday, July 14, 2026",
+    "articles": [
+      {
+        "title": "Cloudflare and AWS Embed x402 Agent Payments at the Edge",
+        "publisher": "InfoQ",
+        "author": "Steef-Jan Wiggers",
+        "date": "2026-07-06",
+        "url": "https://www.infoq.com/news/2026/07/cloudflare-aws-x402-micropayment/",
+        "summary": "Cloudflare opened a waitlist for its Monetization Gateway two weeks after AWS shipped the same capability in CloudFront, letting sellers charge AI agents per request for pages, APIs, datasets, and MCP tools using the x402 protocol with stablecoin settlement. Both implementations enforce payment at the edge before requests reach the origin server, and the x402 Foundation, which now includes AWS, Cloudflare, Anthropic, and Circle, reports over 169 million payments processed in its first year.",
+        "tieback": "As agent-to-service micropayments become real infrastructure rather than a concept, suppliers and platforms with clean, machine-readable product and pricing data will be the ones agents can actually transact with, not just discover, which is the gap Logicbroker's transactionable presence on LLMs and agents is built to close."
+      },
+      {
+        "title": "As AI Agents Transform Commerce, Salesforce Unleashes Its Biggest Agentforce Commerce Release Yet",
+        "publisher": "Salesforce",
+        "author": "",
+        "date": "2026-07-06",
+        "url": "https://www.salesforce.com/ap/news/press-releases/2026/07/06/as-ai-agents-transform-commerce-salesforce-unleashes-its-biggest-agentforce-commerce-release-yet/",
+        "summary": "Salesforce made its Shopper Agent, Buyer Agent, and Merchant Agent generally available, with native integration into ChatGPT and Google Search arriving on top of retailers' existing catalog, inventory, and order systems. The release is framed around a specific claim: agentic AI only works if it can check real inventory and confirm a real shipping cutoff, not simply hold a conversation.",
+        "tieback": "That claim is really an argument for real-time order and inventory visibility and automated EDI, the data plumbing dropship and 3P sellers need in place before any shopper or buyer agent can reliably promise a delivery date."
+      },
+      {
+        "title": "Are grocers making smart investments in back-end AI?",
+        "publisher": "Retail Dive",
+        "author": "Jeff Wells",
+        "date": "2026-07-07",
+        "url": "https://www.retaildive.com/news/grocers-ai-back-end-operations/824806/",
+        "summary": "Only 47% of grocers report using AI in operations compared with 93% of their suppliers, and the piece argues many grocers are holding back not because AI lacks potential but because their underlying data isn't clean or connected enough to generate a return. On thin 1.7% margins, that leaves regional and independent grocers looking for AI that cuts waste and improves accuracy without a lengthy integration lift.",
+        "tieback": "This is a data-foundation problem before it's an AI problem, and it points to SKU onboarding speed and supplier data quality as the prerequisite that determines whether an AI investment on top of that data ever pays back."
+      },
+      {
+        "title": "CEOs fear they're underinvesting in AI",
+        "publisher": "Retail Dive",
+        "author": "Scarlett Evans",
+        "date": "2026-07-09",
+        "url": "https://www.retaildive.com/news/ceos-fear-ai-underinvestment/824808/",
+        "summary": "Cisco's survey of 2,500 CEOs found nearly two-thirds worry they're underinvesting in AI, yet infrastructure modernization, not model selection, ranks as their top 2026 technology priority because fragmented data and network limits are the actual bottleneck. Fewer than one in five CEOs said their in-house data is fully centralized and accessible for AI applications.",
+        "tieback": "The bottleneck these CEOs describe, fragmented and uncentralized data, is exactly what automated EDI and real-time order and inventory visibility are built to fix before AI spend on top of it can show a return."
+      },
+      {
+        "title": "When Developing an AI Strategy, Beware the Urgency Trap",
+        "publisher": "Harvard Business Review",
+        "author": "David De Cremer",
+        "date": "2026-07-01",
+        "url": "https://hbr.org/2026/07/when-developing-an-ai-strategy-beware-the-urgency-trap",
+        "summary": "Citing an MIT finding that 95% of gen AI projects fail and a National Bureau of Economic Research survey where 90% of executives saw no measurable productivity gain from AI, De Cremer argues leaders keep framing AI as a quick fix for urgent bottlenecks rather than a tool for durable value creation. He recommends prioritizing clarity of purpose and resisting urgency bias over chasing fast wins.",
+        "tieback": "Applied to supply chain, the durable value comes from automating the underlying vendor onboarding and EDI plumbing rather than bolting AI onto processes that are still manual and disconnected underneath."
+      }
+    ]
+  },
+  {
     "date": "2026-07-13",
     "label": "Monday, July 13, 2026",
     "articles": [
