@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-15",
+    "label": "Wednesday, July 15, 2026",
+    "articles": [
+      {
+        "title": "Smarter Tokens Could Make AI Purchases Auditable",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-07-15",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/smarter-tokens-could-make-ai-purchases-auditable/",
+        "summary": "Ixopay CTO Jill Willard tells PYMNTS that payments infrastructure was never built to judge intent, and that AI purchasing agents need tokens carrying verifiable context, not just credentials. She describes a near future where every token preserves an auditable trail: which agent acted, under what delegated authority, and how the transaction unfolded end to end.",
+        "tieback": "The same gap shows up in B2B order data. Automated EDI with a clean, replayable transaction trail is what lets a vendor and retailer trust that a PO, ASN, and invoice tie back to one verified event, whether a human or an agent initiated it."
+      },
+      {
+        "title": "AI-based shopping is coming of age — here's how",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-13",
+        "url": "https://chainstoreage.com/ai-based-shopping-coming-age-heres-how",
+        "summary": "A Bloomreach survey of more than 4,000 U.S. and U.K. consumers found over 75% have used AI tools like ChatGPT, Gemini, or Claude to shop in the last six months, with 42% doing so daily. Four in ten respondents said they'd now rather transact through an AI assistant than visit a retailer's own website.",
+        "tieback": "As more purchases route through an AI agent instead of a retailer's own site, product, pricing, and inventory data has to be structured cleanly enough for an agent to read and transact against, which is the whole premise behind a transactable presence on LLMs and agents."
+      },
+      {
+        "title": "Walmart bets on AI and digital twins to shape its supply chain strategy",
+        "publisher": "Retail Dive",
+        "author": "Paige Gross",
+        "date": "2026-07-15",
+        "url": "https://www.retaildive.com/news/walmart-supply-chain-strategy-ai-digital-twins/825162/",
+        "summary": "Walmart's supply chain technology team uses AI models, agents, and digital twin simulations to test how its logistics network would respond to facility closures, transportation delays, or extreme weather. SVP Indira Uppuluri said the tools let associates see how resources are used across the whole network at once, then act on system-generated recommendations rather than working node by node.",
+        "tieback": "A digital twin is only as good as the data feeding it. Real-time, node-by-node order and inventory visibility is the foundation smaller retailers and their vendors need before any simulation or routing model can produce a trustworthy answer."
+      },
+      {
+        "title": "Ecommerce Trends: How Chewy is using AI",
+        "publisher": "Digital Commerce 360",
+        "author": "Brian Warmoth",
+        "date": "2026-07-09",
+        "url": "https://www.digitalcommerce360.com/2026/07/09/ecommerce-trends-how-chewy-is-using-ai/",
+        "summary": "Chewy CEO Sumit Singh said the company is embedding AI across customer service, pharmacy operations, fulfillment, and marketing workflows, with a low-tens-of-millions-dollar efficiency benefit expected in fiscal 2026 and a bigger ramp into 2027. The comments accompanied a Q1 report showing $3.36 billion in quarterly sales.",
+        "tieback": "Fulfillment is the layer Chewy called out by name, and it's also where most vendors and 3P sellers lose the most time today. Faster SKU onboarding and automated order routing get a mid-sized retailer or supplier most of the way to that same efficiency gain, without needing a Chewy-scale AI build-out."
+      },
+      {
+        "title": "Cost versus value: Managing agentic AI system performance",
+        "publisher": "McKinsey & Company",
+        "author": "David Tepper and Lari Hämäläinen",
+        "date": "2026-07-08",
+        "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/cost-versus-value-managing-agentic-ai-system-performance",
+        "summary": "Pay-i CEO David Tepper tells McKinsey that most enterprises can't say which of their AI agents are actually worth the spend, since token bills keep climbing even as per-token prices fall and few companies have instrumentation tying agent activity to business outcomes. He offers a simple deployment test: an agent is worth using when its odds of success beat the ratio of verification time to the time a human would need to do the task alone.",
+        "tieback": "The same discipline applies before layering agents onto vendor management. Without instrumentation tying supplier analytics and routing decisions to measurable outcomes, like fewer stockouts or faster onboarding, an \"agentic\" rollout is just added spend with no way to prove it worked."
+      }
+    ]
+  },
+  {
     "date": "2026-07-14",
     "label": "Tuesday, July 14, 2026",
     "articles": [
