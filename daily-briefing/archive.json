@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-16",
+    "label": "Thursday, July 16, 2026",
+    "articles": [
+      {
+        "title": "Digital Commerce 360 and ReFiBuy Launch First-of-Its-Kind AI Commerce Rankings for Retailer Readiness in AI Shopping",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-07-15",
+        "url": "https://www.digitalcommerce360.com/2026/07/15/ai-commerce-rankings/",
+        "summary": "Digital Commerce 360 and ReFiBuy launched a quarterly benchmark inside the 2026 Top 1000 database that scores retailers on bot friendliness, AI-source traffic share, traffic diversity across AI engines, and 90-day momentum. Early leaders skew toward smaller, catalog-clean retailers such as Online Labels and Brooklinen rather than the largest chains, suggesting readiness for agentic discovery has more to do with data hygiene than scale.",
+        "tieback": "The ranking criteria (clean, structured catalog data feeding AI agents) is the same SKU onboarding and catalog automation problem Logicbroker's rapid vendor onboarding and automated EDI solve for dropship and 3P sellers trying to score well."
+      },
+      {
+        "title": "Global Digital Shopping Index: The Agentic Commerce Deep Dive",
+        "publisher": "PYMNTS Intelligence / Visa Acceptance Solutions",
+        "author": "",
+        "date": "2026-07-16",
+        "url": "https://www.pymnts.com/study/global-digital-shopping-index-agentic-commerce-deep-dive/",
+        "summary": "PYMNTS Intelligence and Visa Acceptance Solutions surveyed 5,241 consumers, 1,185 merchants, and 150 acquirers across the US, Brazil, and the UAE and found consumer trust drops sharply as AI agents get closer to the actual payment step. Acquirers rank governance, permissions, and data frameworks as higher priorities than new payment rails, while merchants are still sorting which agentic use cases are worth funding now.",
+        "tieback": "The governance and permissions gap acquirers flagged points to the same trust problem on the supplier side: retailers need verified, real-time order and inventory data before they will let an agent transact against a vendor's catalog, which is the visibility layer Logicbroker already provides."
+      },
+      {
+        "title": "Amazon preps robotics-equipped sorting warehouse in Texas",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-07-13",
+        "url": "https://www.supplychaindive.com/news/amazon-preps-robotics-equipped-sorting-warehouse-in-texas/824978/",
+        "summary": "Amazon filed permits for a $48 million, 248,687-square-foot sorting warehouse in Georgetown, Texas, that will use robotic systems to bring items to workers instead of the reverse. The facility extends Amazon's multi-year push to automate fulfillment centers after last year's robot deployments aimed at cutting manual sorting and unloading tasks.",
+        "tieback": "Amazon can justify a nine-figure automated DC because its order volume is uniform; most dropship and 3P sellers can't, which is why intelligent routing and supplier analytics that squeeze efficiency out of an existing vendor network matter more to them than warehouse robotics."
+      },
+      {
+        "title": "Lululemon's new distribution center to bolster US, Canada fulfillment",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-07-15",
+        "url": "https://www.supplychaindive.com/news/lululemons-new-distribution-center-to-bolster-us-canada-fulfillment/825182/",
+        "summary": "Lululemon is opening a distribution center in Brampton, Ontario equipped with an AutoStore robotic storage system to support faster US and Canada order fulfillment. The facility adds automated capacity as the retailer looks to move product more efficiently across its cross-border network.",
+        "tieback": "A single-brand retailer can centralize fulfillment in one automated building; multi-vendor marketplace and dropship programs can't, which is why routing orders directly to the right supplier through automated EDI beats consolidating inventory in one box."
+      },
+      {
+        "title": "More Than 200 Experts Urge Action to Steer AI for Society's Good",
+        "publisher": "Bloomberg",
+        "author": "Maya Prakash",
+        "date": "2026-07-13",
+        "url": "https://www.bloomberg.com/news/articles/2026-07-13/more-than-200-experts-urge-action-to-steer-ai-for-society-s-good",
+        "summary": "More than 200 experts, including 16 Nobel laureates, signed a statement warning that AI could drive an economic transformation larger than the Industrial Revolution but compressed into a much shorter timeframe, with large-scale job displacement among the risks. The signatories called for coordinated action to steer the technology's rollout rather than leaving it to individual companies.",
+        "tieback": "The statement's core worry, unmanaged AI-driven change moving faster than institutions can adapt, is the same reason retailers should route AI purchasing decisions through systems with real-time visibility and audit trails rather than bolting agents onto opaque, manual supplier processes."
+      }
+    ]
+  },
+  {
     "date": "2026-07-15",
     "label": "Wednesday, July 15, 2026",
     "articles": [
