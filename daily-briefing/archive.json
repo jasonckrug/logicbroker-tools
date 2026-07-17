@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-07-17",
+    "label": "Friday, July 17, 2026",
+    "articles": [
+      {
+        "title": "How Brands Stay Recognizable In An Agentic Shopping Era",
+        "publisher": "Forbes",
+        "author": "Stephanie Copeland Weber",
+        "date": "2026-07-15",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/07/15/the-human-side-of-ai-commerce-how-brands-stay-recognizable-in-an-agentic-shopping-era/",
+        "summary": "Argues that AI agents now handle discovery, comparison, and filtering for shoppers, so a customer may never open a search engine or land on a brand's site during the early part of a purchase journey. Makes the case that retargeting flows, promo calendars, and loyalty programs built for human attention don't translate to how agents evaluate and recommend products.",
+        "tieback": "Reinforces the need for a transactionable, structured presence that AI agents and LLMs can reliably read and act on, not just a human-facing product page."
+      },
+      {
+        "title": "General Mills plans supply chain revamp as part of $3B cost-cutting effort",
+        "publisher": "Supply Chain Dive",
+        "author": "Antone Gonsalves",
+        "date": "2026-07-13",
+        "url": "https://www.supplychaindive.com/news/general-mills-plans-supply-chain-revamp-as-part-of-3b-cost-cutting-effort/824889/",
+        "summary": "General Mills COO Dana McNabb told investors the company's supply chain network, built for a lower-volume era, needs a redesign to enable faster innovation and packaging flexibility as part of a $3 billion cost-cutting plan. An outside consultant ties the overhaul to faster decision-making and channel-specific assortment flexibility across omnichannel distribution.",
+        "tieback": "A legacy network that can't flex fast enough for omnichannel distribution is exactly the rigidity that real-time order and inventory visibility, plus SKU-level onboarding speed, is built to fix."
+      },
+      {
+        "title": "Renfro broadens AI tools for tighter supply chain compliance",
+        "publisher": "Supply Chain Dive",
+        "author": "Antone Gonsalves",
+        "date": "2026-07-16",
+        "url": "https://www.supplychaindive.com/news/renfro-broadens-ai-tools-for-tighter-supply-chain-compliance/825203/",
+        "summary": "Sock and legwear maker Renfro is expanding its use of Inspectorio's AI-powered platform to replace manual processes for regulatory compliance, traceability, and supplier performance measurement across sourcing regions in North America, Europe, and Asia. The move follows similar AI-driven supply chain investments at Hormel, WD-40, and Scotts Miracle-Gro.",
+        "tieback": "Confirms brands are actively paying for automated, AI-scored supplier performance and compliance tracking, the same use case intelligent routing and supplier analytics across a multi-vendor network solve for."
+      },
+      {
+        "title": "Retail no longer runs on a weekly clock. Grocers must pivot.",
+        "publisher": "Grocery Dive (Opinion)",
+        "author": "John Lin (SymphonyAI)",
+        "date": "2026-07-06",
+        "url": "https://www.grocerydive.com/news/retail-no-longer-runs-weekly-clock-grocers-production-planning/824142/",
+        "summary": "Drawing on analysis of 1.1 billion transactions across 73 million households, the piece argues weekly performance reviews mask daily shifts in demand and competitive pressure, and that AI-assisted shopping is accelerating the need for continuous, near-real-time operating models instead of periodic planning cycles.",
+        "tieback": "The case for continuous rather than weekly visibility into demand and execution maps directly onto the value of real-time order and inventory visibility over batch or delayed data feeds."
+      }
+    ]
+  },
+  {
     "date": "2026-07-16",
     "label": "Thursday, July 16, 2026",
     "articles": [
