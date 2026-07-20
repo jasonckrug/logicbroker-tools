@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-07-20",
+    "label": "Monday, July 20, 2026",
+    "articles": [
+      {
+        "title": "Agentic commerce is coming—and the battle to build its infrastructure is on",
+        "publisher": "Fortune",
+        "author": "Diane Brady",
+        "date": "2026-07-20",
+        "url": "https://fortune.com/2026/07/20/agentic-commerce-stablecoins-infrastructure-circle-ceo-jeremy-allaire/",
+        "summary": "Fortune's CEO Daily columnist surveys the stablecoin and payment-rail land grab now underway to support AI agent-driven commerce, from Circle's \"Agentic Economy\" thesis to Visa's new stablecoin platform and the Stripe-Visa-BlackRock-backed Open USD consortium. The piece frames 2026 as the year infrastructure providers are racing to become the default settlement rails for machine-initiated purchases.",
+        "tieback": "Whoever wins the payments-rail race, an agent still can't transact against a catalog it can't parse; that's the layer beneath the payment layer, where clean, real-time product and inventory data and a genuinely transactable presence on LLMs become the prerequisite for any of this to work."
+      },
+      {
+        "title": "Survey: AI becoming mainstream shopping tool among consumers",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-16",
+        "url": "https://chainstoreage.com/survey-ai-becoming-mainstream-shopping-tool-among-consumers",
+        "summary": "A new LDWW consumer survey finds about 70% of shoppers already use AI in their shopping routines and nearly two-thirds say AI influenced a recent purchase decision, with more than 75% having used tools like ChatGPT, Gemini or Claude to shop in the past six months. Consumers remain cautious, though: over half say they check the sources an AI cites before trusting its answer.",
+        "tieback": "Every one of those AI-assisted purchases depends on the AI being able to see accurate, real-time product and inventory data in the first place, which is precisely what rapid vendor onboarding and automated EDI are meant to close."
+      },
+      {
+        "title": "Ecommerce Trends: 3 important ways online retailers are using AI in 2026",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-07-16",
+        "url": "https://www.digitalcommerce360.com/2026/07/16/ecommerce-trends-ways-online-retailers-are-using-ai-in-2026/",
+        "summary": "Digital Commerce 360's recurring trends column identifies three priorities shaping retailer AI investment this year: optimizing catalog data so products surface in AI-platform recommendations, using AI for more targeted first-party marketing, and preparing for AI-mediated transactions. It cites Adobe data showing AI-driven site traffic now converts 42% more often than non-AI traffic.",
+        "tieback": "The retailers winning on \"showing up in AI platform recommendations\" are the ones whose catalog data is clean and structured, the same SKU onboarding speed and data discipline that determines how fast a supplier's products can go live on a retailer's network."
+      },
+      {
+        "title": "The biggest barrier to AI in supply chains isn't technology",
+        "publisher": "Supply Chain Management Review",
+        "author": "Kevin Brown, Dell Technologies' EVP of Global Operations and CSCO",
+        "date": "2026-07-16",
+        "url": "https://www.scmr.com/article/the-biggest-barrier-to-ai-in-supply-chains-isnt-technology",
+        "summary": "Dell's chief supply chain officer argues AI is a \"force multiplier\" that amplifies whatever operation it's given, meaning it scales inefficiency just as readily as it scales good process. He lays out a simplify-standardize-automate sequence, warning that companies skipping the first two steps end up automating their own bureaucracy rather than creating value.",
+        "tieback": "This is the exact failure mode a fragmented dropship network runs into with AI: without standardized, automated EDI and consistent supplier data across the vendor base first, there is no clean foundation for any agentic layer to act on reliably."
+      }
+    ]
+  },
+  {
     "date": "2026-07-17",
     "label": "Friday, July 17, 2026",
     "articles": [
