@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-07-21",
+    "label": "Tuesday, July 21, 2026",
+    "articles": [
+      {
+        "title": "Agentic commerce, six months in: the delivery promise is now part of the pitch",
+        "publisher": "Retail Bulletin",
+        "author": "Johan Hellman (via Patrick Overall)",
+        "date": "2026-07-16",
+        "url": "https://www.theretailbulletin.com/retail-solutions/agentic-commerce-six-months-in-the-delivery-promise-is-now-part-of-the-pitch-16-07-2026/",
+        "summary": "Traffic referred by AI shopping agents now converts 42% better than other traffic, a full reversal from converting 38% worse a year earlier, while OpenAI's Instant Checkout program shut down after fewer than 30 merchants ever went live. The piece argues agents have taken over discovery and comparison but left the actual transaction with the merchant, and that AI agents parse structured delivery dates, fees, and returns terms rather than marketing copy when ranking sellers.",
+        "tieback": "When an AI agent evaluates a retailer on delivery terms and returns policy before a shopper ever lands on the page, that data has to come from a live, structured order and inventory feed rather than a manually updated product page, which is the real-time order and inventory visibility gap Logicbroker closes for drop-ship and 3P sellers."
+      },
+      {
+        "title": "Walmart bets on AI and digital twins to shape its supply chain strategy",
+        "publisher": "Supply Chain Dive",
+        "author": "Paige Gross",
+        "date": "2026-07-16",
+        "url": "https://www.supplychaindive.com/news/walmart-bets-on-ai-and-digital-twins-to-shape-its-supply-chain-strategy/825163/",
+        "summary": "Walmart's SVP of supply chain technology told CIO Dive that the retailer uses AI models, agents, and digital twin simulations so associates can see how nodes across the network, receiving, fulfillment, and transportation, are performing as a whole rather than one at a time. The team runs \"what if\" simulations, such as a sudden facility closure or demand spike, and lets agents recommend how to reroute or rebalance resources in response.",
+        "tieback": "Walmart can only run those agentic simulations because its systems already have real-time visibility into every node; suppliers without automated EDI and live inventory feeds into a retailer's systems are the weak link that breaks the simulation, which is exactly the gap Logicbroker's automated EDI and real-time order and inventory visibility close for dropship and 3P vendors."
+      },
+      {
+        "title": "Levi's builds toward unified ERP system by mid-2027",
+        "publisher": "Supply Chain Dive",
+        "author": "Phil Neuffer",
+        "date": "2026-07-16",
+        "url": "https://www.supplychaindive.com/news/levis-builds-toward-unified-erp-system-by-mid-2027/825243/",
+        "summary": "Levi Strauss executives said on a July earnings call that the apparel brand is finishing a decade-long consolidation onto a single global ERP platform, having just migrated its Asia operations and Beyond Yoga brand onto the system that already runs North America, with Europe and Latin America next. Levi's frames the unified platform as the foundation it needs to scale AI and automation and to get real-time visibility into inventory movement across stores and distribution centers.",
+        "tieback": "Levi's needed roughly ten years to consolidate nine ERPs before it could start layering AI on top, which is the same onboarding drag that automated EDI and rapid vendor onboarding are built to eliminate for retailers trying to bring dropship and 3P suppliers onto a common data standard in weeks instead of years."
+      },
+      {
+        "title": "U.S. and Japanese Companies Struggle with Different Parts of AI Adoption",
+        "publisher": "Harvard Business Review",
+        "author": "Natarajan Balasubramanian, Shigeru Asaba, Ram Bala, and Amit Joshi",
+        "date": "2026-07-13",
+        "url": "https://hbr.org/2026/07/u-s-and-japanese-companies-struggle-with-different-parts-of-ai-adoption-and-offer-different-lessons-for-making-it-work",
+        "summary": "The authors compare AI adoption in the U.S. (88% of companies use AI in at least one business function) against Japan (26%), and argue the U.S. pattern is wide but shallow, broad deployment that struggles to create real value, while Japan's slower adoption tends to be narrow but deep and more fruitful where it takes hold. The piece draws lessons for any company building an AI strategy around proving ROI rather than just deploying tools broadly.",
+        "tieback": "The same lesson applies to retail and supply chain buyers evaluating AI vendors: breadth of AI deployment without operational depth, meaning real order data, live inventory, and connected suppliers, doesn't produce ROI, which is why automated EDI and real-time order and inventory visibility have to exist as the operational layer before any AI layer on top can deliver value."
+      }
+    ]
+  },
+  {
     "date": "2026-07-20",
     "label": "Monday, July 20, 2026",
     "articles": [
