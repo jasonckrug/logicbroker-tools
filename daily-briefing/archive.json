@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-07-22",
+    "label": "Wednesday, July 22, 2026",
+    "articles": [
+      {
+        "title": "Instacart acquires shelf-scanning technology startup",
+        "publisher": "Grocery Dive",
+        "author": "Sam Silverstein",
+        "date": "2026-07-17",
+        "url": "https://www.grocerydive.com/news/instacart-acquires-arpalus-ai-inventory-computer-vision-ecommerce/825494/",
+        "summary": "Instacart acquired Arpalus, a computer-vision startup whose smartphone app lets in-store shoppers capture real-time shelf inventory with about 95% item-identification accuracy, and whose system also feeds Instacart's Caper Cart smart carts. Instacart plans to combine this data with its existing in-store data collection to cut down on unnoticed out-of-stocks, a top driver of online grocery customer complaints.",
+        "tieback": "Real-time, computer-vision shelf visibility solves the same underlying problem as real-time order and inventory visibility, just applied to physical shelves instead of supplier data feeds."
+      },
+      {
+        "title": "How the food industry is optimizing AI investments",
+        "publisher": "Grocery Dive (Opinion)",
+        "author": "Leslie G. Sarasin",
+        "date": "2026-07-21",
+        "url": "https://www.grocerydive.com/news/how-food-industry-optimizing-ai-investments/825597/",
+        "summary": "Citing FMI's Food Retailing Industry Speaks 2026 report, based on input from more than 42,000 grocery stores, Sarasin notes food retailer AI adoption jumped from 47% to 68% in a year and tech budgets roughly doubled to more than $20 billion, with over half of retailers and suppliers already reporting measurable payoff. She frames AI as finally closing the old operational-efficiency-versus-customer-experience tradeoff rather than forcing retailers to choose one.",
+        "tieback": "The ROI gap she describes, tech spend outrunning proof of payoff, is where automated EDI and intelligent supplier routing turn AI budget into measurable order and fulfillment efficiency instead of another dashboard."
+      },
+      {
+        "title": "Ant International Raises $1.2 Billion to Boost Cross-Border Payments",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-07-21",
+        "url": "https://www.pymnts.com/news/investment-tracker/2026/ant-international-raises-1-2-billion-to-boost-cross-border-payments/",
+        "summary": "Ant International raised roughly $1.2 billion in Series A equity funding to strengthen its merchant payment, treasury and credit-tech businesses, including its agentic commerce solutions, for SMBs and enterprises operating across borders. Bloomberg reports the round could set up a Hong Kong listing, following the 2024 restructuring that followed Ant Group's blocked IPO.",
+        "tieback": "As payment platforms race to fund agentic commerce infrastructure for cross-border merchants, the harder problem stays upstream: getting supplier and inventory data structured enough for an agent to transact against reliably, the same automated EDI and supplier-onboarding gap Logicbroker already closes."
+      }
+    ]
+  },
+  {
     "date": "2026-07-21",
     "label": "Tuesday, July 21, 2026",
     "articles": [
