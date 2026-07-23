@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-23",
+    "label": "Thursday, July 23, 2026",
+    "articles": [
+      {
+        "title": "ESW launches agentic commerce integration, partnering with Microsoft Copilot",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-07-22",
+        "url": "https://www.digitalcommerce360.com/2026/07/22/esw-agentic-commerce-integration-microsoft-copilot/",
+        "summary": "ESW rolled out an agentic commerce integration with Microsoft Copilot that lets brands optimize product catalogs for AI-driven discovery and complete secure checkout and payment inside the AI shopping experience. The move follows a string of similar plays from Square, Salesforce, and other players racing to plug merchant catalogs directly into chat-based AI agents.",
+        "tieback": "Every one of these integrations depends on clean, structured, real-time product and inventory data reaching the agent, which is the same data foundation rapid vendor onboarding and automated EDI are built to deliver."
+      },
+      {
+        "title": "How B2B ecommerce companies can prepare for agentic AI discovery",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-07-21",
+        "url": "https://www.digitalcommerce360.com/2026/07/21/b2b-ecommerce-agentic-ai-discovery-deloitte/",
+        "summary": "Citing new Deloitte research, the piece reports that fewer than one in four B2B suppliers currently use agentic AI, even as buyers increasingly rely on AI agents to assist with product discovery and purchasing workflows rather than complete transactions outright. Deloitte's Paul do Forno argues that discoverability (structured content, FAQs, and clear buying-intent signals) matters more right now than full autonomy.",
+        "tieback": "Suppliers that can't expose accurate SKU and inventory data in a discoverable format will be invisible to buying agents regardless of how good the product actually is, which is exactly the gap SKU onboarding speed and transactionable presence on LLMs are meant to close."
+      },
+      {
+        "title": "How supply chain leaders can avoid common AI pitfalls",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-07-20",
+        "url": "https://www.supplychaindive.com/news/how-supply-chain-leaders-can-avoid-common-ai-pitfalls/825423/",
+        "summary": "The article uses Starbucks' decision to scrap an AI inventory-counting tool after nine months as a jumping-off point for advice from Bain and University of Tennessee experts on where AI actually pays off. Their guidance: apply AI only to frequent, data-rich decisions, treat pilots like onboarding a new employee rather than flipping a software switch, and be willing to kill a tool if it can't run unsupervised.",
+        "tieback": "The failure pattern described, AI bolted onto messy, siloed data, is what real-time order and inventory visibility is designed to prevent, since AI models can only be as good as the underlying feed."
+      },
+      {
+        "title": "Cisco: Retailers see AI as necessary despite security risks",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-20",
+        "url": "https://chainstoreage.com/news-briefs/2026-07-20?article=cisco-retailers-see-ai-necessary-despite-security-risks",
+        "summary": "A Cisco survey of 292 senior retail IT and networking leaders found 68% believe operational efficiency is at risk without AI-capable network infrastructure, while 78% say AI has already expanded their attack surface in the past year. Retailers are stuck upgrading campus and branch networks to support AI workloads even as security teams struggle to keep monitoring and policy consistent across a more distributed footprint.",
+        "tieback": "The tension between needing AI-ready infrastructure and being unable to secure what's already built is a strong argument for a platform that centralizes EDI, order routing, and supplier data rather than adding another point solution to the stack."
+      },
+      {
+        "title": "Responsible AI Is Becoming a Growth Strategy",
+        "publisher": "Harvard Business Review",
+        "author": "Michael Wade and Jochen Wirtz",
+        "date": "2026-07-21",
+        "url": "https://hbr.org/2026/07/responsible-ai-is-becoming-a-growth-strategy",
+        "summary": "Wade and Wirtz argue that Corporate Digital Responsibility needs to move from a compliance checkbox to a strategic capability, citing recent AI missteps at a toy maker, Sirius XM, and Kmart Australia as cautionary tales. Their three-stage playbook calls for companies to inventory every AI system in use, build governance into AI design from the start, and make responsible AI practices visible to customers and regulators.",
+        "tieback": "For any retailer weighing AI-driven supplier or pricing decisions, this is a reminder that governance and auditability need to be built into the platform from day one, not layered on after regulators or customers start asking questions."
+      }
+    ]
+  },
+  {
     "date": "2026-07-22",
     "label": "Wednesday, July 22, 2026",
     "articles": [
