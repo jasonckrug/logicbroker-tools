@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-07-24",
+    "label": "Friday, July 24, 2026",
+    "articles": [
+      {
+        "title": "Linux Foundation Announces Operational Launch of x402 Foundation to Standardize Internet-Native Payments for AI Agents and Applications",
+        "publisher": "The Linux Foundation",
+        "author": "",
+        "date": "2026-07-14",
+        "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications",
+        "summary": "The Linux Foundation activated the x402 Foundation, an open-governance body with 40 founding members including Visa, Mastercard, Stripe, AWS, Google, and Shopify, to steward the x402 protocol contributed by Coinbase. The standard embeds payment capability directly into HTTP so AI agents and APIs can pay for resources, supporting both card and stablecoin rails without a separate checkout flow.",
+        "tieback": "As agent-to-agent payment rails standardize around an open protocol, retailers and suppliers whose catalogs and order systems aren't structured for machine-readable transactions risk being invisible to this new discovery and payment layer, the exact case for building a transactionable presence on LLMs and agents now rather than later."
+      },
+      {
+        "title": "MyRegistry.com enables ChatGPT product discovery and shopping",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-20",
+        "url": "https://chainstoreage.com/news-briefs/2026-07-20?article=myregistrycom-enables-chatgpt-product-discovery-and-shopping",
+        "summary": "MyRegistry.com launched a ChatGPT plugin that lets members and visitors search gift registries, add items, and complete purchases inside a conversational AI session instead of on the retailer's own site. The company frames the integration as a new AI-native discovery and sales channel built directly on top of its existing registry data.",
+        "tieback": "Plugging a registry or catalog into an agent platform only works if the product and inventory data behind it is current, which is the real-time order and inventory visibility gap that determines whether an agent-driven transaction completes cleanly or fails on a stockout or price mismatch."
+      },
+      {
+        "title": "Michaels launches AI shopping assistant",
+        "publisher": "Retail Dive",
+        "author": "",
+        "date": "2026-07-21",
+        "url": "https://www.retaildive.com/news/michaels-ai-shopping-assistant-ask-mike/826016/",
+        "summary": "Michaels rolled out \"Ask Mike,\" a Google Gemini-powered AI shopping assistant that gives shoppers personalized project and product recommendations, built and shipped in about six weeks and already fueling nearly 75,000 conversations. The retailer plans to add AI-generated product overviews and contextual prompts to product pages next.",
+        "tieback": "A six-week build-to-launch timeline sets a new bar for how fast retailers expect customer-facing AI to move, the same speed expectation dropship and 3P retailers are now placing on vendor and SKU onboarding."
+      },
+      {
+        "title": "Survey: Transparency of AI usage in hiring process helps gain candidate trust",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-07-16",
+        "url": "https://chainstoreage.com/news-briefs/2026-07-16?article=survey-transparency-ai-usage-hiring-process-helps-gain-candidate-trust",
+        "summary": "A Fountain survey of frontline job applicants found that clearly explaining how AI is used in hiring builds trust, with three-quarters of respondents saying a company's transparency about its AI shapes how much they trust it. Faster hiring and reduced bias in decisions were named the top perceived benefits, while 62% of applicants said they had been left without any communication after multiple interview rounds.",
+        "tieback": "The same transparency principle applies upstream in retail operations: suppliers trust automated systems more when they can see the logic behind routing, allocation, or onboarding decisions, which is the case for pairing automation with visible, explainable supplier analytics rather than a black box."
+      },
+      {
+        "title": "Design AI Systems That Actually Strengthen Human Reasoning",
+        "publisher": "Harvard Business Review",
+        "author": "Melchior Tamisier-Fayard, Theodoros Evgeniou, and Anne-Laure Fayard",
+        "date": "2026-07-20",
+        "url": "https://hbr.org/2026/07/design-ai-systems-that-actually-strengthen-human-reasoning",
+        "summary": "The authors cite research showing employees who accept AI outputs uncritically lose contextual expertise over time and produce more homogeneous thinking, a risk that compounds for junior staff who get fewer chances to build independent judgment. They recommend workflows built around reverse prompting, AI-free stages, and interfaces that surface alternative interpretations instead of one authoritative answer.",
+        "tieback": "The same warning applies to automated supplier routing and inventory decisions: intelligent routing and supplier analytics tools deliver the most value when they surface options and reasoning for a buyer to weigh, not just a single automated verdict nobody ever double-checks."
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "label": "Thursday, July 23, 2026",
     "articles": [
