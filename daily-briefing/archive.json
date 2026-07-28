@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-07-28",
+    "label": "Tuesday, July 28, 2026",
+    "articles": [
+      {
+        "title": "How Sazo uses agentic AI for cross-border commerce infrastructure",
+        "publisher": "Digital Commerce 360",
+        "author": "Abbas Haleem",
+        "date": "2026-07-23",
+        "url": "https://www.digitalcommerce360.com/2026/07/23/sazo-agentic-ai-cross-border-commerce/",
+        "summary": "Sazo, a cross-border commerce company selling Japanese and South Korean products internationally, uses agentic AI to calculate tariffs, duties, and shipping costs on the fly. The goal is to make buying from another country feel as seamless as shopping domestically.",
+        "tieback": "Automated, real-time landed-cost calculation for cross-border orders is the same problem automated EDI and real-time order visibility solve for dropship retailers expanding into new supplier markets."
+      },
+      {
+        "title": "Schnucks turns to agentic AI shopping assistant",
+        "publisher": "Grocery Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-07-23",
+        "url": "https://www.grocerydive.com/news/schnucks-agentic-ai-shopping-assistant/825966/",
+        "summary": "Schnuck Markets is launching an agentic AI shopping assistant built with VitalityIP that gives customers personalized meal, nutrition, and product recommendations tied to health and lifestyle goals. The tool draws on more than 6 billion lines of shopping, health, and nutrition data alongside Schnucks' own store inventory data.",
+        "tieback": "As grocers hand purchase decisions to AI agents, product and inventory data quality becomes the deciding factor in whether a SKU even gets recommended, which is exactly why fast, clean SKU onboarding and real-time inventory visibility matter more now, not less."
+      },
+      {
+        "title": "How agentic commerce will test loyalty and returns",
+        "publisher": "Chain Store Age",
+        "author": "Vishal Patel",
+        "date": "2026-07-17",
+        "url": "https://chainstoreage.com/how-agentic-commerce-will-test-loyalty-and-returns",
+        "summary": "As AI agents increasingly complete purchases on a shopper's behalf, retailers currently have no reliable way to distinguish an agent-driven order from a manual one. That's already creating disputes over impulse buys, misread product details, and fraudulent or abusive returns.",
+        "tieback": "Disputes over who 'pushed the buy button' show why a single, real-time source of order and inventory truth matters more as agentic purchasing scales across dropship and marketplace channels."
+      }
+    ]
+  },
+  {
     "date": "2026-07-24",
     "label": "Friday, July 24, 2026",
     "articles": [
