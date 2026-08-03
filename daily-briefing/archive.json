@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-08-03",
+    "label": "Monday, August 3, 2026",
+    "articles": [
+      {
+        "title": "Cards Make Their Case in an Agentic World",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-03",
+        "url": "https://www.pymnts.com/credit-cards/2026/cards-make-their-case-in-an-agentic-world/",
+        "summary": "Mastercard, Visa, American Express and Capital One used their Q2 2026 earnings calls to stake competing claims on agentic commerce infrastructure. Mastercard is scaling Agent Pay with more than 30 partners, Visa touted 150+ AI-powered applications plus new OpenAI and Meta partnerships, Amex leaned on its closed-loop network for fraud and data advantages, and Capital One pointed to its Discover network integration as the foundation for AI-driven underwriting.",
+        "tieback": "As card networks race to own the trust layer for agent-initiated purchases, the harder problem for retailers stays upstream: whether their own vendor and inventory data is clean and structured enough for an agent to transact against in the first place, which is where automated EDI and real-time inventory visibility do the actual work."
+      },
+      {
+        "title": "Nine Out of Ten Firms Struggle to Manage Bot Traffic",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-03",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/nine-out-of-ten-firms-struggle-to-manage-bot-traffic/",
+        "summary": "A PYMNTS Intelligence report produced with Trulioo finds companies are struggling to tell malicious bots from legitimate shopping agents, with 57% of billion-dollar-revenue firms reporting bot-related incidents or losses in the past year. Fraud and false blocks tied to bot traffic cost businesses close to $100 billion annually, pushing firms toward continuous identity verification instead of one-time account checks.",
+        "tieback": "The same identity and permissioning problem applies directly to supplier onboarding. A retailer that can verify and onboard a new dropship vendor's data feed automatically, rather than manually vetting each one, is better positioned to extend that same rigor to agent traffic without slowing down legitimate transactions."
+      },
+      {
+        "title": "Schnucks turns to agentic AI shopping assistant",
+        "publisher": "Grocery Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-07-23",
+        "url": "https://www.grocerydive.com/news/schnucks-agentic-ai-shopping-assistant/825966/",
+        "summary": "Schnucks is rolling out an agentic AI shopping assistant that builds carts and makes recommendations based on customers' stated health and wellness preferences, joining Albertsons and Kroger in offering this kind of tool. The assistant is meant to cut the friction of finding products that fit dietary needs across a large, fast-changing catalog.",
+        "tieback": "Tools like this are only as good as the underlying product data behind them, so a retailer's ability to onboard and refresh SKU-level attributes quickly across suppliers directly determines whether the assistant can actually match a dietary preference to the right item in stock."
+      },
+      {
+        "title": "How supply chain leaders can avoid common AI pitfalls",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-07-20",
+        "url": "https://www.supplychaindive.com/news/how-supply-chain-leaders-can-avoid-common-ai-pitfalls/825423/",
+        "summary": "Executives speaking at a recent industry event said the biggest risks in supply chain AI adoption are starting with bad data, scaling pilots too fast, and refusing to kill use cases that don't pay off. Experts stressed that piloting deliberately and building solid data foundations matters more than moving fast.",
+        "tieback": "This is the recurring lesson for any retailer trying to stand up AI-driven forecasting or routing: the data foundation, not the model, is what determines whether a pilot scales, which is exactly the gap that automated EDI and real-time order and inventory visibility are built to close."
+      }
+    ]
+  },
+  {
     "date": "2026-07-31",
     "label": "Friday, July 31, 2026",
     "articles": [
