@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-04",
+    "label": "Tuesday, August 4, 2026",
+    "articles": [
+      {
+        "title": "AI Voice Agents Take Over the Retail Sales Floor",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-03",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-voice-agents-take-over-the-retail-sales-floor/",
+        "summary": "Japanese appliance retailer Yamada Denki built a 24/7 multilingual voice agent on OpenAI's GPT-Realtime that guided roughly 30,000 shoppers through purchases in a two-week campaign, asking the same probing questions a floor associate would instead of waiting for keyword prompts. PYMNTS Intelligence data cited in the piece shows 45% of consumers already say they'd let an AI agent complete a purchase on their behalf, and 43% of retailers are piloting autonomous shopping agents now.",
+        "tieback": "As agents move from answering questions to closing sales, they're only as good as the product and inventory data feeding them, the case a transactionable, agent-ready product feed is meant to make for a retailer's catalog."
+      },
+      {
+        "title": "AI Agents Need Rules Before They Can Run Payments",
+        "publisher": "PYMNTS (Opinion)",
+        "author": "Colin Swain, Bottomline",
+        "date": "2026-07-31",
+        "url": "https://www.pymnts.com/opinion/2026/ai-agents-need-rules-before-they-can-run-payments/",
+        "summary": "Bottomline's Colin Swain argues that finance functions handing real decisions to AI agents, in areas like collections, cash application and risk management, need clear rules, defined decision rights and full audit visibility before autonomy can scale. He frames the goal as \"controlled autonomy,\" where every agent action is traceable and aligned to financial controls rather than layered on top of processes that were never built for it.",
+        "tieback": "That same traceability problem shows up in dropship operations, where automated EDI and real-time order and inventory visibility give trading partners the auditable data trail this piece says agentic finance still lacks."
+      },
+      {
+        "title": "Walmart Canada Forecasts Weather Disruptions With Proprietary AI Tool",
+        "publisher": "Chain Store Age",
+        "author": "Chain Store Age staff",
+        "date": "2026-08-03",
+        "url": "https://chainstoreage.com/news-briefs/2026-08-03?article=walmart-canada-forecasts-weather-disruptions-proprietary-ai-tool",
+        "summary": "Walmart Canada built a \"storm rerouting agent\" using AI-assisted coding tools that cross-references 10-day weather forecasts against real-time highway and ferry closures, carrier data and other operational signals to flag transportation disruptions before they hit. The tool was developed in-house rather than bought from a vendor, reflecting Walmart's broader push to build proprietary AI into supply chain operations.",
+        "tieback": "Most retailers don't have the engineering bench to build a custom disruption tool in-house, which is exactly the gap intelligent routing and supplier analytics close by rerouting orders around a disruption without a bespoke build."
+      },
+      {
+        "title": "Ecommerce Trends: How Lululemon Is Using AI",
+        "publisher": "Digital Commerce 360",
+        "author": "Sara Spivey",
+        "date": "2026-07-30",
+        "url": "https://www.digitalcommerce360.com/2026/07/30/how-lululemon-is-using-ai/",
+        "summary": "Lululemon is applying AI across inventory management, supply chain and procurement to cut complexity, with the goal of shrinking its go-to-market calendar from 18-24 months down to 12-14 months. The retailer named its first chief AI and technology officer in 2025 and is also using AI to sharpen search, fit and personalization on its ecommerce site.",
+        "tieback": "Cutting go-to-market time by a third is largely a vendor and SKU onboarding speed problem, the exact bottleneck rapid vendor onboarding for dropship and 3P suppliers is built to remove."
+      },
+      {
+        "title": "Why The Future Of Agentic AI Is One Expert, Not A Hundred Specialists",
+        "publisher": "Forbes (Councils)",
+        "author": "Alex Saric, Ivalua",
+        "date": "2026-08-03",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/03/why-the-future-of-agentic-ai-is-one-expert-not-a-hundred-specialists/",
+        "summary": "Ivalua's CMO argues that stacking a separate AI specialist agent for every procurement task (supplier onboarding, risk monitoring, contract review, and more) creates a supervision burden no one can manage, since each agent works off different data with no shared context. He cites a Sapio Research survey of 800 procurement leaders where 59% said trust in AI, not cost or capability, is the bigger barrier to progress.",
+        "tieback": "Supplier onboarding shows up by name as one of the procurement tasks fragmenting under agent sprawl, a point in favor of one connected platform over another point-solution agent bolted onto the pile."
+      }
+    ]
+  },
+  {
     "date": "2026-08-03",
     "label": "Monday, August 3, 2026",
     "articles": [
