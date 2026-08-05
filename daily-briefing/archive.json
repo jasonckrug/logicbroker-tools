@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-05",
+    "label": "Wednesday, August 5, 2026",
+    "articles": [
+      {
+        "title": "Cloudflare Issues AI Agents a Wallet and Identity",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-04",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/cloudflare-issues-ai-agents-wallet-identity/",
+        "summary": "Cloudflare introduced Cloudflare Wallets and cloudflare.pay, giving AI shopping agents a verifiable identity and a programmable way to pay on behalf of the humans or companies that deployed them. The move responds to a gap PYMNTS Intelligence has tracked for months: close to half of consumers still worry about fraud, data transparency, and reversing purchases an agent made in their name.",
+        "tieback": "As agent identity and payment infrastructure standardizes, sellers need product, order, and inventory data structured well enough for an agent to transact against with confidence, not just for a human to browse."
+      },
+      {
+        "title": "Appeals Court Overturns Ban on Perplexity AI Shopping Agents on Amazon",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-04",
+        "url": "https://www.pymnts.com/amazon/2026/appeals-court-overturns-ban-on-perplexity-ai-shopping-agents-on-amazon/",
+        "summary": "A U.S. appeals court overturned a prior ruling that had barred Perplexity's AI shopping agents from accessing Amazon, finding it was Perplexity's users, not Perplexity itself, accessing the platform. It is the first federal appeals ruling on whether AI agents acting on a user's behalf can legally access a retailer's platform, regardless of that retailer's own wishes.",
+        "tieback": "Retailers can no longer assume they control whether agents show up on their site; the practical question shifts to whether product, pricing, and inventory data are clean and structured enough for an agent to transact accurately once it arrives."
+      },
+      {
+        "title": "HomeBase USA rolls out inventory scanning robots following pilot",
+        "publisher": "Chain Store Age",
+        "author": "Zachary Russell",
+        "date": "2026-07-30",
+        "url": "https://chainstoreage.com/homebase-usa-rolls-out-inventory-scanning-robots-following-pilot",
+        "summary": "After a two-store pilot, home improvement retailer HomeBase USA expanded Simbe's Tally shelf-scanning robots and Store Intelligence platform to all nine of its locations. The pilot cut pricing errors by 92%, lowered controllable out-of-stocks by 58%, and shortened annual physical inventory counts from three days to under one.",
+        "tieback": "The gains came entirely from continuous, real-time shelf and inventory visibility, the same principle that determines whether a dropship or 3P supplier network shows accurate stock instead of stale counts."
+      },
+      {
+        "title": "AI Ends the Shipping Cost Guessing Game",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-07-30",
+        "url": "https://www.pymnts.com/shipping/2026/ai-ends-the-shipping-cost-guessing-game/",
+        "summary": "Most retailers still quote shipping costs using static assumptions (a default box size or a historical average) instead of how a specific order actually fits into a box, and dimensional-weight pricing can bill an oversized box at nearly three times an item's real weight. Wholesale marketplace Faire and AI bin-packing tools are replacing that guesswork with per-order calculations, since 48% of shoppers who abandon carts cite unexpected shipping costs as the reason.",
+        "tieback": "Static, rule-based shipping and routing breaks down under real order variability the same way static EDI mappings and routing rules do; the fix in both cases is real-time data over defaults."
+      },
+      {
+        "title": "AI Could Squeeze Retail's Middle Even Further",
+        "publisher": "Forbes",
+        "author": "Michelle Evans",
+        "date": "2026-07-30",
+        "url": "https://www.forbes.com/sites/michelleevans1/2026/07/30/ai-could-squeeze-retails-middle-even-further/",
+        "summary": "Retail is polarizing between large retailers with scale and data and DTC brands with direct customer relationships, and Evans argues AI-driven discovery will intensify that split by shifting competition from product access to visibility in AI recommendations. Mid-market retailers that lack both scale and first-party relationships face the sharpest exposure as passive browsing gives way to AI-mediated consideration.",
+        "tieback": "Mid-market retailers and their suppliers can offset scale disadvantages with speed, fast vendor and SKU onboarding and broad assortment reach, so AI discovery engines have more of their catalog to recommend from."
+      }
+    ]
+  },
+  {
     "date": "2026-08-04",
     "label": "Tuesday, August 4, 2026",
     "articles": [
