@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-06",
+    "label": "Thursday, August 6, 2026",
+    "articles": [
+      {
+        "title": "DoorDash Says Agentic Traffic Is Low, but AI Gains Are Not",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-05",
+        "url": "https://www.pymnts.com/news/delivery/2026/doordash-says-agentic-traffic-is-low-but-ai-gains-are-not/",
+        "summary": "DoorDash CEO Tony Xu told investors that agentic order volume from AI shopping assistants remains low because most AI platforms are prioritizing enterprise and coding tools over physical fulfillment, even as DoorDash's own AI tools already build a grocery cart in under two minutes and automate catalog creation for new merchants. The company's new Dash Mark warehouses, where DoorDash controls inventory directly, are delivering tenfold better order accuracy than traditional grocery partnerships.",
+        "tieback": "That tenfold accuracy gap between DoorDash-controlled inventory and traditional grocery partnerships is the same order and inventory visibility problem automated EDI and real-time integration are built to close for retailers leaning on third-party fulfillment."
+      },
+      {
+        "title": "AI Finds the Deal, Shoppers Still Make the Call",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-05",
+        "url": "https://www.pymnts.com/news/retail/2026/ai-finds-the-deal-shoppers-still-make-the-call/",
+        "summary": "New PYMNTS Intelligence data from Amazon Prime Day and Walmart Deals found 21% of shoppers, and 35% of Gen Z, used an AI chatbot while shopping, mostly to compare prices and surface deals rather than to place the actual order. Amazon and Walmart still captured the transaction even as product discovery increasingly happened inside AI tools rather than on the retailers' own sites.",
+        "tieback": "As product discovery moves into AI assistants before the retailer ever sees the shopper, accurate, structured product and inventory data reaching those agents becomes a prerequisite for winning the sale, not an optional add-on."
+      },
+      {
+        "title": "Survey: Consumers comfortable with store robots performing 'background' work",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-08-03",
+        "url": "https://chainstoreage.com/news-briefs/2026-08-03?article=survey-consumers-comfortable-store-robots-performing-background-work",
+        "summary": "A Breakwater Strategy survey conducted with YouGov found 63% of U.S. adults are comfortable with robots doing stockroom work and 59% with robots cleaning aisles, but comfort drops to the mid-40s once robots stock shelves or help customers directly, and to 39% at self-checkout. Breakwater advised retailers to communicate clearly about where and how they deploy robots given that 74% of respondents worry robots will take other people's jobs.",
+        "tieback": "Consumer comfort with back-of-house automation is the opening for retailers to invest in the inventory accuracy behind the scenes, the same real-time visibility that has to keep supplier and fulfillment data in sync before a robot or associate ever touches the shelf."
+      },
+      {
+        "title": "AI Connects B2B Firms' 3 Biggest Challenges: Goods, Contracts and Cash",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-06",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-connects-b2b-firms-3-biggest-challenges-goods-contracts-and-cash/",
+        "summary": "A new PYMNTS Intelligence Enterprise AI Benchmark report finds wholesale distributors use AI across 35 of 75 tracked business tasks, more than retail or construction, with three-quarters using it for contract generation while keeping AI agents at look-up-only access rather than letting them execute orders or payments. The report argues the real opportunity is connecting supplier contracts, inventory levels and cash flow into one coordinated system rather than treating AI as a collection of separate point tools.",
+        "tieback": "Coordinating supplier contracts, inventory levels and cash flow as one system is the same integration problem automated EDI and supplier analytics already solve, well ahead of most wholesalers' cautious, look-up-only approach to AI agents."
+      },
+      {
+        "title": "Council Post: Your E-Commerce Storefront May Look Perfect, But AI Likely Can't Read It",
+        "publisher": "Forbes (Forbes Business Council)",
+        "author": "Margareta Petrovic",
+        "date": "2026-08-04",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/04/your-e-commerce-storefront-may-look-perfect-but-ai-likely-cant-read-it/",
+        "summary": "Petrovic argues that most e-commerce sites are designed for human eyes, not the AI answer engines now filtering product discovery, and that brands need a clean entity layer, structured, machine-readable facts about products and policies, before they can show up in AI-generated answers. She lays out three sequential moves: open the front door to AI crawlers, fix the entity layer, then track legibility as an ongoing metric.",
+        "tieback": "A clean, structured entity layer is exactly what a transactionable presence on LLMs and shopping agents requires, and it depends on the same clean, real-time product and inventory data that fast SKU onboarding is supposed to guarantee in the first place."
+      }
+    ]
+  },
+  {
     "date": "2026-08-05",
     "label": "Wednesday, August 5, 2026",
     "articles": [
