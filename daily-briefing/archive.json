@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-07",
+    "label": "Friday, August 7, 2026",
+    "articles": [
+      {
+        "title": "Google Maps adds agentic features, including food ordering and hotel bookings",
+        "publisher": "TechCrunch",
+        "author": "Aisha Malik",
+        "date": "2026-08-06",
+        "url": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/",
+        "summary": "Google is rolling out new agentic capabilities in its \"Ask Maps\" AI feature, letting users order food through Square, Toast or Uber Eats, book hotels, and buy event tickets directly from natural-language queries in Google Maps. The update also adds Personal Intelligence, which pulls context from Gmail and Calendar, and gives Ask Maps persistent conversation memory, part of Google's push to turn Maps into a task-completing assistant rather than just a navigation tool.",
+        "tieback": "When a bellwether like Google routes agentic food orders through a restaurant's own POS system rather than taking a cut, it validates the model where retailers and suppliers need a transactionable, EDI-connected presence so AI agents can complete orders without the merchant losing the relationship or the margin."
+      },
+      {
+        "title": "Safeway plugin comes to ChatGPT",
+        "publisher": "Grocery Dive",
+        "author": "Peyton Bigora",
+        "date": "2026-08-06",
+        "url": "https://www.grocerydive.com/news/albertsons-ai-safeway-plugin-chatgpt-technology/827147/",
+        "summary": "Albertsons launched a Safeway plugin inside ChatGPT that lets shoppers type \"@Safeway\" plus a request, such as reordering a weekly list, to get relevant product suggestions, then redirects them to Safeway's site to complete checkout. It's the latest piece of Albertsons' broader AI shopping foundation, following a December agentic assistant rollout and a February OpenAI advertising pilot.",
+        "tieback": "The redirect-to-checkout pattern shows retailers still need their own real-time inventory and order data exposed cleanly to the LLM at the moment of discovery, the same catalog and inventory visibility Logicbroker gives suppliers so their SKUs are accurate and ready to transact wherever the shopper actually converts."
+      },
+      {
+        "title": "The RealReal's AI Overhaul Helps Drive 22% GMV Growth",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-06",
+        "url": "https://www.pymnts.com/commerce/ecommerce/2026/the-realreals-ai-overhaul-helps-drive-22-gmv-growth/",
+        "summary": "The RealReal's AI-powered intake system, Athena, now automates authentication and cataloging for close to half of all items, up from 35% a year ago, while a pricing algorithm scoring more than 100 data points per item manages markdowns without manual override. The company also onboarded two new Japanese vendors into its international dropship program this quarter, contributing to GMV growth of 22% year over year.",
+        "tieback": "Athena's jump from 35% to nearly half of intake automated is a direct proof point for what fast, automated SKU and vendor onboarding does to margin and speed to sell, the same lever Logicbroker pulls for dropship and 3P suppliers through automated EDI and rapid onboarding."
+      },
+      {
+        "title": "Crocs launches 10-year AI transformation program",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-08-05",
+        "url": "https://chainstoreage.com/news-briefs/2026-08-05?article=crocs-launches-10-year-ai-transformation-program",
+        "summary": "Crocs signed a 10-year deal with Infosys to deploy AI-first platforms across its enterprise IT and business operations, aiming to break down data silos and enable real-time, insight-driven decision-making. The partnership targets rising operating costs and inconsistent business processes as Crocs tries to respond faster to shifting consumer demand.",
+        "tieback": "A decade-long bet on unifying data across silos shows how much retailers will pay to fix fragmented systems, the same fragmentation Logicbroker resolves for supplier and order data through real-time order and inventory visibility instead of a multi-year IT overhaul."
+      },
+      {
+        "title": "Why Consumers Are Frustrated With AI And What Retailers Can Do About It",
+        "publisher": "Forbes",
+        "author": "Sharon Edelson",
+        "date": "2026-08-05",
+        "url": "https://www.forbes.com/sites/sharonedelson/2026/08/05/why-consumers-are--frustrated-with-ai-and-what-retailers-can-do-about-it/",
+        "summary": "Consumer frustration with AI is growing as shoppers tire of generic marketing, unreliable AI customer service, and low-quality \"AI slop,\" a disillusionment that economic uncertainty is compounding into more pragmatic, risk-averse buying behavior. Gartner projects AI agents will handle 90% of B2B purchases by 2028, raising the stakes for retailers whose AI experiences currently fall short of that trust bar.",
+        "tieback": "If AI fatigue is pushing shoppers toward more pragmatic, reliability-driven decisions, that raises the bar for backend data accuracy, since sloppy or delayed product and inventory info is exactly what erodes trust once it surfaces through an AI assistant, the failure mode Logicbroker's real-time inventory and order visibility is built to prevent."
+      }
+    ]
+  },
+  {
     "date": "2026-08-06",
     "label": "Thursday, August 6, 2026",
     "articles": [
