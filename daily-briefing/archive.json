@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-16",
+    "label": "Sunday, August 16, 2026",
+    "articles": [
+      {
+        "title": "Consumers warm up to agentic AI purchases",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-08-13",
+        "url": "https://www.retaildive.com/news/retail-shoppers-warm-up-agentic-ai-purchases/827563/",
+        "summary": "An RTB House survey of over 1,800 shoppers across the US, UK, Japan, and France found 44% now trust AI tools more than friends and family when making purchase decisions, and 42% of American millennials would let an AI agent buy items for them within a $250 budget if a seven-day return window is included. Trust drops the closer an agent gets to actually completing payment: over a third of respondents, and 44% of baby boomers, still want a human to review the transaction first.",
+        "tieback": "As AI agents take on more of the actual buying decision, retailers depend on suppliers whose product and inventory data is accurate and instantly queryable, the kind of real-time visibility rapid EDI onboarding provides rather than something bolted on after the fact."
+      },
+      {
+        "title": "AI Just Made Retail's Long Tail Pay Off",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-13",
+        "url": "https://www.pymnts.com/news/retail/2026/ai-just-made-retails-long-tail-pay-off/",
+        "summary": "Shopify President Harley Finkelstein said on the company's Aug. 5 earnings call that 75% of AI-attributed purchases last quarter came from outside the platform's top 100 product categories, with that AI-referred traffic and order volume both tripling year over year. The piece argues AI search is finally letting niche products get found without a marketing budget, but only when a retailer's structured product data, fulfillment details, and trust signals are complete enough for an AI agent to match against a specific request.",
+        "tieback": "Every SKU in the long tail only becomes discoverable to an AI agent once it has been onboarded with complete, accurate data, which is the exact bottleneck fast SKU onboarding and automated EDI are built to remove for suppliers with large or fast-changing catalogs."
+      },
+      {
+        "title": "Where USPS could benefit the most from AI",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-08-13",
+        "url": "https://www.supplychaindive.com/news/where-usps-could-benefit-the-most-from-ai/827694/",
+        "summary": "A USPS Office of Inspector General report found the agency already runs more than 35 active AI use cases, with the biggest untapped opportunity in dynamic route optimization that adjusts delivery paths in real time based on traffic and volume. The report cautions that scaling AI-driven routing will need labor union buy-in and competes for investment against network modernization and workforce priorities.",
+        "tieback": "The routing problem USPS is only beginning to tackle with AI, matching real-time conditions to delivery decisions, is the same problem intelligent order routing and supplier analytics solve today for dropship networks moving goods across dozens of suppliers."
+      },
+      {
+        "title": "Target strengthens inventory management with digital twins",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-08-14",
+        "url": "https://www.supplychaindive.com/news/target-strengthens-inventory-management-with-digital-twins/827910/",
+        "summary": "Target built a digital twin called Proxima that simulates how inventory decisions will play out before its teams act on them, catching problems ahead of time; a small pilot on 63 fresh food items improved on-shelf availability by 2.5%. Proxima also modeled inventory flow into Target's new Houston Receive Center with about 98% accuracy before the facility opened.",
+        "tieback": "Target can afford to build a custom simulation layer for inventory visibility, but most retailers get the same real-time view into supplier stock and order flow off the shelf through a platform built for it rather than an in-house engineering project."
+      },
+      {
+        "title": "Beyond The Hype: Agentic AI Has The Potential To Redefine Retail",
+        "publisher": "Forbes",
+        "author": "Shariq Rehman",
+        "date": "2026-08-10",
+        "url": "https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2026/08/10/beyond-the-hype-agentic-ai-has-the-potential-to-redefine-retail/",
+        "summary": "Shariq Rehman of Visionet Systems argues retail's next AI advantage will not come from adopting more models but from connecting merchandising, supply chain, fulfillment, and store operations so decisions happen with shared context, since agentic AI cannot compensate for fragmented data or disconnected systems. He points to AI agents that could trigger inventory replenishment before a stockout or coordinate a promotion with fulfillment capacity as the real prize, not the model itself.",
+        "tieback": "The fragmented supplier data and disconnected systems this piece flags as the real barrier to agentic AI are exactly what automated EDI and unified order and inventory visibility exist to fix before a retailer ever gets to the agentic layer."
+      }
+    ]
+  },
+  {
     "date": "2026-08-07",
     "label": "Friday, August 7, 2026",
     "articles": [
