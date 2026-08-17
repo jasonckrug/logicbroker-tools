@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-17",
+    "label": "Monday, August 17, 2026",
+    "articles": [
+      {
+        "title": "AI Is Bringing Retailers Their Best Customers but Not Closing the Sale",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-07",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-is-bringing-retailers-their-best-customers-not-closing-sales/",
+        "summary": "Etsy and DoorDash executives say AI-referred shopping traffic converts at a higher rate and larger order size, but agentic order volume remains under 1% of total because handoffs to real inventory, fulfillment, and checkout still don't work reliably. Adobe data shows AI-referred traffic to U.S. retail sites up 393% year over year, yet PYMNTS Intelligence finds only 49% of shoppers trust an agent to actually complete a purchase.",
+        "tieback": "The gap these executives describe, connecting an AI agent's interest to real inventory and fulfillment data at the moment of purchase, is exactly what real-time order and inventory visibility and a transactionable presence on LLMs and agents are built to close."
+      },
+      {
+        "title": "Amazon Wants Alexa to Look Inside the Fridge and Fill the Cart",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-13",
+        "url": "https://www.pymnts.com/news/retail/2026/amazon-wants-alexa-to-own-the-shopping-list-before-walmart-ever-sees-it/",
+        "summary": "Amazon's Alexa for Shopping combines photos of a customer's fridge, conversation, and purchase history to build a household shopping list automatically, an attempt to have AI infer demand before a customer states it. Walmart is countering by making its catalog available across multiple AI assistants and leaning on its store-based inventory and fulfillment footprint.",
+        "tieback": "Winning this race depends on a retailer's catalog and inventory data being clean and current enough for an AI agent to act on instantly, the same real-time inventory visibility and SKU onboarding speed problem dropship retailers face at scale."
+      },
+      {
+        "title": "FedEx, Amazon pursue expanded use of robotic arms",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-08-10",
+        "url": "https://www.supplychaindive.com/news/fedex-amazon-pursue-expanded-use-of-robotic-arms/827221/",
+        "summary": "FedEx deployed Dexterity's dual-armed Mech trailer loading robots at its Hagerstown hub and plans to expand automated loading across more than 20 U.S. hubs, while Amazon plans to more than double its robotic arms fleet in 2026. Both moves reflect an industry-wide push to automate physically demanding warehouse tasks with AI-guided robotics.",
+        "tieback": "Physical automation like this only pays off when the order and inventory data feeding it is accurate in real time, which is why intelligent routing and supplier analytics matter as much as the robots themselves."
+      },
+      {
+        "title": "Walmart equipping a store with Symbotic fulfillment system",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-08-14",
+        "url": "https://www.supplychaindive.com/news/walmart-equipping-a-store-with-symbotic-fulfillment-system/827794/",
+        "summary": "Symbotic has begun installing its first SymMicro back-of-store fulfillment system inside a Walmart location, using autonomous robots to retrieve totes for e-commerce pickup and delivery orders. Walmart has committed to buying 400 of the systems as part of a multiyear automation partnership.",
+        "tieback": "Store-level automation like this is only as fast as the order data flowing into it, the same rapid vendor onboarding and automated EDI problem that determines how quickly a retailer's dropship and 3P suppliers can plug into a fulfillment network like this one."
+      },
+      {
+        "title": "Agentic Commerce Will Redefine How Brands Compete",
+        "publisher": "Forbes (Forbes Tech Council)",
+        "author": "Brett Davis",
+        "date": "2026-08-14",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/14/agentic-commerce-will-redefine-how-brands-compete/",
+        "summary": "Davis argues the central question in agentic commerce is what data an AI shopping agent uses to define value, since agents will favor brands with structured, verifiable product data over persuasive marketing copy. He cites Prophet research showing 54% of consumers find autonomous agents helpful, though only 14% currently trust one to place an order.",
+        "tieback": "This is a direct argument for having a transactionable presence on LLMs and agents, since brands whose product data isn't structured for machine consumption will simply be invisible to the agents making the purchase decision."
+      }
+    ]
+  },
+  {
     "date": "2026-08-16",
     "label": "Sunday, August 16, 2026",
     "articles": [
