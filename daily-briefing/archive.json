@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-18",
+    "label": "Tuesday, August 18, 2026",
+    "articles": [
+      {
+        "title": "EXCLUSIVE: Consumers will let AI agents perform these shopping tasks",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-08-13",
+        "url": "https://chainstoreage.com/exclusive-consumers-will-let-ai-agents-perform-these-shopping-tasks",
+        "summary": "A DOSS-commissioned survey of 1,000 U.S. consumers found 77% would let an AI agent shop for them in some capacity, mostly to monitor prices or compare products, but only 6% would let an agent complete a purchase entirely on its own. The survey also found roughly 10% of 500 major retailers block AI shopping crawlers via robots.txt, rising to 23% among marketplaces.",
+        "tieback": "The robots.txt-blocking finding is a proxy for how many retailers aren't yet structured for agent discovery, the same transactionable-presence gap Logicbroker's supplier data feeds are built to close."
+      },
+      {
+        "title": "AI Agents Just Got Their Own Company Credit Cards",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-12",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-just-got-their-own-company-credit-cards/",
+        "summary": "Mercury launched Agent Cards, virtual corporate cards that AI agents can use autonomously within a set budget and merchant list, with out-of-policy transactions auto-declined. Ramp is pursuing a similar model through its Visa partnership, positioning agent purchasing as a new category of cardholder inside existing spend-management systems.",
+        "tieback": "As agents get their own purchasing credentials, the constraint shifts to whether a supplier's catalog, pricing and order data are structured well enough for an agent to transact against, the same SKU and inventory readiness problem Logicbroker solves for dropship vendors today."
+      },
+      {
+        "title": "UPS Automates 90% of Daily Customs Clearances With AI Agents",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-08-17",
+        "url": "https://www.pymnts.com/news/delivery/2026/ups-automates-90-of-daily-customs-clearances-with-ai-agents/",
+        "summary": "UPS used agentic AI to lift same-day customs clearance from 21% to 90% of packages even as daily volume needing review grew nearly ninefold after the U.S. de minimis exemption ended, running classification, documentation and error checking as one continuous workflow instead of three manual steps. UPS paired this with a digital twin of its network that refreshes every 10 minutes and expanded RFID tracking across its delivery fleet.",
+        "tieback": "Collapsing a three-step manual document review into one automated workflow is the same leap Logicbroker's automated EDI and real-time order and inventory visibility deliver for retailers managing high-volume dropship transactions with suppliers."
+      },
+      {
+        "title": "Clorox says ERP transition will provide supply chain gains this year",
+        "publisher": "Supply Chain Dive",
+        "author": "Antone Gonsalves",
+        "date": "2026-08-11",
+        "url": "https://www.supplychaindive.com/news/clorox-says-erp-transition-will-provide-supply-chain-gains-this-year/827589/",
+        "summary": "Clorox's CFO told investors its new ERP, now past its early rollout disruptions, is shifting the company from spreadsheet-driven planning to automated, integrated business planning that should lower inventory levels and let supply chain teams respond proactively to demand signals. The upgrade is part of a five-year, $500 million data infrastructure effort that began in 2021.",
+        "tieback": "Clorox needed a five-year, $500 million systems overhaul to get real-time demand visibility internally, which underscores the value of a platform like Logicbroker that gives retailers that same order and inventory visibility across suppliers without a multi-year ERP replacement."
+      },
+      {
+        "title": "Stripe Acquiring OpenRouter, Aggregating AI?, Flipping the Business Model",
+        "publisher": "Stratechery",
+        "author": "Ben Thompson",
+        "date": "2026-08-17",
+        "url": "https://stratechery.com/2026/stripe-acquiring-openrouter-aggregating-ai-flipping-the-business-model/",
+        "summary": "Ben Thompson analyzes reports that Stripe is acquiring OpenRouter, the AI model-routing marketplace, framing it as a bet on capturing Aggregation-style leverage over the market for AI models rather than just payments. He weighs whether the deal signals Stripe shifting from a payments-take-rate business into an AI infrastructure aggregator.",
+        "tieback": "The same aggregation logic applies to commerce data: whoever sits at the chokepoint between retailer demand and supplier fulfillment, the role Logicbroker plays for dropship and 3P networks, captures outsized leverage as more transactions route through AI intermediaries."
+      }
+    ]
+  },
+  {
     "date": "2026-08-17",
     "label": "Monday, August 17, 2026",
     "articles": [
