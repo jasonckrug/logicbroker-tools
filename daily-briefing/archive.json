@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-19",
+    "label": "Wednesday, August 19, 2026",
+    "articles": [
+      {
+        "title": "Visa and Mastercard Join Rain's Agentic Commerce Coalition",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-18",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/visa-and-mastercard-join-rains-agentic-commerce-coalition/",
+        "summary": "Stablecoin infrastructure company Rain launched the Agentic Payments Alliance on Aug. 18, with Visa, Mastercard, Fiserv, Circle, Solana and Remitly among more than 25 founding members. The coalition plans to develop shared standards for how AI agents get authorized to transact, how fraud gets caught, and how loyalty and rewards travel with an agent, ahead of McKinsey's projected $3 trillion to $5 trillion agentic commerce market by 2030.",
+        "tieback": "A multi-network coalition is now writing the rules for how agents get authorized to transact, which raises the bar for suppliers whose EDI and order data aren't clean enough to meet those same machine-readable standards."
+      },
+      {
+        "title": "What Consumers Will Actually Let AI Buy For Them",
+        "publisher": "Forbes",
+        "author": "Michael Quoc",
+        "date": "2026-08-18",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/18/what-consumers-will-actually-let-ai-buy-for-them/",
+        "summary": "Quoc argues consumer trust in AI purchasing follows an \"autonomy curve\" that declines as price rises and never flattens, since shoppers verify recommendations once real money is at stake. He cites Gartner data showing no more than 11% of shoppers will let AI complete a purchase on its own even in low-stakes categories like household supplies, despite McKinsey's multitrillion-dollar agentic commerce forecast.",
+        "tieback": "If shoppers verify before an agent completes a purchase, the product and inventory data an agent shows at that moment (accurate stock, pricing, delivery windows) becomes the deciding factor, which is exactly what real-time order and inventory visibility is built to guarantee."
+      },
+      {
+        "title": "Schnucks beefs up its digital tools for shoppers",
+        "publisher": "Grocery Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-08-13",
+        "url": "https://www.grocerydive.com/news/schnucks-new-digital-tools-shoppers-artificial-intelligence/827758/",
+        "summary": "Schnuck Markets added an AI shopping assistant, built with VitalityIP on more than 6 billion lines of shopping, health and nutrition data, plus a fully interactive weekly ad that lets shoppers clip coupons and build carts directly from sale listings. The 112-store grocer said the tools are meant to deepen customer relationships around nutrition, budget and meal planning.",
+        "tieback": "An AI assistant that recommends products from weekly deals is only as good as the underlying catalog and promotion data feeding it, the same SKU-level accuracy problem rapid vendor onboarding and automated EDI are built to solve at scale."
+      },
+      {
+        "title": "3 ways Kimberly-Clark is using technology to boost supply chain efficiency",
+        "publisher": "Supply Chain Dive",
+        "author": "Phil Neuffer",
+        "date": "2026-08-18",
+        "url": "https://www.supplychaindive.com/news/3-ways-kimberly-clark-is-using-technology-to-boost-supply-chain-efficiency/828037/",
+        "summary": "Kimberly-Clark finished rolling out a unified Coupa procurement platform to 90% of its suppliers and began scaling an AI manufacturing agent that delivered a 40% to 50% productivity gain on knowledge-search tasks, part of a five-year, $3 billion productivity program. The company also launched an internal \"IT Digital University\" to train supply chain staff on AI and data visualization.",
+        "tieback": "A single supplier-facing platform is what made Kimberly-Clark's AI agent useful in the first place, the same argument for consolidating supplier onboarding and analytics onto one platform rather than layering AI on top of fragmented systems."
+      },
+      {
+        "title": "Why Agentic AI Could Transform Procurement",
+        "publisher": "Harvard Business Review",
+        "author": "Heiner Himmelreich, Ilan Oshri, Paolo Scala and Anas Zaidani",
+        "date": "2026-08-13",
+        "url": "https://hbr.org/2026/08/why-agentic-ai-could-transform-procurement",
+        "summary": "The authors argue procurement is better suited to agentic AI than most business functions because its work is structured and financially measurable, yet adoption stays low for organizational rather than technical reasons. Companies seeing gains are redesigning procurement around AI, giving procurement ownership of deployments, strengthening data foundations, and measuring commercial outcomes instead of usage.",
+        "tieback": "The article's core barrier, weak data foundations, is the same problem intelligent routing and supplier analytics are meant to fix before an agent can make a reliable purchasing decision."
+      }
+    ]
+  },
+  {
     "date": "2026-08-18",
     "label": "Tuesday, August 18, 2026",
     "articles": [
