@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-20",
+    "label": "Thursday, August 20, 2026",
+    "articles": [
+      {
+        "title": "Target Touts Jump in Traffic From AI Platforms as Sales Climb",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-19",
+        "url": "https://www.pymnts.com/earnings/2026/target-touts-traffic-jump-from-ai-platforms-sales-climb/",
+        "summary": "Target's Q2 2026 earnings call credited agentic commerce partnerships with OpenAI and other AI platforms for digital traffic growing more than 3.5 times faster than the industry average. CEO Michael Fiddelke also pointed to Proxima, a digital twin of Target's middle-mile supply chain, as key to making faster inventory decisions between buildings and stores.",
+        "tieback": "Target's Proxima digital twin is the kind of real-time order and inventory visibility retailers need before they can safely expose products to AI-agent traffic, since AI-referred shoppers who hit a stockout won't come back through that channel."
+      },
+      {
+        "title": "Adobe: AI E-Commerce Traffic Booms, but Many Retailers Lag Behind",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-08-19",
+        "url": "https://chainstoreage.com/adobe-ai-e-commerce-traffic-booms-many-retailers-lag-behind",
+        "summary": "Adobe found AI-referred traffic to U.S. retail sites up 62% year over year in July, converting 60% better than non-AI traffic, but homepage visibility for AI shopping agents has actually dropped to an average of 61% across a broader set of retail sites, meaning nearly 40% of content isn't fully readable by shopping agents. Readability varies widely by vertical, from 76% in apparel down to 59% in grocery.",
+        "tieback": "A retailer's product catalog is only as transactable as its underlying data is machine-readable, which is the same clean, structured SKU and attribute data that makes for fast supplier onboarding and a real transactable presence on LLMs and agents."
+      },
+      {
+        "title": "Regional Convenience Retailer Weigel's Unifies Store Operations at POS",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-08-19",
+        "url": "https://chainstoreage.com/news-briefs/2026-08-19?article=regional-convenience-retailer-weigels-unifies-store-operations-pos",
+        "summary": "Weigel's is rolling out Tote's AI-native POS platform across all 90 of its Tennessee convenience stores, combining point of sale, back office, foodservice, and store operations into a single cloud-based system. The retailer says the goal is to simplify operations and make it easier to adopt new store technology as it emerges.",
+        "tieback": "Collapsing fragmented back-office systems into one connected platform is the same problem automated EDI and real-time order visibility solve on the supplier side, replacing a patchwork of disconnected data feeds with one operational source of truth."
+      },
+      {
+        "title": "How DTC Startups Are Using AI to Scale More Efficiently",
+        "publisher": "Modern Retail",
+        "author": "Gabriela Barkho",
+        "date": "2026-08-17",
+        "url": "https://www.modernretail.co/operations/how-dtc-startups-are-using-ai-to-scale-more-efficiently/",
+        "summary": "Founders from brands including Murphy Door and Vaila Shoes described using AI to price custom orders in real time and manage wholesale relationships with partners like Macy's, DSW, and Home Depot without adding headcount. Murphy Door's CEO said AI-assisted pricing now turns a product roughly every six minutes while costs trend down rather than up.",
+        "tieback": "These are lean teams using automation to do the pricing and partner-management work that used to require a bigger back office, the same efficiency gain suppliers get from rapid vendor onboarding and intelligent routing instead of manually managing each retail partner's requirements."
+      },
+      {
+        "title": "As Lululemon AI Chief Exits, Analysts 'Increasingly Concerned' About Turnover",
+        "publisher": "Retail Dive",
+        "author": "Cara Salpini",
+        "date": "2026-08-14",
+        "url": "https://www.retaildive.com/news/lululemon-ai-chief-exits-increasingly-concerned-executive-turnover-heidi-oneill-ceo/827906/",
+        "summary": "Lululemon's chief AI and technology officer departed after less than a year, alongside a separate chief strategy officer exit, just a month before incoming CEO Heidi O'Neill starts. Analysts at BNP Paribas flagged the back-to-back C-suite departures as a talent-retention risk heading into a leadership transition.",
+        "tieback": "When AI strategy lives inside one executive's head instead of a stable platform, retailers lose momentum every time that person leaves, which is the argument for durable, vendor-agnostic infrastructure like EDI and onboarding automation that survives leadership changes."
+      }
+    ]
+  },
+  {
     "date": "2026-08-19",
     "label": "Wednesday, August 19, 2026",
     "articles": [
