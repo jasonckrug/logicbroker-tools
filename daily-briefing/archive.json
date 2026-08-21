@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-21",
+    "label": "Friday, August 21, 2026",
+    "articles": [
+      {
+        "title": "AIibaba Focuses on Agentic Commerce as AI Spending Balloons",
+        "publisher": "PYMNTS.com",
+        "author": "PYMNTS",
+        "date": "2026-08-20",
+        "url": "https://www.pymnts.com/earnings/2026/aiibaba-focuses-agentic-commerce-ai-spending-balloons/",
+        "summary": "Alibaba's Q2 earnings showed AI investment driving a 75% drop in net income even as cloud and AI-product revenue surged, with CEO Eddie Wu detailing plans for Qwen-based AI agents built specifically for eCommerce, spanning shopper-facing search and merchant operations alike. More than 250 million users have already completed a first AI-driven shopping experience through Alibaba's Qwen model.",
+        "tieback": "As Alibaba builds agents that plug directly into merchant data for pricing, marketing and customer service, retailers running on manual vendor onboarding and fragmented catalog feeds will struggle to keep pace with suppliers whose data is already agent-ready."
+      },
+      {
+        "title": "Ecommerce Trends: Which online retailers AI is helping the most",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-08-20",
+        "url": "https://www.digitalcommerce360.com/2026/08/20/ecommerce-trends-which-online-retailers-ai-is-helping-the-most/",
+        "summary": "Digital Commerce 360's AI Commerce Rankings show the retailers benefiting most from AI-driven traffic aren't necessarily the largest ones: niche players like Nixon, Online Labels and CustomInk climbed fastest, while categories like automotive parts gained an average of 20 positions and flowers and gifts fell nearly 18. The rankings suggest AI shopping agents reward well-structured product data over sheer scale.",
+        "tieback": "Category-level winners and losers in AI-referred traffic show that catalog structure and product data quality, not company size, determine which retailers get surfaced to AI shopping agents, the same fast, accurate SKU onboarding Logicbroker builds for."
+      },
+      {
+        "title": "Retailers Report AI-Driven Sales and Bigger Baskets in Q2 Earnings",
+        "publisher": "PYMNTS.com",
+        "author": "PYMNTS",
+        "date": "2026-08-20",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/retailers-report-ai-driven-sales-bigger-baskets-q2-earnings/",
+        "summary": "Walmart, Amazon and Target all told Q2 earnings calls that AI shopping assistants are driving bigger orders (Walmart's Sparky and Amazon's Alexa for Shopping users each spend roughly 40% more per order), but nearly all the hard numbers so far come from grocery and other repeat-purchase categories. Discovery-driven retailers like TJX and Etsy show AI adoption lagging well behind in categories built on browsing rather than repetition.",
+        "tieback": "The gap between AI's grocery success and its weak showing in discovery categories comes down to whether the underlying product and SKU data is clean and structured enough for an assistant to act on it, exactly the gap real-time catalog and inventory visibility is built to close."
+      },
+      {
+        "title": "Shoppers are finally telling grocers why they buy",
+        "publisher": "Grocery Dive (Opinion)",
+        "author": "Daniel Vitiello",
+        "date": "2026-08-12",
+        "url": "https://www.grocerydive.com/news/shoppers-are-finally-telling-grocers-why-they-buy/826775/",
+        "summary": "Conversational AI shopping means customers now describe their full situation, budget and constraints upfront instead of typing keywords, and Cooklist's Daniel Vitiello argues grocers need machine-readable product metadata (allergens, prep time, dietary fit) to act on that declared intent. He also argues grocers should shift from item-by-item lists toward personalized bundles assembled from a shopper's stated needs.",
+        "tieback": "This is a direct case for SKU-level metadata depth and structured catalog data, the same foundation that determines whether a retailer's suppliers can be onboarded and represented accurately enough for AI agents to shop from."
+      },
+      {
+        "title": "The Questions Retail Leaders Should Ask Before Investing In AI",
+        "publisher": "Forbes (Forbes Business Council)",
+        "author": "Melissa Wong",
+        "date": "2026-08-19",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/19/the-questions-retail-leaders-should-ask-before-investing-in-ai/",
+        "summary": "Wong argues AI investments only pay off when the data and systems feeding them are sound, and lays out questions retail leaders should ask vendors about data provenance, system integration and workflow fit before signing on. She frames most AI failures as data and process failures rather than model failures.",
+        "tieback": "Her framework for vetting AI vendors on data quality and integration readiness is the same diligence a retailer should apply before trusting a supplier network's EDI and catalog feeds to power automated operations."
+      }
+    ]
+  },
+  {
     "date": "2026-08-20",
     "label": "Thursday, August 20, 2026",
     "articles": [
