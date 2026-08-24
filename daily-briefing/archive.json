@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-24",
+    "label": "Monday, August 24, 2026",
+    "articles": [
+      {
+        "title": "AI Agents Could Rewrite E-Commerce—Here's How Brands Can Prepare",
+        "publisher": "Forbes",
+        "author": "Haozhuang Dai",
+        "date": "2026-08-21",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/21/ai-agents-could-rewrite-e-commerce-heres-how-brands-can-prepare/",
+        "summary": "AI shopping agents collapse discovery, evaluation and checkout into a single conversation, which means brands lose the traditional multi-step funnel where content, ads and product listings functioned as separate disciplines. Dai argues large language models don't experience brands the way people do, so retailers need structured, machine-readable product data to get recommended in an agent's shortlist.",
+        "tieback": "Brands whose catalog data isn't structured and machine-readable risk disappearing from agent shortlists entirely, which is exactly the gap Logicbroker's transactionable presence on LLMs and agents and standardized SKU onboarding are built to close."
+      },
+      {
+        "title": "Amazon, Fulfillment Tech Company AutoStore Ink Global Supply Deal",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-08-20",
+        "url": "https://www.supplychaindive.com/news/amazon-fulfillment-tech-company-autostore-ink-global-supply-deal/827978/",
+        "summary": "AutoStore agreed to a framework for Amazon to further procure its automated storage and retrieval systems worldwide, though the deal includes no purchase commitments yet. The pact adds an outside automation partner to Amazon's already heavy in-house investment in robotic arms and warehouse automation, and a supply chain consultant called it a wake-up call for Target, Walmart and Kroger to move faster on their own automation.",
+        "tieback": "As automation raises the bar for fulfillment speed at Amazon's scale, mid-market retailers need supplier-side intelligent routing and analytics, not warehouse robotics budgets, to keep pace on delivery promises."
+      },
+      {
+        "title": "Home Depot Rolls Out Express Delivery in 3 Hours or Less Across US",
+        "publisher": "Retail Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-08-21",
+        "url": "https://www.retaildive.com/news/home-depot-express-delivery-3-hours-or-less/828362/",
+        "summary": "Home Depot launched nationwide express delivery promising eligible orders in three hours or less, using its supply chain network and more than 2,000 U.S. stores as fulfillment hubs for a flat $7 to $10 fee covering thousands of SKUs. The retailer said it has cut U.S. delivery lead times 45% over the last 18 months as part of a broader push to speed up its distribution network.",
+        "tieback": "Turning thousands of stores into fulfillment nodes only works with accurate, real-time SKU-level inventory across every location, the same visibility problem Logicbroker's real-time order and inventory visibility solves for dropship and 3P networks."
+      },
+      {
+        "title": "Amazon to Expand Drone Delivery Reach Sixfold This Year",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-08-19",
+        "url": "https://www.supplychaindive.com/news/amazon-to-expand-drone-delivery-reach-sixfold-this-year/828253/",
+        "summary": "Amazon is expanding Prime Air drone delivery to nearly 500 cities and towns by the end of 2026, a sixfold increase, adding metro areas including Atlanta, Chicago and Cleveland. Drone delivery now covers roughly 60% of Amazon's most frequently purchased items and competes directly with Walmart's drone partnership with Wing and DoorDash's new in-house drone program.",
+        "tieback": "As delivery speed becomes a competitive front well beyond Amazon and Walmart's scale, smaller retailers and suppliers need intelligent order routing that picks the fastest fulfillment path from existing inventory rather than building drone infrastructure of their own."
+      },
+      {
+        "title": "The Real E-Commerce AI Revolution (And Why It's Not About Efficiency)",
+        "publisher": "Forbes",
+        "author": "David Greenblatt",
+        "date": "2026-08-21",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/21/the-real-e-commerce-ai-revolution-and-why-its-not-about-efficiency/",
+        "summary": "Greenblatt argues the first wave of AI for online selling just executed tasks faster (writing, optimizing, summarizing), while the bigger unclaimed opportunity is using AI to improve decision quality itself, citing Q4 inventory investment as an example where AI should weigh demand, sell-through and ad spend together instead of producing a plain statistical forecast. He extends the same logic to seller financial planning, arguing sellers need to understand margin, cash tied up in inventory and the true cost of growth.",
+        "tieback": "Better inventory decisions depend on having real-time order and inventory data to feed the model in the first place, which is the visibility gap Logicbroker's real-time order and inventory visibility is built to close for dropship and 3P sellers."
+      }
+    ]
+  },
+  {
     "date": "2026-08-21",
     "label": "Friday, August 21, 2026",
     "articles": [
