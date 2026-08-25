@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-25",
+    "label": "Tuesday, August 25, 2026",
+    "articles": [
+      {
+        "title": "No Discount Survives an AI That Can't See It",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-08-24",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/no-discount-survives-an-ai-that-cant-see-it/",
+        "summary": "Synchrony's August 17 enterprise deal with OpenAI will let shoppers browse promotional financing and partner offers inside ChatGPT, following Target's setup where Circle discounts already apply automatically once a shopper connects their account inside Microsoft Copilot or Google's AI surfaces. The piece argues a loyalty benefit an AI agent cannot read effectively doesn't exist for purposes of a purchase decision, since the agent can only weigh what's exposed to it.",
+        "tieback": "A supplier's promotions, pricing, and terms only influence an AI-mediated purchase if they're exposed through structured, machine-readable data, which is exactly what automated EDI and real-time catalog feeds are built to guarantee."
+      },
+      {
+        "title": "How Payment Leaders Can Win Agentic Commerce",
+        "publisher": "Forbes (Forbes Coaches Council)",
+        "author": "Lital Marom",
+        "date": "2026-08-21",
+        "url": "https://www.forbes.com/councils/forbescoachescouncil/2026/08/21/how-payment-leaders-can-win-agentic-commerce/",
+        "summary": "Marom cites survey data showing about 65% of shoppers trust AI to compare prices while only 14% trust it to place an order, and argues the gap closes through control rather than more autonomy: spending caps, instant revocation, and easy cancellation that let an agent earn a purchase instead of assuming it. She frames judgment and discernment, not raw automation, as the scarce asset payment and commerce leaders need to supply.",
+        "tieback": "The same trust gap applies to supplier-facing automation. Retailers only let a routing engine or buying agent commit to an order when the supplier analytics and intelligent routing behind it give a clear, auditable basis for the decision."
+      },
+      {
+        "title": "Amazon Envisions Next-Generation Automated Stations to Process Packages 2.5 Times Faster",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-08-24",
+        "url": "https://www.pymnts.com/amazon/2026/amazon-envisions-next-generation-automated-stations-to-process-packages-2-5-times-faster/",
+        "summary": "Amazon is developing an automated delivery-station concept, internally called Project Tetromino, that would use AI and robotics to organize packages and prep them for delivery vehicles at roughly 2.5 times the throughput of its current stations, with a pilot facility targeted for 2028. Amazon disputed the leaked timeline and financial projections but confirmed the project is real and still early-stage.",
+        "tieback": "As AI-driven sortation compresses fulfillment speed on the outbound side, the bottleneck shifts upstream to how fast a supplier's inventory and order data can feed that automation, the same problem intelligent routing and real-time inventory visibility solve on the vendor side."
+      },
+      {
+        "title": "Target highlights in-stock gains as turnaround plan advances",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-08-24",
+        "url": "https://www.supplychaindive.com/news/target-highlights-in-stock-gains-as-turnaround-plan-advances/828525/",
+        "summary": "Target COO Lisa Roath said the retailer hit its strongest item availability in recent years for its most frequently purchased products, crediting closer coordination between supply chain, merchandising and store teams plus prepositioned inventory and dedicated trailer capacity ahead of back-to-school. Target is also using Proxima, a digital twin of its middle-mile inventory system announced August 13, to simulate supply chain decisions before executing them.",
+        "tieback": "Proxima is a simulation layer bolted onto existing inventory flows after the fact. A platform with real-time order and inventory visibility built in from the start gives suppliers and retailers that same downstream-impact clarity without a separate digital-twin project."
+      },
+      {
+        "title": "FIS Says Purchase Data Will Push Payments Beyond the Transaction",
+        "publisher": "PYMNTS",
+        "author": "Jakob Harrison (FIS)",
+        "date": "2026-08-24",
+        "url": "https://www.pymnts.com/news/payments-innovation/2026/fis-says-purchase-data-will-push-payments-beyond-the-transaction/",
+        "summary": "FIS senior vice president Jakob Harrison argues payments executives should treat AI and agentic commerce as an accumulation of smaller signals rather than one defining event, and describes FIS's Smart Basket strategy as a bet that item-level purchase data, not just the fact a payment occurred, is what makes a transaction useful to an AI agent. He calls the shift a move from transaction processing to transaction intelligence.",
+        "tieback": "An AI agent, or any automated buying system, is only as useful as the item-level data behind the transaction, the same argument for why SKU onboarding speed and real-time order data matter more than payment processing alone in a dropship or 3P network."
+      }
+    ]
+  },
+  {
     "date": "2026-08-24",
     "label": "Monday, August 24, 2026",
     "articles": [
