@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-26",
+    "label": "Wednesday, August 26, 2026",
+    "articles": [
+      {
+        "title": "Instacart's AI Assistant Turns Chitchat Into Cha-Ching",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-08-24",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/instacarts-ai-assistant-turns-chitchat-into-cha-ching/",
+        "summary": "Instacart is extending its retail media business into Cart Assistant, its AI shopping tool built on 1.6 billion lifetime orders, and is testing three new ad formats designed for conversational shopping. The rollout follows Instacart's integration with Google's Gemini and sits inside a broader race among Google, Amazon, and other platforms to own the AI-driven path from conversation to purchase.",
+        "tieback": "Instacart's bet shows that winning inside an AI shopping conversation depends on having a transactable, structured presence the agent can act on, the same agent-ready foundation Logicbroker builds for its retailer and supplier network."
+      },
+      {
+        "title": "Malachyte Turns Spotify's Skip Signal Into a Merchant's Agentic Edge",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-08-18",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/malachyte-turns-spotify-skip-signal-into-merchant-agentic-edge/",
+        "summary": "Malachyte CEO Sidd Motwani describes how behavioral intelligence infrastructure built at Spotify is being applied to retail, reading a shopper's real-time actions to personalize a storefront in under 200 milliseconds. He argues agentic commerce raises the stakes because an AI agent's \"consideration set\" becomes the new front door, meaning a merchant can lose a sale if its product never makes an agent's shortlist.",
+        "tieback": "The piece underscores why real-time, machine-readable inventory and product data determine whether an AI agent even considers a merchant's catalog, which is the order and inventory visibility problem Logicbroker's platform solves for dropship and 3P suppliers."
+      },
+      {
+        "title": "Lowe's Online Sales Benefit From Mylow AI Agent's Conversion Rate in Q2 2026",
+        "publisher": "Digital Commerce 360",
+        "author": "Abbas Haleem",
+        "date": "2026-08-20",
+        "url": "https://www.digitalcommerce360.com/article/lowes-online-sales/",
+        "summary": "Lowe's reported online sales growth of 15.7% in fiscal Q2 2026, nearly twice its total sales growth, with CEO Marvin Ellison crediting its Mylow AI shopping agent alongside expanded fulfillment options. The company said the conversion rate for customers who use Mylow is triple that of customers who do not, after the tool fielded more than 25 million questions since launch.",
+        "tieback": "Mylow's conversion lift is a direct payoff of clean, structured product data at scale, the same catalog foundation Logicbroker's rapid SKU onboarding gives dropship and 3P vendors before an AI assistant can act on their listings."
+      },
+      {
+        "title": "3M Uses AI to Tame Its 60,000-Product Portfolio",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-08-25",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/3m-uses-ai-to-tame-its-60000-product-portfolio/",
+        "summary": "3M launched Ask 3M, an AI assistant that answers technical product questions in plain language, grounded in the company's own documentation across 49 technology platforms rather than open internet data. The company paired it with a Digital Materials Hub that lets engineers test materials virtually, aiming to shorten the path from research to purchase across a 60,000-SKU catalog.",
+        "tieback": "3M's problem, a massive catalog where incomplete or siloed product data costs sales, is the same one Logicbroker's automated EDI and SKU onboarding speed solve for retailers trying to make thousands of supplier catalogs usable and searchable."
+      },
+      {
+        "title": "Algorithmic Shopping Is Here. Is Your Company Ready?",
+        "publisher": "Harvard Business Review",
+        "author": "Paul F. Accornero",
+        "date": "2026-08-07",
+        "url": "https://hbr.org/2026/08/algorithmic-shopping-is-here-is-your-company-ready",
+        "summary": "Accornero traces how Amazon's Buy for Me, OpenAI's Instant Checkout, Google's Universal Commerce Protocol, and Microsoft's Copilot Checkout have each pushed AI agents further into the purchase decision, not just product discovery. He argues executives who spent years preparing their organizations to use AI internally now face a harder challenge: preparing for AI as the customer.",
+        "tieback": "The piece frames the same shift Logicbroker is built for. Treating AI agents as a real buying channel means retailers and suppliers need a transactable presence on LLMs and agents, not just a human-facing storefront."
+      }
+    ]
+  },
+  {
     "date": "2026-08-25",
     "label": "Tuesday, August 25, 2026",
     "articles": [
