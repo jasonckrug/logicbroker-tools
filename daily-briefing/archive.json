@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-27",
+    "label": "Thursday, August 27, 2026",
+    "articles": [
+      {
+        "title": "Study Finds Consumers Ready to Use AI for Holiday Shopping: Retailers Aren't",
+        "publisher": "Chain Store Age",
+        "author": "Marianne Wilson",
+        "date": "2026-08-24",
+        "url": "https://chainstoreage.com/study-finds-consumers-ready-use-ai-holiday-shopping-heres-how",
+        "summary": "Narvar's 2026 Holiday Shopping Report finds 65% of consumers plan to use AI for at least part of their holiday shopping, from gift discovery to post-purchase tracking, but only 8% of retailers describe themselves as very confident using AI to improve the shopping experience. Most shoppers say they'll trade delivery speed for free shipping, but a meaningful share still expects free shipping to also mean fast.",
+        "tieback": "Retailers behind on AI readiness will need real-time order and inventory visibility to actually deliver on the speed and accuracy that AI-informed shoppers now expect."
+      },
+      {
+        "title": "Synchrony Says AI Has Put Every Checkout in Play",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-08-27",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/synchrony-says-ai-has-put-every-checkout-in-play/",
+        "summary": "Synchrony's Maran Nalluswami says agentic commerce is forcing payments and retail companies to make investment decisions before they know where a transaction will actually close, since AI platforms could become the point of purchase rather than just a research stop. Large retailers are already pushing to have products and payment options available wherever a consumer's AI agent shops, while smaller merchants just want the experience kept simple.",
+        "tieback": "As AI platforms move from research tool to transaction point, retailers need a transactable presence on those platforms, meaning clean, current, agent-readable catalog and inventory data ready to sell through."
+      },
+      {
+        "title": "Retailers Are Making Delivery Promises Their Networks Can't Keep",
+        "publisher": "Forbes",
+        "author": "Nishith Rastogi",
+        "date": "2026-08-26",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/26/retailers-are-making-delivery-promises-their-networks-cant-keep/",
+        "summary": "Marketing and e-commerce teams often set delivery dates without input from the people managing warehouse and carrier capacity, a gap that widens further once peak-season order volume spikes. The author argues real-time operational visibility, not just faster shipping, is what lets retailers set delivery promises their networks can actually hit.",
+        "tieback": "Real-time order and inventory visibility is exactly the fix here: a checkout date is only as reliable as the fulfillment and supplier data feeding it."
+      },
+      {
+        "title": "AI Won't Fix a Store That Was Never Built to Run It",
+        "publisher": "Forbes",
+        "author": "Tim McCracken",
+        "date": "2026-08-24",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/24/ai-wont-fix-a-store-that-was-never-built-to-run-it/",
+        "summary": "A 2026 Deloitte survey found 75% of retail and CPG executives call AI a top strategic priority, but only 16.5% can quantify a return, largely because spend goes toward underlying infrastructure instead of the use cases it's meant to support. The author argues retailers need to assess their network as a whole system before layering on each new AI application, or risk compounding technical debt.",
+        "tieback": "The same logic applies further upstream: piling AI on top of a brittle, manually patched vendor integration layer just compounds the same debt, which is why automated EDI and fast vendor onboarding need to be the foundation before AI gets added on top."
+      },
+      {
+        "title": "Generative AI in E-Commerce: Where the Returns Come From and How to Capture Them",
+        "publisher": "Forbes",
+        "author": "Dennis Vorobyov",
+        "date": "2026-08-26",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/26/generative-ai-in-e-commerce-where-the-returns-come-from-and-how-to-capture-them/",
+        "summary": "The author cites data showing companies that deploy generative AI well see an average $3.70 return per $1 invested, yet only about 5% of companies are \"future-built\" enough to capture that value, starting with clean, current, well-structured product data since AI systems can only recommend what they can read. Winners like Klarna and Stitch Fix pair AI with human judgment rather than fully automating, and purchased AI solutions succeed roughly twice as often as in-house builds according to MIT research.",
+        "tieback": "\"AI can only recommend what it can read\" is the practical case for fast, clean SKU onboarding and structured catalog data as the foundation any agentic or generative shopping experience depends on."
+      }
+    ]
+  },
+  {
     "date": "2026-08-26",
     "label": "Wednesday, August 26, 2026",
     "articles": [
