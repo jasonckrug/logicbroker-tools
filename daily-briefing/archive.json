@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-28",
+    "label": "Friday, August 28, 2026",
+    "articles": [
+      {
+        "title": "Ecommerce Trends: What's different about Amazon's approach to AI commerce",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-08-27",
+        "url": "https://www.digitalcommerce360.com/2026/08/27/ecommerce-trends-amazons-approach-to-ai-commerce/",
+        "summary": "Digital Commerce 360's latest AI Commerce Rankings show Amazon barely cracking the top 100, because it channels shoppers into its own AI ecosystem (Rufus, Alexa) rather than optimizing for third-party AI referral traffic the way Walmart and Target do. Smaller, less-known retailers are picking up outsized traffic share from ChatGPT and Gemini precisely because they don't have a proprietary assistant competing for that same attention.",
+        "tieback": "Retailers without a dominant first-party AI assistant need a transactionable presence across every LLM and agent surface, not just one, which is the exact gap a structured, real-time product feed closes for suppliers who want to be discoverable and purchasable regardless of which agent the shopper is using."
+      },
+      {
+        "title": "Draco Diamond credits AEO, AI traffic trends ahead of Cyber 5",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-08-26",
+        "url": "https://www.digitalcommerce360.com/2026/08/26/draco-diamond-aeo-ai-traffic-cyber-5/",
+        "summary": "Jewelry brand Draco Diamond saw a 31x jump in traffic after investing in answer engine optimization, with AI referral share climbing from 0.18% to 5.45% and those visitors spending 20% longer on-site. The catch: as a made-to-order brand, it still runs a 14-to-21-day fulfillment window, which its founder calls painful for customers who just spent significant money.",
+        "tieback": "Winning AI referral traffic is wasted if fulfillment can't keep pace with it, which is why automated EDI and real-time order and inventory visibility matter as much as AI discoverability once an agent-driven sale actually closes."
+      },
+      {
+        "title": "Dollar General unifies inventory forecasting, replenishment with AI",
+        "publisher": "Chain Store Age",
+        "author": "Zachary Russell",
+        "date": "2026-08-27",
+        "url": "https://chainstoreage.com/dollar-general-unifies-inventory-forecasting-replenishment-ai",
+        "summary": "Dollar General is partnering with Relex Solutions to unify forecasting, replenishment, and allocation across its 21,000-plus stores and 34 distribution centers, spanning roughly 18,000 SKUs. The platform will also manage ordering schedules, lead times, and supplier coordination in one system so stores and distribution centers work from the same data.",
+        "tieback": "This is the same fragmented, high-SKU-count problem that intelligent routing and supplier analytics are built to solve for retailers running dropship or 3P programs where inventory sits with vendors instead of in owned distribution centers."
+      },
+      {
+        "title": "The Real Future Of Supply Chain AI Involves Decision Orchestration",
+        "publisher": "Forbes",
+        "author": "Nirmal Jingar",
+        "date": "2026-08-27",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/27/the-real-future-of-supply-chain-ai-involves-decision-orchestration/",
+        "summary": "The piece argues that as supply chains hand more decisions to AI, the hard problem shifts from model accuracy to governance: explainability, privacy, security, fairness, and measurable value all need stronger rules before autonomous decision-making can be trusted at scale.",
+        "tieback": "As agentic decision-making spreads into supplier and inventory workflows, auditability of every automated transaction becomes a real differentiator rather than a compliance afterthought."
+      },
+      {
+        "title": "Why The Next Trillion-Dollar Opportunity Is AI-Powered Experiences",
+        "publisher": "Forbes",
+        "author": "Mirjana Perkovic",
+        "date": "2026-08-27",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/27/why-the-next-trillion-dollar-opportunity-is-ai-powered-experiences/",
+        "summary": "Perkovic argues the next wave of valuable companies won't win by having AI, but by using it to make ordinary experiences memorable, pointing to world models and embodied AI/service robots reshaping retail, travel, and logistics.",
+        "tieback": "The operational layer behind the experience is what makes or breaks it, and that puts a premium on the unglamorous fundamentals (fast vendor onboarding, clean product data, reliable order flow) that let a retailer actually deliver on an AI-driven promise."
+      }
+    ]
+  },
+  {
     "date": "2026-08-27",
     "label": "Thursday, August 27, 2026",
     "articles": [
