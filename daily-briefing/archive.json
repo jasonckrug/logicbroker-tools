@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-08-31",
+    "label": "Monday, August 31, 2026",
+    "articles": [
+      {
+        "title": "Lowe's AI Assistant Turns Questions Into Sales",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-27",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/lowes-ai-assistant-turns-questions-into-sales/",
+        "summary": "Lowe's AI assistant Mylow has fielded more than 25 million questions since launch, and online shoppers who use it convert at three times the rate of those who don't, CEO Marvin Ellison said on the retailer's Q2 earnings call. Home Depot's comparable tool, Magic Apron, follows the same model, turning a vague project question into a specific, purchasable list of products rather than a set of search results.",
+        "tieback": "Both tools show agents winning by translating unstructured shopper intent directly into a purchasable basket, the same kind of structured, transaction-ready product data that depends on clean SKU and catalog onboarding to work at scale."
+      },
+      {
+        "title": "Microsoft Puts 25 AI Agents to Work on Supply Chain Costs",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-28",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-puts-25-ai-agents-work-supply-chain-costs/",
+        "summary": "Microsoft has deployed more than 25 AI agents across its own supply chain to simulate demand, flag freight billing discrepancies, and recommend shipping routes, building on an Azure data lake it began consolidating in 2018. A related deployment at Dow uses agents to catch invoice errors across roughly 4,000 daily shipments, recovering millions in freight overpayments.",
+        "tieback": "The freight-auditing use case, matching invoices against contracts and shipment history at scale, is the same discrepancy-catching problem automated EDI and real-time order visibility are built to solve for drop-ship and 3P networks."
+      },
+      {
+        "title": "Why Merchants Save Their Best Offers for Checkout",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-08-31",
+        "url": "https://www.pymnts.com/data/2026/why-merchants-save-their-best-offers-for-checkout/",
+        "summary": "A PYMNTS Intelligence and FIS study of 60 grocery, retail and restaurant merchants finds only 27% can currently deliver one-to-one offers in real time, even though most describe their underlying data as advanced. Checkout-integrated promotions are already merchants' most-used and best-performing promotional channel, and 25% plan to prioritize real-time checkout optimization in future budgets.",
+        "tieback": "The gap merchants describe, having the data but not the real-time system to act on it inside a transaction, is exactly what real-time order and inventory visibility is meant to close."
+      },
+      {
+        "title": "From Visibility To Action: Implementing AI For Better Retail Execution",
+        "publisher": "Forbes",
+        "author": "Brett Beveridge",
+        "date": "2026-08-28",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/08/28/from-visibility-to-action-implementing-ai-for-better-retail-execution/",
+        "summary": "The piece argues retailers are investing heavily in AI-powered computer vision and image recognition to verify store execution, but that value only materializes when the technology is paired with strong operational processes, clean data and clear accountability for acting on what it finds. Visibility without a defined owner and response process just produces more dashboards, not better outcomes.",
+        "tieback": "The argument, that AI insight is worthless without clean underlying data and a defined process to act on it, applies just as directly to catalog, inventory and order data across a supplier network as it does to in-store execution."
+      },
+      {
+        "title": "The Questions Retail Leaders Should Ask Before Investing In AI",
+        "publisher": "Forbes",
+        "author": "Melissa Wong",
+        "date": "2026-08-19",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/08/19/the-questions-retail-leaders-should-ask-before-investing-in-ai/",
+        "summary": "With 97% of retail organizations planning to increase AI spending, the piece argues AI tools are only as reliable as the underlying data and systems feeding them, and lays out questions retailers should ask vendors about data lineage, integration and accuracy during discovery calls. It frames AI evaluation as a data-readiness exercise first, a tool-selection exercise second.",
+        "tieback": "The vendor-vetting questions the piece recommends, on data lineage and system integration, are the same diligence retailers should apply to supplier onboarding and EDI connections before layering AI on top of them."
+      }
+    ]
+  },
+  {
     "date": "2026-08-28",
     "label": "Friday, August 28, 2026",
     "articles": [
