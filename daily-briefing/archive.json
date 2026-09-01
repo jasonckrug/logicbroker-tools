@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-09-01",
+    "label": "Tuesday, September 1, 2026",
+    "articles": [
+      {
+        "title": "Retailers Steer AI Traffic Back to Own Checkouts",
+        "publisher": "PYMNTS",
+        "author": "Staff",
+        "date": "2026-08-07",
+        "url": "https://www.pymnts.com/news/retail/2026/retailers-steer-ai-traffic-back-own-checkouts/",
+        "summary": "Retailers including Ulta Beauty, Etsy, and The Knot are marketing products through AI platforms like Gemini and ChatGPT while working to keep the actual transaction, and the customer data that comes with it, on their own sites. A new PYMNTS Intelligence report found 49.6 million U.S. adults now begin retail product searches with AI, making the handoff between AI-driven discovery and merchant checkout a growing strategic question.",
+        "tieback": "As AI-driven discovery routes shoppers away from a single storefront, suppliers need real-time order and inventory visibility and fast SKU onboarding so they stay listed and fulfillable no matter which AI surface a shopper lands on next."
+      },
+      {
+        "title": "Albertsons AI Assistants Drive Immediate 26% Basket Growth Among Early Adopters",
+        "publisher": "PYMNTS",
+        "author": "Staff (citing The Wall Street Journal)",
+        "date": "2026-08-17",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/albertsons-ai-assistants-drive-immediate-26percent-basket-growth-among-early-adopters/",
+        "summary": "Albertsons found that shoppers using its more comprehensive AI assistant, which builds recipes and shopping lists around dietary preferences, increase order value by 26%, compared to 10% for simple conversational search. The grocer is consolidating several AI tools into one assistant and is applying AI to merchandising, staffing, and supply chain optimization as well.",
+        "tieback": "The basket-growth lift depends on stitching product data, availability, and personalization together in real time, the same real-time order and inventory visibility that lets an AI assistant confidently promise, and actually fulfill, what it recommends."
+      },
+      {
+        "title": "Batteries Plus launches AI tools for franchising, store customer service",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-08-31",
+        "url": "https://chainstoreage.com/batteries-plus-launches-ai-tools-franchising-store-customer-service",
+        "summary": "Batteries Plus is rolling out three AI tools: Savannah for franchise development calls, Edison for store customer service, and Wattson for AI-assisted product search, built on several years of backend modernization across e-commerce, POS, product information management, and partner integrations. The retailer says the goal is faster, more confident decisions for both corporate staff and store associates.",
+        "tieback": "Wattson's product-search AI only works because the underlying product data and integrations were normalized first, a reminder that automated, structured supplier data from rapid EDI and SKU onboarding is the prerequisite for any customer-facing AI tool to perform well."
+      },
+      {
+        "title": "Intel report shows gap between robotics expectations and readiness",
+        "publisher": "Supply Chain Dive",
+        "author": "Nathan Owens",
+        "date": "2026-08-31",
+        "url": "https://www.supplychaindive.com/news/intel-report-shows-gap-between-robotics-expectations-and-readiness/828823/",
+        "summary": "A survey of 800 leaders commissioned by Intel found 70% of manufacturing and retail leaders expect to manage a fleet of robots within five years, but only about four in ten have a formal strategy for a mixed human-robot workforce. Retail scored better than smart cities and defense on readiness but still showed a meaningful gap tied to unclear ownership and workforce training.",
+        "tieback": "The gap between deploying automation and having the operating model to run it mirrors supplier onboarding: buying a tool doesn't fix throughput unless intelligent routing and supplier analytics are in place to actually operationalize it."
+      },
+      {
+        "title": "Beyond The Hype: Agentic AI Has The Potential To Redefine Retail",
+        "publisher": "Forbes (Forbes Business Development Council)",
+        "author": "Shariq Rehman",
+        "date": "2026-08-10",
+        "url": "https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2026/08/10/beyond-the-hype-agentic-ai-has-the-potential-to-redefine-retail/",
+        "summary": "Rehman argues retail's AI conversation has focused on how many tools get deployed rather than whether AI actually removes operational friction. He points to agents that trigger inventory replenishment ahead of stockouts and coordinate promotions with fulfillment capacity as the more durable use case than simple copilots.",
+        "tieback": "That's exactly the lever intelligent routing and supplier analytics are built for: connecting demand signals to replenishment and fulfillment decisions automatically instead of leaving them siloed across systems."
+      }
+    ]
+  },
+  {
     "date": "2026-08-31",
     "label": "Monday, August 31, 2026",
     "articles": [
