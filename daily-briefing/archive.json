@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-09-02",
+    "label": "Wednesday, September 2, 2026",
+    "articles": [
+      {
+        "title": "Spreedly Sees Good Bots Becoming an Agentic Commerce Channel",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-02",
+        "url": "https://www.pymnts.com/commerce/ecommerce/2026/agentic-payments-turn-bot-traffic-into-a-merchant-revenue-channel/",
+        "summary": "Spreedly's Adam Hiatt tells PYMNTS that AI-driven bot traffic is shifting from a fraud risk to a revenue channel, with one ticketing customer seeing LLM-originated sessions convert at two to three times the rate of search traffic. He argues merchants now need to treat catalog accuracy and machine-readable product data as commercial infrastructure, since agents largely decide before they ever reach a merchant's site.",
+        "tieback": "Catalog accuracy and machine-readable inventory data are becoming the entry ticket for agent-driven sales, which is exactly the real-time inventory visibility and SKU onboarding speed Logicbroker gives retailers and suppliers today."
+      },
+      {
+        "title": "How 23% of Merchants Captured Retail's Next Agentic Commerce Advantage",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/how-23-percent-of-merchants-captuared-retails-next-agentic-commerce-advantage/",
+        "summary": "A new PYMNTS Intelligence/Visa Acceptance Solutions study finds only 23% of merchants can clearly identify both AI-driven traffic and purchases today, even though 61% expect AI results to influence purchases more than traditional search and 56% expect agents to complete transactions outright. The report frames attribution, not the smartest shopping agent, as the first real competitive advantage in agentic commerce.",
+        "tieback": "Most merchants lack the order and transaction visibility to even see agent-driven demand, a gap Logicbroker's real-time order and inventory visibility is built to close before competitors figure out attribution."
+      },
+      {
+        "title": "H&M Tracks Store Inventory in Real Time With RFID, AI",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-01",
+        "url": "https://chainstoreage.com/hm-tracks-store-inventory-real-time-rfid-ai",
+        "summary": "H&M Group is rolling out GreyOrange's AI-based gStore platform, which pairs RFID readers and smart mirrors to locate inventory within three to five feet and flag which SKUs sell fastest or get abandoned in fitting rooms. The retailer is layering this on top of an existing GreyOrange warehouse robotics deployment to speed replenishment and picking across hundreds of stores.",
+        "tieback": "H&M is paying for real-time, SKU-level inventory visibility to fix replenishment gaps, the same problem Logicbroker's real-time order and inventory visibility solves at the vendor and dropship level before product ever reaches a store."
+      },
+      {
+        "title": "Dollar General Deploys AI Across Distribution Centers, Stores",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-08-31",
+        "url": "https://www.supplychaindive.com/news/dollar-general-deploys-ai-across-distribution-centers-stores/828966/",
+        "summary": "Dollar General is using Relex Solutions' AI platform to unify forecasting, replenishment and allocation across its 21,000 stores and 34 distribution centers, folding ordering schedules, lead times and supplier coordination into one system. CEO Todd Vasos said the company is also building \"agentic operating systems\" to reshape workflows enterprise-wide.",
+        "tieback": "Unifying supplier coordination and fulfillment data into one planning layer is the same problem Logicbroker's intelligent routing and supplier analytics solve for retailers managing dropship and 3P vendor networks."
+      },
+      {
+        "title": "From Inflation To AI: How Retailers Can Stay Ahead This Holiday Season",
+        "publisher": "Forbes",
+        "author": "Jill Standish (Accenture, Global Retail Lead)",
+        "date": "2026-08-30",
+        "url": "https://www.forbes.com/sites/jillstandish/2026/08/30/from-inflation-to-ai-how-retailers-can-stay-ahead-this-holiday-season/",
+        "summary": "Accenture's Jill Standish writes that retail leaders face a widening gap between AI ambition and results heading into the holidays: 56% are confident agentic AI will deliver quantifiable outcomes within 12 months, but only 17% say they've achieved widespread, sustained business value so far. She also cites Accenture research finding 74% of consumers would trust a personal AI agent more than their best friend to make a purchase on their behalf.",
+        "tieback": "With consumer trust in AI agents already ahead of retailer readiness, the operational bottleneck is proven infrastructure, not more pilots, which is where Logicbroker's rapid vendor onboarding and automated EDI already deliver measurable results."
+      }
+    ]
+  },
+  {
     "date": "2026-09-01",
     "label": "Tuesday, September 1, 2026",
     "articles": [
