@@ -1,5 +1,56 @@
 [
   {
+    "date": "2026-09-03",
+    "label": "Thursday, September 3, 2026",
+    "articles": [
+      {
+        "title": "Anthropic Gives Retailers Blueprint for AI Shopping Agents",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-gives-retailers-blueprint-for-ai-shopping-agents/",
+        "summary": "Anthropic released blueprints for retailers to build shopping and merchant agents ahead of the holiday season, covering product search, cart assembly, checkout handoff and merchant-side inventory and pricing tasks. The blueprint deploys across the Claude API, Amazon Bedrock, Microsoft Foundry and Google Cloud Vertex AI, and keeps payment processing with the retailer's existing checkout.",
+        "tieback": "The blueprint assumes retailers already have clean, real-time product and inventory data to feed the agent, which is exactly the gap Logicbroker's real-time order and inventory visibility and transactionable presence on LLMs and agents closes for drop-ship and 3P sellers."
+      },
+      {
+        "title": "EMVCo Proposes Intent Layer for Agentic Card Payments",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/emvco-proposes-intent-layer-for-agentic-card-payments/",
+        "summary": "EMVCo released a draft framework, open for comment through Sept. 30, that would let issuers and merchants verify whether an AI agent's purchase falls within the spending limits and duration a consumer actually authorized. The proposed \"Intent Services\" layer would track mandates across recurring and cumulative transactions rather than relying on a single valid card credential.",
+        "tieback": "As agentic payments infrastructure catches up on authorization and intent tracking, the harder bottleneck for suppliers stays upstream: getting accurate order, inventory and pricing data into the transaction in the first place, which is where Logicbroker's automated EDI and intelligent routing already do the work."
+      },
+      {
+        "title": "The perfect mix: How convenience stores can balance human ideas and AI in SKU planning",
+        "publisher": "Supply Chain Dive",
+        "author": "Michael Brady",
+        "date": "2026-09-02",
+        "url": "https://www.supplychaindive.com/news/ai-can-help-c-stores-get-their-product-mix-right-but-merchants-still-have/829277/",
+        "summary": "Convenience store operators are using AI tools to spot sales patterns and flag assortment gaps, but experts from Bain, Accenture, BCG and LatentView note the technology only works once it is connected to existing POS and financial systems, and the final call on adding or cutting a SKU still belongs to a human merchant. Assortment redesign paired with the right technology typically drives a 1% to 3% sales increase and a 2% to 5% margin improvement.",
+        "tieback": "The article's core warning, that AI recommendations are worthless if the underlying system data isn't integrated and trustworthy, is the same problem Logicbroker's supplier analytics and SKU onboarding speed solve at the vendor connection layer before any AI ever sees the data."
+      },
+      {
+        "title": "Retailers bet on AI for supply chain, 'smart' shopping",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-08-31",
+        "url": "https://www.ciodive.com/news/retailers-AI-supply-chain-smart-shopping/829229/",
+        "summary": "Executives from Gap, Dollar General, Ulta Beauty and Kohl's used their Q2 earnings calls to detail AI investments in supply chain, personalization and internal workflows, with Dollar General describing plans to build \"agentic operating systems\" for enterprise-wide processes and Ulta citing AI-powered sourcing to optimize omnichannel inventory.",
+        "tieback": "Retailers building agentic systems for inventory and sourcing need trading partner data flowing in real time to act on, the same requirement Logicbroker's real-time order and inventory visibility and automated EDI were built to satisfy for supplier networks."
+      },
+      {
+        "title": "The AI Industry Is Now Selling Decisions",
+        "publisher": "Forbes (Forbes Technology Council)",
+        "author": "Tiffany Chang",
+        "date": "2026-09-02",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/02/the-ai-industry-is-now-selling-decisions/",
+        "summary": "Chang argues enterprises are shifting from paying for AI model access to paying per decision, since routine tasks like summarizing or classifying don't need frontier-level intelligence while complex reasoning does. She compares it to routing electricity, where not every device needs the same power, and predicts companies will increasingly measure AI by the value created per interaction rather than by leaderboard rank.",
+        "tieback": "This right-size-the-intelligence-for-the-task logic maps directly onto supply chain automation, where high-volume, structured decisions like PO matching, inventory sync and routing don't need a human or a frontier model in the loop, the exact work Logicbroker's automated EDI and intelligent routing already handle."
+      }
+    ]
+  },
+  {
     "date": "2026-09-02",
     "label": "Wednesday, September 2, 2026",
     "articles": [
