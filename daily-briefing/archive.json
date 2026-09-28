@@ -1,5 +1,941 @@
 [
   {
+    "date": "2026-09-28",
+    "label": "Weekly: Week of September 21 to September 27, 2026",
+    "articles": [
+      {
+        "title": "The Next Ecommerce Battle Is Over Who Controls Your Conversation",
+        "publisher": "Forbes",
+        "author": "Ron Schmelzer",
+        "date": "2026-09-25",
+        "url": "https://www.forbes.com/sites/ronschmelzer/2026/09/25/the-next-ecommerce-battle-is-over-who-controls-your-conversation/",
+        "summary": "Schmelzer argues that product search is turning into a conversation with an AI sales associate, citing Adobe's near 700% jump in generative AI referrals and Shopify's eightfold rise in AI-driven merchant traffic. The open question is who owns the shopper when ChatGPT or Gemini starts the interaction, and the piece concludes that structured, in-stock, machine-readable catalog data matters more than the storefront.",
+        "tieback": "If agents query catalogs directly and skip listings that are not truly available, a retailer's dropship assortment only counts when supplier inventory and attributes are current, which is the case for real-time inventory feeds and a transactionable presence on LLMs."
+      },
+      {
+        "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+        "publisher": "TechCrunch",
+        "author": "Jagmeet Singh",
+        "date": "2026-09-26",
+        "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+        "summary": "Google is testing a Buy button on select Flipkart listings inside Gemini and AI Mode that opens a Flipkart-branded checkout without leaving the AI interface, with a wider rollout planned for October. Amazon listings appeared alongside but without the buy option, which shows Google choosing which merchants become transactable.",
+        "tieback": "Agent surfaces are starting to pick which retailers can close the sale in place, so a prospect's extended aisle needs order, price and availability data an agent can act on, not just a product feed."
+      },
+      {
+        "title": "Why Building AI Agents Is No Longer the Hardest Part of Agentic Commerce",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-25",
+        "url": "https://www.pymnts.com/commerce/ecommerce/2026/why-building-ai-agents-is-no-longer-the-hardest-part-of-agentic-commerce/",
+        "summary": "Mastercard's Sabrina Tharani says the constraint on agentic commerce is no longer the agent but the surrounding infrastructure: permissions, liability, authentication and post-purchase resolution across merchants, banks and networks. She expects the first mainstream agent purchases to be low-value, high-frequency items such as household staples and recurring orders.",
+        "tieback": "Post-purchase is where agent orders break, so retailers taking agent-initiated orders on dropship items need automated order, ship-confirm and return messages with every supplier, which is where automated EDI does the work."
+      },
+      {
+        "title": "The rise of the AI shelf",
+        "publisher": "Modern Retail",
+        "author": "Gabriela Barkho",
+        "date": "2026-09-26",
+        "url": "https://www.modernretail.co/operations/the-rise-of-the-ai-shelf/",
+        "summary": "This Modern Retail Podcast episode looks at the \"AI shelf,\" the set of products ChatGPT, Claude and Gemini surface in recommendations, including a test in which a fictional deodorant brand got itself recommended. Spins' Jessica Wright discusses how brands make product data machine-readable for agents and how that changes organic and paid marketing.",
+        "tieback": "Shelf space on AI assistants depends on attribute completeness, so the speed and quality of SKU onboarding from suppliers now affects discoverability as well as time to sell."
+      },
+      {
+        "title": "How Schnucks brought its AI shopping assistant to life",
+        "publisher": "Grocery Dive",
+        "author": "Jeff Wells",
+        "date": "2026-09-23",
+        "url": "https://www.grocerydive.com/news/schnucks-ai-shopping-assistant-grocery-technology/831101/",
+        "summary": "Schnucks' data science lead told Groceryshop that its agentic assistant launched without knowing store hours and that syndicated data on 90% of SKUs still missed attributes like calories, with small producers the hardest to fill in. The grocer had to unify scattered systems, capture undocumented staff knowledge and translate internal jargon before the agent could answer shoppers well.",
+        "tieback": "Missing supplier attributes blocked Schnucks' agent the same way they stall vendor programs, which supports a pitch built on enforcing item-data standards at vendor onboarding rather than cleaning them up after launch."
+      },
+      {
+        "title": "Kroger's AI focus is on 'flexibility and control,' digital chief says",
+        "publisher": "Grocery Dive",
+        "author": "Peyton Bigora",
+        "date": "2026-09-23",
+        "url": "https://www.grocerydive.com/news/kroger-ai-technology-groceryshop/831102/",
+        "summary": "Kroger CDO Yael Cossett said the grocer wants to control the proprietary data underneath its AI while staying flexible on frontier-model partners, and that the next step is combining customer data science with supply chain and merchandising decisions. He added that Kroger is not chasing fully automatic refills yet and that its shopping assistant has increased product discovery.",
+        "tieback": "Retailers that want to own their AI data layer while swapping partners need a network that keeps order and supplier performance data in their hands, which is where supplier analytics and real-time order visibility fit."
+      },
+      {
+        "title": "Amazon Wants to Run Merchants' Businesses Beyond Amazon",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-24",
+        "url": "https://www.pymnts.com/news/retail/2026/amazon-wants-to-run-merchants-businesses-beyond-amazon/",
+        "summary": "Amazon is opening Seller Central to orders and listings from Walmart, eBay, Shopify and TikTok and expanding Seller Assistant into a persistent agent that monitors inventory, pricing, ads and demand. PYMNTS reads the combination as Amazon moving from marketplace to merchant operating system, noting that more than 95% of its independent sellers sell in multiple channels.",
+        "tieback": "If Amazon becomes the system of record for multichannel suppliers, retailers running dropship or 3P programs risk seeing their vendors' inventory and order data through a rival's tools, which raises the value of a neutral network with direct supplier integrations."
+      },
+      {
+        "title": "While AI agents remain siloed, investment soars",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-09-25",
+        "url": "https://www.ciodive.com/news/agents-remain-disconnected-enterprises-double-down/831317/",
+        "summary": "An IDC survey of more than 400 tech leaders, sponsored by Leah, found two-thirds run AI agents in production and plan to double agentic budgets, yet only 29% of agents interact with each other and 7% of enterprises have advanced orchestration. IDC advises managing agents as a portfolio around cross-functional processes and measuring outcomes rather than counting deployments.",
+        "tieback": "Order-to-cash between retailer and supplier is exactly the cross-company process that single-department agents cannot see, so agent projects will need a shared, structured transaction layer underneath them."
+      },
+      {
+        "title": "Closing the Gap Between AI Investment and Financial Return",
+        "publisher": "Harvard Business Review",
+        "author": "David L. Rogers and Krishnan Sankaranarayanan",
+        "date": "2026-09-23",
+        "url": "https://hbr.org/2026/09/closing-the-gap-between-ai-investment-and-financial-return",
+        "summary": "Rogers and Sankaranarayanan argue that most corporate AI spending goes to low-value features and time savings that never show up as measurable financial gains. They recommend tying AI to core value drivers, the firm's position in its value chain, specific income-statement lines and defined financial return measures.",
+        "tieback": "CFO scrutiny of AI returns favors projects tied to income-statement lines such as inventory carrying cost, assortment expansion without inventory, and chargeback recovery, which keeps dropship economics in the conversation."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "label": "Monday, September 28, 2026",
+    "articles": [
+      {
+        "title": "Tapestry to sell via Google’s Gemini app, AI Mode",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-09-24",
+        "url": "https://www.retaildive.com/news/tapestry-sell-via-google-gemini-app-ai-mode/830890/",
+        "summary": "Tapestry now lets shoppers buy Coach and Kate Spade products directly inside Google Search AI Mode and the Gemini app, paying with Google Pay without leaving Google, with consumer approval required on each transaction. The company uses the Universal Commerce Protocol for checkout and says it receives the same customer data it would from a purchase on its own sites.",
+        "tieback": "Agent checkout through UCP only works if the inventory and pricing behind each listing are current, so retailers weighing agent channels for dropship or 3P assortment need real-time inventory visibility before that transactionable presence on LLMs and agents is safe to turn on."
+      },
+      {
+        "title": "Consumers trust AI to advise, but don’t consent to it purchasing for them",
+        "publisher": "Retail Dive (via CX Dive)",
+        "author": "Matt Vartabedian",
+        "date": "2026-09-23",
+        "url": "https://www.retaildive.com/news/consumers-trust-ai-advise-do-not-consent-purchasing-them/830990/",
+        "summary": "An ACI Worldwide survey of more than 3,300 U.S. and U.K. consumers found only 7% of fashion shoppers would let an AI assistant buy without approval, and 53% are uncomfortable letting an assistant purchase for them at all. Shoppers mainly want AI for price-drop alerts and cross-retailer comparisons, and they value retailer-embedded assistants that handle order tracking, returns and promotions.",
+        "tieback": "With shoppers still approving each purchase, the near-term win is being recommended with accurate price and availability, and the order tracking and returns features they value depend on real-time order visibility across every supplier fulfilling the order."
+      },
+      {
+        "title": "Instacart provides retailers & brands real-time shelf view",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-24",
+        "url": "https://chainstoreage.com/instacart-provides-retailers-brands-real-time-shelf-view",
+        "summary": "Instacart is rolling out store intelligence tools that give grocers a continuously updated digital view of shelves, built from shopper scans, Caper Cart imagery and 1.6 billion lifetime orders, with forecasting that flags likely stockouts. A companion Store Excellence Portal gives CPG brands a daily store and UPC level view of gaps, estimated lost revenue and substitution to competitors.",
+        "tieback": "Daily, SKU-level availability data for brands raises the bar for supplier visibility generally, and retailers running dropship programs will expect the same from vendor inventory feeds through real-time inventory visibility and supplier analytics."
+      },
+      {
+        "title": "How the supply chain is getting smarter, more automated & less wasteful",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-25",
+        "url": "https://chainstoreage.com/how-supply-chain-getting-smarter-more-automated-less-wasteful",
+        "summary": "Chain Store Age rounds up supply chain moves including Pep Boys deploying Relex’s AI platform for forecasting, replenishment, DC prioritization and vendor collaboration, and Gap using Boston Dynamics Stretch robots so one or two associates can receive 10,000 cases a day. It also covers Best Buy certifying all 29 of its supply chain facilities as zero waste.",
+        "tieback": "Pep Boys lists vendor collaboration inside its AI planning rollout, a reminder that forecasting gains depend on suppliers sending timely, structured order and inventory data, which is where automated EDI and supplier analytics earn their place."
+      },
+      {
+        "title": "The AI commerce era: 7 e-commerce leaders on what’s still broken",
+        "publisher": "The Next Web (Contributed)",
+        "author": "Will Jones",
+        "date": "2026-09-24",
+        "url": "https://thenextweb.com/news/ai-commerce-gap-ecommerce-leaders-ai-agents",
+        "summary": "A contributed TNW piece interviewing seven e-commerce agency leaders argues that current AI commerce tools detect catalog and account problems but leave humans to diagnose, fix and verify them. The operators say the next step is an execution layer with business context, permissions and confidence-based automation, with low-risk fixes automated and high-risk changes kept for human sign-off.",
+        "tieback": "The catalog exception work these operators describe (broken variations, missing attributes, compliance data) is the same friction that slows dropship assortment growth, so SKU onboarding speed with validated catalog data is the practical lever to raise with prospects."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "label": "Friday, September 25, 2026",
+    "articles": [
+      {
+        "title": "Mastercard: Merchants Want AI Shoppers Without Losing the Customer",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-24",
+        "url": "https://www.pymnts.com/commerce/ecommerce/2026/mastercard-merchants-want-ai-shoppers-without-losing-the-customer/",
+        "summary": "Mastercard's Gaurang Shah says consumers already use AI agents for discovery and comparison but stop short of letting them buy, and merchants need proof of agent identity, authorization and intent before accepting agent-initiated transactions. Merchants want to stay discoverable, trusted and transactable in third-party agents while keeping parity on their own channels and avoiding a race to the lowest price.",
+        "tieback": "Being transactable inside outside agents depends on a clean, complete catalog with accurate stock and pricing, which is where transactionable presence on LLMs and agents and real-time inventory visibility come into a prospect conversation."
+      },
+      {
+        "title": "JD Sports deploys Algolia for agentic commerce strategy",
+        "publisher": "Digital Commerce 360",
+        "author": "",
+        "date": "2026-09-23",
+        "url": "https://www.digitalcommerce360.com/2026/09/23/jd-sports-algolia-agentic-commerce-strategy/",
+        "summary": "JD Sports named Algolia as the governing intelligence layer for its agentic commerce strategy, aiming to make its catalog discoverable and shoppable through AI platforms. The retailer reported search revenue up 22% and product listing page click-through up 73% since the deployment.",
+        "tieback": "A retailer treating product data as the control layer for agent discovery is a signal that assortment depth and SKU onboarding speed from dropship suppliers will decide how much of the catalog agents can actually see and sell."
+      },
+      {
+        "title": "Amazon: AI supply chain agents among seller upgrades",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-09-24",
+        "url": "https://www.supplychaindive.com/news/amazon-ai-supply-chain-agents-among-seller-upgrades/831164/",
+        "summary": "Amazon is adding agentic inbound planning and aged inventory capabilities to Seller Assistant, alongside a unified view that tracks shipments across its fulfillment network and consolidates country-level compliance requirements. The goal is a single global inventory pool that Amazon distributes to countries based on demand.",
+        "tieback": "Amazon is raising the bar for what sellers expect in end-to-end inventory and order visibility, which puts pressure on retailers running 3P or dropship programs to offer suppliers comparable real-time visibility and supplier analytics."
+      },
+      {
+        "title": "Fashion Is Moving At AI Speed. Its Supply Chain Isn't",
+        "publisher": "Forbes",
+        "author": "Angela Chan-Danisi",
+        "date": "2026-09-21",
+        "url": "https://www.forbes.com/sites/angelachan/2026/09/21/fashion-is-moving-at-ai-speed-its-supply-chain-isnt/",
+        "summary": "Generative design tools such as FLORA let fashion teams produce colorways, renderings and campaign assets in seconds, but mills, pattern makers and factories still operate on physical timelines. Manufacturers report that AI-generated designs often lack the construction data a factory needs, adding back rework the digital process was meant to remove.",
+        "tieback": "Faster front-end design only pays off if new items can move from concept to live, orderable SKUs quickly, so the bottleneck shifts to supplier coordination and SKU onboarding speed."
+      },
+      {
+        "title": "Build On Buy: The Third Retail Technology Model Emerging In The AI Era",
+        "publisher": "Forbes",
+        "author": "Yevgeni Tsirulnik",
+        "date": "2026-09-23",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/23/build-on-buy-the-third-retail-technology-model-emerging-in-the-ai-era/",
+        "summary": "The author argues that AI lowers the cost of building interfaces, workflows and agents much faster than it lowers the cost of operating systems that must keep inventory, pricing and transactions correct at scale. Retailers should buy a durable foundation for those consequential functions and build their differentiation on top of it.",
+        "tieback": "This frames the case against building dropship and EDI plumbing in-house: retailers can build their own agents and experiences while relying on a proven platform for automated EDI, order routing and inventory accuracy."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "label": "Thursday, September 24, 2026",
+    "articles": [
+      {
+        "title": "Shopify Brings Shop Pay Checkout Solution to Meta's Muse AI Agent",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-22",
+        "url": "https://www.pymnts.com/commerce/ecommerce/2026/shopify-brings-shop-pay-checkout-solution-to-metas-muse-ai-agent/",
+        "summary": "Shopify and Meta announced that Meta's Muse personal AI agent can now complete agentic checkout with Shop Pay across all Shopify stores, days after Amazon barred Muse from its site over credential-security concerns. Shopify's CFO said shoppers who start in an LLM land directly on product pages and convert roughly 80% better.",
+        "tieback": "Agent traffic is flowing to merchants whose catalogs, inventory and checkout are machine-readable, so retailers extending assortment through dropship suppliers need that supplier inventory exposed in real time or those SKUs never make it into an agent's cart."
+      },
+      {
+        "title": "Shoppers burned by bad AI recommendations",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-09-23",
+        "url": "https://www.retaildive.com/news/shoppers-burned-bad-ai-purchase-recommendations/831013/",
+        "summary": "A SmartCustomer survey of nearly 1,200 U.S. consumers found 76% used AI to make a purchase in the past year, yet 89% do not fully trust AI recommendations and a third regretted a purchase an AI suggested. Respondents overwhelmingly expect AI platforms to validate sources and confirm seller legitimacy before recommending products.",
+        "tieback": "As agents start vetting sellers and product data, inaccurate supplier listings and stale availability become a recommendation-level liability, which raises the value of validated SKU onboarding and accurate inventory feeds from every dropship partner."
+      },
+      {
+        "title": "Amazon adds pickup locations; enables seller tool with next-gen AI",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-23",
+        "url": "https://chainstoreage.com/amazon-adds-pickup-locations-enables-seller-tool-next-gen-ai",
+        "summary": "Amazon upgraded Seller Assistant with persistent memory of each seller's pricing and inventory cycles, always-on automated workflows with audit trails, and a plugin that pipes seller inventory and sales data into outside AI agents including Claude. It also launched Standard Ocean Express, routing third-party inventory from the Port of Los Angeles by rail to East Coast fulfillment centers.",
+        "tieback": "Amazon is raising the bar for what a marketplace gives its 3P sellers, so retailers running their own marketplace or dropship program will be compared on how much automated order, inventory and performance tooling their suppliers get."
+      },
+      {
+        "title": "Kroger bases AI strategy on customer data, helping shoppers & associates",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-23",
+        "url": "https://chainstoreage.com/kroger-bases-ai-strategy-customer-data-helping-shoppers-associates",
+        "summary": "At GroceryShop 2026, Kroger CDO Yael Cosset laid out an AI strategy built on proprietary demand-forecasting and operational models plus third-party agents, deployed in assisted, augmented and autonomous stages based on risk. He described a future where agents handle planning, shopping and fulfillment, citing Kroger's visibility into product availability as the advantage.",
+        "tieback": "Kroger names availability and fulfillment visibility as the prerequisite for agent-run shopping, which is the same gap retailers face on any assortment they do not stock themselves, making real-time order and inventory visibility across suppliers the lever."
+      },
+      {
+        "title": "Study Finds Enterprises Rethink Work to Get More From AI",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-22",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/study-finds-enterprises-rethink-work-to-get-more-from-ai/",
+        "summary": "PYMNTS Intelligence found 93% of companies with AI embedded in three or more functions report returns versus 55% of lighter adopters, while deeper adopters also report nearly twice as many barriers. The piece argues the constraint has shifted from model capability to data, interoperability and workflow plumbing that lets agents do real work.",
+        "tieback": "When an agent approves an order or triggers procurement, it depends on clean, interoperable partner data, so automated EDI and standardized supplier integration become the AI-readiness investment rather than a back-office project."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "label": "Wednesday, September 23, 2026",
+    "articles": [
+      {
+        "title": "Amazon boots Meta's Muse in fight over AI shopping",
+        "publisher": "Axios",
+        "author": "Nathan Bomey",
+        "date": "2026-09-21",
+        "url": "https://www.axios.com/2026/09/21/amazon-meta-muse-ai-agentic-shopping",
+        "summary": "Amazon blocked Meta's new Muse personal agent from browsing and buying on Amazon.com less than two weeks after launch, saying third-party purchasing agents must operate openly and respect a retailer's decision about whether to participate. Axios contrasts this with Walmart and Target, which are opening their catalogs to Google, OpenAI and other external agents, framing the fight as a question of who owns the customer relationship versus who simply fulfills the order.",
+        "tieback": "Retailers that choose the open path need their full assortment, including dropship and 3P supplier SKUs, to be accurate and purchasable wherever agents shop, which puts the weight on transactionable presence on LLMs and agents backed by real-time inventory."
+      },
+      {
+        "title": "Banks Call for Audit Trail From AI Shopping Instructions to Payment Outcome",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-22",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-want-audit-trail-from-ai-shopping-instructions-payment-outcome/",
+        "summary": "Six banks, including Bank of America, Capital One, ING and NatWest, published a paper proposing that agent-initiated purchases carry an auditable record of the customer's instruction, the authority granted, and what happened before and after payment. The paper flags merchant fear of disputes and chargebacks from decisions they did not control, and says a follow-up will translate the principles into protocols and standards.",
+        "tieback": "If agent orders must be reconstructable end to end, retailers will need a clean order, shipment and return record across every supplier that fulfilled the item, which is where automated EDI and real-time order visibility across dropship vendors become dispute-resolution infrastructure."
+      },
+      {
+        "title": "Crocs Puts One AI Agent in Charge of Sales and Service",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-22",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/crocs-puts-one-ai-agent-in-charge-of-sales-and-service/",
+        "summary": "Crocs replaced a chatbot that escalated 80% of conversations with Rivet, a Salesforce Agentforce agent that handles product discovery, sizing, order tracking, returns and checkout in one chat, pulling live order and return status from its IBM Sterling order management system. More than half of the 178,000 monthly service inquiries were 'Where is my order?' requests, and the orchestrator design let Crocs extend the agent to phone support in seven weeks.",
+        "tieback": "An agent can only answer order-status and return questions as well as the order data behind it, so retailers expanding assortment through dropship partners need supplier ship confirmations and tracking flowing back in real time or the agent escalates to a human anyway."
+      },
+      {
+        "title": "Retailers tamp down shadow AI but struggle to oversee agentic sprawl",
+        "publisher": "CIO Dive",
+        "author": "Eric Geller",
+        "date": "2026-09-23",
+        "url": "https://www.ciodive.com/news/retail-ai-agents-visibility-data-breaches-netskope/831060/",
+        "summary": "Netskope's annual retail report finds the share of retail employees using ungoverned AI tools fell from 70% to 44% while approved-tool usage rose to 73%, but 56% of AI-related data policy violations involved regulated data. It also recorded a 400% increase in retail AI agents connecting to remote MCP servers, creating new data pathways that security teams struggle to see.",
+        "tieback": "As retailers wire agents into supplier, order and inventory data over MCP, buyers will favor a single governed integration layer to trading partners over dozens of ad hoc connections, a practical argument for centralizing supplier connectivity and EDI."
+      },
+      {
+        "title": "1 in 4 agents run unmonitored, giving way to operational risk",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-09-22",
+        "url": "https://www.ciodive.com/news/1-in-4-agents-run-unmonitored-operational-risk/831071/",
+        "summary": "New Relic's 2026 Observability Forecast, based on a survey of 2,575 IT and engineering leaders, finds one in four enterprise AI agents runs without monitoring even as agents autonomously change code, configurations and infrastructure. Eight in ten organizations plan to deploy AI observability within a year, and average observability tool counts rose back to five as AI-specific platforms add sprawl.",
+        "tieback": "Operations leaders letting agents trigger routing, replenishment or supplier actions will ask how those decisions are observed and audited, which favors platforms with built-in supplier analytics and exception visibility over bolted-on point tools."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "label": "Tuesday, September 22, 2026",
+    "articles": [
+      {
+        "title": "Visa Says Small Merchants Could Move Faster on AI Shopping",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-22",
+        "url": "https://www.pymnts.com/smbs/2026/visa-says-small-merchants-could-move-faster-on-ai-shopping/",
+        "summary": "A new PYMNTS Intelligence and Visa Acceptance Solutions report finds only 15% of merchants have product data structured well enough for AI shopping agents to use, even though 68% expect agents to drive at least 5% of digital sales within two years. Visa's Sara Craven says small merchants can close that readiness gap faster than larger ones because they can rewrite product descriptions and inventory data more quickly.",
+        "tieback": "Structured, always-current product and inventory data is exactly what rapid SKU onboarding and real-time inventory visibility deliver, so suppliers don't have to choose between fast dropship onboarding and being visible to shopping agents."
+      },
+      {
+        "title": "Best Buy Opens Up Gift-Buying and Discovery Through ChatGPT Ahead of Holidays",
+        "publisher": "Digital Commerce 360",
+        "author": "Beth Duckett",
+        "date": "2026-09-16",
+        "url": "https://www.digitalcommerce360.com/2026/09/16/best-buy-opens-up-gift-buying-and-discover-through-chatgpt-ahead-of-holidays/",
+        "summary": "Best Buy will let shoppers find gift ideas and complete purchases inside ChatGPT this holiday season, part of a broader plan that also includes an expanded marketplace and faster fulfillment. The retailer now lists nearly 1 million products from more than 5,000 brands on its marketplace, including international sellers.",
+        "tieback": "A supplier's listing is only transactable inside an agent conversation if its EDI, pricing and inventory feeds stay accurate in real time, which is the automated EDI and order visibility layer Logicbroker already runs for dropship and marketplace sellers."
+      },
+      {
+        "title": "Mastercard and Alchemy Partner to Enable Everyday Agentic Payments",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-17",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-alchemy-partner-enable-everyday-agentic-payments/",
+        "summary": "Mastercard and blockchain infrastructure provider Alchemy are adding Mastercard payment credentials to Alchemy's AgentCard, letting AI agents complete purchases anywhere Mastercard is accepted online. The partnership targets everyday agentic payments rather than one-off pilot transactions.",
+        "tieback": "A payment rail that lets an agent pay is only half the transaction, since intelligent routing and automated EDI are what actually get the order to the right supplier and fulfilled once the agent's payment clears."
+      },
+      {
+        "title": "How AI Makes Individualized Promotions at Scale a Reality",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-11",
+        "url": "https://chainstoreage.com/how-ai-makes-individualized-promotions-scale-reality",
+        "summary": "Grocer Brookshire Brothers, Gap Inc. and Sport Clips Haircuts are each using AI platforms to personalize promotions and local marketing at scale, from centralized promo planning to agentic tools that manage thousands of local customer interactions a month. The piece frames 2026 as the year AI made individual-level targeting operationally realistic rather than aspirational.",
+        "tieback": "Promotion engines like these are only as accurate as the SKU-level inventory and pricing data feeding them, which is where supplier analytics and real-time inventory visibility keep personalized offers from promoting items that are actually out of stock."
+      },
+      {
+        "title": "The Man Who Built Apple's Stores Doesn't Buy Silicon Valley's Bet on AI Shopping",
+        "publisher": "TechCrunch",
+        "author": "Jagmeet Singh",
+        "date": "2026-09-21",
+        "url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+        "summary": "Ron Johnson, who built Apple's retail stores and later ran J.C. Penney, argues AI agents will inform shoppers rather than replace the in-store, hands-on purchase decision for higher-consideration items. He says AI will make shoppers more informed before they arrive at a store, not eliminate the store visit itself.",
+        "tieback": "Even in Johnson's scenario the operational lever that matters is supplier data reaching stores accurately and fast, since an informed shopper still needs the item in stock at the store AI sent them to."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "label": "Monday, September 21, 2026",
+    "articles": [
+      {
+        "title": "Commerce Test Shows Where AI Agents Break Down",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-18",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/commerce-test-shows-where-ai-agents-break-down/",
+        "summary": "Alibaba's CommerceAgentBench tested 13 AI models on 107 real e-commerce tasks spanning procurement, logistics, product listing and after-sales service, and the top performer, Claude Opus 5, completed just 61.7% of them. Agents consistently broke down on landed cost calculations, multi-leg shipping routes and after-sales disputes, the tasks that require tracking information across many steps.",
+        "tieback": "These are the exact failure points Logicbroker's automated EDI and intelligent routing already solve deterministically, so retailers don't have to bet order accuracy on an AI agent's ability to hold shipment and cost data across a long workflow."
+      },
+      {
+        "title": "Retail's AI reckoning: Why the next wave of commerce may split between platforms and retailers",
+        "publisher": "EMARKETER",
+        "author": "Gadjo Sevilla",
+        "date": "2026-09-16",
+        "url": "https://www.emarketer.com/content/retail-s-ai-reckoning--why-next-wave-of-commerce-may-split-between-platforms-retailers",
+        "summary": "At EMARKETER's Future of Digital Summit, analysts said retailer-owned assistants like Amazon's Alexa and Walmart's Sparky are capturing more AI-driven commerce sales than general AI platforms such as ChatGPT and Gemini. Panelists also flagged a widening accuracy problem, with AI response error rates running 10 to 20 percent and brands needing consistent product data across every channel an agent might pull from.",
+        "tieback": "Before a retailer can safely expose its catalog and inventory to shopping agents, it needs the kind of real-time, consistent order and inventory visibility across trading partners that keeps product data from contradicting itself channel to channel."
+      },
+      {
+        "title": "AI Agents Take the Controls in Supply Chains",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-21",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-take-the-controls-in-supply-chains/",
+        "summary": "PYMNTS' Prompt Economy examines how AI agents are starting to make autonomous supply chain decisions, like rerouting a vessel and reallocating inventory within minutes without human approval. Both an HBR analysis and IDC research cited in the piece agree that none of this works at scale without clean, governed, interoperable data underneath it.",
+        "tieback": "That data readiness precondition is exactly what automated EDI and real-time order and inventory visibility deliver, giving retailers the clean data layer agentic orchestration depends on before they hand over routing or allocation decisions."
+      },
+      {
+        "title": "AI failures often trace back to poor data foundation: survey",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-09-17",
+        "url": "https://www.ciodive.com/news/ai-failures-link-poor-data-foundation-survey/830729/",
+        "summary": "A Collibra-commissioned Harris Poll survey of 300 data and AI decision-makers found that 72% trace enterprise AI failures back to a poor data foundation, and more than half of employees say they spend hours each week manually correcting AI agent outputs. Decision-makers are now restructuring reporting lines to tie AI functions more closely to data governance.",
+        "tieback": "Clean, validated trading-partner data through automated EDI removes the manual correction burden this survey describes, since the data feeding any AI layer is already normalized before an agent ever touches it."
+      },
+      {
+        "title": "Retailers Are Spending Millions On AI. Can They Prove The ROI?",
+        "publisher": "Forbes",
+        "author": "Angela Chan",
+        "date": "2026-09-09",
+        "url": "https://www.forbes.com/sites/angelachan/2026/09/09/retailers-are-spending-millions-on-ai-can-they-prove-the-roi/",
+        "summary": "A Deloitte study of 200 retail and consumer-products executives found that 82% plan to increase AI investment over the next year, yet only 16.5% can currently quantify a return, and retailers are spending more on AI than other industries while expecting comparatively lower returns. The piece frames retail's AI spending as running ahead of retailers' ability to measure what it's actually delivering.",
+        "tieback": "Rapid vendor and SKU onboarding speed gives retailers a return that is easy to measure in weeks, not quarters, since faster onboarding shows up directly in time-to-revenue rather than in a hard-to-isolate AI budget line."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "label": "Friday, September 18, 2026",
+    "articles": [
+      {
+        "title": "Circle Launches Agentic Commerce Blockchain Arc With 100+ Partners",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-16",
+        "url": "https://www.pymnts.com/blockchain/2026/circle-debuts-agentic-commerce-focused-blockchain-arc/",
+        "summary": "Circle introduced Arc, a blockchain designed for agentic economic activity, launching with more than 100 partners and integration into its USDC stablecoin. The company says USDC already accounts for 98.8% of agent-driven transaction volume settling over the x402 payment standard since its Agent Stack launched in May.",
+        "tieback": "As agent-to-agent payment rails mature, drop-ship networks need automated EDI and real-time order data clean enough for autonomous buyers to transact against without manual reconciliation."
+      },
+      {
+        "title": "AI Agents Become the Next Payments Customer",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS (feat. Viggo Stenseth, SolvaPay)",
+        "date": "2026-09-18",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-become-the-next-payments-customer/",
+        "summary": "SolvaPay CEO Viggo Stenseth explains that payment systems built to verify human buyers now have to recognize AI agents with legitimate authority to spend, including agents that pay other agents to complete pieces of a task. He argues reconciliation gets harder as one assignment fans out into several layered transactions, pushing merchants toward usage-based billing and new fraud controls.",
+        "tieback": "Agent-to-agent transactions that fan out into multiple sub-payments raise the same reconciliation problem drop-ship retailers already face with suppliers, the exact problem automated EDI and intelligent order routing are built to solve."
+      },
+      {
+        "title": "UNFI Consolidates Midwest Facilities to Leverage Automation",
+        "publisher": "Supply Chain Dive",
+        "author": "Antone Gonsalves",
+        "date": "2026-09-17",
+        "url": "https://www.supplychaindive.com/news/unfi-consolidates-midwest-facilities-to-leverage-automation/830616/",
+        "summary": "United Natural Foods is consolidating distribution centers into automation-ready facilities as part of a three-year turnaround, crediting a lean daily management rollout at 44 distribution centers with four straight quarters of improved fill rates and on-time deliveries. The company also finished deploying an AI-powered supply chain and procurement planning platform network-wide and plans $300 million in further automation and ERP spending in fiscal 2027.",
+        "tieback": "A network-wide AI planning platform is only as good as the trading-partner data feeding it, the same real-time order and inventory visibility problem automated EDI and supplier onboarding solve for distribution-heavy retailers."
+      },
+      {
+        "title": "Shein Opens Automated Distribution Center in Indiana",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-09-14",
+        "url": "https://www.supplychaindive.com/news/shein-opens-automated-distribution-center-in-indiana/830190/",
+        "summary": "Shein opened a 737,000-square-foot automated distribution center in Lebanon, Indiana, featuring a goods-to-person fulfillment system meant to boost efficiency and worker safety. The facility expands Shein's Indiana footprint to more than 2.5 million square feet as the retailer builds out US fulfillment capacity alongside its third-party logistics partners.",
+        "tieback": "Warehouses that move this fast need supplier connections that move just as fast; rapid vendor onboarding and automated EDI keep new fulfillment capacity from sitting idle while trading partners get set up manually."
+      },
+      {
+        "title": "AI Agents Will Become The New Gatekeepers Of Customer Loyalty",
+        "publisher": "Forbes",
+        "author": "Jeff Fromm",
+        "date": "2026-09-16",
+        "url": "https://www.forbes.com/sites/jefffromm/2026/09/16/ai-agents-will-become-the-new-gatekeepers-of-customer-loyalty/",
+        "summary": "Personal AI agents are starting to manage loyalty point economics on shoppers' behalf, comparing value across programs the way they already compare prices, according to Phaedon's Jaclyn Wands. The piece argues brands now have to win over both the algorithm, through transparent and accessible program data, and the human, through trust and experience.",
+        "tieback": "If an agent is going to compare a retailer's real value against competitors, that retailer needs clean, real-time product and inventory data and a transactable presence the agent can actually query."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "label": "Thursday, September 17, 2026",
+    "articles": [
+      {
+        "title": "Mastercard Says Consumer Choice at the Center of Agent Pay",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-17",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-says-consumer-choice-at-the-center-of-agent-pay/",
+        "summary": "Mastercard U.S. Co-President Chiro Aikat told PYMNTS that about 132 million consumers now use AI, but rising AI usage hasn't translated into equal willingness to delegate purchase authority to agents. He said agentic commerce will reshape loyalty by moving preferences like rewards and return policies ahead of the transaction rather than after it.",
+        "tieback": "Agents can only act on preferences and loyalty terms they can actually see, which puts a premium on real-time order and inventory visibility and clean, structured product data that agents can query with confidence."
+      },
+      {
+        "title": "Google Debuts Agentic Tools to Prep Retailers for Holidays",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-16",
+        "url": "https://www.pymnts.com/google/2026/google-debuts-agentic-tools-to-prep-retailers-for-holidays/",
+        "summary": "Google added AI \"performance insights\" to Merchant Center, letting retailers see how their brand is being discovered on AI Mode and AI Overviews versus competitors. It also expanded Universal Commerce Protocol checkout features, including cart transfer and enhanced checkout flow testing, ahead of the holiday season.",
+        "tieback": "As Google structures more of the shopping funnel around agent discovery and UCP-powered checkout, suppliers need a transactionable presence on LLMs and agents, which depends on product data that's already clean, current, and machine-readable at the source."
+      },
+      {
+        "title": "Macy's Rolls Out AI Inventory Replenishment Tool",
+        "publisher": "Supply Chain Dive",
+        "author": "Kelly Stroh",
+        "date": "2026-09-16",
+        "url": "https://www.supplychaindive.com/news/macys-rolls-out-ai-inventory-replenishment-tool/830441/",
+        "summary": "Macy's is moving an AI forecast overlay from pilot to broader rollout across its replenishment operations, aiming to improve in-stock levels as part of its multiyear supply chain transformation. The retailer said inventory was up 2.5% in Q2, in line with sales growth, as it enters fall in a stronger inventory position.",
+        "tieback": "AI forecasting is only as accurate as the order and inventory data feeding it, which is where automated EDI and real-time visibility across a fragmented vendor base determine whether a replenishment model actually holds up at scale."
+      },
+      {
+        "title": "Walmart Expands Conversational AI Capabilities Across Scintilla Platform",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-16",
+        "url": "https://www.pymnts.com/walmart/2026/walmart-expands-conversational-ai-capabilities-across-scintilla-platform/",
+        "summary": "Walmart Data Ventures is adding conversational AI, personalized alerts, and custom dashboards to its Scintilla commerce intelligence platform, plus AI-powered recommendations in Scintilla In-Store to help supplier field reps see what needs attention. Next year Scintilla will unify first-party and Marketplace insights in one view for suppliers operating across both.",
+        "tieback": "Walmart is building supplier-facing analytics that flag what needs action in real time, which is the same intelligent routing and supplier analytics gap that mid-market retailers and their vendors need addressed without a Walmart-scale data team."
+      },
+      {
+        "title": "Global AI Spend Will Nearly Double in 2026 Due to Infrastructure Demand",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-09-16",
+        "url": "https://www.ciodive.com/news/global-ai-spend-nearly-double-2026-infrastructure-demand/830592/",
+        "summary": "Gartner forecasts global AI spend will hit $2.7 trillion in 2026, a 49.5% increase, driven largely by infrastructure rather than deliberate line-item purchases. A Gartner analyst noted that AI costs are increasingly showing up in CIOs' budgets whether or not they set out to buy AI, as vendors embed it into existing products.",
+        "tieback": "With AI increasingly arriving pre-embedded rather than as a standalone purchase, the practical question for retailers and suppliers shifts from how much to spend on AI to which integration partners already carry AI-ready data plumbing, like rapid vendor onboarding and automated EDI, instead of requiring it to be built from scratch."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "label": "Wednesday, September 16, 2026",
+    "articles": [
+      {
+        "title": "Teens start to trust AI recommendations more than friends, parents",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-09-14",
+        "url": "https://www.retaildive.com/news/teens-ai-shopping-product-recommendations-trust/830277/",
+        "summary": "A new Mastercard survey of 26,000 parents and teens found that 27% of teens say they're likely to use a fully AI-run shopping assistant that recommends, selects and purchases items on their behalf, compared with just 16% of their parents. Nearly a third of teens said they trust AI-generated product recommendations over a friend's advice, and about a quarter would trust an AI tool over their parents' guidance.",
+        "tieback": "As younger shoppers get comfortable letting an agent choose and buy on their behalf, retailers and suppliers need real-time inventory and order visibility that an AI agent can query directly, not static catalog feeds it has to guess at."
+      },
+      {
+        "title": "Salesforce launches AIforce to harness agentic architecture",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-09-15",
+        "url": "https://www.ciodive.com/news/salesforce-launches-aiforce-interface-layer-agentic-architecture/830479/",
+        "summary": "Salesforce unveiled AIforce at Dreamforce 2026, a connective interface layer that links its Data 360, Customer 360 and Agentforce foundation to any AI interface, including Claude, ChatGPT, Slack and Teams, while keeping data permissions and governance inside Salesforce. CEO Marc Benioff described the move as a shift \"from software as the interface to software powering every interface,\" alongside expanded Google Cloud and AWS partnerships.",
+        "tieback": "As major platforms race to make enterprise data queryable by any AI agent, retailers will expect their commerce and fulfillment data held to the same standard. A transactable presence on LLMs and agents lets suppliers meet that expectation on the product and order side, not just inside a CRM."
+      },
+      {
+        "title": "Pinterest teams with Nvidia to better support AI shopping",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-14",
+        "url": "https://chainstoreage.com/pinterest-teams-nvidia-better-support-ai-shopping",
+        "summary": "Pinterest built a new multimodal AI layer on Nvidia's Blackwell GPUs and Dynamo generative AI framework to power its Pinterest Assistant shopping and discovery tool, turning more than 80 billion monthly searches into signals for AI-based product discovery. The company reported roughly 85x faster response startup versus its prior approach to visual search.",
+        "tieback": "As product discovery increasingly starts inside a third-party AI assistant instead of a retailer's own site, brands need product and inventory data structured and current enough to be surfaced accurately. Intelligent routing and supplier analytics help ensure what an AI assistant recommends is actually in stock and fulfillable when the click converts."
+      },
+      {
+        "title": "JCPenney parent Catalyst Brands expands employee 'super app' rollout",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-15",
+        "url": "https://chainstoreage.com/jcpenney-parent-catalyst-brands-expands-employee-super-app-rollout",
+        "summary": "Catalyst Brands is extending the AI-based WorkJam \"super app\" to roughly 70,000 frontline associates across its Aéropostale, Brooks Brothers, Lucky Brand and Nautica banners, building on a JCPenney deployment credited with boosting employee referrals. The rollout adds a WorkJam AI Agent that answers HR and benefits questions conversationally, with plans to expand it to everyday operational questions.",
+        "tieback": "Retailers are learning that AI pays off on the store floor when it gives frontline staff fast, reliable answers in the flow of work. The same logic applies to supplier onboarding: rapid, guided vendor onboarding for dropship and 3P relationships cuts the manual back-and-forth that slows a new supplier from going live."
+      },
+      {
+        "title": "CEOs warn against falling into AI's efficiency trap: The biggest risk is 'a better version of yesterday'",
+        "publisher": "Fortune (CEO Daily)",
+        "author": "Lee Williamson",
+        "date": "2026-09-15",
+        "url": "https://fortune.com/2026/09/15/ceos-ai-efficiency-trap-fortune-leaders-forum/",
+        "summary": "At the inaugural Fortune Leaders Forum in Macau, AS Watson Group CEO Malina Ngai and other Fortune Global 500 executives warned that using AI to speed up existing workflows risks producing \"a better version of yesterday\" instead of real reinvention. ServiceNow research cited at the event found 60% of companies now have AI agents, but only 5% have redesigned workflows around them; Walmart China CEO Christina Zhu added that AI is making human judgment more valuable, not less, since data shows what customers chose but not their unmet needs.",
+        "tieback": "The gap between deploying AI agents and actually redesigning workflows around them is exactly where drop-ship and 3P programs stall. Automated EDI and intelligent routing only pay off when vendor onboarding and order workflows are rebuilt around them, not just bolted onto the old process."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "label": "Tuesday, September 15, 2026",
+    "articles": [
+      {
+        "title": "Instacart, Shipt launch AI-powered shopping assistants",
+        "publisher": "Retail Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-09-14",
+        "url": "https://www.retaildive.com/news/instacart-shipt-launch-ai-powered-shopping-assistants/830092/",
+        "summary": "Instacart launched Clementine and Shipt launched Ask Shipt, AI assistants that build a grocery cart from a conversation or an uploaded photo, drawing on live store inventory data and Instacart's 1.6 billion lifetime orders. Both companies are extending the tools to retailer-branded storefronts, with several more grocery chains adopting Instacart's Cart Assistant.",
+        "tieback": "These carts are only as accurate as the inventory feed behind them, which is the argument for real-time order and inventory visibility (not batch updates) as the foundation any AI shopping agent needs before it can place a correct order."
+      },
+      {
+        "title": "AI Agents Spending Money Online? New Research Says Not Really",
+        "publisher": "Decrypt",
+        "author": "Jason Nelson",
+        "date": "2026-09-13",
+        "url": "https://decrypt.co/378103/ai-agents-spending-money-research",
+        "summary": "TRM Labs examined $52.7 million across 198.9 million payments on Coinbase's x402 protocol and found that after filtering out scripts and self-payments, only 0.6% to 7.5% of the remaining commerce by value could be confidently attributed to autonomous AI agents rather than scripted bots. The firm says scaling agentic commerce will require better agent registration and reputation signals, calling it \"agentic compliance.\"",
+        "tieback": "Most agent-labeled traffic today is still scripts, not autonomous buyers, a reminder to build supplier connections on proven EDI and order rails now rather than waiting on immature agent-payment infrastructure to mature."
+      },
+      {
+        "title": "Harps names first director of AI",
+        "publisher": "Grocery Dive",
+        "author": "Peyton Bigora",
+        "date": "2026-09-11",
+        "url": "https://www.grocerydive.com/news/harps-food-stores-director-ai-technology-innovation-will-mcdoniel/830075/",
+        "summary": "Harps Food Stores, a 177-store regional grocer, promoted longtime employee Will McDoniel to the newly created role of director of AI strategy and innovation, joining Kroger and Ahold Delhaize USA in naming dedicated AI leadership. McDoniel will identify where AI can improve processes and speed the chain's adoption of new capabilities.",
+        "tieback": "A mid-market grocer standing up formal AI governance signals that this segment, not just national chains, is ready to move on supplier data and inventory automation, exactly where fast vendor onboarding and automated EDI shorten time to value."
+      },
+      {
+        "title": "Target introduces AI-powered photo search, review features",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-09-10",
+        "url": "https://www.retaildive.com/news/target-introduces-ai-powered-photo-search-review-features/830041/",
+        "summary": "Target rolled out AI-powered Photo Search and Review Insights to help shoppers find products by image and quickly digest review themes, adding to its existing Buy Again and Continue Shopping tools. The retailer says Review Insights has already lifted conversions and cart adds, following a quarter in which net sales rose 5.3% and net earnings roughly doubled.",
+        "tieback": "Discovery features like this only work when product data behind every SKU is clean and complete, reinforcing the payoff of fast, accurate SKU onboarding so new items are searchable and convertible the moment they hit the catalog."
+      },
+      {
+        "title": "AI Is Blurring the Line Between Sales and Marketing",
+        "publisher": "Harvard Business Review",
+        "author": "Doug J. Chung, Jean-Christophe Fann, Candace Lun Plotkin, Jennifer Stanley and Maria Valdivieso",
+        "date": "2026-09-04",
+        "url": "https://hbr.org/2026/09/ai-is-blurring-the-line-between-sales-and-marketing",
+        "summary": "The authors argue that agentic AI is dissolving the traditional wall between marketing and sales, but most companies still deploy the technology separately within each function, missing the chance to build a continuous, shared-data loop across the customer journey. Capturing the full benefit requires rethinking workflows, metrics, incentives, and organizational responsibility, not just adding AI tools.",
+        "tieback": "The same logic applies upstream in retail: AI deployed only in merchandising or only in supplier operations misses the bigger win, which is why intelligent routing and supplier analytics matter most when connected across the full order-to-fulfillment loop rather than bolted onto one department."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "label": "Monday, September 14, 2026",
+    "articles": [
+      {
+        "title": "Mastercard's Sherri Haymond on Letting AI Shop While Consumers Stay in Charge",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-14",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercards-sherri-haymond-on-letting-ai-shop-while-consumers-stay-in-charge/",
+        "summary": "Mastercard's Sherri Haymond told PYMNTS that agentic purchases are already happening through features like Amazon's Buy for Me and Google's AI Mode checkout, without requiring a new standalone shopping destination. She said payment participants need visibility into what a consumer authorized an agent to do, since tokenization alone doesn't resolve disputes when something goes wrong.",
+        "tieback": "As agent-assisted checkout spreads across platforms rather than living in one destination, suppliers with clean, structured product and inventory data (the kind automated EDI and real-time order visibility produce) are the ones agents can actually transact against."
+      },
+      {
+        "title": "Amazon Is Becoming a Gateway to ChatGPT Ads",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-14",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/amazon-is-becoming-a-gateway-to-chatgpt-ads/",
+        "summary": "Amazon Ads and OpenAI launched a pilot on September 10 letting select U.S. advertisers buy ChatGPT ad placements through Amazon's existing ad platform, with Amazon managing the campaigns while OpenAI's own system still decides which ads appear. The deal marks a reversal for Amazon, which had kept rival AI chat platforms away from its retail ecosystem even as it built competing shopping tools of its own.",
+        "tieback": "As Amazon supplies the commerce infrastructure sitting behind ChatGPT's ad surface, suppliers without a structured, agent-readable presence on LLMs risk being invisible in the interfaces where more shopping activity is starting to happen."
+      },
+      {
+        "title": "Sysco Targets $500M in AI-Driven Cost Savings",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-09-09",
+        "url": "https://www.ciodive.com/news/sysco-targets-500m-ai-driven-cost-savings/829977/",
+        "summary": "Sysco plans to cut $500 million in costs over the next three fiscal years through an AI program aimed at supply chain productivity, delivery routing, inventory forecasting, and procurement automation. CEO Kevin Hourican tied the effort to both improving customer service and lowering structural operating expenses.",
+        "tieback": "Sysco is chasing the same routing and forecasting gains that intelligent routing and supplier analytics are built to deliver for retailers coordinating many suppliers at once."
+      },
+      {
+        "title": "Chewy Eyes $50M in Annual Cost Savings With AI",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-09-11",
+        "url": "https://www.ciodive.com/news/chewy-projects-50m-annual-cost-savings-ai/830210/",
+        "summary": "Chewy projects $50 million in annual AI-driven cost savings starting next fiscal year, with its AI assistant already resolving roughly 30% of self-service customer chats while the company builds a multiagent orchestration framework for future capabilities. Executives said the payoff depends on first-party infrastructure and clean data built up over several quarters, not the AI layer alone.",
+        "tieback": "Chewy's bet that clean, first-party data is the real moat behind agentic AI is the same argument for real-time order and inventory visibility as a prerequisite before any retailer layers automation on top."
+      },
+      {
+        "title": "The World's Largest Health and Beauty Retailer Says AI Will Make Shopping 'More Human, Not Less'",
+        "publisher": "Fortune",
+        "author": "Nicholas Gordon",
+        "date": "2026-09-12",
+        "url": "https://fortune.com/2026/09/12/as-watson-ceo-malina-ngai-ai-retail-jobs/",
+        "summary": "AS Watson Group CEO Malina Ngai argued companies should use AI to upgrade how employees work rather than simply cut headcount, pointing to rising engagement scores and a warehouse where robots have shifted the workforce toward more women. She warned that using AI only to speed up today's processes just produces \"a version of yesterday.\"",
+        "tieback": "Ngai's case for reinventing the model rather than polishing old processes is the same argument for automating repetitive dropship and EDI onboarding work, freeing retail teams to spend time on vendor relationships and assortment instead of manual data entry."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "label": "Friday, September 11, 2026",
+    "articles": [
+      {
+        "title": "Instacart Launches an AI Grocery Shopping Assistant Called Clementine",
+        "publisher": "TechCrunch",
+        "author": "Aisha Malik",
+        "date": "2026-09-09",
+        "url": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
+        "summary": "Instacart launched Clementine on September 9, an AI assistant built on 1.6 billion lifetime orders and 10 million daily inventory signals that turns a conversation, recipe, or photographed shopping list into a ready-to-buy cart. The same technology now powers Cart Assistant, Instacart's white-label version already live with grocery partners including Food Bazaar, Heritage Grocers Group, and Woodman's.",
+        "tieback": "Clementine is only as good as the inventory signals feeding it, which is the same real-time inventory visibility and fast SKU onboarding problem a dropship or 3P supplier network has to solve before any AI shopping agent can build an accurate cart from its catalog."
+      },
+      {
+        "title": "AI Agents Need Permissioned Funding Sources, Not Company Bank Accounts",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-10",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-need-permissioned-funding-sources-not-company-bank-accounts/",
+        "summary": "PYMNTS lays out why CFOs are moving toward financial architecture that separates money from the permission to spend it, since a company running thousands of AI agents that buy software, procure inventory, and negotiate with suppliers cannot fund each one with its own bank account. The piece argues that identity, spending limits, counterparties, and purpose need to be controlled programmatically at the moment of each transaction, not baked into where the money sits.",
+        "tieback": "An agent authorized to procure inventory and negotiate with suppliers needs the same kind of auditable, permissioned transaction trail that automated EDI and real-time order visibility already provide for supplier purchase orders today."
+      },
+      {
+        "title": "UNFI Sales Dip in Q4 as It Laps Year Since Cyber Attack",
+        "publisher": "Digital Commerce 360",
+        "author": "Abbas Haleem",
+        "date": "2026-09-08",
+        "url": "https://www.digitalcommerce360.com/2026/09/08/unfi-ai-supply-chain-sales-q4-2026/",
+        "summary": "UNFI's Q4 fiscal 2026 sales dipped slightly to $7.64 billion, but the company says its AI-powered supply chain and procurement planning platform, now rolled out across every distribution center, drove fill rate, on-time delivery, and throughput gains for a fourth consecutive quarter. Adjusted EBITDA grew 27% to $701 million and free cash flow hit a record $323 million.",
+        "tieback": "Four straight quarters of fill rate and on-time delivery gains only after full network rollout shows how much of an AI supply chain tool's payoff depends on the real-time order and inventory visibility feeding it, not the AI layer by itself."
+      },
+      {
+        "title": "Morrisons Unifies Online Order, Delivery Management",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-09-10",
+        "url": "https://chainstoreage.com/news-briefs/2026-09-10?article=morrisons-unifies-online-order-delivery-management",
+        "summary": "Morrisons is deploying Instaleap, an Instacart-owned fulfillment platform, to manage online orders across third-party marketplace channels including Uber Eats, Just Eat, and Deliveroo, along with an in-store picking app to help staff fulfill those orders. The move builds on Morrisons' existing Instacart Caper Carts rollout as the grocer works to keep delivery reliable across a growing number of outside marketplaces.",
+        "tieback": "Routing orders accurately across multiple third-party marketplace channels from one system is the same problem intelligent routing and supplier analytics solve for a dropship program juggling many downstream retail partners at once."
+      },
+      {
+        "title": "What Happens When AI Starts Doing Business with AI?",
+        "publisher": "Harvard Business Review",
+        "author": "Jafar Sabbah and Oguz A. Acar",
+        "date": "2026-09-02",
+        "url": "https://hbr.org/2026/09/what-happens-when-ai-starts-doing-business-with-ai",
+        "summary": "Drawing on a controlled simulation covering 160 governance runs and 2,560 AI-to-AI interactions, the authors find that rich, machine-readable information and reputation signals help agents identify and commit to good counterparties, while rigid interaction protocols actually reduce deal-making. They contrast Amazon blocking Perplexity's shopping agent with Tencent opening a controlled agent-to-agent channel inside WeChat as two opposite bets on how much access to give outside agents.",
+        "tieback": "The finding that agents transact more successfully when given rich, structured, machine-readable information is the direct business case for a transactionable presence on LLMs and agents in the first place."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "label": "Thursday, September 10, 2026",
+    "articles": [
+      {
+        "title": "AI Takes the First Step in Shopping While Consumers Keep the Buy Button",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-09",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-takes-the-first-step-in-shopping-while-consumers-keep-the-buy-button/",
+        "summary": "New PYMNTS Intelligence data finds nearly 50 million U.S. adults now start product research with AI, and those who follow an AI recommendation to a new retailer spend an average of $1,430 over three months, well above other AI-assisted shoppers. Consumers still draw a hard line at checkout: only 37% would let an agent authorize payment even though 56% are fine letting one search and compare products.",
+        "tieback": "The gap between AI-driven discovery and AI-authorized checkout is a merchandising and data problem before it's a payments problem, since an agent can only shortlist a retailer whose product, price, and availability data it can actually read, which is where a transactionable presence on LLMs and agents starts."
+      },
+      {
+        "title": "23% Of Us Trust AI Agents To Spend Our Money. Visa Has A Plan",
+        "publisher": "Forbes",
+        "author": "John Koetsier",
+        "date": "2026-09-09",
+        "url": "https://www.forbes.com/sites/johnkoetsier/2026/09/09/23-of-us-trust-ai-agents-to-spend-our-money-visa-has-a-plan/",
+        "summary": "Visa Group President Oliver Jenkyn tells Forbes that only 23% of consumers trust an AI agent with a purchase, a figure that triples to 61% when Visa's brand backs the transaction, and lays out competing agent-authentication protocols from Visa, Mastercard, Google, and OpenAI/Stripe. Jenkyn predicts B2B procurement will be the first place agentic commerce takes hold because those workflows are already rules-based and permissioned.",
+        "tieback": "Jenkyn's own framing, that procurement and supplier onboarding are the natural proving ground for agents because the data is structured and permissions are clear, describes the exact environment automated EDI and rapid vendor onboarding are built to support."
+      },
+      {
+        "title": "Retailers bet on AI for supply chain, 'smart' shopping",
+        "publisher": "Retail Dive",
+        "author": "Paige Gross",
+        "date": "2026-09-09",
+        "url": "https://www.retaildive.com/news/retailers-AI-supply-chain-smart-shopping/829609/",
+        "summary": "Gap, Ulta, Kohl's and Dollar General executives used Q2 earnings calls to detail AI investments spanning supply chain optimization, agentic operating systems for enterprise workflows, and AI-powered shopping assistants. Bain's Aaron Cheris said most retailers are overhauling a specific function with AI rather than pursuing a full \"AI-first\" transformation, with supply chain routing and cost reduction as a common target.",
+        "tieback": "The earnings-call detail on \"agentic operating systems for enterprisewide workflows\" and network optimization signals retailers want systems that can act on real-time order and inventory data, not just report on it, which is exactly the gap intelligent routing and supplier analytics fill for a dropship program."
+      },
+      {
+        "title": "AI Top 25 Reveals a Wide Execution Gap Across Wholesale Distribution",
+        "publisher": "Distribution Strategy Group",
+        "author": "Mark Brohan",
+        "date": "2026-09-09",
+        "url": "https://distributionstrategy.com/2026/09/ai-top-25-reveals-a-wide-execution-gap-across-wholesale-distribution/",
+        "summary": "A survey of 233 wholesale distribution executives found 93% call AI a strategic priority but only 16% have deployed it across multiple business functions. DSG's AI Top 25 benchmark ties the leaders' progress to single-owner accountability, clean product and customer data, and measuring AI against business metrics like fill rate and days of inventory on hand rather than activity, with 81% of companies reporting strong data quality confident in their AI returns versus 18% of those with poor data.",
+        "tieback": "Fill rate and days-of-inventory-on-hand being the real scorecard, not the number of pilots running, tracks directly with what real-time order and inventory visibility and fast SKU onboarding are meant to fix before a distributor even adds an AI layer on top."
+      },
+      {
+        "title": "How Much of Today's AI in Retail is Just Yesterday's Software Wearing a New Label",
+        "publisher": "Total Retail",
+        "author": "Tara Buchler",
+        "date": "2026-09-09",
+        "url": "https://www.mytotalretail.com/article/how-much-of-todays-ai-in-retail-is-just-yesterdays-software-wearing-a-new-label/",
+        "summary": "Buchler argues that much of what retailers now call \"AI\" in fulfillment and inventory is decades-old rules-based automation relabeled, citing survey data that 55% of supply chain professionals classify traditional automation as AI and only 11% of organizations set measurable AI success criteria. She urges retail buyers to ask vendors what specifically changed in the underlying method before crediting a result to AI rather than to process redesign or headcount cuts.",
+        "tieback": "Her point that only 11% of organizations measure AI against a defined business case is a useful gut check for any platform decision, including one built around order and inventory visibility, where the value has to show up in verifiable cycle-time and accuracy numbers, not a label."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-09",
+    "label": "Wednesday, September 9, 2026",
+    "articles": [
+      {
+        "title": "Visa CEO Says AI Shopping Has Arrived but Agentic Payments Haven't",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS staff",
+        "date": "2026-09-08",
+        "url": "https://www.pymnts.com/visa/2026/visa-ceo-says-ai-shopping-has-arrived-but-agentic-payments-havent/",
+        "summary": "Visa CEO Ryan McInerney told the Goldman Sachs Communacopia + Technology Conference that consumers are using AI to compare and discover products but still complete purchases on merchants' own sites, not through autonomous agents. He said trust is the main barrier: three-quarters of consumers surveyed don't trust agentic platforms to pay with their money, a number that rises when Visa is involved.",
+        "tieback": "Discovery is moving to AI faster than checkout is, which means suppliers and retailers need clean, real-time order and inventory data ready now, well before agentic payments mature enough to complete the loop."
+      },
+      {
+        "title": "Meta Debuts Its Muse AI Agent. Will Consumers Trust It?",
+        "publisher": "TechCrunch",
+        "author": "Sarah Perez",
+        "date": "2026-09-08",
+        "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
+        "summary": "Meta launched Muse, a personal AI agent that connects to a user's email, calendars, and shopping apps and can complete purchases using Link by Stripe for checkout. The piece frames Muse as a major consumer-trust test, given Meta's history of privacy settlements, and notes rivals like Google's Gemini Spark are pursuing the same everyday-task model.",
+        "tieback": "As general-purpose agents like Muse start checking out on shoppers' behalf outside a retailer's own site, suppliers whose catalog and inventory data aren't structured for machine consumption risk becoming invisible to this new transaction layer."
+      },
+      {
+        "title": "Coca-Cola's AI Just Solved Retailers' Inventory Headache",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS staff",
+        "date": "2026-09-08",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/coca-colas-ai-just-solved-retailers-inventory-headache/",
+        "summary": "Coca-Cola's Perfect Basket tool, built into its Coke Buddy ordering platform, analyzes order history, seasonality, and comparable outlets to recommend what and how much retailers should order. Across roughly 39,000 Malaysian outlets, 83% of retailers followed its recommendations, with Coca-Cola reporting stronger sales growth among adopters.",
+        "tieback": "Perfect Basket only works because Coca-Cola built clean, real-time SKU and order data into its platform; suppliers stuck on manual ordering and slow SKU onboarding can't feed a comparable recommendation engine for their own retail partners."
+      },
+      {
+        "title": "Three Cool Pricing Rollouts From a Hot Summer",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-09-04",
+        "url": "https://chainstoreage.com/three-cool-pricing-rollouts-hot-summer",
+        "summary": "Chain Store Age rounds up three AI-driven pricing deployments from summer 2026: Bealls automating markdowns with Oracle's Retail Lifecycle Pricing Optimization (up 25% in clearance sales), Grupo Coppel using First Insight's predictive Value Score to guide private-label pricing and assortment, and Savers Value Village rolling out its own ThriftIQ pricing tool across 58 pilot stores.",
+        "tieback": "Every one of these tools runs on real-time inventory and sell-through signals; retailers get the markdown and margin gains only when supplier data feeds them cleanly and on time, which is where automated EDI and intelligent routing earn their keep."
+      },
+      {
+        "title": "AI Is Redrawing The Boundaries Of Leadership",
+        "publisher": "Forbes (Forbes Technology Council)",
+        "author": "Milan Shetti",
+        "date": "2026-09-01",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2026/09/01/ai-is-redrawing-the-boundaries-of-leadership/",
+        "summary": "Rocket Software CEO Milan Shetti argues that AI initiatives cut across functional lines faster than traditional org charts can track, pushing companies to create roles like Chief AI Officer so someone owns accountability for what each AI use case is meant to achieve. He warns that without a named owner, cross-functional AI projects stall between departments.",
+        "tieback": "Retailers naming their first Chief AI Officers this year (Target, Victoria's Secret) will need that same accountability applied to vendor operations: a dropship or 3P program only scales AI cleanly on top of a single, governed data layer, not another siloed point solution."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-08",
+    "label": "Tuesday, September 8, 2026",
+    "articles": [
+      {
+        "title": "Merchants Put AI to Work Without Handing Over the Customer",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-08",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/merchants-put-ai-work-without-handing-over-customer/",
+        "summary": "A PYMNTS Intelligence and Visa Acceptance Solutions survey of 1,185 merchants finds 46% are least willing to let AI agents control the final price a customer pays, and 42% rank fraud, disputes and liability as their top concern. Merchants are investing fastest in personalization and reordering tools that deepen an existing customer relationship, not in autonomous checkout, which only 26% plan to fund within a year.",
+        "tieback": "The survey shows merchants want AI commerce features that keep them, not the agent, in control of pricing and fulfillment decisions. That's exactly the role Logicbroker's real-time order and inventory visibility plays: it lets a retailer open up to AI agents without losing sight of what's actually happening in the transaction."
+      },
+      {
+        "title": "Amazon Turns 360,000 Customer Checks Into Fraud Intelligence",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-03",
+        "url": "https://www.pymnts.com/news/retail/2026/amazon-and-walmart-turn-fraud-prevention-into-a-retail-product/",
+        "summary": "Amazon added a feature to Alexa for Shopping that lets customers ask whether a suspicious message actually came from the company, comparing it against records of billions of prior communications. Walmart is pursuing a parallel strategy, linking identity, transaction, returns and customer-contact data into one system instead of managing each channel's fraud signals separately.",
+        "tieback": "Both retailers are learning that fraud and trust signals only work when transaction, order and identity data are unified across channels. That's the same connected-data foundation Logicbroker provides across a retailer's full supplier and order network, not just within one company's walls."
+      },
+      {
+        "title": "41% of Millennials Use ChatGPT for Product Discovery",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS",
+        "date": "2026-09-08",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/41percent-millennials-use-chatgpt-product-discovery/",
+        "summary": "A PYMNTS Intelligence report finds ChatGPT now ranks second behind Google for millennial product discovery, ahead of Amazon, and that 42% of millennials who used generative AI for shopping research say it has fully or mostly replaced their prior research habits. Actual purchasing still happens across stores, apps and marketplaces, so AI is pulling ahead of the point of sale rather than replacing it.",
+        "tieback": "If product discovery is shifting into AI platforms before a shopper ever reaches a retailer's own site, having clean, structured product and inventory data ready for those systems determines whether a brand shows up in that first conversation at all, which is what Logicbroker's supplier onboarding and catalog data enable."
+      },
+      {
+        "title": "Agentic Commerce Is Here As Mastercard, Cloudflare And Olas Build Rails",
+        "publisher": "Forbes",
+        "author": "Sandy Carter",
+        "date": "2026-09-02",
+        "url": "https://www.forbes.com/sites/sandycarter/2026/09/02/agentic-commerce-is-here-as-mastercard-cloudflare-and-olas-build-rails/",
+        "summary": "Carter interviews founders from Olas, Para and Cloudflare to map four layers of agentic commerce infrastructure now being built in parallel: payments, authorization, agent-to-agent hiring and fulfillment confirmation. She notes Mastercard's Agent Pay already works with more than 30 firms and Olas has logged 14 million agent-driven deals.",
+        "tieback": "The fulfillment confirmation layer Carter describes, proof that a good actually shipped and arrived as promised, is exactly where Logicbroker's automated EDI and order tracking give suppliers and retailers a verifiable answer that AI agents (and their operators) can trust."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-07",
+    "label": "Monday, September 7, 2026",
+    "articles": [
+      {
+        "title": "Amazon Prime members now get free Alexa+ access",
+        "publisher": "Retail Dive",
+        "author": "Bryan Wassel",
+        "date": "2026-09-04",
+        "url": "https://www.retaildive.com/news/amazon-adds-perks-prime-free-alexa-access/829610/",
+        "summary": "Amazon has made its agentic AI assistant Alexa+ free for all U.S. Prime members as it completes a broader rollout, following a quarter of double-digit Prime membership growth. Shoppers who try Alexa+ sign up for Prime at a nearly 25% higher rate, and the move follows Walmart's recent expansion of its own paid loyalty perks.",
+        "tieback": "As agentic assistants become a standard loyalty perk instead of a paid add-on, more everyday purchases will originate from inside an AI agent rather than a storefront, raising the stakes for brands to maintain a transactable, structured presence on these assistants instead of relying on traditional product pages."
+      },
+      {
+        "title": "Dollar General deploys AI across distribution centers, stores",
+        "publisher": "Retail Dive (first published Supply Chain Dive)",
+        "author": "Kelly Stroh",
+        "date": "2026-09-04",
+        "url": "https://www.retaildive.com/news/dollar-general-ai-distribution-centers-stores/829201/",
+        "summary": "Dollar General is rolling out Relex Solutions' AI platform across its 21,000 stores and 34 distribution centers to unify forecasting, replenishment, ordering schedules, lead times and supplier coordination into one planning environment. The retailer says the system gives its teams greater visibility across the network as it builds out broader agentic operating systems for the enterprise.",
+        "tieback": "A single AI layer for supplier coordination and replenishment only performs as well as the order and inventory data feeding it, which is exactly the real-time visibility and automated EDI connectivity a drop-ship network needs to keep forecasting accurate across thousands of suppliers."
+      },
+      {
+        "title": "Urban Outfitters' Nuuly pursues more fulfillment center automation",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-09-04",
+        "url": "https://www.supplychaindive.com/news/urban-outfitters-nuuly-pursues-more-fulfillment-center-automation/829575/",
+        "summary": "Nuuly, Urban Outfitters' rental subscription brand, is layering in more automation at its Kansas City-area fulfillment center: automated garment storage going live this month, an automated order sortation system arriving in the fourth quarter, and an automated picking system targeted for mid-2027. President David Hayne outlined the plan on the company's Aug. 26 earnings call, part of a roughly $475 million fiscal 2027 capex plan with about half tied to logistics.",
+        "tieback": "Automated sortation and picking only pay off if the orders and inventory feeding those systems are already accurate in real time, the same real-time order and inventory visibility and intelligent routing layer a dropship network needs before automation investments like this can scale."
+      },
+      {
+        "title": "What Retailers Should Consider While Building AI Departments",
+        "publisher": "Forbes (Forbes Business Council)",
+        "author": "Charisma Glassman",
+        "date": "2026-09-04",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2026/09/04/what-retailers-should-consider-while-building-ai-departments/",
+        "summary": "Genpact's Charisma Glassman argues that standing up a retail AI department is not a one-time project but an ongoing operating model that must be built carefully, proven honestly and continuously improved, given how thin retail margins make missteps costly. Drawing on field guides from Anthropic, OpenAI and Microsoft, she frames \"absorption,\" changing how work actually gets done around people and agents, as the harder problem than simply buying new tools.",
+        "tieback": "The gap between buying an AI tool and absorbing it into daily operations is exactly why fast supplier and SKU onboarding speed matters: automation only pays off once it's embedded in the workflow retailers run every day, not layered on top of it."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "label": "Friday, September 4, 2026",
+    "articles": [
+      {
+        "title": "Lawmakers Test the Rules for AI Agents That Move Money",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-09-03",
+        "url": "https://www.pymnts.com/news/payments-innovation/2026/lawmakers-test-the-rules-for-ai-agents-that-move-money/",
+        "summary": "At a Sept. 2 House Financial Services Committee hearing, Circle's Heath Tarbert argued AI agents need always-on, programmable payment rails, while Rep. Bill Foster pressed for legally traceable \"agentic identity\" behind every autonomous transaction. Lawmakers debated stablecoin rules, smart-contract settlement triggers, and whether banks' existing identity infrastructure should verify which AI agents are authorized to move money.",
+        "tieback": "Every agent-to-agent transaction Congress is trying to regulate still needs a merchant that can prove which supplier, order, and inventory record backs it up. That's the real-time order and inventory visibility Logicbroker already gives retailers, well ahead of agentic payment rails going live."
+      },
+      {
+        "title": "Williams-Sonoma AI assistants drive customer engagement — and conversions",
+        "publisher": "Retail Dive",
+        "author": "Kristen Doerer",
+        "date": "2026-09-02",
+        "url": "https://www.retaildive.com/news/williams-sonoma-ai-assistants-drive-customer-engagement-conversions/829051/",
+        "summary": "Williams-Sonoma's AI shopping assistants Olive (on its flagship site) and the newly launched Otto (Pottery Barn) convert customers at three times the rate of non-users, and Otto resolves more than 70% of customer conversations without a human handoff, executives said on the company's Q2 earnings call. CEO Laura Alber credited the results to pairing AI with the retailer's proprietary first-party data across design, discovery, and checkout.",
+        "tieback": "Olive and Otto only work because Williams-Sonoma's product and inventory data is clean enough for an AI agent to read. That's the same structured, real-time catalog and inventory foundation Logicbroker gives retailers so their own shopping agents, and third-party ones, have accurate data to act on."
+      },
+      {
+        "title": "800 AI Agents Now Run GE Appliances' Factory Floor",
+        "publisher": "PYMNTS",
+        "author": "PYMNTS Staff",
+        "date": "2026-09-03",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/800-ai-agents-now-run-ge-appliances-factory-floor/",
+        "summary": "GE Appliances deployed more than 800 AI agents across its factories, warehouses, and supply chain on Google Cloud's Gemini Enterprise, including one agent that automated order-status communication with more than 600 suppliers and cut back orders 25%. The system, called Brilliant Factory, now also feeds real-time production, staffing, and inventory decisions instead of relying on a plant manager's judgment and static reports.",
+        "tieback": "That 25% back-order reduction came from automating supplier communication at scale, the exact problem Logicbroker's automated EDI and rapid vendor onboarding solve for retailers managing hundreds of drop-ship and 3P suppliers, without building a custom AI layer in-house."
+      },
+      {
+        "title": "How AI is powering Target's back-to-school push",
+        "publisher": "Retail Dive",
+        "author": "Dani James",
+        "date": "2026-09-03",
+        "url": "https://www.retaildive.com/news/target-back-to-school-push-AI/829468/",
+        "summary": "Target is using AI to power wish-list product recommendations and a \"next best action\" widget on its e-commerce site during back-to-school season, a category where wish-list use drives about 45% higher demand, SVP of technology Brad Thompson told Retail Dive. The retailer is also testing AI-driven, one-to-one personalized page layouts ahead of a broader rollout.",
+        "tieback": "Target's next-best-action AI can only point shoppers toward products that are actually in stock and priced correctly. Real-time order and inventory visibility has to sit underneath any personalization layer, not just the front-end AI."
+      },
+      {
+        "title": "AI Is Revolutionizing Strategic Decision-Making",
+        "publisher": "Harvard Business Review",
+        "author": "Felipe A. Csaszar",
+        "date": "2026-09-01",
+        "url": "https://hbr.org/2026/09/ai-is-revolutionizing-strategic-decision-making",
+        "summary": "Csaszar argues AI is \"unbounding rationality\" for corporate strategy: it can generate and evaluate far more strategic options than a planning team ever could, build continuously updated models of markets and competitors, and stress-test plans through structured debate free of internal politics. He warns that since the same AI tools are available to every company, durable advantage will go to whoever pairs them with proprietary data and faster execution.",
+        "tieback": "For a retailer weighing which suppliers, marketplaces, or fulfillment partners to add next, that proprietary-data advantage is exactly what a live, structured feed of order, inventory, and supplier performance data (the kind Logicbroker provides) gives an AI-assisted strategy process to reason over."
+      }
+    ]
+  },
+  {
     "date": "2026-09-03",
     "label": "Thursday, September 3, 2026",
     "articles": [
