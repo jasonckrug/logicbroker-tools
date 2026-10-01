@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-10-01",
+    "label": "Weekly: Week of September 24 to September 30, 2026",
+    "articles": [
+      {
+        "title": "Shopify opens checkout to browser-based AI agents",
+        "publisher": "TechCrunch",
+        "author": "",
+        "date": "2026-09-28",
+        "url": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
+        "summary": "Shopify added WebMCP support for checkout, including Shop Pay, with three tools (get_checkout, update_checkout, complete_checkout) that let browser-based agents read, edit and submit an order after the buyer authorizes it, without screenshots or scraping. It is rolling out to all eligible merchants while Amazon and some brands block agent purchases on their sites.",
+        "tieback": "Once agents can complete a purchase on any eligible storefront, the order arrives with no human checking stock or ship method first, so a retailer's dropship and 3P catalog needs accurate, real-time inventory and clean order routing to the right supplier from the first transaction."
+      },
+      {
+        "title": "Why the Fed Thinks B2B Payments Are Already Built for Agentic",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-30",
+        "url": "https://www.pymnts.com/news/b2b-payments/2026/why-the-fed-thinks-b2b-payments-are-already-built-for-agentic/",
+        "summary": "Fed Governor Christopher Waller said in a Sept. 29 speech that B2B purchasing suits agentic commerce because companies already wrap spending in approved-supplier lists, budget limits and recurring purchase patterns. PYMNTS argues the breakthrough is turning that procurement authority into credentials an agent can carry and a counterparty can verify.",
+        "tieback": "Retailer-to-supplier trading relationships already run on codified rules (vendor approval, cost, terms, EDI document flows), so the retailers with those rules automated today are the ones best positioned to let agents place and confirm supplier orders."
+      },
+      {
+        "title": "Mastercard Deploys New Risk Insights to Support Agentic Payments",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-30",
+        "url": "https://www.pymnts.com/mastercard/2026/mastercard-deploys-new-risk-insights-to-support-agentic-payments/",
+        "summary": "Mastercard added trust and intelligence services to Agent Pay, including a probability score that estimates whether a transaction was initiated by an AI agent and signals that flag unusual activity needing review. The score is in US testing, and Mastercard is working with Cloudflare and Skyfire on agent verification standards.",
+        "tieback": "As networks make agent-initiated orders easier to approve, more of them will clear payment and land in the retailer's order flow, which shifts the failure point to fulfillment: whether the item is really in stock at the supplier and ships on time."
+      },
+      {
+        "title": "Meta is expanding its AI agent Muse to small businesses",
+        "publisher": "TechCrunch",
+        "author": "",
+        "date": "2026-09-29",
+        "url": "https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/",
+        "summary": "Meta launched Muse for Small Business, an agent that helps owners run operations and find customers, with integrations including Shopify, Stripe, QuickBooks, Klaviyo and Slack. It is free with usage limits, with paid plans for heavier use, and follows Meta's enterprise platform announcement the day before.",
+        "tieback": "Small brands that sell through retailer dropship programs are about to have agents managing their storefronts and inventory, so retailers will get better results from suppliers if onboarding and data exchange are simple enough for a small seller (or its agent) to keep current."
+      },
+      {
+        "title": "Walmart CEO addresses dynamic pricing concerns",
+        "publisher": "Retail Dive",
+        "author": "Dani James",
+        "date": "2026-09-28",
+        "url": "https://www.retaildive.com/news/walmart-ceo-dynamic-pricing-concerns/831490/",
+        "summary": "CEO John Furner published a letter saying Walmart does not and will not set prices by shopper, time of day or urgency, and will not use what customers tell its Sparky agent to raise prices or hide cheaper items. Consumer group Groundwork Collaborative points to a 2023 Walmart patent for cart-based electronic shelf label pricing as evidence the door remains open.",
+        "tieback": "Pricing set by AI or electronic labels now draws public scrutiny, so retailers need one consistent price per item across store, site and agent channels, including for supplier-fulfilled SKUs where cost and retail data come from the vendor feed."
+      },
+      {
+        "title": "Gartner Predicts Only 5% of Organizations Will Make At Least 10% of Supply Chain Planning Decisions Autonomously by 2030",
+        "publisher": "Gartner",
+        "author": "",
+        "date": "2026-09-24",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-24-gartner-predicts-only-5-percent-of-organizations-will-make-at-least-10-percent-of-supply-chain-planning-decisions-autonomously-by-2030",
+        "summary": "Gartner predicts that by 2030 only 5% of organizations automating supply chain planning will make at least 10% of planning decisions autonomously. It says spending on planning automation does not by itself create AI readiness, and that data, technology and talent foundations have to come first.",
+        "tieback": "Autonomous planning stalls when the underlying data is incomplete, and for retailers that data includes supplier inventory, ship confirmations and lead times, which is the visibility layer to fix before buying another planning tool."
+      },
+      {
+        "title": "Hy-Vee looks to dramatically speed up online shopping",
+        "publisher": "Grocery Dive",
+        "author": "Peyton Bigora",
+        "date": "2026-09-28",
+        "url": "https://www.grocerydive.com/news/hy-vee-e-commerce-groceryshop-ceo-jeremy-gosch/831403/",
+        "summary": "Hy-Vee CEO Jeremy Gosch told Groceryshop the grocer wants to cut average online order time from about 40 minutes to five minutes or less, using AI to preload carts with repeat and seasonal items. Hy-Vee is rewriting all of its digital properties, with beta testing due within a month.",
+        "tieback": "When AI fills the cart before the shopper looks, any item that is out of stock or mis-listed becomes a substitution or a cancellation, so accurate item and inventory data from every source, including third-party vendors, determines whether that speed goal holds."
+      },
+      {
+        "title": "AI has improved basket size by 35%, says Walmart CTO Suresh Kumar",
+        "publisher": "Business Standard",
+        "author": "Avik Das",
+        "date": "2026-09-30",
+        "url": "https://www.business-standard.com/companies/people/ai-has-improved-customer-basket-size-by-35-walmart-cto-suresh-kumar-126093001005_1.html",
+        "summary": "Walmart global CTO Suresh Kumar said baskets are 35% larger for customers using the Sparky agent, which plans around a goal (such as a dinner for six) rather than single products. Speaking at Walmart's Converge event in Bengaluru, he also described AI gains in developer productivity and last-mile delivery.",
+        "tieback": "Goal-based agents build multi-item baskets across categories, which makes assortment breadth a revenue driver and puts pressure on how fast a retailer can onboard new vendors and SKUs to fill the gaps those baskets expose."
+      },
+      {
+        "title": "Apps, Agents, and Aggregation",
+        "publisher": "Stratechery",
+        "author": "Ben Thompson",
+        "date": "2026-09-28",
+        "url": "https://stratechery.com/2026/apps-agents-and-aggregation/",
+        "summary": "Thompson argues that agents are the ultimate aggregators, treating apps as a means rather than an end, and that the scarce resource shifts from discovery to the user's intent. He sees Meta (Muse) and Microsoft (Copilot) as best placed and says giving each user a provisioned machine for their agent is the real unlock.",
+        "tieback": "If agents become the front door and storefronts become interchangeable back ends, a retailer's advantage moves to what an agent can reliably transact against: breadth of assortment, accurate availability and dependable fulfillment, which is where a well-run dropship program competes."
+      },
+      {
+        "title": "Overdue modernization stokes security fears, wrecks AI plans",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-09-29",
+        "url": "https://www.ciodive.com/news/modernization-legacy-systems-stalls-ai/831698/",
+        "summary": "A GFT Technologies survey of 945 CIOs and CTOs found more than 4 in 5 canceled at least one AI pilot because of legacy system limits, and 93% fear unmodernized systems will eventually cause a security event. Only 15% say their modernization is nearly or fully complete.",
+        "tieback": "Retail AI plans that depend on supplier data often hit legacy EDI and integration bottlenecks first, so modernizing the trading-partner connection layer is a practical place to start rather than a full stack rebuild."
+      }
+    ]
+  },
+  {
     "date": "2026-09-28",
     "label": "Weekly: Week of September 21 to September 27, 2026",
     "articles": [
