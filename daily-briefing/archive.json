@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-10-05",
+    "label": "Weekly: Week of Sep 28 to Oct 4, 2026",
+    "articles": [
+      {
+        "title": "EMVCo Takes On Proof of Permission for AI Payments",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-10-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/emvco-framework-targets-consumer-intent-agentic-payments/",
+        "summary": "EMVCo closed comments Sept. 30 on its draft Agentic Payments framework, whose centerpiece, Intent Services, would let payment participants register, retrieve and update what a consumer authorized an AI agent to buy, including for later disputes. It may also add know-your-agent identification and transaction flags for agent involvement; PYMNTS data shows 56% of consumers would let agents compare products but only 37% would let them authorize payment.",
+        "tieback": "Agent orders will start carrying a recorded consumer mandate, so retailers whose dropship orders pass through to vendors need that order context to survive the hop from checkout to supplier for returns and disputes."
+      },
+      {
+        "title": "Consumer AI use a boon for the holidays as AI traffic doubles",
+        "publisher": "Retail Dive",
+        "author": "Matt Vartabedian",
+        "date": "2026-10-01",
+        "url": "https://www.retaildive.com/news/consumer-ai-use-boon-holidays-ai-traffic-doubles/831790/",
+        "summary": "Adobe forecasts AI-referred traffic to U.S. retail sites will rise 130% year over year this holiday season, and its survey of 5,000 consumers found AI-referred visitors add to cart 32% more often and generate more revenue per visit than other traffic. Over two-thirds of AI-assisted shoppers said they were less likely to return items, a reversal from 18 months ago when non-AI traffic was worth far more.",
+        "tieback": "Higher-intent AI traffic makes a stale stock or price signal more expensive, so real-time inventory visibility across vendor-fulfilled assortment is what converts those sessions during peak."
+      },
+      {
+        "title": "OpenAI Adds Virtual Try-On Feature to ChatGPT",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-10-02",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-adds-virtual-try-on-feature-chatgpt/",
+        "summary": "OpenAI added a Try on button to clothing and accessory listings in ChatGPT, using a saved selfie, plus Favorites and folders for saving products on mobile and web. PYMNTS notes about 23% of U.S. consumers start retail search with AI and apparel, shoes and accessories made up roughly 28% of recent AI-assisted purchases.",
+        "tieback": "Richer in-assistant product experiences raise the content bar for every listed SKU, including vendor-supplied 3P items, which puts a premium on SKU onboarding speed with complete images and attributes."
+      },
+      {
+        "title": "DoorDash launches an AI agent you can text to order food",
+        "publisher": "TechCrunch",
+        "author": "Aisha Malik",
+        "date": "2026-09-30",
+        "url": "https://techcrunch.com/2026/09/30/doordash-launches-an-ai-agent-you-can-text-to-order-food/",
+        "summary": "DoorDash launched an AI agent that takes orders over Apple Messages, handling requests like \"order my usual,\" recommending local dishes and building group orders with mixed dietary needs. A U.S. waitlist is open, positioning the agent against Uber Eats and Grubhub.",
+        "tieback": "Repeat-order agents only work when the underlying catalog and availability data are current, the same dependency retailers face when agents re-order items fulfilled by dropship suppliers."
+      },
+      {
+        "title": "5 takeaways from Groceryshop",
+        "publisher": "Grocery Dive",
+        "author": "Jeff Wells, Peyton Bigora",
+        "date": "2026-09-28",
+        "url": "https://www.grocerydive.com/news/takeaways-groceryshop-conference-2026-las-vegas/831421/",
+        "summary": "AI dominated Groceryshop: DoorDash said its Ask DoorDash assistant produced 50% larger carts and checkout five times faster, and Kroger signaled its assistant will likely gain autonomous shopping features. Schnucks said it had to clean up its data before launching its assistant, and at first forgot to give it store hours.",
+        "tieback": "The Schnucks lesson scales badly for extended aisles: assortment sourced from many vendors carries uneven data quality, so supplier data normalization has to come before any shopping agent sits on top of it."
+      },
+      {
+        "title": "P&G Takes Its AI Scrap Killer Global",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-09-29",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/pg-takes-its-ai-scrap-killer-global/",
+        "summary": "Procter & Gamble is rolling its Siemens-built AI visual inspection system to factories worldwide after it cut scrap 10% to 20% on the lines where it ran, with installs five to 10 times faster than traditional machine vision. The program feeds P&G's Supply Chain 3.0 effort targeting up to $1.5 billion in cost savings (figures are the companies' own).",
+        "tieback": "As large suppliers automate production and quality, the lag shifts to order and inventory signals between retailer and supplier, which is where automated EDI and supplier performance analytics close the gap."
+      },
+      {
+        "title": "Kroger takes key step forward in tying retail media creative with digital sales",
+        "publisher": "Grocery Dive",
+        "author": "Chris Kelly",
+        "date": "2026-10-01",
+        "url": "https://www.grocerydive.com/news/kroger-ai-and-predictive-scoring-e-commerce/831891/",
+        "summary": "In a study with Vidmob and MMA Global, Kroger used AI to analyze more than 1,900 ad assets and found predictive creative scoring forecast e-commerce conversion with 81% accuracy. Ads that followed the recommendations averaged four times better conversion; the study was vendor-run.",
+        "tieback": "Once media spend is tuned to predicted conversion, promoting an item the vendor cannot ship wastes budget, so supplier inventory visibility belongs in retail media planning for marketplace and dropship SKUs."
+      },
+      {
+        "title": "AI Is Making Verification the Bottleneck for Companies",
+        "publisher": "Harvard Business Review",
+        "author": "Christian Catalini",
+        "date": "2026-10-02",
+        "url": "https://hbr.org/2026/10/ai-is-making-verification-the-bottleneck-for-companies",
+        "summary": "Catalini argues that as AI makes producing text, code and decisions cheap, value moves to verification, with firms becoming verification factories that depend on unique ground truth and expert talent. He warns many companies adopt AI in ways that erode both, for example by automating away the expert overrides that are their most valuable data.",
+        "tieback": "For a retailer running hundreds of vendors, the verification layer is the check on supplier-submitted catalog, inventory and shipment data before it reaches customers or agents."
+      },
+      {
+        "title": "The ugly economics of consumer AI",
+        "publisher": "TechCrunch",
+        "author": "Russell Brandom",
+        "date": "2026-09-30",
+        "url": "https://techcrunch.com/2026/09/30/the-ugly-economics-of-consumer-ai/",
+        "summary": "Brandom argues consumer AI faces a monetization ceiling, citing a16z and PNC data that only 2.2% of consumers paid for AI as of May, at about $31 a month, even as a quarter of adults use it daily. That ceiling is pushing labs toward enterprise revenue and new consumer products like Meta's Muse and OpenAI's Dots.",
+        "tieback": "If subscriptions cap out, assistant makers will lean harder on commerce and transaction revenue, which makes a transactionable presence on LLMs and agents a channel decision retailers will face whether or not they pursue it."
+      }
+    ]
+  },
+  {
     "date": "2026-10-01",
     "label": "Weekly: Week of September 24 to September 30, 2026",
     "articles": [
