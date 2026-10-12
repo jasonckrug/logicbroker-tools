@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-10-12",
+    "label": "Weekly: Week of Oct 5 to Oct 11, 2026",
+    "articles": [
+      {
+        "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
+        "publisher": "TechCrunch",
+        "author": "Aisha Malik",
+        "date": "2026-10-05",
+        "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+        "summary": "TikTok launched a conversational Shopping Assistant that answers questions on sizing, shipping and availability and helps complete purchases, along with one-click checkout that lets users buy directly from brands inside the For You feed. The features are built with Salesforce, Shopify, Shoplazza and Stripe and push shopping beyond TikTok Shop into the main app.",
+        "tieback": "A buy button inside a video feed still has to confirm stock and hand the order to whoever ships it, so brands and retailers selling there need real-time inventory feeds and order routing that keep pace with impulse demand."
+      },
+      {
+        "title": "Gap unveils AI-assisted shopping, three decades after its first website",
+        "publisher": "Retail Dive",
+        "author": "Daphne Howland",
+        "date": "2026-10-05",
+        "url": "https://www.retaildive.com/news/gap-ai-assisted-shopping-three-decades-after-website/832070/",
+        "summary": "Gap Inc. opened its full brand portfolio to the third-party AI platforms Alta Daily and Daydream and launched conversational shopping agents on Old Navy and Banana Republic sites and apps. CTO Sven Gerjets acknowledged shopper wariness, citing a survey that found 45% of AI-assisted purchases consumers regret are apparel and footwear.",
+        "tieback": "Exposing a whole assortment to outside AI platforms only works if attributes and availability are accurate in every feed, which raises the bar on SKU data quality for any dropship or marketplace items in the catalog."
+      },
+      {
+        "title": "AI Agents Bring Shoppers, but Merchants Must Close the Sale",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-10-06",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-bring-shoppers-but-merchants-must-close-the-sale/",
+        "summary": "Visa's agentic commerce product lead Pavan HS says merchants treat AI agents as one more sales channel that must work with existing payment, fraud, returns and loyalty systems, and that no merchant will rebuild its payment stack for it. He describes real frictions, including a Gemini order returned in-store on a different processor and fraud rules declining agent traffic that originated in Singapore.",
+        "tieback": "Agent-originated orders still have to survive returns, refunds and disputes across channels, which argues for keeping order, shipment and return status visible in one place from checkout through the supplier that shipped it."
+      },
+      {
+        "title": "Newegg, The RealReal team with Google for conversational AI shopping",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-10-08",
+        "url": "https://chainstoreage.com/newegg-realreal-team-google-conversational-ai-shopping",
+        "summary": "Newegg added Universal Commerce Protocol checkout so U.S. shoppers can buy eligible products inside Google AI Mode and Gemini, with Newegg as merchant of record handling fulfillment and support. The RealReal rolled out Ask TRR, a shopping agent built on Gemini Enterprise, to all 45 million members after a pilot.",
+        "tieback": "Newegg's setup shows what a transactionable presence on LLMs and agents takes (live pricing, live inventory and a clean order handoff back to the merchant), the same plumbing a retailer needs before extending its dropship assortment into AI checkout."
+      },
+      {
+        "title": "Eataly implements EDI, agentic AI into enterprise",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-10-07",
+        "url": "https://chainstoreage.com/eataly-implements-edi-agentic-ai-enterprise",
+        "summary": "After growing from one store every six years to ten in a single year, with order and transaction volume up more than 40% over two years, Eataly replaced email, PDF and WhatsApp supplier communication with Cleo EDI alongside a move to Microsoft Dynamics 365; PO confirmations now return in about 30 minutes instead of days and matched invoices post automatically. With that data in place, Eataly is building an AI agent that flags expiring warehouse inventory and traces quality issues to specific vendors.",
+        "tieback": "Eataly had to automate EDI before its AI agent had clean vendor data to work with, the same sequence a retailer faces when it wants supplier analytics on a dropship program still run on email and spreadsheets."
+      },
+      {
+        "title": "Bed Bath & Beyond parent company to unify supply chain with AI",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-10-09",
+        "url": "https://chainstoreage.com/bed-bath-beyond-parent-company-unify-supply-chain-ai",
+        "summary": "Neighborhood Intelligence, parent of Bed Bath & Beyond, The Container Store, Kirkland's, BuyBuy Baby and Overstock, selected RELEX to put forecasting, replenishment, allocation and merchandise financial planning on one AI platform. The aim is a shared view across banners that protects in-stock rates and sell-through as the 335-store company grows.",
+        "tieback": "A multi-banner retailer consolidating planning on one data layer also needs vendor-fulfilled and marketplace inventory feeding that layer, or its AI forecasts will plan around only the stock it owns."
+      },
+      {
+        "title": "AI is 'reshaping' Walmart and Sparky is leading the charge",
+        "publisher": "Retail Dive",
+        "author": "Nicole Silberstein",
+        "date": "2026-10-08",
+        "url": "https://www.retaildive.com/news/ai-walmart-sparky-CX-investment/832327/",
+        "summary": "Walmart U.S. CEO David Guggina said AI-driven savings in delivery and store execution are being reinvested in price and experience, with e-commerce up 24% in Q2 and the Sparky assistant driving 40% higher order values and a 57% conversion lift from visual search. He said ChatGPT and Gemini mostly deep link shoppers to Walmart with strong conversion, a contrast with Amazon's blocking of third-party agents.",
+        "tieback": "Walmart's open stance toward agents passes agent-driven demand to its marketplace sellers and dropship suppliers, whose inventory and ship-time accuracy will affect how often those listings keep getting recommended."
+      },
+      {
+        "title": "U.K. grocer Asda delivers AI-based offers at online checkout",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-10-09",
+        "url": "https://chainstoreage.com/uk-grocer-asda-delivers-ai-based-offers-online-checkout",
+        "summary": "Asda uses Rokt's machine-learning tools on the payment and order confirmation pages of its grocery and George sites to choose the most relevant offer for each shopper in real time, creating a retail media revenue stream at checkout. Asda reports Rokt revenue on grocery up 72% year over year with no change in conversion.",
+        "tieback": "Retailers are turning checkout into a margin lever, which puts the same scrutiny on anything surfaced there, including third-party assortment, that has to be in stock and shippable when the shopper says yes."
+      },
+      {
+        "title": "Who Owns the Customer in the Age of AI Agents?",
+        "publisher": "Harvard Business Review",
+        "author": "Sangeet Paul Choudary",
+        "date": "2026-10-09",
+        "url": "https://hbr.org/2026/10/who-owns-the-customer-in-the-age-of-ai-agents",
+        "summary": "Choudary argues that as consumers hand discovery, comparison and purchasing to agents, the usual sources of control (engagement, network effects, supplier lock-in, proprietary data, even a company's own agent) may no longer secure the customer, opening with Amazon blocking Meta's Muse twelve days after its launch. He says the advantage shifts to companies that help agents decide well by linking intent to transactions, observing outcomes and feeding transaction-level results into future decisions.",
+        "tieback": "If transaction-level outcome data becomes the moat, retailers need clean post-order signals (fill rate, ship time, returns by supplier) captured across their dropship network, which is supplier analytics put to a new use."
+      },
+      {
+        "title": "AI platform sprawl undermines enterprise ROI",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-10-07",
+        "url": "https://www.ciodive.com/news/single-ai-deployment-platforms-rare-app-sprawl-grows/832443/",
+        "summary": "FICO's State of Responsible AI 2026 survey of more than 1,000 executives found only 8.2% of organizations run AI on a single shared deployment platform and only 5% say AI significantly exceeded ROI expectations. About 40% cite security and 38% cite data integration and quality as the top barriers to agentic AI returns, and FICO's Scott Zoldi says governance teams stop 50% to 90% of deployments when no shared standard exists.",
+        "tieback": "With data integration named a top barrier to agentic ROI, retailers evaluating AI should first check whether supplier order, inventory and catalog data arrives as one normalized stream, since agents built on fragmented partner feeds inherit the fragmentation."
+      }
+    ]
+  },
+  {
     "date": "2026-10-05",
     "label": "Weekly: Week of Sep 28 to Oct 4, 2026",
     "articles": [
