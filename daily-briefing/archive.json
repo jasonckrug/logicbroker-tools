@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-10-19",
+    "label": "Weekly: Week of Oct 12 to Oct 18, 2026",
+    "articles": [
+      {
+        "title": "Google launches Universal Cart for purchases across retailers",
+        "publisher": "Digital Commerce 360",
+        "author": "Brian Warmoth",
+        "date": "2026-10-16",
+        "url": "https://www.digitalcommerce360.com/2026/10/16/google-universal-cart-launch-features/",
+        "summary": "Google rolled out Universal Cart in the U.S. across Search, AI Mode and the Gemini app, letting shoppers save items from multiple retailers, track price and inventory changes, and check out through the Universal Commerce Protocol or hand the cart to the merchant's own site. Launch retailers include Walmart, Ulta Beauty, Wayfair, Target, Sephora and Shopify merchants, with Newegg among the latest to integrate UCP.",
+        "tieback": "A cart that watches inventory across retailers will surface any stale stock or price feed on a dropship item immediately, so retailers listing extended-aisle SKUs in Google need real-time order and inventory visibility from every supplier before the holiday peak."
+      },
+      {
+        "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+        "publisher": "TechCrunch",
+        "author": "Sarah Perez",
+        "date": "2026-10-13",
+        "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+        "summary": "American Express launched an Intent Intelligence Framework that captures a shopper's purchase instructions (merchant, budget, product preferences), has the customer authenticate them, and issues an Intent ID and Proof of Intent Token that the agent uses to obtain a payment credential. Amex says it can block a transaction when the agent's order does not match the signed intent, and the ID follows the purchase into fraud and dispute handling.",
+        "tieback": "If the payment layer can reject an order that does not match the shopper's stated product, the retailer's catalog and supplier SKU data have to resolve cleanly to what the agent asked for, which puts SKU onboarding accuracy upstream of payment approval."
+      },
+      {
+        "title": "Agentic Payments Are About to Break the Meaning of an Authorized Transaction",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-10-16",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/agentic-payments-redefine-authorized-transaction/",
+        "summary": "FIS product executive Troy Mann says agentic transaction volume is still small but banks will need to identify which agent made a purchase, what it was allowed to do, and whether the order matches the buyer's original mandate. He argues the signals for that sit fragmented across merchants, AI platforms and issuers, and suggests agent-specific virtual cards with merchant, amount and time limits as a near-term control.",
+        "tieback": "When disputes start to hinge on whether an order matched the mandate, retailers need a clean audit trail from order capture through supplier fulfillment, which is where automated EDI and order-status data carry weight."
+      },
+      {
+        "title": "Numerator: The product categories most likely to be disrupted by AI are...",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-10-14",
+        "url": "https://chainstoreage.com/numerator-product-categories-most-likely-be-disrupted-ai-are",
+        "summary": "Numerator's new AI Consumer Index ranks health and beauty, apparel, footwear and accessories, and electronics as the categories most exposed to AI-driven discovery, and estimates AI-engaged households account for $37 billion in additional annual spending. Costco, TJX and Amazon over-index with AI-engaged shoppers while Ahold Delhaize and Albertsons under-index, and 48% of respondents worry about how their data is used.",
+        "tieback": "The categories Numerator flags are also heavy dropship and marketplace categories, so retailers there have the most to gain from fast SKU onboarding and complete attribute data that agents can read."
+      },
+      {
+        "title": "Survey: Consumers leverage AI tools to compare prices, find discounts",
+        "publisher": "Chain Store Age",
+        "author": "Zachary Russell",
+        "date": "2026-10-16",
+        "url": "https://chainstoreage.com/survey-consumers-leverage-ai-tools-compare-prices-find-discounts",
+        "summary": "A Snipp survey of 1,000 regular AI shoppers found 71% have asked AI to find a deal and 63% say AI has saved them money, mostly by comparing prices across retailers. Thirty-two percent would switch from their usual brand if AI found a better price, though only 17% want AI to apply offers automatically.",
+        "tieback": "If agents make price comparison across retailers effortless, a retailer's defense is breadth and availability of assortment, which favors programs that can add vetted dropship vendors quickly rather than competing on price alone."
+      },
+      {
+        "title": "Target wants more efficient stores. An upgraded employee app could help.",
+        "publisher": "Retail Dive",
+        "author": "Dani James",
+        "date": "2026-10-14",
+        "url": "https://www.retaildive.com/news/target-upgrades-store-operations-app-employees/832989/",
+        "summary": "Target upgraded its myDay store operations app to weigh real-time inventory needs, team availability and sales forecasts, grouping and ranking tasks by urgency and value, with AI-enabled insights coming next. Its Scan to Divert feature, which decides at scan whether new product goes to the shelf or the backroom based on demand and space, has delivered $25 million in value, Target said.",
+        "tieback": "Store-level decisions like shelf versus backroom only work when inbound inventory data is accurate and timely, the same real-time visibility requirement that applies to vendor-shipped orders in a retailer's extended aisle."
+      },
+      {
+        "title": "Tractor Supply opens Idaho distribution center with automation, dedicated AI team",
+        "publisher": "Retail Dive",
+        "author": "Max Garland",
+        "date": "2026-10-12",
+        "url": "https://www.retaildive.com/news/tractor-supply-opens-idaho-distribution-center-with-automation-dedicated-a/832591/",
+        "summary": "Tractor Supply opened an 865,000-square-foot, $200 million-plus distribution center in Nampa, Idaho, with its first automated storage and retrieval system and an on-site AI innovation team tasked with applying AI to operational needs. About 81% of merchandise reaching its stores in fiscal 2025 came through its DC network, with the rest shipped directly from vendors to stores or customers.",
+        "tieback": "The roughly 19% of goods that bypass the DCs is where routing rules and supplier performance analytics matter most, since vendor-direct shipments sit outside the automation the retailer is building."
+      },
+      {
+        "title": "Amazon and Walmart Are Turning Retail Efficiency Into Someone Else's Expense",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-10-15",
+        "url": "https://www.pymnts.com/news/retail/2026/amazon-and-walmart-are-turning-retail-efficiency-into-someone-elses-expense/",
+        "summary": "PYMNTS argues that Walmart's warehouse robotics push can require suppliers to change packaging, labeling, case configurations and shipping specs, shifting implementation costs onto vendors while Walmart captures the productivity gains. It pairs that with Amazon's new Bee wearables, which turn conversations into product recommendations, as two versions of platforms controlling the handoff between demand and fulfillment.",
+        "tieback": "As large retailers tighten supplier compliance specs, a retailer that makes vendor onboarding and EDI compliance easy has a sourcing advantage with the suppliers that big-box programs are pushing costs onto."
+      },
+      {
+        "title": "Agentic AI gap persists between executives, workers",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-10-16",
+        "url": "https://www.ciodive.com/news/agentic-gap-executives-workers/833289/",
+        "summary": "An Asana survey of more than 4,500 CIOs, AI leaders and workers found 68% of leaders use three or more AI agents weekly versus 36% of workers, and fewer than a quarter of workers say agents handle the tasks they most need help with. Nearly half of agent users spend about 10% of their time switching tools and reconciling outputs, and 38% say over a quarter of agent work is duplicated.",
+        "tieback": "Operations teams judge automation by whether work gets finished, so the stronger case for supplier and order automation is measured exceptions cleared and orders shipped, not agent activity counts."
+      },
+      {
+        "title": "Expedia's AI chief: Models are fungible, data isn't",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-10-16",
+        "url": "https://www.ciodive.com/news/expedia-chief-AI-data-officer-tech-stack/833165/",
+        "summary": "Expedia Group's first chief AI and data officer, Xavier Amatriain, says the company runs both frontier and open-weight models, avoids lock-in to any one model, and treats its data foundation as the real moat for a two-sided marketplace of travelers and suppliers. He describes a 'fan out, fan in' approach to testing tools and is reorganizing teams into small AI-first squads with few cross-team dependencies.",
+        "tieback": "For a retailer running a two-sided dropship or marketplace program, the durable asset is clean, connected supplier, order and inventory data, which stays valuable whichever AI model or agent sits on top."
+      }
+    ]
+  },
+  {
     "date": "2026-10-12",
     "label": "Weekly: Week of Oct 5 to Oct 11, 2026",
     "articles": [
