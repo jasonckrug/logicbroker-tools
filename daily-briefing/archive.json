@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-10-26",
+    "label": "Weekly: Week of Oct 19 to Oct 25, 2026",
+    "articles": [
+      {
+        "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+        "publisher": "TechCrunch",
+        "author": "Sarah Perez",
+        "date": "2026-10-21",
+        "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+        "summary": "Walmart launched Agent Gateway, an MCP server that lets approved AI agents search Walmart and Sam's Club inventory and buy on a shopper's behalf, plus Agent Profiles (rolling out next month) that separate agent orders from the customer's own and support per-transaction approval or spending caps. New agent terms bar agents from seeing payment data or acting beyond the shopper's intent, keep Walmart's standard returns policy in force when an agent misbehaves, and block noncompliant agents, in contrast to Amazon's decision to block third-party agents.",
+        "tieback": "Once agents can transact against Walmart's live inventory through MCP, every extended-aisle supplier SKU behind that catalog has to carry accurate stock and order status in real time, which is the transactionable-presence and real-time inventory visibility problem dropship programs have to solve before agent volume scales."
+      },
+      {
+        "title": "How Retailers Can Reinvent the Digital Flywheel for Agentic Commerce",
+        "publisher": "BCG",
+        "author": "Daniel Gospodinov, Lauren Wiener, Khaled Tawfik, Robert Derow, Tanmay Jain, Coco Anderson",
+        "date": "2026-10-21",
+        "url": "https://www.bcg.com/publications/2026/retailers-win-ai-shopping-agents",
+        "summary": "A BCG survey of 150 retailers and brands finds 68% expect AI shopping agents to have a significant or transformational effect within two years, and eight in ten have already taken a position (42% open data to any agent, 32% to selected agents, 6% block). BCG says agents evaluate retailers on product data, price, availability, delivery and returns, and cites Nordstrom cleaning its catalog for agent visibility and holding its third-party marketplace sellers to a high product-data standard.",
+        "tieback": "BCG's Nordstrom example puts 3P seller data quality inside the retailer's agent-visibility problem, so marketplace and dropship operators need SKU onboarding that enforces content standards at the supplier level rather than cleaning listings after they go live."
+      },
+      {
+        "title": "More than a Store: Can AI plan my Thanksgiving meal?",
+        "publisher": "Grocery Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-10-22",
+        "url": "https://www.grocerydive.com/news/more-than-a-store-ai-ecommerce-grocery-thanksgiving-meal-planning/833063/",
+        "summary": "A Grocery Dive editor asked Safeway's and Kroger's AI shopping assistants to build a Thanksgiving basket for 10: Safeway's returned 51 items for about $202 (including a whole pie pumpkin alongside canned pumpkin), and Kroger's produced recipes that did not match the products it had already added. She found curated bundles and shoppable lists from Safeway, The Fresh Market and Aldi faster and clearer, and concluded the chatbots work better for brainstorming than as shopping tools.",
+        "tieback": "Retailer-owned agents are only as good as the product, price and assortment data they can reason over, so the operational lever is clean, structured item data across owned and supplier-fulfilled SKUs before more conversational shopping goes live."
+      },
+      {
+        "title": "Runnings supports growth with AI-enabled forecasting and replenishment",
+        "publisher": "Chain Store Age",
+        "author": "Dan Berthiaume",
+        "date": "2026-10-23",
+        "url": "https://chainstoreage.com/runnings-supports-growth-ai-enabled-forecasting-and-replenishment",
+        "summary": "Farm, home and outdoor retailer Runnings (90 stores in 12 states) is deploying RELEX's AI platform across stores and DCs, starting with forecasting and replenishment, and plans to add pricing, promotion, assortment and space planning over several years. It is moving to an exception-based model where the system runs routine replenishment so buyers focus on higher-level decisions, with the stated goal of better availability and lower inventory.",
+        "tieback": "Exception-based replenishment works only if supplier inventory, PO acknowledgments and ship confirmations land on time and in structure, so a growing regional retailer's lever is automated EDI and supplier analytics that keep vendor data feeding the forecast."
+      },
+      {
+        "title": "5 big numbers from Kroger's Investor Day",
+        "publisher": "Grocery Dive",
+        "author": "Peyton Bigora, Sam Silverstein",
+        "date": "2026-10-22",
+        "url": "https://www.grocerydive.com/news/kroger-investor-day-value-ecommerce-growth-technology/833667/",
+        "summary": "Kroger's three-year plan includes a self-funded $5 billion value investment, about 3% comps by 2029, $500 million in incremental e-commerce EBITDA, and modernized operations through digital shelf labels, AI, robotics and supply chain automation, with e-commerce potentially reaching 30% of the business. It also aims to raise directly sourced products from under 1% to 10% by 2029 to take intermediary margin out and get closer to growers.",
+        "tieback": "A grocer that moves from under 1% to 10% direct sourcing while scaling e-commerce takes on many more direct supplier connections, which makes rapid vendor onboarding and automated EDI the gating capability for the cost-out plan."
+      },
+      {
+        "title": "Etsy updates AI use policies to emphasize craftsmanship",
+        "publisher": "Retail Dive",
+        "author": "Dani James",
+        "date": "2026-10-23",
+        "url": "https://www.retaildive.com/news/etsy-updates-ai-use-policies-emphasize-craftsmanship/833838/",
+        "summary": "Etsy now requires most listings to include at least one unedited photo of the real product, bans AI-generated functional guides and bot-generated listings, and lets buyers get refunds when a listing that missed the image rules turns out materially different. It added a listing-form flag for images it detects as AI-generated and is investing in detection and removal, while using AI itself for discovery, matching and personalization.",
+        "tieback": "Marketplace operators are now writing and enforcing content rules for sellers at listing time, so 3P programs need onboarding workflows that validate supplier content against those rules before items publish."
+      },
+      {
+        "title": "Why customers are fed up with AI chatbots",
+        "publisher": "Retail Dive (first published by CX Dive)",
+        "author": "Matt Vartabedian",
+        "date": "2026-10-22",
+        "url": "https://www.retaildive.com/news/why-customers-fed-up-ai-chatbots/833488/",
+        "summary": "A Five9 survey of 3,000 consumers and 600 business decision-makers found only 46% of consumers rated their most recent AI or chatbot interaction positively, versus about two-thirds for phone, email and in-person support, and 46% of those who abandoned a bot for a human did so because it repeatedly misunderstood them. Experts point to outdated knowledge bases and missing context, and the survey found 55% trust AI to resolve an issue when a human option exists versus 26% when it does not.",
+        "tieback": "Most retail service questions are \"where is my order\" questions, so a bot is only as accurate as the order and shipment status it can read, which for dropship orders depends on real-time order visibility from every supplier."
+      },
+      {
+        "title": "Redesign the retail value chain around fulfilled orders, not agentify the old one",
+        "publisher": "HFS Research",
+        "author": "Abhishek Mundra, Ashish Chaturvedi",
+        "date": "2026-10-21",
+        "url": "https://www.hfsresearch.com/research/redesign-retail-value-chain/",
+        "summary": "HFS argues retail COOs should rebuild the value chain as a closed decision loop around each fulfilled order instead of layering AI onto siloed functions, citing its finding that 83% of organizations invest in AI but only 13% have completed deployment in even one area. It calls for agent-ready catalogs, supplier capacity commitments, exception-based planning, and a real-time API commerce and orchestration layer around ERP, WMS and OMS so authorized third-party agents can see one view of stock and orders and transact.",
+        "tieback": "For retailers with dropship or 3P assortment, the API orchestration layer HFS describes has to include supplier nodes, which means real-time supplier inventory and order status plus intelligent routing feeding the same view that external agents transact against."
+      },
+      {
+        "title": "Gartner Says AI Risk is Rising Faster Than AI Value",
+        "publisher": "Gartner",
+        "author": "",
+        "date": "2026-10-19",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-19-gartner-it-symposium-xpo-keynote-release-2026",
+        "summary": "In its Symposium/Xpo keynote, Gartner said 58% of functional leaders see some positive value from AI but struggle to scale it, and that 71% of organizations expect to deploy agentic AI within 12 months while only 21% have agentic governance in place. It recommends a Value-Risk Flywheel, an \"AI Central Bank\" as a shared control plane for AI decisions, and empowering AI-savvy employees to find new value.",
+        "tieback": "The 71% versus 21% gap means many retailers will let agents act on orders and inventory before they can audit them, which favors platforms that log every supplier transaction and exception in one place."
+      },
+      {
+        "title": "What's keeping 5 tech executives up at night in the AI era",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-10-23",
+        "url": "https://www.ciodive.com/news/CIOs-share-concerns-AI/833789/",
+        "summary": "At Gartner Symposium, technology leaders from Capital One Software, Heineken, Bowdoin College, Infor and the Oregon State Treasury described their top AI worries: unclear data location and security, runaway agents nobody clearly controls, consumer agents like Meta's Muse handed broad access with few boundaries, and a lack of accountability when agents err. Infor's CIO said AI is moving into core processes faster than companies can decide who owns and governs it.",
+        "tieback": "Retail IT buyers evaluating agent-facing commerce will ask who is accountable when an agent-placed dropship order fails, so a clear audit trail across retailer, supplier and order status is now part of the buying criteria."
+      }
+    ]
+  },
+  {
     "date": "2026-10-19",
     "label": "Weekly: Week of Oct 12 to Oct 18, 2026",
     "articles": [
