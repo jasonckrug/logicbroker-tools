@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-11-02",
+    "label": "Week of Oct 26 to Nov 1, 2026",
+    "articles": [
+      {
+        "title": "Who wins when AI does the shopping? New evidence on agentic commerce",
+        "publisher": "McKinsey & Company",
+        "author": "Elizabeth Silliman, Jack Trotter, Kelsey Robinson",
+        "date": "2026-10-28",
+        "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
+        "summary": "A June 2026 survey of about 21,000 consumers in 11 markets finds 53% have used AI for shopping in the past three months, and the share of US AI users who completed a purchase with AI rose from 10% to 17% year over year. McKinsey says retailer assistants catch up with stand-alone AI tools at checkout because they already connect to live inventory, payments and delivery, and that AI searches hitting a structured catalog convert at roughly twice the rate of searches using scraped or stale data.",
+        "tieback": "McKinsey's own readiness test (can your systems tell an agent the price, stock, delivery date and let it buy now) is a checklist that fails fastest on dropship and marketplace SKUs, which is where real-time inventory visibility and transactionable presence on LLMs and agents earn their keep."
+      },
+      {
+        "title": "Amazon CEO says shopping agents like Meta's Muse 'not great'",
+        "publisher": "Fortune",
+        "author": "Sebastian Herrera",
+        "date": "2026-10-29",
+        "url": "https://fortune.com/2026/10/29/amazon-ceo-says-shopping-agents-like-metas-muse-not-great/",
+        "summary": "On Amazon's Q3 call, Andy Jassy said few customers buy through outside shopping agents because the experience is still not great, a month after Amazon blocked Meta's Muse, while saying more than 400 million customers used Alexa for Shopping in the past year and those users spend 50% more per order. Meta, meanwhile, says Muse has more than 10 million users, shopping is its top use case, and partners such as Shopify, Walmart and Best Buy have opened their stores to it.",
+        "tieback": "With Amazon walled off and Walmart, Best Buy and Shopify open to third-party agents, retailers outside Amazon have to make every assortment SKU, including supplier-shipped ones, transactable by agents, which puts transactionable presence on LLMs and agents on the retailer's own roadmap."
+      },
+      {
+        "title": "Most consumers aren't using AI for product discovery, yet",
+        "publisher": "Retail Dive",
+        "author": "Nicole Silberstein",
+        "date": "2026-10-29",
+        "url": "https://www.retaildive.com/news/most-consumers-arent-using-ai-for-product-discovery-yet/833604/",
+        "summary": "AlixPartners' survey of more than 9,000 US consumers finds only 10% start product discovery with AI (14% of Gen Z and millennials), and most are not ready to hand the purchase itself to an agent. The firm expects replenishment and commodity queries to shift to agents first and says thin or messy product data (attributes, availability, price) will leave brands invisible in that channel.",
+        "tieback": "If agents read structured attributes and availability rather than imagery and copy, the retailer's leverage is how quickly and completely supplier SKUs arrive with clean data, which is a SKU onboarding speed problem more than a marketing one."
+      },
+      {
+        "title": "Amazon Business targets procurement efficiency with new AI and reporting features",
+        "publisher": "Digital Commerce 360",
+        "author": "Brian Warmoth",
+        "date": "2026-10-27",
+        "url": "https://www.digitalcommerce360.com/2026/10/27/amazon-business-procurement-announcements/",
+        "summary": "At its Reshape event, Amazon Business expanded its Business Assistant from a general tool into a conversational assistant tied to each customer's orders, spend and approvals, handling order tracking, approval status, savings recommendations, payment allocation and spend analysis. It also launched Value Intelligence, which reports savings, time saved and off-policy spend prevented against third-party benchmarks.",
+        "tieback": "B2B buyers are being trained to expect an assistant that answers order, approval and spend questions instantly, which raises the bar for any retailer's supplier network to expose order status and supplier performance data that an assistant can query."
+      },
+      {
+        "title": "Gap Inc. launches AI hiring tool in time for the holidays",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-10-29",
+        "url": "https://www.retaildive.com/news/gap-ai-hiring-tool-bridgette/872884/",
+        "summary": "Gap Inc. rolled out Bridgette, an AI career guide built on Paradox and Workday Recruiting that finds and applies for jobs, answers questions, schedules interviews and sends reminders, ahead of roughly 200,000 expected seasonal applications. A pilot across more than 100 stores and six distribution centers since June handled about 45,000 candidates and scheduled more than 7,000 interviews, freeing store managers from recruiting admin.",
+        "tieback": "The lever is pulling repetitive coordination off store and DC managers during peak, the same labor logic that argues for automating supplier order, ASN and invoice exchanges so holiday dropship volume does not land on a merchandising team's inbox."
+      },
+      {
+        "title": "Cycling apparel company unites planning, sourcing on single platform",
+        "publisher": "Supply Chain Dive",
+        "author": "Phil Neuffer",
+        "date": "2026-10-27",
+        "url": "https://www.supplychaindive.com/news/cycling-apparel-company-unites-planning-sourcing-on-single-platform/833732/",
+        "summary": "Australian cycling brand MAAP is moving planning, design, product development, sourcing and order management onto Bamboo Rose's AI-enabled TotalPLM platform, after previously having to update three systems for a single product change. The brand expects better data accuracy, visibility and less manual work, joining Walmart, Pacsun and Wakefern among the vendor's users.",
+        "tieback": "Three systems for one product change is the same fragmentation retailers face when supplier item data arrives in different formats, and it is why a single onboarding path for vendor SKUs shortens time to sellable inventory."
+      },
+      {
+        "title": "Fanatics revamps outfit curation tool with OpenAI",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-10-29",
+        "url": "https://www.retaildive.com/news/fanatics-openai-outfit-curation-tool/873180/",
+        "summary": "Fanatics rebuilt its Shop the Look tool with OpenAI, which uses the retailer's product, team and inventory data plus Fanatics' merchandising rules to suggest coordinated, in-stock outfits that refresh daily across its own site and league stores. A pilot across about 30,000 MLB products produced 10% higher engagement than the prior version.",
+        "tieback": "Recommendations built only from in-stock items are only as good as the inventory feed underneath them, so retailers extending this to dropship or licensed-partner assortment need real-time inventory visibility from suppliers or the AI will recommend what cannot ship."
+      },
+      {
+        "title": "Instacart to stop offering smart carts",
+        "publisher": "Grocery Dive",
+        "author": "Catherine Douglas Moran",
+        "date": "2026-10-27",
+        "url": "https://www.grocerydive.com/news/instacart-stops-smart-carts-business/872824/",
+        "summary": "Instacart is winding down its Caper Cart smart cart business five years after buying Caper AI for $350 million, saying retailer adoption did not scale fast enough and expecting $55 million to $80 million in pre-tax charges. It will refocus its in-store strategy on software, data and AI, including shelf-level inventory capture from its Arpalus acquisition.",
+        "tieback": "Retailers are funding AI that improves inventory and operating data at scale over capital-heavy hardware, which favors software investments that deliver real-time inventory visibility without a store-by-store rollout."
+      },
+      {
+        "title": "Retailers are building for AI shoppers while most brands are still fighting to be seen",
+        "publisher": "eMarketer",
+        "author": "",
+        "date": "2026-10-30",
+        "url": "https://www.emarketer.com/content/retailers-building-ai-shoppers-while-most-brands-still-fighting-seen",
+        "summary": "Drawing on a Kearney benchmark of 106 consumer companies, eMarketer reports that all six digital retail platforms studied have an explicit agentic commerce strategy and five run a live agentic offering, while only two of 53 consumer products companies operate anything live. The analysis argues readiness tracks distance from checkout, with most brands stuck as visibility optimizers trying to get AI systems to find and recommend them, and expects paid placement in AI channels to become its own discipline.",
+        "tieback": "When the retailer owns the agent-ready checkout and the brand does not, the retailer's dropship or marketplace program becomes the brand's fastest route into agent channels, which makes rapid vendor onboarding a recruiting pitch to suppliers, not just an operations metric."
+      },
+      {
+        "title": "Retailers are still figuring out how to tie AI goals to executive compensation",
+        "publisher": "Modern Retail",
+        "author": "Anna Hensel",
+        "date": "2026-10-27",
+        "url": "https://www.modernretail.co/operations/why-retailers-are-having-a-hard-time-tying-increased-ai-usage-to-executive-compensation/",
+        "summary": "Ralph Lauren added AI metrics as a factor in executive incentive payouts, but about 12% of S&P 500 companies disclose AI goals in pay plans, mostly tech firms, and recruiters see few retailers linking AI to compensation. Executives and recruiters say AI is still mostly a cost-cutting story, and until it shows clear revenue gains it is hard to tie to pay.",
+        "tieback": "Retail leaders are under pressure to show AI revenue, not just savings, so the buyer pain is proving assortment and sales lift, which favors programs that can report supplier-level GMV and fill-rate impact through supplier analytics."
+      }
+    ]
+  },
+  {
     "date": "2026-10-26",
     "label": "Weekly: Week of Oct 19 to Oct 25, 2026",
     "articles": [
