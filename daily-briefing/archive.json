@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-11-09",
+    "label": "Week of Nov 2 to Nov 8, 2026",
+    "articles": [
+      {
+        "title": "Visa tested AI shopping agents. Here's how they performed",
+        "publisher": "Chain Store Age",
+        "author": "",
+        "date": "2026-11-05",
+        "url": "https://chainstoreage.com/visa-tested-ai-shopping-agents-heres-how-they-performed",
+        "summary": "Visa's new Agentic Commerce Benchmark ran 22 AI models from 12 labs through 15 shopping tasks (buying a TV, a laptop, a personal care appliance) and found an overall pass rate of 57.2%, with the best model at 82.2% and the worst at 28.9%. More than half of failed runs still ended in a purchase, and all three attempts succeeded in only 34.2% of model-scenario combinations, which Visa frames as a consistency problem it will extend into checkout and payment testing.",
+        "tieback": "When an agent can complete a purchase on a wrong match, the retailer inherits the cancellation and return, so the lever is making price, stock and attribute data for every SKU, including supplier-shipped ones, precise enough that agents pick correctly, which is where transactionable presence on LLMs and agents depends on real-time order and inventory visibility."
+      },
+      {
+        "title": "Amazon adds over 100 Alexa for Shopping functions",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-11-05",
+        "url": "https://www.retaildive.com/news/amazon-adds-alexa-ai-shopping-functions/873602/",
+        "summary": "Amazon added more than 100 capabilities to its Alexa for Shopping agent, including managing subscriptions, resolving billing questions, and creating and editing lists and registries. The update widens the agent from product search and ordering into account and post-purchase tasks ahead of the holidays.",
+        "tieback": "As Amazon's agent answers order, billing and subscription questions on its own, retailers competing with it need order status and delivery data from every fulfillment source, including dropship vendors, available in real time so their own assistants can give the same answers."
+      },
+      {
+        "title": "Google makes big plans for wallet",
+        "publisher": "Retail Dive",
+        "author": "Justin Bachman",
+        "date": "2026-11-04",
+        "url": "https://www.retaildive.com/news/google-wallet-digital-agentic-retail/873721/",
+        "summary": "Google is positioning its digital wallet as more than a payment credential, describing it as a repository for receipts that can also track online orders and arrange refunds. Retail Dive frames the plan as part of Google's agentic commerce push, where the wallet becomes the layer that follows an order after an agent places it.",
+        "tieback": "If Google's wallet starts tracking orders and triggering refunds, retailers will need shipment, cancellation and return events flowing out of every supplier promptly and in a standard format, which is the job automated EDI and real-time order visibility already do for dropship programs."
+      },
+      {
+        "title": "Exclusive: JPMorgan and Mastercard back AI shopping startup Firmly",
+        "publisher": "Axios",
+        "author": "",
+        "date": "2026-11-06",
+        "url": "https://www.axios.com/pro/fintech-deals/2026/11/06/firmly-15-million-series-a-jpmorgan-mastercard",
+        "summary": "Seattle-based Firmly raised a $15 million Series A backed by J.P. Morgan Payments and Mastercard (other coverage names Squarepoint Capital as lead), bringing total funding to about $20 million. Firmly lets merchants sell inside AI assistants, marketplaces and shoppable ads without building a separate integration for each, and it handles the merchant side of Mastercard Agent Connect.",
+        "tieback": "Payments networks funding a one-integration path into many agents signals that agent distribution is consolidating, and retailers still need the supplier-side catalog and inventory feeds behind that integration to be complete and current for transactionable presence on LLMs and agents to hold up."
+      },
+      {
+        "title": "AI recommendations are leading to returns",
+        "publisher": "Retail Dive",
+        "author": "Nicole Silberstein",
+        "date": "2026-11-03",
+        "url": "https://www.retaildive.com/news/ai-recommendations-returns/873075/",
+        "summary": "A Blue Yonder survey finds nearly a quarter of US consumers have bought a product based on an AI recommendation, and about 46% of those buyers returned an item in the past year. The leading reason for returning AI-recommended items is that the product did not match its description, which the report attributes to product data written for search bars rather than AI assistants.",
+        "tieback": "Returns driven by listing mismatches trace back to supplier-provided content, so the operational lever is enforcing attribute completeness and accuracy at the point a vendor's SKUs are onboarded, which is where SKU onboarding speed has to come with validation rather than shortcuts."
+      },
+      {
+        "title": "Reformation implements new AI planning tool, helping in-stock rates",
+        "publisher": "Retail Dive",
+        "author": "Dani James",
+        "date": "2026-11-06",
+        "url": "https://www.retaildive.com/news/reformation-q3-earnings-sales-growth-ai-planning-tool-in-stock-rates/873991/",
+        "summary": "Reformation's CEO said on its Q3 call that a new AI-backed planning tool improves product performance evaluation and demand forecasting, lifting in-stock rates and full-price selling. Net revenue grew about 19% to $173.6 million, and William Blair analysts credited the brand's ability to read and react to demand faster than traditional apparel peers.",
+        "tieback": "Better forecasts only help if inventory positions are visible quickly enough to act on, and retailers extending assortment through dropship can apply the same read-and-react approach when supplier inventory feeds update in near real time."
+      },
+      {
+        "title": "EBay trims Depop shipping rates, bolsters delivery features",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-11-05",
+        "url": "https://www.supplychaindive.com/news/ebay-trims-depop-shipping-rates-bolsters-delivery-features/873710/",
+        "summary": "EBay deployed an improved AI-powered delivery date model in six export markets (US, China, UK, France, Canada, Poland), letting it show more listings with a fast delivery promise while keeping reliability. Its AI listing tool now also estimates package size and weight, generates a prepaid label and adds tracking, and Depop's shipping costs fell after it gained access to eBay's carrier rates.",
+        "tieback": "A marketplace promising delivery dates on third-party listings needs dependable ship-time and carrier data from each seller, the same input retailers need from dropship vendors before they can show accurate delivery promises, which is where intelligent routing and supplier analytics come in."
+      },
+      {
+        "title": "Amazon deploys thousands of smart glasses to delivery drivers",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-11-04",
+        "url": "https://www.supplychaindive.com/news/amazon-deploys-thousands-of-smart-glasses-to-delivery-drivers/873620/",
+        "summary": "Amazon plans to deploy 5,000 smart delivery glasses this year and more than 20,000 by the end of 2027, showing drivers navigation, gate codes and drop-off preferences in their field of view. The glasses confirm the right packages are in the van, flag deliveries left at a location that does not match the address, and capture proof of delivery automatically.",
+        "tieback": "Amazon is reducing failed and misdelivered orders at the last step, and retailers running dropship programs face the same cost in a different form, since every supplier-shipped order needs tracking and delivery confirmation captured and passed back to the customer without manual follow-up."
+      },
+      {
+        "title": "Analysis: AI shopping agents could threaten Amazon and Walmart's ad business",
+        "publisher": "Reuters (via The Star)",
+        "author": "Juveria Tabassum, Nicholas P. Brown, Arriana McLymore",
+        "date": "2026-11-04",
+        "url": "https://www.thestar.com.my/tech/tech-news/2026/11/04/analysis-ai-shopping-agents-could-threaten-amazon-and-walmart039s-ad-business",
+        "summary": "Reuters reports that Amazon and Walmart, which together hold about 88% of the estimated $74.4 billion US retail media market, face a risk that shopping agents bypass the sponsored placements brands pay for, with Morgan Stanley estimating agents could handle 10% to 20% of US e-commerce spend by 2030. Amazon is blocking outside agents while Walmart is opening to them and testing ads in Sparky, and consultants expect a shift toward product-data-driven advertising aimed at agents.",
+        "tieback": "If agents choose on product data rather than paid placement, the retailer with the most complete and accurate assortment data wins the recommendation, which raises the value of fast, clean supplier and SKU onboarding relative to retail media spend."
+      },
+      {
+        "title": "Holiday shoppers only want a dash of AI for the gift hunt",
+        "publisher": "Retail Dive",
+        "author": "Dani James",
+        "date": "2026-11-05",
+        "url": "https://www.retaildive.com/news/holiday-shoppers-only-want-a-dash-of-ai-for-the-gift-hunt/873317/",
+        "summary": "Retail Dive's holiday coverage finds consumers using AI this season mostly for price comparisons and narrowing gift ideas. Shoppers say keeping control of the final buying decision still matters, which limits how much they will hand off to an agent.",
+        "tieback": "Shoppers using AI to compare but buying themselves means the agent's job is to route them to a retailer that shows a competitive price, real availability and a credible delivery date, so the near-term payoff is accurate inventory and delivery data on extended-aisle SKUs rather than autonomous checkout."
+      }
+    ]
+  },
+  {
     "date": "2026-11-02",
     "label": "Week of Oct 26 to Nov 1, 2026",
     "articles": [
