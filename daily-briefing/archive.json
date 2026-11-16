@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-11-16",
+    "label": "Week of Nov 9 to Nov 15, 2026",
+    "articles": [
+      {
+        "title": "ChatGPT's new Wallet lets AI agents shop and check out for you",
+        "publisher": "TechCrunch",
+        "author": "Sarah Perez",
+        "date": "2026-11-13",
+        "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+        "summary": "OpenAI launched ChatGPT Wallet, which lets its dots agents choose and complete purchases using a payment token so neither the agent nor the merchant sees the card, with users approving each order by Face ID or fingerprint; it starts with a limited group of U.S. Pro subscribers. OpenAI plans spending limits and category pre-approvals later and published a Commerce Partner Playbook for retailers, while noting that Amazon and others still block agents from their sites.",
+        "tieback": "The merchant receives the shipping address and order details straight from the agent, so a retailer with supplier-fulfilled SKUs needs agent orders to route into the same order flow and inventory feed as web orders, which is where transactionable presence on LLMs and agents depends on real-time order and inventory visibility."
+      },
+      {
+        "title": "Introducing Businesses in ChatGPT",
+        "publisher": "OpenAI",
+        "author": "",
+        "date": "2026-11-10",
+        "url": "https://openai.com/index/introducing-businesses-chatgpt/",
+        "summary": "OpenAI opened a beta that lets businesses claim a profile in ChatGPT, submit self-service product feeds with pricing and availability, see how users interact with them, and deploy Business Agents (initially for eligible U.S. e-commerce and online-service businesses). Shopify merchants' eligible products already flow in through Shopify Catalog, and Shopify stores can connect to speed verification.",
+        "tieback": "A self-service feed puts the retailer on the hook for accurate price and availability across every SKU, including drop-ship and 3P items whose stock lives in supplier systems, so the lever is how quickly supplier inventory and catalog data can be normalized and kept current."
+      },
+      {
+        "title": "Amazon's plan to own the world's product data and fight AI shopping agents",
+        "publisher": "Reuters",
+        "author": "",
+        "date": "2026-11-13",
+        "url": "https://www.reuters.com/business/media-telecom/amazons-plan-own-worlds-product-data-fight-ai-shopping-agents-2026-11-13/",
+        "summary": "Reuters, citing an internal document, reports Amazon is planning a World Product Graph that would catalog data on virtually every item for sale, including products Amazon does not stock, partly to counter outside AI shopping agents, with brands such as Coca-Cola and Bayer already contributing and an aspirational launch of October 2027. Amazon disputed parts of the report, saying usage figures were outdated and that Alexa for Shopping is about 97% accurate.",
+        "tieback": "If the largest marketplace is racing to own complete product data, retailers competing for agent recommendations need their own catalog breadth and attribute depth, which favors programs that can onboard supplier SKUs quickly rather than waiting on manual item setup."
+      },
+      {
+        "title": "AI agents are here to help with your online shopping (where they're allowed)",
+        "publisher": "Marketplace",
+        "author": "Kristin Schwab and Sarah Leeson",
+        "date": "2026-11-10",
+        "url": "https://www.marketplace.org/story/2026/11/10/some-retailers-try-blocking-agentic-ai-shoppers",
+        "summary": "Marketplace host Kristin Schwab interviews The Verge's Mia Sato about the holiday-season tension between agentic shoppers from Meta, OpenAI and others and the retailers deciding whether to let them in. Some sites accept agents acting for consumers while others, including Amazon, block them, leaving shoppers with uneven results depending on where the agent tries to buy.",
+        "tieback": "Retailers deciding whether to open the door to agents need confidence that orders arriving through them will be fulfilled correctly, which is an order-routing and inventory-accuracy question as much as a policy one."
+      },
+      {
+        "title": "Linux Foundation adds development standard for agents",
+        "publisher": "CIO Dive",
+        "author": "Makenzie Holland",
+        "date": "2026-11-12",
+        "url": "https://www.ciodive.com/news/linux-foundation-adds-development-standard-agents/874442/",
+        "summary": "The Linux Foundation launched the Agent Name Service, an open standard built on DNS that defines how AI agents are named, registered, monitored and authenticated agent-to-agent, backed by 11 companies including Cisco, Salesforce and Cloudflare. The piece ties it to enterprises closing their environments to outside agents after security incidents, with Cloudflare's CTO saying businesses need to know who an agent represents before trusting it to act.",
+        "tieback": "Verifiable agent identity is what would let a retailer accept agent orders instead of blocking them, so prospects evaluating agent channels should ask how agent-originated orders will be identified and audited alongside EDI and API orders from suppliers."
+      },
+      {
+        "title": "Asics boosts inventory management using warehouse drones",
+        "publisher": "Supply Chain Dive",
+        "author": "Phil Neuffer",
+        "date": "2026-11-11",
+        "url": "https://www.supplychaindive.com/news/asics-boosts-inventory-management-using-warehouse-drones/874273/",
+        "summary": "Asics deployed Corvus Robotics autonomous drones at its 855,000-square-foot Byhalia, Mississippi omnichannel DC, moving from twice-yearly manual counts to monthly cycle counts, recovering misplaced inventory 60% faster and cutting 200 labor hours. With better visibility, Asics no longer holds back up to 15 of every 100 products from online marketplaces because of fulfillment risk.",
+        "tieback": "The marketplace detail is the point: inventory you cannot trust is inventory you cannot list, so the lever for any brand or retailer selling through 3P channels is accurate, near-real-time available-to-sell data flowing to every channel."
+      },
+      {
+        "title": "Square Expands AI Tools to Give Sellers More Control",
+        "publisher": "PYMNTS",
+        "author": "",
+        "date": "2026-11-12",
+        "url": "https://www.pymnts.com/news/artificial-intelligence/2026/square-expands-agentic-ai-tools-give-sellers-more-control-over-business-operations/",
+        "summary": "Square made its Squaremates business agent generally available to U.S. sellers as the main entry point to its dashboard, able to run multistep tasks such as bulk catalog updates and labor-based scheduling, and expanded its MCP server and a new CLI so outside AI assistants can act on seller accounts. A restocking capability in beta identifies low inventory and prepares supplier orders for seller approval, part of Block's plan for procurement agents.",
+        "tieback": "Agents that draft supplier purchase orders only work when the supplier side can receive and acknowledge them electronically, which puts automated EDI and supplier connectivity in the path of AI-driven replenishment."
+      },
+      {
+        "title": "JD Sports leverages tech for faster replenishment",
+        "publisher": "Supply Chain Dive",
+        "author": "Alejandra Carranza",
+        "date": "2026-11-13",
+        "url": "https://www.supplychaindive.com/news/jd-sports-leverages-tech-for-faster-replenishment/874427/",
+        "summary": "JD Sports rolled out Zebra mobile computers with RFID sleds to 414 UK and Ireland stores in about three months, citing 98% on-shelf availability and 20% faster replenishment, with counts now run daily or twice weekly so shelves and inventory systems stay in sync. The retailer says accurate counts are what make one-hour click-and-collect and 30-minute delivery promises possible and let teams spot shrink well before a 90- or 180-day audit. (The technology here is RFID data capture rather than AI; it is included as the inventory-accuracy foundation that AI replenishment depends on.)",
+        "tieback": "Fast fulfillment promises rest on store-level stock accuracy, and the same discipline applies to drop-ship, where the retailer is promising inventory it cannot count itself and needs real-time supplier inventory feeds to keep the promise."
+      },
+      {
+        "title": "Welcome to the B2A Economy",
+        "publisher": "Andreessen Horowitz (a16z)",
+        "author": "Olivia Moore and Justine Moore",
+        "date": "2026-11-10",
+        "url": "https://a16z.com/welcome-to-the-b2a-economy/",
+        "summary": "a16z argues AI agents are becoming the internet's primary users and that businesses will shift from blocking bots to competing for them, citing Shopify's eightfold rise in AI-driven traffic and nearly thirteenfold rise in AI-search orders, Human Security's 8x growth in agentic browser traffic from August to October, and higher conversion from AI-referred visits. The essay maps the agent and infrastructure landscape and says payments, fraud and identity systems are already straining at low agent volumes.",
+        "tieback": "If agents become a distribution channel the way web and mobile did, assortment breadth that agents can see and buy becomes a growth lever, which strengthens the case for expanding catalog through drop-ship and 3P vendors that can be onboarded quickly."
+      },
+      {
+        "title": "Why do enterprises keep missing the mark on AI?",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-11-12",
+        "url": "https://www.ciodive.com/news/enterprise-AI-blockers-CIO-data-infrastructure/874552/",
+        "summary": "CIO Dive compiles its recent reporting on why enterprise AI investments keep falling short, pointing to poor data foundations, infrastructure limits, runaway budgets and an uneven risk-to-value equation rather than technical skill alone. Kyndryl's Ismail Amla adds that AI requires enterprise-wide change management across people, process and technology.",
+        "tieback": "For retailers the data-foundation problem is concrete: AI forecasting, pricing or agent-facing feeds are only as good as the supplier order, inventory and item data underneath them, so cleaning up partner data flows is often the first AI project."
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "label": "Week of Nov 2 to Nov 8, 2026",
     "articles": [
