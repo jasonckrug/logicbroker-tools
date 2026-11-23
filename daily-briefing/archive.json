@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-11-23",
+    "label": "Weekly: Week of Nov 16 to Nov 22, 2026",
+    "articles": [
+      {
+        "title": "Big box retailers lean on AI ahead of holiday rush",
+        "publisher": "CIO Dive",
+        "author": "Paige Gross",
+        "date": "2026-11-19",
+        "url": "https://www.ciodive.com/news/target-walmart-AI-shopping-agents/875264/",
+        "summary": "Target said on its Q3 call that its Ask Target assistant is in beta, with testers buying at about twice the rate of other shoppers, while Walmart reported Sparky usage up 129% and has rolled out agent profiles that let customers set permissions and spending limits. Gartner analyst Sandeep Unni told CIO Dive that an agent is only as effective as the retailer's product content, inventory visibility, pricing accuracy and fulfillment promise, and that fragmented data and inconsistent product attributes are the biggest barriers.",
+        "tieback": "For a retailer running dropship or marketplace assortment, every supplier feed becomes agent-facing data, so inconsistent attributes and stale partner inventory turn directly into lost agent-driven sales, which is where SKU onboarding speed and real-time inventory visibility matter."
+      },
+      {
+        "title": "In Graphic Detail: Welcome to the agentic commerce quarter",
+        "publisher": "Modern Retail",
+        "author": "Krystal Scanlon",
+        "date": "2026-11-19",
+        "url": "https://www.modernretail.co/technology/in-graphic-detail-welcome-to-the-agentic-commerce-quarter/",
+        "summary": "Modern Retail (republishing Digiday) charts holiday 2026 as the first season where shopping agents complete payments, citing ChatGPT Wallet, Google's UCP-powered checkout in Canada, Amazon blocking Meta's Muse and Walmart's agent spending caps, with eMarketer forecasting $1.44 billion in U.S. agent-completed e-commerce sales this year. Gartner data shows 39% of marketers have tailored product information or pricing for agents but only 30% have built workflows for agent transactions, while Okta finds just 31% of consumers would let an agent buy without review.",
+        "tieback": "The gap between being discoverable and being transactable is the opening: Adobe says AI-referred shoppers converted 90% better in September, and a retailer whose extended-aisle catalog shows up in agents but cannot be fulfilled reliably will lose that lift, which is the case for transactionable presence on LLMs and agents backed by accurate supplier data."
+      },
+      {
+        "title": "Exclusive: AWS Marketplace head on letting AI agents shop for software",
+        "publisher": "Fortune",
+        "author": "Wen Shao",
+        "date": "2026-11-19",
+        "url": "https://fortune.com/2026/11/19/aws-marketplace-rolls-out-ai-agents-to-shop-for-software-autonomously/",
+        "summary": "AWS Marketplace launched agents that cover each stage of B2B software procurement, from discovery and contract review to vendor security checks and purchase, and companies can give agents a budget and rules for which purchases still go to a person. AWS's Matt Yanchyshyn said buyers now describe what they want to build instead of searching by keyword, and partners Drata and Vanta expect small, high-volume purchases to go fully autonomous while large deals keep a human in the loop.",
+        "tieback": "The same budget-and-rules model is likely to reach retail replenishment and supplier purchasing, so prospects will start asking whether their supplier network can accept machine-initiated orders with rule-based approvals and automated EDI confirmations."
+      },
+      {
+        "title": "Holiday shoppers expect AI to save them over $190 this year",
+        "publisher": "Retail Dive",
+        "author": "Tatiana Walk-Morris",
+        "date": "2026-11-18",
+        "url": "https://www.retaildive.com/news/holiday-shoppers-ai-discounts-save-hundreds/874309/",
+        "summary": "A Forethought AI Agents by Zendesk survey of more than 1,000 U.S. adults found shoppers expect AI tools to save them $192 on holiday purchases, but 41% have abandoned an online cart because a chatbot could not answer simple questions about shipping or inventory. Only 18% would let an AI agent make a purchase over $500, and 82% want a refund or credit when AI promises something the business cannot deliver.",
+        "tieback": "Cart abandonment over shipping and stock questions traces back to missing data, so retailers selling supplier-fulfilled items need ship-by dates and stock counts from each vendor flowing in real time before an assistant can quote a promise the supplier will keep."
+      },
+      {
+        "title": "Target boosts on-shelf availability, aided by stronger tech",
+        "publisher": "Supply Chain Dive",
+        "author": "Max Garland",
+        "date": "2026-11-20",
+        "url": "https://www.supplychaindive.com/news/target-boosts-on-shelf-availability-aided-by-stronger-tech/875117/",
+        "summary": "Target improved on-shelf availability by more than a percentage point in Q3, crediting allocation technology and AI-driven purchasing and replenishment that now covers about 90% of its assortment, up from 40% a year earlier. COO Lisa Roath said the next step is reviewing how inventory flows end to end, from purchasing and allocation to replenishment and the sales floor, and next-day delivery now reaches nearly three-fourths of the U.S. population.",
+        "tieback": "Once owned inventory runs on science-led replenishment, the least-managed part of the assortment is usually the extended aisle, so retailers at this stage are ready for intelligent routing and supplier analytics that apply the same discipline to dropship vendors."
+      },
+      {
+        "title": "Delivering the agentic supply chain",
+        "publisher": "McKinsey & Company",
+        "author": "Mike Doheny, Rahul Shahani and Kapil Dev Bansal",
+        "date": "2026-11-17",
+        "url": "https://www.mckinsey.com/capabilities/operations/our-insights/operations-blog/delivering-the-agentic-supply-chain",
+        "summary": "McKinsey's operations team argues agentic AI can become the execution layer supply chains have lacked, citing early pilots with 4 to 7% lower cost of goods sold, 20 to 50% productivity gains, a retailer that cut inventory 12% through multiagent markdown optimization, and order management tasks reduced from 20 to 120 minutes to one or two. It notes that only 3% of organizations see AI supply chain savings above 20%, and recommends redesigning workflows by domain, cleaning data before it reaches planning models, and setting clear human-in-the-loop thresholds.",
+        "tieback": "Order entry, validation, inventory checks and fulfillment coordination are the dropship order lifecycle, and McKinsey's figures give prospects a benchmark for what automated EDI and exception-based order management should deliver."
+      },
+      {
+        "title": "E-commerce boosts Home Depot, Lowe's in Q3",
+        "publisher": "Retail Dive",
+        "author": "Caroline Jansen",
+        "date": "2026-11-18",
+        "url": "https://www.retaildive.com/news/home-depot-lowes-digital-sales-boost-q3-ecommerce/875054/",
+        "summary": "Home Depot posted its sixth straight quarter of double-digit online comp growth, about 13%, crediting AI-enabled search, expanded assortment, targeted marketing and faster checkout-to-delivery. Lowe's grew online sales 17.4%, which GlobalData's Neil Saunders attributed partly to its marketplace widening assortment across price points, alongside faster delivery and better site functionality.",
+        "tieback": "Lowe's result is a public proof point that a 3P marketplace lifts digital comps in home improvement, and the operating constraint behind it is how fast new sellers and SKUs can be onboarded without weakening delivery promises."
+      },
+      {
+        "title": "US Foods to test inventory-scanning robots at 6 more warehouses",
+        "publisher": "Supply Chain Dive",
+        "author": "Antone Gonsalves",
+        "date": "2026-11-17",
+        "url": "https://www.supplychaindive.com/news/us-foods-to-test-inventory-scanning-robots-at-6-more-warehouses/874829/",
+        "summary": "US Foods is testing autonomous inventory-scanning robots at one warehouse and plans to pilot them at six more by year-end, with CEO David Flitman saying the system costs about as much as one worker and counts inventory accurately within 24 hours. The distributor already uses AI for route optimization, volume and workforce forecasting, and item forecasting to support service levels and working capital.",
+        "tieback": "Daily-accurate counts only reduce cancellations if they reach selling channels quickly, so suppliers and distributors investing in counting accuracy still need real-time inventory feeds to their retail partners to capture the benefit."
+      },
+      {
+        "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+        "publisher": "TechCrunch",
+        "author": "Sarah Perez",
+        "date": "2026-11-18",
+        "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+        "summary": "At the New York Times DealBook Summit, Microsoft CEO Satya Nadella said AI agents will reshuffle internet economics, pushing aggregators whose ad models were built for \"human web\" traffic toward cost-per-click or transactional models. He suggested that if Amazon keeps blocking agents, platforms such as Shopify that let them in could gain an advantage, saying \"if you don't accept the agent, somebody else will.\"",
+        "tieback": "Retailers deciding whether to open their catalogs to third-party agents now face a prominent public argument about the cost of saying no, and the practical prerequisite for saying yes is a catalog, including supplier-owned SKUs, that agents can transact against reliably."
+      },
+      {
+        "title": "Companies lack the human talent to oversee AI agent proliferation",
+        "publisher": "CX Dive",
+        "author": "Matt Vartabedian",
+        "date": "2026-11-20",
+        "url": "https://www.customerexperiencedive.com/news/ai-agents-proliferate-human-oversight-needed/875239/",
+        "summary": "A Zendesk report covering more than 4,400 business respondents found 81% of leaders use AI agents, with a median of 10 customer-facing agents today and 15 planned, many built for defined workflows such as autonomously checking and initiating returns. Nearly four in five say they need formal oversight roles, yet fewer than a third of human agents say their employer is helping them build the skills to supervise AI.",
+        "tieback": "A returns agent that cannot see which supplier shipped an item or what that supplier's return terms are will create exceptions instead of removing them, so retailers automating service on dropship orders need supplier-level order data and return rules in the same system the agent reads."
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "label": "Week of Nov 9 to Nov 15, 2026",
     "articles": [
